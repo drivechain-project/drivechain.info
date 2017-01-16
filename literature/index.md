@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Literature
+---
+
 
 Original Post: http://www.truthcoin.info/blog/drivechain/
 
