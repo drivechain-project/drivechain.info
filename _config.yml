@@ -1,0 +1,33 @@
+baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
+blogurl: "/blog" # Blog subpath
+url: "http://www.truthcoin.info" # the base hostname & protocol for your site
+title: "Truthcoin: Making Cheap Talk Expensive"
+#title: "Truthcoin: Nullius in Verba"
+
+# This is used by feed.xml. Uncomment if you want to use it.
+# description: "..."
+
+gems:
+  - jemoji
+exclude:
+  - README.md
+  - CHANGELOG.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+permalink: /blog/:title/
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+encoding: utf-8
