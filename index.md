@@ -3,8 +3,11 @@ layout: page
 title: Drivechain
 ---
 
-### Sidechains Have Arrived!
+### Sidechains
 
+Coming very soon.
+
+Please browse the [literature](/literature/index.html) for more information while the site is being established.
 
 
 # Contact
