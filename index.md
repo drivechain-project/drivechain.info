@@ -6,7 +6,7 @@ title: Drivechain
 
 ### Pitch
 
-Has *scaling* got you down? Are your BTC hodlings threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum? Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime'](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)? Does 'using a separate currency at each individual store' sound like an incredibly stupid idea to you, one which contradicts the very *purpose* of money?
+Has *scaling* got you down? Are your BTC hodlings threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum? Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)? Does 'using a separate currency at each individual store' sound like an incredibly stupid idea to you, one which contradicts the very *purpose* of money?
 
 If you think that blocks are too small, or too big, or that they should contain more message-types, or that they should contain fewer message-types, or if you think the CoreDevs should be fired, or that the CoreDevs should be hired, then sidechains might be for you!
 
