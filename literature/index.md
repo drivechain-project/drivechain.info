@@ -3,20 +3,30 @@ layout: page
 title: Literature
 ---
 
+### Specification
 
-Original Post: http://www.truthcoin.info/blog/drivechain/
+[Original Post and Specfication](http://www.truthcoin.info/blog/drivechain/)
 
-Theoretical Work:
+To this, only two modifications have since been made:
 
-http://www.truthcoin.info/blog/contracts-oracles-sidechains/
-http://www.truthcoin.info/blog/drivechain-op-code/
+* Introduction of blind merged mining.
+* Forcing deposits to select the sidechain-UTXO as an input, such that all of the sidechain's money is always in a single UTXO. 
 
-Video Series on "Sidechain Privatization" -- aka smart contract ecology: https://www.youtube.com/playlist?list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4
+### Theoretical Work: Why it isn't bad that miners can rob the sidechain
 
-Risk Analysis:
+[Video Series on "Sidechain Privatization", ie "smart contract ecology"](https://www.youtube.com/playlist?list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4)
 
-Video Series on "Sidechain Risks" https://www.youtube.com/playlist?list=PLw8-6ARlyVciNjgS_NFhAu-qt7HPf_dtg
+Which is itself an expansion of [this post](http://www.truthcoin.info/blog/contracts-oracles-sidechains/) and [this post](http://www.truthcoin.info/blog/drivechain-op-code/).
 
-Miner Centralization, The Final Objection:
+The conclusions are summarized in this post about ["Wise Contracts"](http://www.truthcoin.info/blog/wise-contracts/).
 
-Code: https://github.com/drivechain-implementation-2/DrivechainTesting/blob/master/README.md
+
+### Risk Analysis
+
+[Comprehensive video series on "Sidechain Risks"](https://www.youtube.com/playlist?list=PLw8-6ARlyVciNjgS_NFhAu-qt7HPf_dtg)
+
+### Response to Criticism re: "Miner Centralization"
+
+* 1
+* 2
+* 3
