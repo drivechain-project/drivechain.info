@@ -27,7 +27,7 @@ To this, only two modifications have since been made:
 4. [The Benefits of Running Any Program (are Nonexistant)](https://www.youtube.com/watch?v=k3L2Rdz06NM&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=4)
 5. [Why do we allow Contracts to "Censor" our "Freedom"?](https://www.youtube.com/watch?v=GsnDUAkwlOw&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5)
 
-[Slides](/media/psztorc-sidechain-privatization.pdf)
+[Slides](/media/slides/psztorc-sidechain-privatization.pdf)
 
 
 ### Risk Analysis
@@ -38,7 +38,7 @@ To this, only two modifications have since been made:
 4. [Eq. Tx Fees in an Unconstrained Future](https://www.youtube.com/watch?v=YErLEuOi3xU&list=PLw8-6ARlyVciNjgS_NFhAu-qt7HPf_dtg&index=4)
 5. [Orphaning and Conclusions](https://www.youtube.com/watch?v=0gRDuLWq0Vg&list=PLw8-6ARlyVciNjgS_NFhAu-qt7HPf_dtg&index=5)
 
-[Slides](/media/psztorc-sidechain-risks.pdf)
+[Slides](/media/slides/psztorc-sidechain-risks.pdf)
 
 [Playlist](https://www.youtube.com/playlist?list=PLw8-6ARlyVciNjgS_NFhAu-qt7HPf_dtg)
 
@@ -47,7 +47,7 @@ To this, only two modifications have since been made:
 
 "Better Strategy Can Improve TX-Throughput, Even if it Can't Improve TX-Physics"
 
-[Slides](/media/psztorc-milan.pdf)
+[Slides](/media/slides/psztorc-milan.pdf)
 
 [Video](https://www.youtube.com/watch?v=Gzg_u9gHc5Q&t=6575s)
 
@@ -55,7 +55,7 @@ To this, only two modifications have since been made:
 
 "Overview / Teaser / Demo"
 
-[Slides](/media/psztorc-drivechain-construct-2017.pdf)
+[Slides](/media/slides/psztorc-drivechain-construct-2017.pdf)
 
 
 
