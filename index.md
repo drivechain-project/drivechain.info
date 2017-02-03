@@ -6,29 +6,24 @@ title: Drivechain
 
 ### Pitch
 
-Has *scaling* got you down? Are your BTC hodlings threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum? Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)? Does 'using a separate currency at each individual store' sound like an incredibly stupid idea to you, one which contradicts the very *purpose* of money?
+* Has *scaling* got you down?
+* Are your BTC hodlings threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum?
+* Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)?
+* Does 'using a separate currency at each individual store' sound like a dumb idea to you, so dumb that it contradicts the very *purpose* of money?
 
-If you think that blocks are too small, or too big, or that they should contain more message-types, or that they should contain fewer message-types, or if you think the CoreDevs should be fired, or that the CoreDevs should be hired, then sidechains might be for you!
-
+If you think that blocks are too small, or too big, or that they should contain more message-types, or fewer message-types, or if you think the CoreDevs should be fired, or if you don't want anyone firing your favorite Dev, then sidechains might be for you!
 
 ### What are sidechains?
 
 Sidechains are alternate chains of Bitcoin ("Alt-chains") which do *not* have their own token. To use them, individuals deposit BTC into the sidechain (at a 1:1 rate) which they later redeem (also at a 1:1 rate). Therefore, the total number of BTC currency units remains fixed at 21 million, no matter how many chains are used.
 
-They allow anyone to develop and run their own code, without facing the (near-impossible) task of also bootstrapping a new unit of money. Conversely, sidechains filter out get-rich-quick schemes (as the 'get rich' part is now impossible), and allow good projects to stand out and receive our attention.
+### Benefits of Sidechains
 
-
-### Other Benefits of Sidechains
-
-Sidechains allow Bitcoin to emulate its competitors. In this way, Bitcoin will always have the best code, because it can copy any code that exists.
-
-Third, sidechains allow greater privatization of computing resources. Currently, Bitcoin is a single large commons. It must be managed, USSR-style, because Satoshi's consensus protocol requires everyone to agree on everything, down to the very last byte. Sidechains allow users to exert great individual control over the resources they are willing to commit to the P2P network (and the benefits which they would like to receive in return).
-
-Fourth, sidechains allow us to take greater risks that we could previously. We can deploy a new piece of software -with actual Bitcoin on the line- and yet if this new software fails, the failure will only take down a small, experimental portion of the Bitcoin Ecosystem. Only those users who opted-in to these newest features would be affected. Since everyone can learn from the failures of one individual, total progress accelerates.
-
-### Further Reading
-
-Check out the sidebar for more info.
+1. **Permissionless Innovation**: Anyone can develop / run their own code, without facing the (near-impossible) task of also bootstrapping a new unit of money.
+2. **Anti-Scam**: SCs filter out get-rich-quick schemes (the 'get rich' part is now impossible). Therefore, good projects can stand out and receive our attention.
+3. **Eliminates Competition**: Bitcoin will always have the best code, because it can copy any code that exists.
+4. **Freedom to Choose**: Satoshi's consensus protocol requires everyone to agree on everything, down to the very last byte. Sidechains allow users to choose which benefits they would like to pay for.
+5. **Faster Progress**: SCs let us test new features. The tests are safe -- if these features fail, they won't take down the main network. However, the tests are also informative -- real BTC is on the line.
 
 ### Demo Video and Screenshots
 
@@ -55,6 +50,8 @@ Time passes. Eventually the withdrawal is confirmed:
 ![shot-5](/media/shot-5.png)
 
 The BTC has completed its round trip journey!
+
+Check out the sidebar for more info.
 
 ### Contact
 
