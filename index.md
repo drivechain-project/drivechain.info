@@ -6,12 +6,12 @@ title: Drivechain
 
 ### Pitch
 
-* Has *scaling* got you down?
-* Are your BTC hodlings threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum?
+* Has [*scaling*](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) got you down?
+* Are your BTC [hodlings](https://bitcointalk.org/index.php?topic=375643.0) threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum?
 * Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)?
-* Does 'using a separate currency at each individual store' sound like a dumb idea to you, so dumb that it contradicts the very *purpose* of money?
+* Does 'using a separate currency at each individual store' sound like a dumb idea to you, so dumb that it contradicts the very *purpose* of [money](http://nakamotoinstitute.org/shelling-out/)?
 
-If you think that blocks are too small, or too big, or that they should contain more message-types, or fewer message-types, or if you think the CoreDevs should be fired, or if you don't want anyone firing your favorite Dev, then sidechains might be for you!
+If you think that blocks are too small, or too big, or that they should contain more message-types, or fewer message-types, or if you think the CoreDevs should be fired, or if you don't want anyone firing your favorite Devs, then sidechains might be for you!
 
 ### What are sidechains?
 
