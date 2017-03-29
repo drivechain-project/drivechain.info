@@ -25,6 +25,17 @@ Sidechains are alternate chains of Bitcoin ("Alt-chains") which do *not* have th
 4. **Freedom to Choose**: Satoshi's consensus protocol requires everyone to agree on everything, down to the very last byte. Sidechains allow users to choose which benefits they would like to pay for.
 5. **Faster Progress**: SCs let us test new features. The tests are safe -- if these features fail, they won't take down the main network. However, the tests are also informative -- real BTC is on the line.
 
+### Peter Todd / Luke-Jr Told Me That Sidechains Are Insecure
+
+Drivechain's security model is commonly misunderstood (and improved upon Blockstream's original 2014 conception), so here it is, short and simple:
+
+1. When you send your BTC from a mainchain to a sidechain, what you are actually doing is putting it into a special account. Bitcoin miners "own" this account and can send these funds wherever they like.
+2. That might sound like a problem, but it isn't because the box can only be opened infrequently (twice or three times a year), and a super-majority of miners must leave a note on the box stating exactly where they intend to transfer the money. Otherwise the money just stays there.
+3. The only way anything can go wrong, is if miners leave a note on the box which doesn't match the note that the sidechain full node software auto-generated for them. It is easy to check because the notes are very short. Then, everyone in the Bitcoin community has to do nothing about the error, for *multiple months*.
+4. This is unlikely because, if miners wanted to steal some money, they can already do so, much more easily, by [1] depositing BTC to an exchange, [2] selling for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1]. 
+
+The lengthy delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates.
+
 ### Demo Video and Screenshots
 
 View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view).
