@@ -27,7 +27,7 @@ Sidechains are alternate chains of Bitcoin ("Alt-chains") which do *not* have th
 
 ### Peter Todd / Luke-Jr Told Me That Sidechains Are Insecure
 
-Drivechain's security model is commonly misunderstood. Here it is, short and simple:
+Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is commonly misunderstood. Here it is, short and simple:
 
 1. When BTC are deposited (from mainchain to sidechain), they are placed into a special account. Miners "own" this account, and can send these funds wherever they like.
 2. That might sound like a problem, but it isn't because the box can only be opened infrequently (two or three times a year), and a super-majority of miners must leave a note on the box stating exactly where they intend to transfer the money. The sidechain software does this automatically.
