@@ -30,8 +30,7 @@ Sidechains are alternate chains of Bitcoin ("Alt-chains") which do *not* have th
 Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is commonly misunderstood. Here it is, short and simple:
 
 1. When BTC are deposited (from mainchain to sidechain), they are placed into a special account. Miners "own" this account, and can send these funds wherever they like.
-2. That might sound like a problem, but it isn't because the box can only be opened infrequently (two or three times a year), and a super-majority of miners must leave a note on the box stating exactly where they intend to transfer the money. The sidechain software does this automatically.
-3. So, to steal, miners need to write an invalid note on the box, and leave it there for multiple months. If no one interferes, the sidechain is robbed.
+3. So, to steal, miners need to write an invalid note on the box, and leave it there for multiple months. Then, if no one interferes, the sidechain is robbed.
 
 Notice that, if miners wanted to steal some money, they can already do so, much more easily, by [1] depositing BTC to an exchange, [2] selling for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1].
 
