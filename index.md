@@ -33,9 +33,9 @@ Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivech
 2. That might sound like a problem, but it isn't because the box can only be opened infrequently (two or three times a year), and a super-majority of miners must leave a note on the box in advance. This note states exactly where the miners intend to transfer the money, and the sidechain software creates/validates the "correct" note automatically.
 3. So, to steal, miners need to write an invalid note on the box, and leave it there for multiple months. Then, if no one interferes, the sidechain is robbed.
 
-Notice that, if miners wanted to steal some money, they can already do so, much more easily, by [1] depositing BTC to an exchange, [2] selling for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1].
+The lengthy multi-month delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates. So, in practice, the delay can be avoided by paying a small fee.
 
-The lengthy multi-month delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates.
+The model is sound because we assume that miners are uninterested in "stealing". We justify this assumption by the fact that, in our pre-sidechain world, miners can *already* "steal", through a process of [1] depositing BTC to an exchange, [2] selling that BTC for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1]. It appears that miners are unwilling to betray network-integrity to such an obvious and serious degree. This is assumed to be comparable to the sidechain-case (where miners must allow an easily-corrected error to persist for several months).
 
 ### Demo Video and Screenshots
 

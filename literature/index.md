@@ -18,8 +18,8 @@ To this, only two modifications have since been made:
 
 ### Sidechain Privatization
 
-* "smart contract ecology"
-* "Why it isn't bad, that miner can rob the sidechain".
+* "Smart Contract Ecology"
+* "Why it isn't bad, that miners can rob a sidechain".
 
 1. [Intro, Problem, and Outline](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)
 2. [When Contracts Attack - Oracles](https://www.youtube.com/watch?v=2OOKgTSrITs&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=2)
