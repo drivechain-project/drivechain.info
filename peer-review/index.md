@@ -21,7 +21,7 @@ It will also contain links to relevant discussion on [bitcoin-dev] and [bitcoin-
 
 ## Endorsements
 
-1. 12.06.2017 -- [Jimmy Song supports](https://medium.com/@jimmysong/how-to-give-everyone-more-control-b3391c0f7816) on grounds political pragmatism.
+1. 12.06.2017 -- [Jimmy Song supports](https://medium.com/@jimmysong/how-to-give-everyone-more-control-b3391c0f7816) on grounds of political pragmatism.
 2. 16.06.2017 -- [Luke-Jr weighs in](https://lists.linuxfoundation.org/pipermail/bitcoin-discuss/2017-June/000149.html) , this post later [became stickied on r/bitcoin](https://www.reddit.com/r/Bitcoin/comments/6hpkqd/how_to_get_both_decentralisation_and_the/).
 
 
