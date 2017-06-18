@@ -60,7 +60,7 @@ Possibly Solara is more influential than I thought! I can't recall ever hearing 
 
 Later that very day, Greg [took to Twitter](https://twitter.com/taoeffect/status/875850514558210048) to express his opinion --which, in addition to $3.75 will get you an iced mocha frappuccino at Starbucks--  that the [Drivechain security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is "a complete regression back to banking". He also [implied](https://twitter.com/taoeffect/status/875949046225031169) that DC would "[turn] miners into the exchange everyone goes through" and that DC "defeats the purpose of Bitcoin."
 
-However, during the ensuring conversation, he admitted to have not done any background reading whatsoever. Mashuri Clark then asked ["If you’re not going to read up on it then why should anyone listen to your critiques?"](https://twitter.com/MashuriBC/status/875828093780230144) to which Greg replied ["I agree, they shouldn't"](https://twitter.com/taoeffect/status/875828528121495552).
+However, during the ensuing conversation, he admitted to have not done any background reading whatsoever. Mashuri Clark then asked ["If you’re not going to read up on it then why should anyone listen to your critiques?"](https://twitter.com/MashuriBC/status/875828093780230144) to which Greg replied ["I agree, they shouldn't"](https://twitter.com/taoeffect/status/875828528121495552).
 
 #### My Response
 
