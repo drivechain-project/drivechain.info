@@ -58,23 +58,19 @@ Possibly Solara is more influential than I thought! I can't recall ever hearing 
 
 ####  Summary
 
+Here's Greg's actual critique:
+
+https://twitter.com/taoeffect/status/876227634593583104
+
+Here's my version of Greg's critique, which I wrote for fun, because Bitcoin isn't serious, it's about egos and making fun of people:
+
 Later that very day, Greg [took to Twitter](https://twitter.com/taoeffect/status/875850514558210048) to express his opinion --which, in addition to $3.75 will get you an iced mocha frappuccino at Starbucks--  that the [Drivechain security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is "a complete regression back to banking". He also [implied](https://twitter.com/taoeffect/status/875949046225031169) that DC would "[turn] miners into the exchange everyone goes through" and that DC "defeats the purpose of Bitcoin."
 
 However, during the ensuring conversation, he admitted to have not done any background reading whatsoever. Mashuri Clark then asked ["If you’re not going to read up on it then why should anyone listen to your critiques?"](https://twitter.com/MashuriBC/status/875828093780230144) to which Greg replied ["I agree, they shouldn't"](https://twitter.com/taoeffect/status/875828528121495552).
 
 #### My Response
 
-Definitely the strongest part of Greg's critique is when he points out that the reader should not listen to him because he is too lazy to do any background reading.
-
-Absent that, his central complaint seems to be that users would need to trust miners, to the exact same degree that today's fiat users must trust commercial banking establishments (after all, it is a "complete" regression). This is obvious nonsense (ie, the transparency/auditability, pseudonymity, programmability, etc features are incomparable), but within Greg's brash overgeneralizations is a mumbled recycling of [Peter Todd's original Oct-2014 complaint](https://www.reddit.com/r/Bitcoin/comments/2k01du/peter_todd_on_twitter_the_sidechains_paper_is/clgpjpx/) about "51% of miners can steal coins".
-
-The question is so frequently asked that I [moved it to the front page](http://www.drivechain.info/#peter-todd--luke-jr-told-me-that-sidechains-are-insecure) (as you may have seen on your way over here). Greg replied --in a remark whose eloquence befits perfectly a man of his reputation-- that I [hadn't proved "jack shit"](https://twitter.com/taoeffect/status/875950307062063106) and that the situations were unrelated.
-
-Sadly for Greg, Mashuri had [earlier linked](https://twitter.com/MashuriBC/status/875827165320708097) him to something which precisely addressed directly this lack of relation ("My generalization is slightly problematic... As I've just explained, to correct this relative deficiency, we add..."). It is exactly this information which Greg chose tragically to ignore, citing (correctly this time) his own indolence.
-
-Greg futher embarassed himself by [not knowing how soft forks work](https://twitter.com/Truthcoin/status/875923091385405441), not knowing [the distinction between "drivechain" (the connecting tissue) and individual sidechains](https://twitter.com/Truthcoin/status/875868272524234752), [confusing "miners" with "a commitee"](https://twitter.com/taoeffect/status/875823380045242368) and failing to grasp [the ecological nature of economic contracts](http://www.truthcoin.info/blog/wise-contracts/).
-
-In conclusion, Greg is correct that none of us should have listened to him. Nonethless, his mistakes are probably a useful tour for some readers, and a valuable part of the peer review process.
+[ Fill in with your response, less BS ]
 
 ## Footnote
 
