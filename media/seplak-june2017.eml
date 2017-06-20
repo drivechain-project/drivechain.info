@@ -1,0 +1,157 @@
+MIME-Version: 1.0
+Received: by 10.25.204.16 with HTTP; Mon, 19 Jun 2017 06:05:25 -0700 (PDT)
+Received: by 10.25.204.16 with HTTP; Mon, 19 Jun 2017 06:05:25 -0700 (PDT)
+Bcc: ********************************
+In-Reply-To: <AAC86547-7904-4475-9966-138130019567@taoeffect.com>
+References: <24f2b447-a237-45eb-ef9f-1a62533fad5c@gmail.com>
+	<83671224-f6ff-16a9-81c0-20ab578aec9d@gmail.com>
+	<AAC86547-7904-4475-9966-138130019567@taoeffect.com>
+Date: Mon, 19 Jun 2017 15:05:25 +0200
+Delivered-To: truthcoin@gmail.com
+Message-ID: <CA+XQW1j50asq3nfW4uP6B1kADS4mP6r_sJ38c2_S1djDT7nXYg@mail.gmail.com>
+Subject: Re: [bitcoin-dev] Drivechain RfD -- Follow Up
+From: Paul Sztorc <truthcoin@gmail.com>
+To: Tao Effect <contact@taoeffect.com>
+Content-Type: multipart/alternative; boundary="94eb2c1cc67cd49fcf05524fc97d"
+
+--94eb2c1cc67cd49fcf05524fc97d
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+You are simply incorrect, Greg. 51% of miners do not have "total" control
+over coins...they do control the coin destination, but they can not
+accelerate the timing nor overwhelm their parent chain with a high volume
+of requests...in other words, they must subject themselves to a lengthy
+delay, and make themselves vulnerable to a a trivial audit. Moreover,
+before *any* of this, users must agree to subject themselves to these new
+rules.
+
+What if you were a developer of Firefox, and I said nonsense things like
+"the Firefox application can have total control over your computer" or "the
+vision is that everyone has to do everything in Firefox". The mistakes are
+so large (you apparently do not understand chain reorganizations at all,
+and your point about "limits user's choice" is nonsense) that one almost
+doesn't know where to begin. You simply don't know what you are talking
+about, and I will continue to embarrass you if you continue to make it this
+easy.
+
+You also consistently fail to make an important distinction, between two
+positions:
+
+(1) "I wouldn't move my BTC to a drivechain...I'm not into that kind of
+thing."
+(2) "I decree that no Bitcoin users anywhere should have the option to move
+their money to a drivechain."
+
+Many people (quite reasonably) hold the first position, but your position
+is the 2nd. Who is "limiting user choice" now? You. And, since this is your
+position, what do you do about Altcoins (which logically should be equally
+outrageous to you) or for that matter Ethereum? The Bitcoin mailing list is
+not about if individual users should-or-should-not spend to multisignature
+outputs, or use the LN...it is about whether ideas might service at least
+some users somewhere, and if they will break Bitcoin (as you ought to know)=
+.
+
+You need to decide how humiliated you would like to be. Further nonsense
+will be published to the "Peer Review" page.
+
+I would prefer it if you did not support Drivechain, because I only want
+supporters who at least know the basics.
+
+Paul
+
+On Jun 18, 2017 5:30 PM, "Tao Effect" <contact@taoeffect.com> wrote:
+
+In Drivechain, 51% of miners have total control and ownership over all of
+the sidechain coins. The vision of Drivechain is to have many blockchains
+"plugged in" to the main chain.
+
+Today, well over 51% of miners are under the jurisdiction of a single
+government.
+
+Thus the effect of Drivechain appears to be the creation of a new kind of
+digital border imposed onto the network where everyone hands over ownership
+of their Bitcoins to a /single/ mining cartel when they wish to interact
+with /any/ sidechain.
+
+Drivechain would be a reasonable idea if that weren't the case, but since
+it is, Drivechain now introduces a very real possible future where Bitcoins
+can be confiscated by the Chinese government in exactly the same manner
+that the Chinese government today confiscates financial assets in other
+financial networks within China.
+
+One argument is that the psuedo-anonymity granted by Bitcoin addresses
+could theoretically make this less likely to happen, and while that is
+true, it is also true that every day Bitcoin becomes less and less
+psuedo-anonymous as governments invest in blockchain analysis tech [1].
+
+How many high-profile confiscations =E2=80=94 now via the Bitcoin-blockchai=
+n itself
+(no longer being able to blame a 3rd-party exchange) =E2=80=94 is Bitcoin w=
+illing
+to tolerate and open itself up to?
+
+In a world before Drivechain: the worst that a 51% coalition can do is
+prevent you from spending your coins (censorship).
+
+In a world with Drivechain three things become true:
+
+1. The Bitcoin network centralizes more, because more power (both financial
+power and power in terms of capability/control) is granted to miners. This
+is likely to have secondary consequences on the main-chain network as well
+(in terms of its price and ability to evolve).
+
+2. A 51% coalition =E2=80=94 and/or the government behind it =E2=80=94 is n=
+ow able to
+financially profit by confiscating coins. No longer is it just censorship,
+"asset forfeiture" =E2=80=94 theft =E2=80=94 becomes a real possibility for=
+ day-to-day
+Bitcoin users.
+
+3. Drivechain limits user's existing choice when it comes to who is acting
+as custodian of their Bitcoins, from any trustworthy exchange, down to a
+single mining cartel under the control of a single set of laws.
+
+The argument given to this is that a UASF could be initiated to wrest
+control away from this cartel. I do not believe this addresses the concern
+at all.
+
+A UASF is a very big deal and extremely difficult to pull off correctly.
+Even when you have users behind you, it *requires* significant support from
+the miners themselves [2]. Therefore, I do not believe a UASF is a
+realistic possibility for recovery.
+
+I would only support Drivechain if all of these issue were addressed.
+
+Kind regards,
+Greg Slepak
+
+[1] EU Commits =E2=82=AC5 Million to Fund Blockchain Surveillance Research =
+=E2=80=94
+http://www.coindesk.com/eu-commits-e5-million-fund-blockchain-surveillance-
+research/
+
+[2] https://lists.linuxfoundation.org/pipermail/
+bitcoin-dev/2017-June/014497.html
+
+--
+Please do not email me anything that you are not comfortable also sharing w=
+ith
+the NSA.
+
+On Jun 10, 2017, at 10:04 AM, Paul Sztorc via bitcoin-dev <
+bitcoin-dev@lists.linuxfoundation.org> wrote:
+
+Hi everyone,
+
+It has been 3 weeks -- responses so far have been really helpful. People
+jumped right in, and identified unfinished or missing parts much faster
+than I thought they would (ie, ~two days). Very impressive.
+
+Currently, we are working on the sidecha...
+
+...
+
+
+
+--94eb2c1cc67cd49fcf05524fc97d--
