@@ -29,6 +29,7 @@ It will also contain links to relevant discussion on [bitcoin-dev] and [bitcoin-
 ## Objections (and Responses)
 
 
+Vaguely in the style of ['The Skeptics'](http://nakamotoinstitute.org/the-skeptics/), emphasizing Taleb's "global and morally mandatory" skin-in-the-game heuristic.
 
 
 <h3 id="solana-wright">16.06.2017 -- Jasmine Solana / Dr. Craig Wright</h3>
@@ -80,6 +81,7 @@ In conclusion, Greg is correct that none of us should have listened to him. None
 
 **Update 6/20**: As a result of experiencing this webpage, [Greg's brain exploded](\media\slepak-1.png), and he tried unsuccessfully to erase his earlier mistakes by doubling down on them in various ways.
 
+First, he went straight to <s>his parents</s> the bitcoin-dev mailing list, but forgot that [bitcoin-dev] is, despite the name, actually about bitcoin software development, and not about 'refereeing what someone put on the internet somewhere'. Ergo his email was rejected by the moderators, and he had to write [a new email pretending to be a technical critique of drivechain](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-June/014600.html), possibly only [to waste my time](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-June/014609.html) as I had already replied to him once privately. Secondly he went on an aforelinked [loony twitter rant](https://twitter.com/taoeffect/status/876212719506006016) in which he rejected the premise that I am allowed to make assertions (and/or that I am allowed to support them with references that immediately display quotations from him in their exact original context, which readers can fully examine at their leisure), and generally advertised to the world that, if he doesn't understand something (not just drivechain), then it is everyone else's fault for not immediately bringing a tailor-made explanation to him on command. Third, after warming up with a few [outright lies](https://twitter.com/taoeffect/status/876219472004108288), he [broadcasted a quote from private emails](https://twitter.com/taoeffect/status/876859722950819840) that I sent directly to him (as a favor to him), deliberately to misrepresent this as *..gasp..* 'a THREAT'. Unfortunately, he forgot that no one cares (ie, liked by the ["Peer Review Bot"](https://twitter.com/Peer__Reviewer), lol!), and he also forgot that, as the author, I can just [publish the email](/media/seplak-june2017.eml) so that everyone can read it and learn for themselves that the email is uniformly disdainful, and that the sentence in question follows many informative, non-minatory paragraphs. Fourth, he then [had his mom make him a sandwich so that he could pretend to have a girlfriend and then tweet about it](https://twitter.com/taoeffect/status/876567758829273091).
 
 We hope that Greg is getting the help he needs, and wish him a speedy recovery.
 
