@@ -69,19 +69,26 @@ This project uses zk-snarks for extreme privacy. In fact it's so private that no
 
 [Link.](https://z.cash/)
 
-### 10. BitMessage
+### 10. Original Ripple
+
+[Link.](https://bitcointalk.org/index.php?topic=297287.0)
+
+Original Ripple allowed users to extend credit to their friends, and for that credit to then be extended to friends-of-friends in a big trust network.
+
+
+### 11. BitMessage
 
 A P2P message system emphasizing privacy. With BTC fees, we might have a solution to the problem of e-mail spam. We could then break Google's hold over our entire communications infrastructure (and password-reset infrastructure).
 
 [Link.](https://bitmessage.org/wiki/Main_Page)
 
-### 11. Counterparty
+### 12. Counterparty
 
 Digital asset market, with P2P trades. These assets are usually for games, or collectables, but they *may* also be backed by TTPs to enable ‘stocks on the blockchain’, 'gold on the blockchain', 'airline miles'.
 
 [Link.](http://counterparty.io/)
 
-### 12. DropZone
+### 13. DropZone
 
 Physical contraband market. Currently the production version uses Bitcoin Testnet for messages. A sidechain might be more stable, and might allow for the system to automatically confirm that BTC payments have taken place.
 
