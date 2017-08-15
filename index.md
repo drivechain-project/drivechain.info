@@ -37,6 +37,15 @@ The lengthy multi-month delay might sound prohibitively inconvenient, but it isn
 
 The model is sound because we assume that miners are uninterested in "stealing". We justify this assumption by the fact that, in our pre-sidechain world, miners can *already* "steal", through a process of [1] depositing BTC to an exchange, [2] selling that BTC for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1]. It appears that miners are unwilling to betray network-integrity to such an obvious and serious degree. This is assumed to be comparable to the sidechain-case (where miners must allow an easily-corrected error to persist for several months).
 
+### Bitcoin Improvement Proposals (BIPs)
+
+Drivechain is so big it actually fits into two BIPs over three files:
+
+1. [drivechain-bips.md](https://github.com/drivechain-project/docs/blob/master/drivechain-bips.md)
+2. [bip1-hashrate-escrow.md](https://github.com/drivechain-project/docs/blob/master/bip1-hashrate-escrow.md)
+3. [bip2-blind-merged-mining.md](https://github.com/drivechain-project/docs/blob/master/bip2-blind-merged-mining.md)
+
+
 ### Demo Video and Screenshots
 
 View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view).
