@@ -52,7 +52,7 @@ This is why Adam Back in particular emphasizes the "slow return" feature of Driv
 
 ### I have heard that it will take 3-6 months to transfer money from the sidechain to the mainchain. Won't that be too slow to be useful?
 
-Firstly, these are customizable parameters, and open for debate -- but if withdrawals are every x=3 months, and only x=1 withdrawal can make forward progress [on the mainchain] at a time, and only x=1 prospective withdrawal can be assembled [by the sidechain] at a time, then indeed we can expect total withdrawal time to average 4.5 months [(.5)*3+3] ).
+Firstly, these are customizable parameters, and open for debate -- but if withdrawals are every x=3 months, and only x=1 withdrawal can make forward progress (on the mainchain) at a time, and only x=1 prospective withdrawal can be assembled (by the sidechain) at a time, then indeed we can expect total withdrawal time to average 4.5 months [(.5)*3+3].
 
 Some complain that such a system would be too slow to be usable, but replies of this kind disregard the effect of atomic cross-chain swaps, which are instant.
 
