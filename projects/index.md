@@ -78,7 +78,7 @@ Original Ripple allowed users to extend credit to their friends, and for that cr
 
 ### 11. BitMessage
 
-A P2P message system emphasizing privacy. With BTC fees, we might have a solution to the problem of e-mail spam. We could then break Google's hold over our entire communications infrastructure (and password-reset infrastructure).
+A P2P message system emphasizing privacy. With BTC fees, we might have a solution to the problem of e-mail spam. We could then break Google's hold over our entire communications infrastructure (and password-reset infrastructure). Perhaps even LinkedIn and even Facebook would end up disrupted.
 
 [Link.](https://bitmessage.org/wiki/Main_Page)
 
