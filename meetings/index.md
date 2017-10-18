@@ -22,7 +22,7 @@ As of October 25, 2017, the format will be:
 Notes for you:
 
 * Use [the subreddit](https://www.reddit.com/r/Drivechains/) to request that items be added to the agenda.
-* The topic order will be posted 
+* The topic order will be posted below (see "Next Meeting").
 
 Someone (probably Paul) will post a brief summary of the meeting, along with hyperlink.
 
