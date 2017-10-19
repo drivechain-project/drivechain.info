@@ -90,7 +90,7 @@ Instead, Drivechain **[condenses](http://www.truthcoin.info/blog/drivechain/#jus
 This is why Adam Back in particular emphasizes the "slow return" feature of Drivechain, whenever possible (recall that Dr. Back was a major innovator and promoter of extension blocks in early 2014).
 
 
-### What about Zmn..'s Sidechain-Headers-on-Mainchain (SHoM) ? ### {#shom}
+### What about [Zmn..'s Sidechain-Headers-on-Mainchain (SHoM)](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-September/014910.html) ? ### {#shom}
 
 Again, to repeat the answer for extension blocks (above), **the distinction between hard and soft forks isn't the point**.
 
