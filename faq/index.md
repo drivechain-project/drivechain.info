@@ -94,7 +94,7 @@ This is why Adam Back in particular emphasizes the "slow return" feature of Driv
 
 Again, to repeat the answer for extension blocks (above), **the distinction between hard and soft forks isn't the point**.
 
-The point is, instead, **the burden placed on existing users**. While an extension block does allow 'oldtype nodes' to ignore the extension data, it does this at a cost of no longer being able to fully-validate the block. It is a 'backdoor hardfork', of a kind, because users need to upgrade.
+The point is, instead, **the [burden](http://www.truthcoin.info/blog/measuring-decentralization/) placed on existing users**. While an extension block does allow 'oldtype nodes' to ignore the extension data, it does this at a cost of no longer being able to fully-validate the block. It is a 'backdoor hardfork', of a kind, because users need to upgrade.
 
 Imagine five different scenarios:
 
