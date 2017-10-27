@@ -4,7 +4,7 @@ title: Peer Review
 ---
 
 
-This page is under construction. When complete, it will contain things like "Endorsements", "ACK" (acknowledgements as 'acceptable'), or "Objections".
+This page is under construction. When complete, it will contain things like "Endorsements", "ACK" (acknowledgments as 'acceptable'), or "Objections".
 
 It will also contain links to relevant discussion on [bitcoin-dev] and [bitcoin-discuss]. It may also link to media or social media, if appropriate.
 
@@ -75,9 +75,9 @@ The question is so frequently asked that I [moved it to the front page](http://w
 
 Sadly for Greg, Mashuri had [earlier linked](https://twitter.com/MashuriBC/status/875827165320708097) him to something which precisely addressed directly this lack of relation ("My generalization is slightly problematic... As I've just explained, to correct this relative deficiency, we add..."). It is exactly this information which Greg chose tragically to ignore, citing (correctly this time) his own indolence.
 
-Greg futher embarassed himself by [not knowing how soft forks work](https://twitter.com/Truthcoin/status/875923091385405441), not knowing [the distinction between "drivechain" (the connecting tissue) and individual sidechains](https://twitter.com/Truthcoin/status/875868272524234752), [confusing "miners" with "a commitee"](https://twitter.com/taoeffect/status/875823380045242368) and failing to grasp [the ecological nature of economic contracts](http://www.truthcoin.info/blog/wise-contracts/).
+Greg further embarassed himself by [not knowing how soft forks work](https://twitter.com/Truthcoin/status/875923091385405441), not knowing [the distinction between "drivechain" (the connecting tissue) and individual sidechains](https://twitter.com/Truthcoin/status/875868272524234752), [confusing "miners" with "a commitee"](https://twitter.com/taoeffect/status/875823380045242368) and failing to grasp [the ecological nature of economic contracts](http://www.truthcoin.info/blog/wise-contracts/).
 
-In conclusion, Greg is correct that none of us should have listened to him. Nonethless, his mistakes are probably a useful tour for some readers, and a valuable part of the peer review process.
+In conclusion, Greg is correct that none of us should have listened to him. Nonetheless, his mistakes are probably a useful tour for some readers, and a valuable part of the peer review process.
 
 **Update 6/20**: As a result of experiencing this webpage, [Greg's brain exploded](\media\slepak-1.png), and he tried unsuccessfully to erase his earlier mistakes by doubling down on them in various ways.
 
