@@ -65,7 +65,7 @@ Nonetheless, I will compare drivechain to their suggestion.
 
 First, the sidechain challenge is to create a SPV-proof for side-to-main transfers. In other words, we must define conditions under which main-to-side payments can be re-unlocked on the mainchain.
 
-Their suggestion involves two things: [1] add a second Merkle tree (to both chains) such that each block commits to all earlier blocks, and [2] to actually insert a big chunk of stuff into the bitcoin txn withdrawaing the funds. This "big chunk of stuff" is the txn that was included in the sidechain, along with the sidechain's block header, as well as many of the sidechain's headers. In this way, they literally "SPV prove" the spend. I say "literally" because this idea strongly resembles the way an actual SPV wallet works: it downloads many headers, and checks these headers for valid work, and finally checks the given txn to see if it was included.
+Their suggestion involves two things: [1] add a second Merkle tree (to both chains) such that each block commits to all earlier blocks, and [2] to actually insert a big chunk of stuff into the bitcoin txn withdrawing the funds. This "big chunk of stuff" is the txn that was included in the sidechain, along with the sidechain's block header, as well as many of the sidechain's headers. In this way, they literally "SPV prove" the spend. I say "literally" because this idea strongly resembles the way an actual SPV wallet works: it downloads many headers, and checks these headers for valid work, and finally checks the given txn to see if it was included.
 
 They then use some statistical logic to greatly reduce the number of headers needed, in general. This is a very cool trick, but since each header is ~80 bytes (or ~160 if merged mined), and since each must be selected somehow, the proof size ends up "in the tens of kilobytes range". The midpoint of this phrase, 50 KB, is about 100 times the size of the the average Bitcoin txn, which (everything included) is about 0.5 Kb. So their proof requires a txn to be much larger.
 
@@ -158,9 +158,9 @@ Other than that, I would point out that Bitcoin has always been the "money of pr
 
 It actually shouldn't be difficult at all! If Altcoins are useful, they should have fee-paying users. Therefore, miners should want to claim these fees by making the Altcoin a blind-merged-mined drivechain.
 
-Bitcoin Miners are actually the cheif *victims* of Altcoin-value-dilution -- other miners are getting money that *they* could have for free, if the Altcoins were instead merged-mined sidechains.
+Bitcoin Miners are actually the chief *victims* of Altcoin-value-dilution -- other miners are getting money that *they* could have for free, if the Altcoins were instead merged-mined sidechains.
 
-I think the issue is confusing, because most of the Altcoins we see today are *not* useful and therefore we would *not* want to absorb them into Bitcoin. And therefore, it is hard for Bitcoiners of today to imagine that absorbtion happening.
+I think the issue is confusing, because most of the Altcoins we see today are *not* useful and therefore we would *not* want to absorb them into Bitcoin. And therefore, it is hard for Bitcoiners of today to imagine that absorption happening.
 
 But really, if you think about it, if a given Altcoin persists as an Altcoin [and is not made into a sidechain], then that very fact is *evidence* that the Altcoin in question probably isn't useful to anyone. Or else, it is because it has features that *can't* be copied by *any* sidechain (see Monero answer), in which case this question is moot.
 
@@ -171,7 +171,7 @@ But really, if you think about it, if a given Altcoin persists as an Altcoin [an
 
 ### Can we have a sidechain that uses Proof of Stake? ### {#pos}
 
-Yes, we could. The concept of the 1st sidechain BIP, hashrate escrows is flexible enough to copy *any* blockchain -- public or private, proof-of-stake, proof-of-space, proof-of-steak, etc. Even wierdo stuff like Corda.
+Yes, we could. The concept of the 1st sidechain BIP, hashrate escrows is flexible enough to copy *any* blockchain -- public or private, proof-of-stake, proof-of-space, proof-of-steak, etc. Even weirdo stuff like Corda.
 
 However, Drivechain ships with a specialized, customized feature called 'blind merged mining' (BMM), which makes consensus on the sidechain *free*. As in, free in both the economic and engineering sense (see below). If a chain uses BMM, it freely inherits all of Bitcoin's proof of work security. In fact, the sidechain gets all of Bitcoin's security, even if transaction fees [or other miner-revenue-sources] fall to zero.
 
@@ -236,7 +236,7 @@ Secondly, software developers are often overworked, and can't prioritize their s
 
 No.
 
-They are similar -- SegWit requires miners to support a new block structure, and to enforce [new rules for a new address types (P2WPKH, P2WSH)](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki). Sidechains also require miners to support a new block structure (one which contains a "withdrawal-vote-database" of minimial size"), and to enforce new rules for a new address type. But the two are requirements are entirely independent of each other. **You could have one, the other, both, or none.**
+They are similar -- SegWit requires miners to support a new block structure, and to enforce [new rules for a new address types (P2WPKH, P2WSH)](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki). Sidechains also require miners to support a new block structure (one which contains a "withdrawal-vote-database" of minimal size"), and to enforce new rules for a new address type. But the two are requirements are entirely independent of each other. **You could have one, the other, both, or none.**
 
 However, the two have tremendous synergy. Lightning Network allows instant/fully-reliable transactions *across sidechains*, which is very cool for both Sidechains and LN.
 
