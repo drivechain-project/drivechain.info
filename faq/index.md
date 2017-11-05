@@ -34,7 +34,7 @@ This means that the **sidechains are [completely firewalled](http://www.truthcoi
 In fact, because Drivechain is asymmetric (in that the child sidechain is subordinate to the parent mainchain), the mainchains cannot be harmed even by the *success* of their sidechains. Since Bitcoin Core would be the patriarch of this family of sidechains, Core would be the safest chain of them all.
 
 
-### Why does drivechain allow miners to deny the creation of a given sidechain? Are you against permissionless innovation? Are you a BitMain shill?? ### {#categorial-control}
+### Why does drivechain allow miners to deny the creation of a given sidechain? Are you against permissionless innovation? Are you a BitMain shill?? ### {#categorical-control}
 
 Unlike other projects, drivechain explicitly aims to allow miners to censor certain types of smart contract. I call this feature **"categorical control"**. Simple-minded people misinterpret this design goal as an affront to permissionless innovation -- "After all", they think, "if miners can censor a type of smart contract, how can it be a permissionless system?".
 
