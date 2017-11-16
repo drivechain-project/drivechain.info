@@ -70,7 +70,7 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 
 ### Memes
 
-<p>
+
 
 <div class="responsive">
   <div class="gallery">
@@ -92,7 +92,8 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
   </div>
 </div>
 
-</p>
+<div class="clearfix"></div>
+
 
 
 
@@ -140,37 +141,56 @@ Drivechain is so big it actually fits into two BIPs over three files:
 
 View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view).
 
-Two instances of Bitcoin, at time=0:
+Some images of some BTC making a round-trip journey!
 
-<a href="/media/shot-1.png">
-	<img src="/media/shot-1.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1.png" width="300" height="200">
+    </a>
+    <div class="desc">Two instances of Bitcoin, at time=0.</div>
+  </div>
+</div>
 
-Mine some mainchain Bitcoin, open the sidechain's "transfer" tab:
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1.png" width="300" height="200">
+    </a>
+    <div class="desc">Mine some mainchain Bitcoin, open the sidechain's "transfer" tab.</div>
+  </div>
+</div>
 
-<a href="/media/shot-2.png">
-	<img src="/media/shot-2.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1.png" width="300" height="200">
+    </a>
+    <div class="desc">Make a deposit (from mainchain to sidechain, these happen instantly).</div>
+  </div>
+</div>
 
-Make a deposit (from mainchain to sidechain, these happen instantly):
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1.png" width="300" height="200">
+    </a>
+    <div class="desc">Make a withdrawal (from sidechain to mainchain, these are very slow).</div>
+  </div>
+</div>
 
-<a href="/media/shot-3.png">
-	<img src="/media/shot-3.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1.png" width="300" height="200">
+    </a>
+    <div class="desc">Time passes. Eventually the withdrawal is confirmed.</div>
+  </div>
+</div>
 
-Make a withdrawal (from sidechain to mainchain, these are very slow):
+<div class="clearfix"></div>
 
-<a href="/media/shot-4.png">
-	<img src="/media/shot-4.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
-
-Time passes. Eventually the withdrawal is confirmed:
-
-<a href="/media/shot-5.png">
-	<img src="/media/shot-5.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
-
-The BTC has completed its round trip journey!
+The roundtrip journey is complete!
 
 Check out the sidebar for more info.
 
