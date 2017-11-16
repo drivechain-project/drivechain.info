@@ -21,37 +21,44 @@ img:hover {
 
 
 
-Drivechain allows multiple blockchains to agree to all use the same 21,000,000 Bitcoins. These networks are otherwise completely autonomous and firewalled from each other.
+Drivechain allows multiple blockchains to all agree to share the same 21,000,000 Bitcoins. These networks are otherwise autonomous.
 
 ### Problems With Today's Mono-Chain Setup
 
-* Blockchain technology has economic tradeoffs, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
-* Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about competition from other projects (Ethereum, Z-Cash, Ripple).
-* Satoshi, creator of Bitcoin, [wanted to support many transaction types, but knew that his design was prohibitively inflexible](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214).
-* Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is constrained as a medium of exchange -- and therefore at a competitive disadvantage.
+* Blockchain technology has **economic tradeoffs**, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
+* Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about **competition** from other projects (Ethereum, Z-Cash, Ripple).
+* Satoshi, creator of Bitcoin, [wanted to support many transaction types, but knew that his design was **prohibitively inflexible**](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214).
+* Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is **constrained** as a medium of exchange -- and therefore at a competitive disadvantage.
 
-Instead, sidechains are alt-chains that all use the same Bitcoin token. These networks start with no coins of their own; they accept Bitcoin deposits, conduct Bitcoin transfers, and finally dispense Bitcoin withdrawals.
+Instead, sidechains are alt-chains that all use the same Bitcoin token. They start with zero coins; they accept Bitcoin deposits, conduct Bitcoin transfers, and finally dispense Bitcoin withdrawals.
 
 ### Memes
 
-<a target="_blank" href="/media/meme1.png">
-  <img src="/media/meme1.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
 
-<a target="_blank" href="/media/meme2.png">
-  <img src="/media/meme2.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
+<p>
+	<a target="_blank" href="/media/meme1.png">
+		<img src="/media/meme1.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
+	</a>
+	
+	<a target="_blank" href="/media/meme2.png">
+		<img src="/media/meme2.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
+	</a>
+</p>
 
 
 ### Drawback
 
-Sidechains intentionally offload their message-processing to other chains. Therefore, when the messages "come back" (ie, the side-to-main withdrawals), they may not be "correct".
+Drivechain (intentionally) offloads some message-processing to other chains, and doesn't check up on them.
 
-Drivechain attempts to use incentives to make the messages as correct as possible. First, these "withdrawal" messages must be publicly announced in advance. Second, they are strongly rate-limited: only a few messages per year. Third, they must be willfully and consistently endorsed by a hashrate majority.
+Instead, Drivechain uses incentives and asymmetric processing to guarantee correctness of the side-to-main ("withdrawal") messages:
 
-Thus, the only way a message can be incorrect would be if a hashrate majority *wants* it to be incorrect.
+1. Withdrawals must be publicly announced in advance.
+2. They are strongly rate-limited: only a few valid withdrawals per year.
+3. They must be willfully and consistently endorsed by a hashrate majority.
 
-We justify this assumption by observing that, in our pre-sidechain world, miners generally want things to be correct. In theory, the [incentives of miners and investors](http://www.truthcoin.info/images/bitcoin-incentives.png) are very strongly aligned: both are compensated most when the exchange rate is highest. And, in practice, we do *not* see large reorganizations (where miners can "steal", by first depositing BTC to major exchanges, then selling that BTC for fiat (which they withdraw), and finally rewriting the last 3 or 4 days of chain history, to un-confirm the original deposits). These reorgs would devastate the exchange rate, as they would cast doubt on the entire Bitcoin experiment. The thesis of Drivechain is that sidechain-theft would also devastate the exchange rate, as it would cast doubt on the entire *sidechain* experiment (which would itself cast doubt on the Bitcoin experiment, given the anti-competitive power of sidechains).
+Thus, the network will only accept an incorrect withdrawal under one condition: if a hashrate majority *wants* it to be incorrect.
+
+This is justified by observing that, in our pre-sidechain world, miners always want things to be correct. In theory, the [incentives of miners and investors](http://www.truthcoin.info/images/bitcoin-incentives.png) are very strongly aligned: both are compensated most when the exchange rate is highest. And, in practice, we do *not* see large reorganizations (where miners can "steal", by first depositing BTC to major exchanges, then selling that BTC for fiat (which they withdraw), and finally rewriting the last 3 or 4 days of chain history, to un-confirm the original deposits). These reorgs would devastate the exchange rate, as they would cast doubt on the entire Bitcoin experiment. The thesis of Drivechain is that sidechain-theft would also devastate the exchange rate, as it would cast doubt on the entire *sidechain* experiment (which would itself cast doubt on the Bitcoin experiment, given the anti-competitive power of sidechains).
 
 More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
 
