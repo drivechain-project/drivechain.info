@@ -158,4 +158,16 @@ h3 {
   }
 }
 
+
 @import "custom-scss";
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail{
+    flex: 0 0 300px;
+    height: 300px;
+}
+
