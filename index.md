@@ -5,15 +5,51 @@ title: Drivechain
 
 <head>
 <style>
-img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
+div.gallery {
+    border: 1px solid #ccc;
 }
 
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 </style>
 </head>
@@ -35,17 +71,22 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 ### Memes
 
 
-<div class="gallery">
-    
-	<a href="/media/meme1.png">
-		<img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="thumbnail">
-	</a>
-	
-	<a href="/media/meme2.png">
-		<img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="thumbnail">
-	</a>
-	
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/meme1.png">
+      <img src="/media/meme1.png" alt="meme1" width="200" height="300">
+    </a>
+  </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a href="/media/meme2.png">
+      <img src="/media/meme2.png" alt="meme2" width="200" height="300">
+    </a>
+  </div>
+</div>
+
 
 
 
