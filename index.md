@@ -70,22 +70,30 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 
 ### Memes
 
+<p>
 
 <div class="responsive">
   <div class="gallery">
+  
     <a href="/media/meme1.png">
       <img src="/media/meme1.png" alt="meme1" width="200" height="300">
     </a>
+	
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
+  
     <a href="/media/meme2.png">
       <img src="/media/meme2.png" alt="meme2" width="200" height="300">
     </a>
+	
   </div>
 </div>
+
+</p>
+
 
 
 
