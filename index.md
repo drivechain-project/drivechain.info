@@ -3,39 +3,70 @@ layout: page
 title: Drivechain
 ---
 
+<head>
+<style>
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
 
-### Pitch
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+</style>
+</head>
 
-* Has [*scaling*](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) got you down?
-* Are your BTC [hodlings](https://bitcointalk.org/index.php?topic=375643.0) threatened by Ethereum, Z-Cash, Ripple, and Other Ethereum?
-* Did you want to support every possible transaction type, but can't because core's [design is set in stone for the rest of its lifetime](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214)?
-* Does 'using a separate currency at each individual store' sound like a dumb idea to you, so dumb that it contradicts the very *purpose* of [money](http://nakamotoinstitute.org/shelling-out/)?
 
-If you think that blocks are too small, or too big, or that they should contain more message-types, or fewer message-types, or if you think the CoreDevs should be fired, or if you don't want anyone firing your favorite Devs, then sidechains might be for you!
 
-### What are sidechains?
 
-Sidechains are alternate chains of Bitcoin ("Alt-chains") which do *not* have their own token. To use them, individuals deposit BTC into the sidechain (at a 1:1 rate) which they later redeem (also at a 1:1 rate). Therefore, the total number of BTC currency units remains fixed at 21 million, no matter how many chains are used.
+Drivechain allows multiple blockchains to agree to all use the same 21,000,000 Bitcoins. These networks are otherwise completely autonomous and firewalled from each other.
 
-### Benefits of Sidechains
+### Problems With Today's Mono-Chain Setup
 
-1. **Permissionless Innovation**: Anyone can develop / run their own code, without facing the (near-impossible) task of also bootstrapping a new unit of money.
-2. **Anti-Scam**: SCs filter out get-rich-quick schemes (the 'get rich' part is now impossible). Therefore, good projects can stand out and receive our attention.
-3. **Eliminates Competition**: Bitcoin will always have the best code, because it can copy any code that exists.
-4. **Freedom to Choose**: Satoshi's consensus protocol requires everyone to agree on everything, down to the very last byte. Sidechains allow users to choose which benefits they would like to pay for.
-5. **Faster Progress**: SCs let us test new features. The tests are safe -- if these features fail, they won't take down the main network. However, the tests are also informative -- real BTC is on the line.
+* Blockchain technology has economic tradeoffs, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
+* Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about competition from other projects (Ethereum, Z-Cash, Ripple).
+* Satoshi, creator of Bitcoin, [wanted to support many transaction types, but knew that his design was prohibitively inflexible](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214).
+* Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is constrained as a medium of exchange -- and therefore at a competitive disadvantage.
 
-### Peter Todd / Luke-Jr Told Me That Sidechains Are Insecure
+Instead, sidechains are alt-chains that all use the same Bitcoin token. These networks start with no coins of their own; they accept Bitcoin deposits, conduct Bitcoin transfers, and finally dispense Bitcoin withdrawals.
 
-Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is commonly misunderstood. Here it is, short and simple:
+### Memes
+
+<a target="_blank" href="/media/meme1.png">
+  <img src="/media/meme1.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
+</a>
+
+<a target="_blank" href="/media/meme2.png">
+  <img src="/media/meme2.png" alt="Forest" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
+</a>
+
+
+### Drawback
+
+Sidechains intentionally offload their message-processing to other chains. Therefore, when the messages "come back" (ie, the side-to-main withdrawals), they may not be "correct".
+
+Drivechain attempts to use incentives to make the messages as correct as possible. First, these "withdrawal" messages must be publicly announced in advance. Second, they are strongly rate-limited: only a few messages per year. Third, they must be willfully and consistently endorsed by a hashrate majority.
+
+Thus, the only way a message can be incorrect would be if a hashrate majority *wants* it to be incorrect.
+
+We justify this assumption by observing that, in our pre-sidechain world, miners generally want things to be correct. In theory, the [incentives of miners and investors](http://www.truthcoin.info/images/bitcoin-incentives.png) are very strongly aligned: both are compensated most when the exchange rate is highest. And, in practice, we do *not* see large reorganizations (where miners can "steal", by first depositing BTC to major exchanges, then selling that BTC for fiat (which they withdraw), and finally rewriting the last 3 or 4 days of chain history, to un-confirm the original deposits). These reorgs would devastate the exchange rate, as they would cast doubt on the entire Bitcoin experiment. The thesis of Drivechain is that sidechain-theft would also devastate the exchange rate, as it would cast doubt on the entire *sidechain* experiment (which would itself cast doubt on the Bitcoin experiment, given the anti-competitive power of sidechains).
+
+More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
+
+
+### The Box Metaphor
+
+Here is a short metaphor for the risks of using a sidechain:
 
 1. When BTC are deposited (from mainchain to sidechain), they are placed into a special account. Miners "own" this account, and can send these funds wherever they like.
-2. That might sound like a problem, but it isn't because the box can only be opened infrequently (two or three times a year), and a super-majority of miners must leave a note on the box in advance. This note states exactly where the miners intend to transfer the money, and the sidechain software creates/validates the "correct" note automatically.
+2. That might sound like a problem, but it isn't because the box can only be opened infrequently (two or three times a year), and a super-majority of miners must leave a note on the box in advance. This note states exactly where the miners intend to transfer the money. The "correct" note is automatically generated by sidechain software, and is easy to check.
 3. So, to steal, miners need to write an invalid note on the box, and leave it there for multiple months. Then, if no one interferes, the sidechain is robbed.
 
-The lengthy multi-month delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates. So, in practice, the delay can be avoided by paying a small fee.
+The lengthy multi-month delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates. So, in practice, the delay can be avoided by paying a neglibible, market-based fee.
 
-The model is sound because we assume that miners are uninterested in "stealing". We justify this assumption by the fact that, in our pre-sidechain world, miners can *already* "steal", through a process of [1] depositing BTC to an exchange, [2] selling that BTC for fiat (which they withdraw), and [3] rewriting the last 3 or 4 days of chain history, to un-confirm the deposit in step [1]. It appears that miners are unwilling to betray network-integrity to such an obvious and serious degree. This is assumed to be comparable to the sidechain-case (where miners must allow an easily-corrected error to persist for several months).
+The model is sound because we assume that miners are uninterested in "stealing" (see above). 
 
 ### Bitcoin Improvement Proposals (BIPs)
 
@@ -73,6 +104,18 @@ Time passes. Eventually the withdrawal is confirmed:
 The BTC has completed its round trip journey!
 
 Check out the sidebar for more info.
+
+
+### Main Benefits
+
+1. **Permissionless Innovation**: Anyone can create a new blockchain project, without facing the (near-impossible) task of also bootstrapping a new unit of money.
+2. **Eliminates Competition**: Bitcoin will always have the best code, because it can copy any code that exists.
+3. **Freedom to Choose**: Satoshi's consensus protocol requires everyone to agree on everything, down to the very last byte. Sidechains allow users to choose which benefits they would like to pay for.
+
+### Other Benefits
+
+1. **Anti-Scam**: SCs filter out get-rich-quick schemes (the 'get rich' part is now impossible). Therefore, good projects can stand out and receive our attention.
+2. **Faster Progress**: SCs let us test new features. The tests are safe -- if these features fail, they won't take down the main network. However, the tests are also informative -- real BTC is on the line.
 
 ### Contact
 
