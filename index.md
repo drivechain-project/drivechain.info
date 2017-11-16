@@ -145,23 +145,23 @@ Some images of some BTC making a round-trip journey!
 
 Two instances of Bitcoin, at time=0:
 
-![image](/media/shot-1)
+![image](/media/shot-1.png)
 
 Mine some mainchain Bitcoin, open the sidechain's "transfer" tab:
 
-![image](/media/shot-2)
+![image](/media/shot-2.png)
 
 Make a deposit (from mainchain to sidechain, these happen instantly):
 
-![image](/media/shot-3)
+![image](/media/shot-3.png)
 
 Make a withdrawal (from sidechain to mainchain, these are very slow):
 
-![image](/media/shot-4)
+![image](/media/shot-4.png)
 
 Time passes. Eventually the withdrawal is confirmed:
 
-![image](/media/shot-5)
+![image](/media/shot-5.png)
 
 The roundtrip journey is complete!
 
