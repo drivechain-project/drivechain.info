@@ -36,11 +36,11 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 
 
 <p>
-	<a target="_blank" href="/media/meme1.png">
+	<a href="/media/meme1.png">
 		<img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
 	</a>
 	
-	<a target="_blank" href="/media/meme2.png">
+	<a href="/media/meme2.png">
 		<img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
 	</a>
 </p>
@@ -90,31 +90,31 @@ View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd
 
 Two instances of Bitcoin, at time=0:
 
-<a target="_blank" href="/media/shot-1.png">
+<a href="/media/shot-1.png">
 	<img src="/media/shot-1.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
 </a>
 
 Mine some mainchain Bitcoin, open the sidechain's "transfer" tab:
 
-<a target="_blank" href="/media/shot-2.png">
+<a href="/media/shot-2.png">
 	<img src="/media/shot-2.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
 </a>
 
 Make a deposit (from mainchain to sidechain, these happen instantly):
 
-<a target="_blank" href="/media/shot-3.png">
+<a href="/media/shot-3.png">
 	<img src="/media/shot-3.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
 </a>
 
 Make a withdrawal (from sidechain to mainchain, these are very slow):
 
-<a target="_blank" href="/media/shot-4.png">
-	<img src="/media/shot-4.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
-</a>
+
+<img src="/media/shot-4.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
+
 
 Time passes. Eventually the withdrawal is confirmed:
 
-<a target="_blank" href="/media/shot-5.png">
+<a href="/media/shot-5.png">
 	<img src="/media/shot-5.png" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow">
 </a>
 
