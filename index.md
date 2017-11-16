@@ -37,21 +37,13 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 
 <div class="gallery">
     
-    <div class="thumbnail">
+	<a href="/media/meme1.png">
+		<img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="thumbnail">
+	</a>
 	
-        <a href="/media/meme1.png">
-			<img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
-		</a>
-		
-	</div>  
-	
-	<div class="thumbnail">
-	
-        <a href="/media/meme2.png">
-			<img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
-		</a>
-		
-	</div>  
+	<a href="/media/meme2.png">
+		<img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="thumbnail">
+	</a>
 	
 </div>
 
