@@ -35,7 +35,14 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 ### Memes
 
 
-<p> <a target="_blank" href="/media/meme1.png"><img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow"></a> <a target="_blank" href="/media/meme2.png"><img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow"></a>
+<p>
+	<a target="_blank" href="/media/meme1.png">
+		<img src="/media/meme1.png" alt="Meme1" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
+	</a>
+	
+	<a target="_blank" href="/media/meme2.png">
+		<img src="/media/meme2.png" alt="Meme2" border="1px solid #ggg" border-radius="4px" padding="5px" width="150px" hover="box-shadow" class="callout">
+	</a>
 </p>
 
 
