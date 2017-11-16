@@ -143,52 +143,25 @@ View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd
 
 Some images of some BTC making a round-trip journey!
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" width="300" height="200">
-    </a>
-    <div class="desc">Two instances of Bitcoin, at time=0.</div>
-  </div>
-</div>
+Two instances of Bitcoin, at time=0:
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" width="300" height="200">
-    </a>
-    <div class="desc">Mine some mainchain Bitcoin, open the sidechain's "transfer" tab.</div>
-  </div>
-</div>
+![image](/media/shot-1)
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" width="300" height="200">
-    </a>
-    <div class="desc">Make a deposit (from mainchain to sidechain, these happen instantly).</div>
-  </div>
-</div>
+Mine some mainchain Bitcoin, open the sidechain's "transfer" tab:
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" width="300" height="200">
-    </a>
-    <div class="desc">Make a withdrawal (from sidechain to mainchain, these are very slow).</div>
-  </div>
-</div>
+![image](/media/shot-2)
 
-<div class="responsive">
-  <div class="gallery">
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" width="300" height="200">
-    </a>
-    <div class="desc">Time passes. Eventually the withdrawal is confirmed.</div>
-  </div>
-</div>
+Make a deposit (from mainchain to sidechain, these happen instantly):
 
-<div class="clearfix"></div>
+![image](/media/shot-3)
+
+Make a withdrawal (from sidechain to mainchain, these are very slow):
+
+![image](/media/shot-4)
+
+Time passes. Eventually the withdrawal is confirmed:
+
+![image](/media/shot-5)
 
 The roundtrip journey is complete!
 
