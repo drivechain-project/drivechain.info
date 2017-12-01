@@ -82,6 +82,8 @@ A P2P message system emphasizing privacy. With BTC fees, we might have a solutio
 
 [Link.](https://bitmessage.org/wiki/Main_Page)
 
+Edit: I think this particular use would [not require drivechain per se](https://twitter.com/Truthcoin/status/935670042141908993).
+
 ### 12. Counterparty
 
 Digital asset market, with P2P trades. These assets are usually for games, or collectables, but they *may* also be backed by TTPs to enable ‘stocks on the blockchain’, 'gold on the blockchain', 'airline miles'.
