@@ -32,6 +32,12 @@ To this, only two modifications have since been made:
 
 ## Presentations
 
+### Overview and Misconceptions -- January 2018
+
+This is the best presentation to watch, if you can only watch one. It has all the facts and almost all of the "criticisms".
+
+[Slides](/media/slides/dc-overview-misconceptions.pdf)
+
 
 ### Construct -- January 2017
 
