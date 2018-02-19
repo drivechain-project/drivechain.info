@@ -150,6 +150,9 @@ This is justified by observing that, in our pre-sidechain world, miners always w
 
 More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
 
+Please [read the FAQ](/faq/index.html)!
+
+
 
 ### The Box Metaphor
 

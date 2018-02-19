@@ -1,0 +1,65 @@
+
+Blind Merged Mining (BMM) Explained via A Sequence of Transformations
+Paul Sztorc
+2/18/2018
+
+
+Here, I will demonstrate that the problem of "sidechain consensus" can be incrementally transformed into a much simpler (but logically equivalent) problem.
+
+
+
+First Transformation
+---------------------
+
+First, notice that the mere existence of an SPV-proof implies that all sidechain money is already at SPV-level security. This is true of any output locked to any SPV-proof (whether Drivechain or Blockstream's skiplist or anything else). While we are at this level of security (SPV level), the metric "heaviest valid chain" is by definition equal to the metric of "heaviest chain". (The word 'heaviest' means 'most proof of work' in this context.)
+
+Therefore, our first transformation is as follows:
+
+"determine the heaviest valid chain [on the sidechain network]" --> "determine the heaviest chain"
+
+
+
+Second Transformation
+---------------------
+
+Second, notice that, at any given point in time, there will be one "hashing cost" (X $/hash) per miner. If this cost is priced in BTC itself ("BTC per hash"), then the 'heaviest chain rule' simply becomes a 'most-BTC-spent hashing-this-chain rule'. The two are the same thing -- merely expressed in different units.
+
+( Satoshi's proof of work is really proving *economic resources* spent, but since it cannot directly measure "economic resources", it estimates this by "counting hashes" [speaking loosely]. )
+
+Thus, our second transformation:
+
+"determine the heaviest chain" --> "Which chain got hashed the most?" --> "Which chain had the most BTC spent on it?"
+
+
+
+Third Transformation
+---------------------
+
+Normally, Bitcoin checks *the entire chain* to see if it has the highest cumulative difficulty. Here, we might replicate that by checking to see which chain has had the most total BTC spent on it in txns, but we will *not* do that in Blind Merged Mining (BMM). BMM does something else -- we'll get to it in a moment.
+
+In Blind Merged Mining, each side:blockheader is embedded (by hash commitment) in a mainchain coinbase txn. And each side:blockheader is required to specify its parent.
+
+Thus, our third transformation, (which may, at first, appear to be a strange or even counterproductive one):
+
+"Which chain had the most BTC spent on it?" --> "For this one chain of side:headers that we do see [embedded here in the series of main:chain coinbase txns], how do we know that there never existed an alternative chain of side:headers, on which someone was willing to spend more?"
+
+This transformation changes the nature of the question, from one of 'maximization' to one of 'refutation'. Instead of asking "find the X which maximizes f(X)", we now ask, "demonstrate that f(X), which is currently at f(a), has already reached its global maximum".
+
+
+
+Fourth Transformation
+---------------------
+
+Finally, BMM restricts each main:block to contain at most one side:block [per sidechain of course]. This can be thought of as special "real estate" that governs the sidechain. Furthermore, BMM ships with some technology allowing mainchain miners to "auction off" that real estate to the highest bidder.
+
+So our last transformation:
+
+"For this one chain of side:headers ... how do we know that there never existed an alternative ..., on which someone was willing to spend more?" --> "How can we be sure that each parcel of critical real estate was auctioned off at the highest price?"
+
+In other words, we maximize it in pieces. Instead of proving that f(X) has been globally maximized, we use the fact that f(X) = f_1() + f_2() + f_3, and then show that each sub-function has been maximized. Instead of showing that we have the longest chain, we show that each block was auctioned off at the highest price, and therefore the side:chain we see is made up of entirely of "most expensive of their era" side:blocks.
+
+
+
+Hopefully the last question, "How can we be sure that each parcel of critical real estate was auctioned off at the highest price?", is not one that needs to be answered! It will occur naturally as part of a rational profit motive. The sidechain node (called "Simon" in BMM) will construct a sidechain block, paying himself all of the that side:block's txn fees -- if we call this value "v", then the block is worth v to him, if mined by a mainchain miner (called "Mary"). Thus, each 10 minutes, the Marys will auction off their single 'slot' of critical real estate to all of the sidechain's Simons. If the minimum bid increment is e, then the final auction price must be between v-e and v itself (or else someone is not taking advantage of an opportunity to freely earn more money).
+
+Ideally, e would be as low as possible, which is the subject of a later question.
