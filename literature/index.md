@@ -7,11 +7,11 @@ title: Literature
 
 [Original Post and Specfication](http://www.truthcoin.info/blog/drivechain/)
 
-To this, only two modifications have since been made:
+To this, only three modifications have since been made:
 
 * Introduction of [blind merged mining](http://www.truthcoin.info/blog/blind-merged-mining/).
-* Forcing deposits to select the sidechain-UTXO as an input, such that all of the sidechain's money is always in a single UTXO. 
-
+* Forcing deposits to select the sidechain-UTXO as an input, such that all of the sidechain's money is always in a single UTXO.
+* Lengthening the withdrawal period from a configurable "two weeks" to mandatory/standardized three months (13,150 ACKs), and removing the waiting period.
 
 
 ## Blog Posts
