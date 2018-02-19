@@ -269,7 +269,7 @@ It is true that sidechain nodes (called "Simons") do get to keep a portion of th
 
 If the fullnode costs are too *low* to justify BMM...well that simply indicates that there's no problem and no one needs to care. 
 
-[Here is a more detailed explanation.](/media/blind-merged-mining-econ.txt)
+[Here is a more detailed explanation.](/media/blind-merged-mining-econ/)
 
 
 
