@@ -126,6 +126,19 @@ This is why the strongest cryptographers often have no solutions to Bitcoin's la
 ( Incidentally, it is also why I believe that general-purpose smart contracting systems, like Ethereum and Rootstock, are misguided. These "general-purpose" systems actually *can't do as much* as a subset of individually selected smart contracts -- ironically, their [generality limits their usefulness](http://www.truthcoin.info/blog/contracts-oracles-sidechains/). )
 
 
+### In the security model you mention ["sounding the alarm"](http://www.truthcoin.info/blog/drivechain/#security-models), where users and miners warn other users and miners. Isn't this centralization / collusion? ### {#sound-the-alarm}
+
+One reddit user [writes](https://www.reddit.com/r/Bitcoin/comments/6ztp3b/lets_discuss_something_techrelated_for_a_change/dn0rsdo/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=Bitcoin): "Drivechains have 1008-block cycles ostensibly to protect against theft, so that someone can 'raise the alarm' and tell miners to downvote a particular theft withdrawal, but that sounds too much like centralized collusion to me.
+
+In this case, the word 'collusion' is misused. In one sense, the word is neutral, meaning "working together". One could say that there is already a lot of Bitcoin collusion today, because all Bitcoin users and miners are coordinating in order to run mutually-compatible versions of Bitcoin. Everyone *is* colluding, but everyone wants to get the right answer. So in this case collusion is a good/neutral thing.
+
+In the second more negative sense, 'collusion' implies some secrecy and nefariousness (to gain an edge on a different group, one made up of earnest and independent people). But that sense does not apply here. Sounding the alarm is 100% transparent. In fact, it is an alarm! Very loud!
+
+And this "collusion" [of sounding the alarm] is only possible if the bad guys have themselves just "colluded". The baddies have to collude first (over which WT^ to upvote). In response, the defenders have to do exactly as much colluding work. But it is easier for the defenders because they can move second -- the do not need to lift a finger until after the attackers have invested the effort of attacking.
+
+While this is collaboration, it is not centralization. Drivechain is designed so that everyone can **independently** respond to the alarm by doing the right thing. They do not need to coordinate with a leader, or a large miner or other users, or anything else. They simply know what to do, because, by design, it is very easy for them to learn what to do. In this case the design is much better than, [the March 2013 consensus failure emergency](http://www.truthcoin.info/blog/against-the-hard-fork/#3-coordination-and-ambiguity). A drivechain theft would be exactly like that event (in which everything worked out just fine), except that it would be much *better*, because **everyone** would [1] have plenty of warning, and time to respond (two months or so), and [2] would already know what to do (either downvote everything, or manually upvote the winner, both will work).
+
+
 
 ## 2. Comparisons 
 
