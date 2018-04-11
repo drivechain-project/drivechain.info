@@ -38,7 +38,7 @@ In fact, because Drivechain is asymmetric (in that the child sidechain is subord
 
 The phrase "rely on" is ambiguous in this case, but I believe the answer is "no". I will give the answer in three sections.
 
-##### A Background Point
+##### (i) A Background Point
 
 In the real world, most contracts do not "rely" on a court to be enforced. The two [parties](https://en.wikipedia.org/wiki/Party_%28law%29) will work together to enforce the contract on each other, and it will only "go to court" as a last resort. So, at first glance the court is superfluous.
 
@@ -48,11 +48,11 @@ If a "court" is a way of preventing sidechain-theft, then Drivechain has two of 
 
 All withdrawals take effort, including thefts. So the possibility that the second court [the UASF] might 'strike down' an [otherwise imminent] theft, is likely to deter theft in the first place. In that sense, having the UASF around is a strict improvement.
 
-##### "Preventing" Theft
+##### (ii) "Preventing" Theft
 
 If miners do attack a sidechain, then the best recourse the victims have is to use a UASF to split the chain, and then [1] hope that exchanges support [what will be, by definition] a minority hashrate chain (ie a "new" chain) [newer, decentralized, atomic-swap-based exchanges should make this much easier]; and then [2] hope that the free market decides that the UASF-coins are more valuable than the non-UASF-coins. If those two conditions are met, miners will be forced to extend the UASF-chain (ie the non-theft chain), and it will become the longest chain (re-fusing them into one chain). Thus, the UASF "prevents" the sidechain-theft.
 
-##### "Guaranteeing" Theft!
+##### (iii) "Guaranteeing" Theft!
 
 However, the UASF technique is so general that it could also, in principle, *guarantee* the sidechain-theft. Or it could guarantee that all sidechain-withdrawals always fail (whether theft or honest), or else that all honest withdrawals always succeed as quickly as possible, or else that all thefts always succeed on precisely the 22,222nd block after they are attempted (or any other number between 13,150 and 26,300). So it is not meaningful to imbue the UASF with an "anti-theft" feature. Instead, the UASF is simply a vehicle through which users clarify, VERY loudly, exactly what it is they want to buy from miners when they hand over 140,000 USD (at 2/18/2018 prices) in exchange for the newest 13.5 BTC (assuming 1 BTC of tx fees).
 
