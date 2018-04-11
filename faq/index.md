@@ -34,11 +34,11 @@ This means that the **sidechains are [completely firewalled](http://www.truthcoi
 In fact, because Drivechain is asymmetric (in that the child sidechain is subordinate to the parent mainchain), the mainchains cannot be harmed even by the *success* of their sidechains. Since Bitcoin Core would be the patriarch of this family of sidechains, Core would be the safest chain of them all.
 
 
-### Does Drivechain rely on a UASF to prevent a sidechain theft? Isn't that [socially unscalable](https://twitter.com/theinstagibbs/status/965315428686934016)? Isn't that an example of sidechains affecting mainchains ("mainchain contagion")? ### {#uasf-reliance}
+### Does Drivechain rely on a UASF to prevent a sidechain theft? ### {#uasf-reliance}
 
-The phrase "rely on" is ambiguous in this case, but I believe the answer is "no". Interestingly, the second question also has the answer of "no", because UASFs can in fact be made to be [socially scalable](http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html).
+The phrase "rely on" is ambiguous in this case, but I believe the answer is "no". I will give the answer in three sections.
 
-##### "Relying on" UASF
+##### A Background Point
 
 In the real world, most contracts do not "rely" on a court to be enforced. The two [parties](https://en.wikipedia.org/wiki/Party_%28law%29) will work together to enforce the contract on each other, and it will only "go to court" as a last resort. So, at first glance the court is superfluous.
 
@@ -48,16 +48,21 @@ If a "court" is a way of preventing sidechain-theft, then Drivechain has two of 
 
 All withdrawals take effort, including thefts. So the possibility that the second court [the UASF] might 'strike down' an [otherwise imminent] theft, is likely to deter theft in the first place. In that sense, having the UASF around is a strict improvement.
 
+##### "Preventing" Theft
+
 If miners do attack a sidechain, then the best recourse the victims have is to use a UASF to split the chain, and then [1] hope that exchanges support [what will be, by definition] a minority hashrate chain (ie a "new" chain) [newer, decentralized, atomic-swap-based exchanges should make this much easier]; and then [2] hope that the free market decides that the UASF-coins are more valuable than the non-UASF-coins. If those two conditions are met, miners will be forced to extend the UASF-chain (ie the non-theft chain), and it will become the longest chain (re-fusing them into one chain). Thus, the UASF "prevents" the sidechain-theft.
+
+##### "Guaranteeing" Theft!
 
 However, the UASF technique is so general that it could also, in principle, *guarantee* the sidechain-theft. Or it could guarantee that all sidechain-withdrawals always fail (whether theft or honest), or else that all honest withdrawals always succeed as quickly as possible, or else that all thefts always succeed on precisely the 22,222nd block after they are attempted (or any other number between 13,150 and 26,300). So it is not meaningful to imbue the UASF with an "anti-theft" feature. Instead, the UASF is simply a vehicle through which users clarify, VERY loudly, exactly what it is they want to buy from miners when they hand over 140,000 USD (at 2/18/2018 prices) in exchange for the newest 13.5 BTC (assuming 1 BTC of tx fees).
 
 "The UASF" is just a stand-in for "the free market". After all, [some sidechains are bad, and we *want* miners/investors to get rid of them for us](http://www.truthcoin.info/blog/wise-contracts/). So who's to say that a given theft is even a bad thing? And who is to say that it even is theft in the first place (this could only be justified by appealing to the sidechain node, which is exactly what sidechains are uninterested in doing).
 
+### Isn't that [UASF reliance] solution [socially unscalable](https://twitter.com/theinstagibbs/status/965315428686934016)? ### {#social-scalability}
 
-##### UASF Social Scalability  ##### {#uasf-scalability}
+Despite the previous answer, where I say that drivechain does NOT rely on a UASF, I will answer this question. I believe the answer to this one is also a no, because UASFs can in fact be made to be [socially scalable](http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html).
 
-Despite the previous answer, let us imagine that mining conditions have reached a point of extreme hostility, such that each withdrawal *must* be manually escorted across the finish line by a new UASF. (In this way, the withdrawals would "rely on" UASFs.)
+First, let us imagine that mining conditions have reached a point of extreme hostility, such that each withdrawal *must* be manually escorted across the finish line by a new UASF. (In this way, the withdrawals would "rely on" UASFs.)
 
 Is this technique "socially scalable"?
 
@@ -73,7 +78,7 @@ And, as luck would have it, "slowing everything down" yet another difference bet
 
 So the social scalability can be reclaimed, without the entire system failing. Instead, one aspect of it simply becomes a little bit more expensive.
 
-##### UASF Causing Mainchain Reorg  ##### {#sidechain-causes-reorg}
+### Isn't that ["relying" on a UASF] an example of sidechains affecting mainchains ("mainchain contagion")? And thus, a sidechain could have an impact on the mainchain (and your whole goal was to avoid exactly that)? ### {#uasf-contagion}
 
 It is true that a sidechain-induced UASF can cause a mainchain reorganization.
 
