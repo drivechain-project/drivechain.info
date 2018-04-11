@@ -128,7 +128,7 @@ This is why the strongest cryptographers often have no solutions to Bitcoin's la
 
 ### In the security model you mention ["sounding the alarm"](http://www.truthcoin.info/blog/drivechain/#security-models), where users and miners warn other users and miners. Isn't this centralization / collusion? ### {#sound-the-alarm}
 
-One reddit user [writes](https://www.reddit.com/r/Bitcoin/comments/6ztp3b/lets_discuss_something_techrelated_for_a_change/dn0rsdo/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=Bitcoin): "Drivechains have 1008-block cycles ostensibly to protect against theft, so that someone can 'raise the alarm' and tell miners to downvote a particular theft withdrawal, but that sounds too much like centralized collusion to me.
+One reddit user [writes](https://www.reddit.com/r/Bitcoin/comments/6ztp3b/lets_discuss_something_techrelated_for_a_change/dn0rsdo/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=Bitcoin): "Drivechains have 1008-block cycles ostensibly to protect against theft, so that someone can 'raise the alarm' and tell miners to downvote a particular theft withdrawal, but that sounds too much like centralized collusion to me."
 
 In this case, the word 'collusion' is misused. In one sense, the word is neutral, meaning "working together". One could say that there is already a lot of Bitcoin collusion today, because all Bitcoin users and miners are coordinating in order to run mutually-compatible versions of Bitcoin. Everyone *is* colluding, but everyone wants to get the right answer. So in this case collusion is a good/neutral thing.
 
