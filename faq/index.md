@@ -3,9 +3,68 @@ layout: page
 title: Frequently Asked Questions
 ---
 
-Updated 02/2018
+Updated 04/2018
 
 Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), my latest YouTube video. I know many people prefer the YouTube format these days.
+
+## 0. Four Common Misconceptions
+
+Here I highlight four big hangups that people seem to have over and over.
+
+### i. "51% hashrate can steal BTC" ### {#i}
+
+It is said that "51% of the miners can steal all of the funds on the sidechain".
+
+It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like (namely, one that pays them all of the sidechain's BTC). At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
+
+To compare apples to apples, this [6 months of 51% miner-attacking] is equivalent to a 13,150-block reorganization. ...in fact it is even worse in the 51% case, because the reorg-attackers can work in secret (instead of DC where they must announce the attack in advance, and then continue it openly each block), and because of their hashrate superiority of 2%, they can start their new chain as many as ~526 blocks into the past.
+
+During the reorganization, the attacking miners can steal all BTC transacted on the mainchain -- either by making BTC purchases themselves (and refunding themselves via doublespend), or by collaborating with other purchasers (by rewarding them "epsilon" if they sign a doublespend txn directing the merchant's money to miners).
+
+How much BTC would this be?
+
+Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), this would be ~1400 BTC transacted per block. Over 13,500 blocks, the stolen BTC would total 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* circulating coins would be stolen. And because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), it is more BTC than could ever be deposited onto any sidechain ever.
+
+So, it is true that 51% hashrate can steal all the BTC on the sidechain. But they can also steal all of the BTC on the mainchain. And the mainchain theft is easier and pays more.
+
+Of course, this leads us to...
+
+### ii. Autonomous Miners Fallacy ### {#ii}
+
+Some people believe that miners are free to do whatever they like. This view is often simplified [perhaps for politeness reasons] as sorting miners into two "types", the "honest" type that tend to choose to do friendly things, and the "dishonest" type that tend to choose to do unfriendly things (ie, short-term, narrowly selfish, deceptive, etc).
+
+In reality, though, miners have no choice but to profit-maximize. This is Bitcoin 101 and it is unfortunate to have to explain it here, nine years into the game.
+
+Here are some passages which explain this well: 
+
+* ["if so many miners stick to their guns that the ROI on the old currency continues to be high, then all the obstinate miners will have accomplished is in making a gift to the more practical ones."](https://medium.com/@bramcohen/bitcoin-s-ironic-crisis-32226a85e39f) -- Bram Cohen, June 2015
+* ["if a miner would rather hold B2X, they could earn it four times faster by mining B1X and trading it for B2X"](https://medium.com/@danrobinson/the-cost-of-supporting-the-b2x-fork-how-to-lose-100m-in-ten-days-6797f7ef52da) -- Dan Robinson, Nov 2017
+
+Two days after Dan Robinson's post, [miners cancelled their SegWit2x project](https://news.bitcoin.com/breaking-news-segwit2x-fork-cancelled/), which they --seemingly-- wanted very badly. But not as badly as they wanted more MONEY!
+
+Please see [the published security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) and also panes 5 and 6 of [this meme](http://www.drivechain.info/media/meme3.png) for details on what miners would find to be more or less profitable.
+
+Furthermore...
+
+### iii. Ethereum Immunodeficiency Syndrome ### {#iii}
+
+Some "smart contracts" are actually bad, and we *want* to get rid of them.
+
+This is near-impossible to do, if the smart contract system is too general purpose (as in Ethereum). See my ["Smart Contract Ecology" presentation](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1) (or [answer below](www.drivechain.info/faq/#categorical-control) for details.
+
+However, it is also impossible to do, if no one has an incentive to do it. Without an incentive to curate the portfolio of active sidechains, we will have a free rider problem -- who will take out the trash? 
+
+We solve this by harmonizing ownership and control -- the miners are the only ones with enough skin in the game to make this decision, so they should be the ones who control which sidechains are "evicted". So the 51% theft possibility is actually a *feature*, not a bug. We want it there, filtering out sidechains that interact badly (just like we want miners to "evict" txns that are double spends).
+
+### iv. User Paternalism Fallacy ### {#iv}
+
+Some sidechains are bound to be "low quality", for whatever reason. Perhaps because they are not popular enough to be secure. Depositing into these would be a bad idea.
+
+It is natural to want to "protect" people from their mistakes.
+
+But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an Altcoin. And -- as they should! The user is soverign.
+
+
 
 ## 1. Security ## {#security}
 
