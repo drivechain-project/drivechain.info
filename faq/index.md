@@ -17,7 +17,9 @@ It is said that "51% of the miners can steal all of the funds on the sidechain".
 
 It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like (namely, one that pays them all of the sidechain's BTC). At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
 
-To compare apples to apples, this [6 months of 51% miner-attacking] is equivalent to a 13,150-block reorganization. ...in fact it is even worse in the 51% case, because the reorg-attackers can work in secret (instead of DC where they must announce the attack in advance, and then continue it openly each block), and because of their hashrate superiority of 2%, they can start their new chain as many as ~526 blocks into the past.
+To compare apples to apples, this [6 months of 51% miner-attacking, or 3 months of 100% attacking] is equivalent to a 13,150-block reorganization.
+
+ ( The reorg attack is much easier, in the 51% case, because the reorg-attackers may work in secret. In DC, they must announce the attack in advance, and then continue it openly each block. Secondly, because of their hashrate superiority of 2%, they can start their new chain as many as ~526 blocks into the past. )
 
 During the reorganization, the attacking miners can steal all BTC transacted on the mainchain -- either by making BTC purchases themselves (and refunding themselves via doublespend), or by collaborating with other purchasers (by rewarding them "epsilon" if they sign a doublespend txn directing the merchant's money to miners).
 
