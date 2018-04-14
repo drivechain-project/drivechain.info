@@ -120,9 +120,9 @@ Conversations are better than a random subset of unending text-message-chat, for
 
 I have even offered to allow Jorge to use text, while I use conversation. This could be done by him dictating [via text] to a representative. It isn't as strange as it sounds -- today, hosts will sometimes read their YouTube comments live, and then respond to them. But he still refuses.
 
-And [he is still messaging me on Telegram](drivechain.info/peer-review/crazy-timon.png)!!
+And [he is still messaging me on Telegram](crazy-timon.png)!!
 
-Update: Jorge [clarifies](drivechain.info/peer-review/jorge-update.png) that he is not a skeptic yet. 
+Update: Jorge [clarifies](jorge-update.png) that he is not a skeptic yet. 
 
 
 ## Footnote
