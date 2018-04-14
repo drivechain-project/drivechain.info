@@ -92,7 +92,7 @@ Unfortunately, when it comes to drivechain, I have found talking to Jorge Timon 
 
 He refuses to do any background reading or research of any kind. If references are supplied to him, he makes absurd complaints about them -- they they are too long, to too short; or take the form of voice when they should be text; or not this kind of text, etc. Worse, he demands that explanations be hand-fed to him personally.
 
-Jorge repeated misrepresents my disdain for him, as a rejection of peer review in general.
+Jorge repeatedly misrepresents my disdain for him, as a rejection of peer review in general.
 
 But this is false. Several Blockstream associates have been involved, in some manner or another, in an ongoing process of Drivechain peer review.
 
