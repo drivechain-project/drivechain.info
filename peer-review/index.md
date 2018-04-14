@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Peer Review
 ---
@@ -86,6 +86,41 @@ First, he went straight to <s>his parents</s> the bitcoin-dev mailing list, but 
 We hope that Greg is getting the help he needs, and wish him a speedy recovery.
 
 
+<h3 id="jtimon">14.04.2018 -- Jorge Timon</h3>
+
+Unfortunately, when it comes to drivechain, I have found talking to Jorge Timon to be a complete waste of time.
+
+He refuses to do any background reading or research of any kind. If references are supplied to him, he makes absurd complaints about them -- they they are too long, to too short; or take the form of voice when they should be text; or not this kind of text, etc. Worse, he demands that explanations be hand-fed to him personally.
+
+Jorge repeated misrepresents my disdain for him, as a rejection of peer review in general.
+
+But this is false. Several Blockstream associates have been involved, in some manner or another, in an ongoing process of Drivechain peer review.
+
+This especially includes:
+
+* May 2016 (following the Consensus conference) -- Adam Back, Christopher Allen, and even [gasp] Gregory Maxwell.
+* October 2016 (following Scaling III) -- [AB and CA, again] + Pieter Wuille and Matt Corallo.
+
+Keep this in mind: at no point, ever, did any of these Blockstream employees say anything resembling: "Hmm, you know what, we really need to loop Jorge Timon in on this, to get his expert opinion."
+
+My repeated interactions with Jorge have all been negative. I believe him to be simply incapable of understanding certain things.
+
+One of them is hypotheticals -- while conversing with Jorge, I will occasionally make a statement of the form "If X, then Y". On all occasions that I can remember, he has instead complained about the fact that "X isn't".
+
+"It is the mark of an educated mind to be able to entertain a thought without accepting it."
+-- Aristotle
+
+Frequently, I have observed Jorge respond to counterexamples as though they were *examples*.
+
+Finally, in response to his extremely negative stance toward drivechain (despite admitting some ignorance of it, see beginning of [Misconception Video](https://www.youtube.com/watch?v=gUbGT70wy5k)) I have offered to have a polite YouTube conversation with Jorge several times.
+
+Despite immense popular support for this idea, he has always declined, saying that he "prefers text". By this, he means that he prefers harassing me at all hours of the day and night with an unending stream of nonsensical unblockable Telegram messages, while at the same time refusing to read the "text" on my blog, or on drivechain.info/faq , or in the [bitcoin-dev] emails (compiled on drivechain.info/peer-review).
+
+Conversations are better than a random subset of unending text-message-chat, for [several reasons](truthcoin.info/files/conversation/). Despite having this explained to him, my myself and others, he still "prefers text" (see above).
+
+I have even offered to allow Jorge to use text, while I use conversation. This could be done by him dictating [via text] to a representative. It isn't as strange as it sounds -- today, hosts will sometimes read their YouTube comments live, and then respond to them. But he still refuses.
+
+And he is still messaging me on Telegram!!
 
 
 ## Footnote
