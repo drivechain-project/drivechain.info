@@ -29,13 +29,13 @@ Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimat
 
 So, it is true that 51% hashrate can steal all the BTC on the sidechain. But they can also steal all of the BTC on the mainchain. And the mainchain theft is easier and pays more.
 
-Of course, this leads us to...
+Of course, this leads us to the next two fallacies...
 
 ### ii. Autonomous Miners Fallacy ### {#ii}
 
 Some people believe that miners are free to do whatever they like. This view is often simplified [perhaps for politeness reasons] as sorting miners into two "types", the "honest" type that tend to choose to do friendly things, and the "dishonest" type that tend to choose to do unfriendly things (ie, short-term, narrowly selfish, deceptive, etc).
 
-In reality, though, miners have no choice but to profit-maximize. This is Bitcoin 101 and it is unfortunate to have to explain it here, nine years into the game.
+In reality, though, miners have no choice but to profit-maximize.
 
 Here are some passages which explain this well: 
 
@@ -46,9 +46,26 @@ Two days after Dan Robinson's post, [miners cancelled their SegWit2x project](ht
 
 Please see [the published security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) and also panes 5 and 6 of [this meme](http://www.drivechain.info/media/meme3.png) for details on what miners would find to be more or less profitable.
 
-Furthermore...
+### iii. "Infallible Miner" Fallacy ### {#iii}
 
-### iii. Ethereum Immunodeficiency Syndrome ### {#iii}
+A related notion is the idea that "miners" are the "owners" or "masters" or "controllers" of the Bitcoin cryptosystem -- and wherever miners lead, everyone else follows blindly and without resistance.
+
+But the truth is the exact *opposite* of this. Whenever "miners" and "nodes" disagree, it is always nodes that get the final word. For example:
+
+* Flag day" UASF activations -- most famously of SegWit in Summer 2017, but also [P2SH in Spring 2012](https://www.uasf.co/#why-bip148-and-not-a-direct-flag-day-uasf-for-segwit).
+* The [March 2013 anti-consensus event](https://bitcoin.org/en/alert/2013-03-11-chain-fork) -- during which miners were required to reconfigure their software (at great financial loss)...but nodes were required to do "nothing".
+* The Post-Scaling-III civil war, during which 51% hashrate "signaled" for Bitcoin Unlimited. This signaling ultimately had no effect whatsoever. (Once it did [cause an invalid block](https://www.reddit.com/r/Bitcoin/comments/5qwtr2/bitcoincom_loses_132btc_trying_to_fork_the/) to be formed, leading -again- to miner losses but node indifference.)
+* In August 2010, miners *did as they were told* and extended [a chain that followed all of the rules](https://en.bitcoin.it/wiki/Value_overflow_incident). The problem was, some nodes later decided that they didn't like these rules, after all. So nodes changed the rules, and found new miners to enforce the new rules. The old miners, enforcing the old rules, did not get paid, and had to surrender.
+
+These are examples of Miners being trumped by users, in a variety of contexts. Drivechain merely acknowledges this pre-existing fact.
+
+This fallacy is similar to the ["Enough to Buy Back the Product"](http://steshaw.org/economics-in-one-lesson/chap21p1.html) and "Labor Theory of Value" fallacies. It demands that "the makers of cheap dresses should get enough to buy back cheap dresses and the makers of mink coats enough to buy back mink coats". Miners are like security guards -- watching diligently over a football game or rock concert to deal with altercations. But "a group of security guards" does not a rock-and-roll concert make...you need the guitarist. And you need the drummer, and the promoters, the record company, the guitar-maker, the producer of nylon string, etc.
+
+[Related](https://twitter.com/Truthcoin/status/929797893413855232) -- a time when hashrate determined nothing.
+
+While the security guards should be *obedient* they should NOT be *incompetent* -- they must be able to carry out the investor's will. That is the subject of the next misconception.
+
+### iv. Ethereum Immunodeficiency Syndrome ### {#iv}
 
 Some "smart contracts" are actually bad, and we *want* to get rid of them.
 
@@ -58,13 +75,13 @@ However, it is also impossible to do, if no one has an incentive to do it. Witho
 
 We solve this by harmonizing ownership and control -- the miners are the only ones with enough skin in the game to make this decision, so they should be the ones who control which sidechains are "evicted". So the 51% theft possibility is actually a *feature*, not a bug. We want it there, filtering out sidechains that interact badly (just like we want miners to "evict" txns that are double spends).
 
-### iv. User Paternalism Fallacy ### {#iv}
+### v. User Paternalism Fallacy ### {#v}
 
-Some sidechains are bound to be "low quality", for whatever reason. Perhaps because they are not popular enough to be secure. Depositing into these would be a bad idea.
+Some sidechains are bound to be "low quality", for whatever reason. Perhaps because they are not popular enough to be secure, or perhaps they have been constructed by saboteurs. Depositing into these would be a bad idea.
 
 It is natural to want to "protect" people from their mistakes.
 
-But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an Altcoin. And -- as they should! The user is soverign.
+But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an Altcoin. And -- as they should! The user is sovereign.
 
 
 
@@ -278,6 +295,24 @@ Some complain that such a system would be too slow to be usable, but replies of 
 ( Furthermore, while side-to-main transfers are slow, main-to-side transfers are quite fast, x~=10 confirmations. I would go as far as to say that, just as the Lightning Network is enabled by SegWit and CSV, Drivechain is enabled by the atomic swaps and of Counterparty-like 'embedded consensus'. )
 
 Thanks to atomic swaps, someone can act as an investment banker or custodian, and purchase side:BTC at a (tiny, competitive discount) and then transfer those side-to-main at a minimal inconvenience (comparable to that of someone who buys a bank CD). Through market activities, the *entire system* becomes exactly as patient as its most-patient members. As icing on the cake, people who aren't planning on using their BTC anytime soon (ie "the patient") can even get a tiny investment yield, in return for providing this service.
+
+### With respect to a "LargeBlock sidechain" specifically ...
+
+#### ...why should I need to xfer my UTXOs from main-to-side at all? That's inconvenient -- with a hard fork, they just show up there. #### {#vs-hf}
+
+Sidechains are "opt in". So if you want to use the new feature, you must "opt in" to it.
+
+#### ...will the "SmallBlock mainchain" even have enough tx-bandwidth for all of our [LargeBlocker] coins to escape? #### {#trapped-utxos} 
+
+Well -- eventually, each UTXO on the mainchain must be spent, if it is to have any effect at all on anything. So, if there is not enough bandwidth, then your mainchain UTXOs are lost in any case, and you have no choice but to hope for a hardfork blocksize increase.
+
+However, the sidechain does not *need* to source its growth from main-to-side txns.
+
+Two questions ago, I mentioned that an 'investment banker' type person could "specialize in patience". They would hold sidechain coins and walk them side-to-main.
+
+The same principle applies main-to-side. A very wealthy individual "Wally" could use a few main-to-side transfers to xfer a high *quantity of coins*. Wally could then charge a tiny premium on selling these coins in any manner -- for example: via mainchain atomic swaps, in exchange for mainchain lightning-payments, in exchange for real-life goods and services.
+
+So sidechains can grow in all the ways that Altcoins can grow.
 
 
 ### What if a sidechain has too few nodes? Who will run them? Who will maintain this software?
