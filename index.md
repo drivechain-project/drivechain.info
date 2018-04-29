@@ -174,6 +174,11 @@ Drivechain is so big it actually fits into two BIPs over three files:
 2. [bip1-hashrate-escrow.md](https://github.com/drivechain-project/docs/blob/master/bip1-hashrate-escrow.md)
 3. [bip2-blind-merged-mining.md](https://github.com/drivechain-project/docs/blob/master/bip2-blind-merged-mining.md)
 
+See also:
+
+* BIP pull requests, [#642](https://github.com/bitcoin/bips/pull/642) and [#643](https://github.com/bitcoin/bips/pull/643).
+* [The "big diff"](/media/big-diff-mainchain.html) -- our proposed changes to Bitcoin Core.
+
 
 ### Demo Video and Screenshots
 
