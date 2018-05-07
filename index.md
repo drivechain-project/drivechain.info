@@ -180,35 +180,16 @@ See also:
 * The ["big diff"](https://github.com/drivechain-project/diff) (our code changes from Bitcoin Core) -- now broken down by [[ignorable] UI changes](/media/mainchainUIDIFF.html) and [[important] non-UI](/media/mainchainBMMDIFF.html).
 
 
-### Demo Video and Screenshots
+### Screenshots, Testing Guide, Demo Video
 
-View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view).
+Check out our great [Testing Guide](https://github.com/drivechain-project/testing)!
 
-Some images of some BTC making a round-trip journey!
+![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageWithdraw.png)
 
-Two instances of Bitcoin, at time=0:
+![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageBMMAutomationConnected.png)
 
-![image](/media/shot-1.png)
+View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view) (Jan 2017).
 
-Mine some mainchain Bitcoin, open the sidechain's "transfer" tab:
-
-![image](/media/shot-2.png)
-
-Make a deposit (from mainchain to sidechain, these happen instantly):
-
-![image](/media/shot-3.png)
-
-Make a withdrawal (from sidechain to mainchain, these are very slow):
-
-![image](/media/shot-4.png)
-
-Time passes. Eventually the withdrawal is confirmed:
-
-![image](/media/shot-5.png)
-
-The roundtrip journey is complete!
-
-Check out the sidebar for more info.
 
 
 ### Main Benefits
