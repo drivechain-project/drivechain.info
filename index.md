@@ -182,13 +182,68 @@ See also:
 
 ### Screenshots, Testing Guide, Demo Video
 
-Check out our great [Testing Guide](https://github.com/drivechain-project/testing)!
+Check out our great **[Testing Guide](https://github.com/drivechain-project/testing)**!
 
 ![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageWithdraw.png)
 
 ![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageBMMAutomationConnected.png)
 
 View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view) (Jan 2017).
+
+
+Old Gallery:
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/shot-1.png">
+      <img src="/media/shot-1..png" alt="shot1" width="200" height="300">
+    </a>
+	
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/shot-2.png">
+      <img src="/media/shot-2.png" alt="shot2" width="200" height="300">
+    </a>
+	
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/shot-3.png">
+      <img src="/media/shot-3.png" alt="shot3" width="200" height="300">
+    </a>
+	
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/shot-4.png">
+      <img src="/media/shot-4.png" alt="shot4" width="200" height="300">
+    </a>
+	
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/shot-5.png">
+      <img src="/media/shot-5.png" alt="shot5" width="200" height="300">
+    </a>
+	
+  </div>
+</div>
+
+<div class="clearfix"></div>
 
 
 
