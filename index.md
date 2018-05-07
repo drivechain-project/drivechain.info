@@ -177,7 +177,7 @@ Drivechain is so big it actually fits into two BIPs over three files:
 See also:
 
 * BIP pull requests, [#642](https://github.com/bitcoin/bips/pull/642) and [#643](https://github.com/bitcoin/bips/pull/643).
-* [The "big diff"](/media/big-diff-mainchain.html) -- our proposed changes to Bitcoin Core.
+* The ["big diff"](https://github.com/drivechain-project/diff) (our code changes from Bitcoin Core) -- now broken down by [[ignorable] UI changes](/media/mainchainUIDIFF.html) and [[important] non-UI](/media/mainchainBMMDIFF.html).
 
 
 ### Demo Video and Screenshots

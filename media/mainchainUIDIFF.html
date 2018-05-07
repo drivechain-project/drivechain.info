@@ -1,0 +1,2393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #ffffcc }
+body  { background: #ffffff; }
+body .c { color: #999988; font-style: italic } /* Comment */
+body .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+body .k { font-weight: bold } /* Keyword */
+body .o { font-weight: bold } /* Operator */
+body .ch { color: #999988; font-style: italic } /* Comment.Hashbang */
+body .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+body .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+body .cpf { color: #999988; font-style: italic } /* Comment.PreprocFile */
+body .c1 { color: #999988; font-style: italic } /* Comment.Single */
+body .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+body .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gr { color: #aa0000 } /* Generic.Error */
+body .gh { color: #999999 } /* Generic.Heading */
+body .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+body .go { color: #888888 } /* Generic.Output */
+body .gp { color: #555555 } /* Generic.Prompt */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .gu { color: #aaaaaa } /* Generic.Subheading */
+body .gt { color: #aa0000 } /* Generic.Traceback */
+body .kc { font-weight: bold } /* Keyword.Constant */
+body .kd { font-weight: bold } /* Keyword.Declaration */
+body .kn { font-weight: bold } /* Keyword.Namespace */
+body .kp { font-weight: bold } /* Keyword.Pseudo */
+body .kr { font-weight: bold } /* Keyword.Reserved */
+body .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+body .m { color: #009999 } /* Literal.Number */
+body .s { color: #bb8844 } /* Literal.String */
+body .na { color: #008080 } /* Name.Attribute */
+body .nb { color: #999999 } /* Name.Builtin */
+body .nc { color: #445588; font-weight: bold } /* Name.Class */
+body .no { color: #008080 } /* Name.Constant */
+body .ni { color: #800080 } /* Name.Entity */
+body .ne { color: #990000; font-weight: bold } /* Name.Exception */
+body .nf { color: #990000; font-weight: bold } /* Name.Function */
+body .nn { color: #555555 } /* Name.Namespace */
+body .nt { color: #000080 } /* Name.Tag */
+body .nv { color: #008080 } /* Name.Variable */
+body .ow { font-weight: bold } /* Operator.Word */
+body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mb { color: #009999 } /* Literal.Number.Bin */
+body .mf { color: #009999 } /* Literal.Number.Float */
+body .mh { color: #009999 } /* Literal.Number.Hex */
+body .mi { color: #009999 } /* Literal.Number.Integer */
+body .mo { color: #009999 } /* Literal.Number.Oct */
+body .sa { color: #bb8844 } /* Literal.String.Affix */
+body .sb { color: #bb8844 } /* Literal.String.Backtick */
+body .sc { color: #bb8844 } /* Literal.String.Char */
+body .dl { color: #bb8844 } /* Literal.String.Delimiter */
+body .sd { color: #bb8844 } /* Literal.String.Doc */
+body .s2 { color: #bb8844 } /* Literal.String.Double */
+body .se { color: #bb8844 } /* Literal.String.Escape */
+body .sh { color: #bb8844 } /* Literal.String.Heredoc */
+body .si { color: #bb8844 } /* Literal.String.Interpol */
+body .sx { color: #bb8844 } /* Literal.String.Other */
+body .sr { color: #808000 } /* Literal.String.Regex */
+body .s1 { color: #bb8844 } /* Literal.String.Single */
+body .ss { color: #bb8844 } /* Literal.String.Symbol */
+body .bp { color: #999999 } /* Name.Builtin.Pseudo */
+body .fm { color: #990000; font-weight: bold } /* Name.Function.Magic */
+body .vc { color: #008080 } /* Name.Variable.Class */
+body .vg { color: #008080 } /* Name.Variable.Global */
+body .vi { color: #008080 } /* Name.Variable.Instance */
+body .vm { color: #008080 } /* Name.Variable.Magic */
+body .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight"><pre><span></span><span class="gh">diff --git a/src/rpc/client.cpp b/src/rpc/client.cpp</span>
+<span class="gh">index 99c1242d8..861516971 100644</span>
+<span class="gd">--- a/src/rpc/client.cpp</span>
+<span class="gi">+++ b/src/rpc/client.cpp</span>
+<span class="gu">@@ -129,6 +129,16 @@ static const CRPCConvertParam vRPCConvertParams[] =</span>
+     { &quot;logging&quot;, 1, &quot;exclude&quot; },
+     { &quot;disconnectnode&quot;, 1, &quot;nodeid&quot; },
+     { &quot;addwitnessaddress&quot;, 1, &quot;p2sh&quot; },
+<span class="gi">+    { &quot;createcriticaldatatx&quot;, 0, &quot;amount&quot; },</span>
+<span class="gi">+    { &quot;createcriticaldatatx&quot;, 1, &quot;height&quot; },</span>
+<span class="gi">+    { &quot;createbmmcriticaldatatx&quot;, 0, &quot;amount&quot; },</span>
+<span class="gi">+    { &quot;createbmmcriticaldatatx&quot;, 1, &quot;height&quot; },</span>
+<span class="gi">+    { &quot;createbmmcriticaldatatx&quot;, 3, &quot;nsidechain&quot; },</span>
+<span class="gi">+    { &quot;createbmmcriticaldatatx&quot;, 4, &quot;ndag&quot; },</span>
+<span class="gi">+    { &quot;listsidechaindeposits&quot;, 0, &quot;nsidechain&quot; },</span>
+<span class="gi">+    { &quot;receivewtprime&quot;, 0, &quot;nsidechain&quot; },</span>
+<span class="gi">+    { &quot;receivewtprimeupdate&quot;, 0, &quot;height&quot; },</span>
+<span class="gi">+    { &quot;receivewtprimeupdate&quot;, 1, &quot;update&quot; },</span>
+     // Echo with conversion (For testing only)
+     { &quot;echojson&quot;, 0, &quot;arg0&quot; },
+     { &quot;echojson&quot;, 1, &quot;arg1&quot; },
+<span class="gh">diff --git a/src/rpc/misc.cpp b/src/rpc/misc.cpp</span>
+old mode 100644
+new mode 100755
+<span class="gh">index e772f5653..9ed4a9267</span>
+<span class="gd">--- a/src/rpc/misc.cpp</span>
+<span class="gi">+++ b/src/rpc/misc.cpp</span>
+<span class="gu">@@ -6,20 +6,26 @@</span>
+ #include &lt;base58.h&gt;
+ #include &lt;chain.h&gt;
+ #include &lt;clientversion.h&gt;
+<span class="gi">+#include &lt;consensus/validation.h&gt;</span>
+ #include &lt;core_io.h&gt;
+ #include &lt;crypto/ripemd160.h&gt;
+<span class="gd">-#include &lt;init.h&gt;</span>
+<span class="gd">-#include &lt;validation.h&gt;</span>
+ #include &lt;httpserver.h&gt;
+<span class="gi">+#include &lt;init.h&gt;</span>
+<span class="gi">+#include &lt;merkleblock.h&gt;</span>
+ #include &lt;net.h&gt;
+ #include &lt;netbase.h&gt;
+ #include &lt;rpc/blockchain.h&gt;
+ #include &lt;rpc/server.h&gt;
+ #include &lt;rpc/util.h&gt;
+<span class="gi">+#include &lt;sidechain.h&gt;</span>
+<span class="gi">+#include &lt;sidechaindb.h&gt;</span>
+ #include &lt;timedata.h&gt;
+ #include &lt;util.h&gt;
+<span class="gi">+#include &lt;utilmoneystr.h&gt;</span>
+ #include &lt;utilstrencodings.h&gt;
+<span class="gi">+#include &lt;validation.h&gt;</span>
+ #ifdef ENABLE_WALLET
+<span class="gi">+#include &lt;wallet/coincontrol.h&gt;</span>
+ #include &lt;wallet/rpcwallet.h&gt;
+ #include &lt;wallet/wallet.h&gt;
+ #include &lt;wallet/walletdb.h&gt;
+<span class="gu">@@ -600,6 +606,514 @@ UniValue logging(const JSONRPCRequest&amp; request)</span>
+     return result;
+ }
+ 
+<span class="gi">+UniValue createcriticaldatatx(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    // TODO finish</span>
+<span class="gi">+    //</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 4)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;createcriticaldatatx\n&quot;</span>
+<span class="gi">+            &quot;Create a critical data transaction\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;amount\&quot;         (numeric or string, required) The amount in &quot; + CURRENCY_UNIT + &quot; to be spent.\n&quot;</span>
+<span class="gi">+            &quot;2. \&quot;height\&quot;         (numeric, required) The block height this transaction must be included in.\n&quot;</span>
+<span class="gi">+            &quot;3. \&quot;criticalhash\&quot;   (string, required) h* you want added to a coinbase\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;createcriticaldatatx&quot;, &quot;\&quot;amount\&quot;, \&quot;height\&quot;, \&quot;criticalhash\&quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;createcriticaldatatx&quot;, &quot;\&quot;amount\&quot;, \&quot;height\&quot;, \&quot;criticalhash\&quot;&quot;)</span>
+<span class="gi">+            );</span>
+<span class="gi">+</span>
+<span class="gi">+    // Amount</span>
+<span class="gi">+    CAmount nAmount = AmountFromValue(request.params[0]);</span>
+<span class="gi">+    if (nAmount &lt;= 0)</span>
+<span class="gi">+        throw JSONRPCError(RPC_TYPE_ERROR, &quot;Invalid amount for send&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    int nHeight = request.params[1].get_int();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Critical hash</span>
+<span class="gi">+    uint256 hashCritical = uint256S(request.params[2].get_str());</span>
+<span class="gi">+    if (hashCritical.IsNull())</span>
+<span class="gi">+        throw JSONRPCError(RPC_TYPE_ERROR, &quot;Invalid h*&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Create and send the transaction</span>
+<span class="gi">+    std::string strError;</span>
+<span class="gi">+    if (vpwallets.empty()){</span>
+<span class="gi">+        strError = &quot;Error: no wallets are available&quot;;</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strError);</span>
+<span class="gi">+    }</span>
+<span class="gi">+    std::vector&lt;CRecipient&gt; vecSend;</span>
+<span class="gi">+    CRecipient recipient = {CScript() &lt;&lt; OP_0, nAmount, false};</span>
+<span class="gi">+    vecSend.push_back(recipient);</span>
+<span class="gi">+</span>
+<span class="gi">+    LOCK2(cs_main, vpwallets[0]-&gt;cs_wallet);</span>
+<span class="gi">+</span>
+<span class="gi">+    CWalletTx wtx;</span>
+<span class="gi">+    CReserveKey reservekey(vpwallets[0]);</span>
+<span class="gi">+    CAmount nFeeRequired;</span>
+<span class="gi">+    int nChangePosRet = -1;</span>
+<span class="gi">+    //TODO: set this as a real thing</span>
+<span class="gi">+    CCoinControl cc;</span>
+<span class="gi">+    if (!vpwallets[0]-&gt;CreateTransaction(vecSend, wtx, reservekey, nFeeRequired, nChangePosRet, strError, cc)) {</span>
+<span class="gi">+        if (nAmount + nFeeRequired &gt; vpwallets[0]-&gt;GetBalance())</span>
+<span class="gi">+            strError = strprintf(&quot;Error: This transaction requires a transaction fee of at least %s&quot;, FormatMoney(nFeeRequired));</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strError);</span>
+<span class="gi">+    }</span>
+<span class="gi">+    CValidationState state;</span>
+<span class="gi">+    if (!vpwallets[0]-&gt;CommitTransaction(wtx, reservekey, g_connman.get(), state)) {</span>
+<span class="gi">+        strError = strprintf(&quot;Error: The transaction was rejected! Reason given: %s&quot;, state.GetRejectReason());</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strError);</span>
+<span class="gi">+    }</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue ret(UniValue::VOBJ);</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    ret.push_back(Pair(&quot;txid&quot;, wtx.GetHash().GetHex()));</span>
+<span class="gi">+    ret.push_back(Pair(&quot;nChangePos&quot;, nChangePosRet));</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+UniValue createbmmcriticaldatatx(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    // TODO handle optional height better</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 5)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;createbmmcriticaldatatx\n&quot;</span>
+<span class="gi">+            &quot;Create a BMM request critical data transaction\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;amount\&quot;         (numeric or string, required) The amount in &quot; + CURRENCY_UNIT + &quot; to be spent.\n&quot;</span>
+<span class="gi">+            &quot;2. \&quot;height\&quot;         (numeric, required) The block height this transaction must be included in.\n&quot;</span>
+<span class="gi">+            &quot;Note: If 0 is passed in for height, current block height will be used&quot;</span>
+<span class="gi">+            &quot;3. \&quot;criticalhash\&quot;   (string, required) h* you want added to a coinbase\n&quot;</span>
+<span class="gi">+            &quot;4. \&quot;nsidechain\&quot;     (numeric, required) Sidechain requesting BMM\n&quot;</span>
+<span class="gi">+            &quot;5. \&quot;ndag\&quot;           (numeric, required) DAG number\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;createbmmcriticaldatatx&quot;, &quot;\&quot;amount\&quot;, \&quot;height\&quot;, \&quot;criticalhash\&quot;, \&quot;nsidechain\&quot;, \&quot;ndag\&quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;createbmmcriticaldatatx&quot;, &quot;\&quot;amount\&quot;, \&quot;height\&quot;, \&quot;criticalhash\&quot;, \&quot;nsidechain\&quot;, \&quot;ndag\&quot;&quot;)</span>
+<span class="gi">+            );</span>
+<span class="gi">+</span>
+<span class="gi">+    // Amount</span>
+<span class="gi">+    CAmount nAmount = AmountFromValue(request.params[0]);</span>
+<span class="gi">+    if (nAmount &lt;= 0)</span>
+<span class="gi">+        throw JSONRPCError(RPC_TYPE_ERROR, &quot;Invalid amount for send&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Height</span>
+<span class="gi">+    int nHeight = request.params[1].get_int();</span>
+<span class="gi">+    if (nHeight == 0) {</span>
+<span class="gi">+        LOCK(cs_main);</span>
+<span class="gi">+        nHeight = chainActive.Height();</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Critical hash</span>
+<span class="gi">+    uint256 hashCritical = uint256S(request.params[2].get_str());</span>
+<span class="gi">+    if (hashCritical.IsNull())</span>
+<span class="gi">+        throw JSONRPCError(RPC_TYPE_ERROR, &quot;Invalid h*&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // nSidechain</span>
+<span class="gi">+    int nSidechain = request.params[3].get_int();</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!IsSidechainNumberValid(nSidechain))</span>
+<span class="gi">+        throw JSONRPCError(RPC_TYPE_ERROR, &quot;Invalid Sidechain number&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // nDAG</span>
+<span class="gi">+    int nDAG = request.params[4].get_int();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Create critical data</span>
+<span class="gi">+    CScript bytes;</span>
+<span class="gi">+    bytes.resize(3);</span>
+<span class="gi">+    bytes[0] = 0x00;</span>
+<span class="gi">+    bytes[1] = 0xbf;</span>
+<span class="gi">+    bytes[2] = 0x00;</span>
+<span class="gi">+</span>
+<span class="gi">+    bytes &lt;&lt; CScriptNum::serialize(nSidechain);</span>
+<span class="gi">+    bytes &lt;&lt; CScriptNum::serialize(nDAG);</span>
+<span class="gi">+</span>
+<span class="gi">+    CCriticalData criticalData;</span>
+<span class="gi">+    criticalData.bytes = std::vector&lt;unsigned char&gt;(bytes.begin(), bytes.end());</span>
+<span class="gi">+    criticalData.hashCritical = hashCritical;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Create transaction with critical data</span>
+<span class="gi">+    CMutableTransaction mtx;</span>
+<span class="gi">+    mtx.nVersion = 1;</span>
+<span class="gi">+    mtx.vout.resize(1);</span>
+<span class="gi">+    mtx.vout[0].scriptPubKey = CScript() &lt;&lt; OP_TRUE;</span>
+<span class="gi">+    mtx.vout[0].nValue = nAmount;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Set lock time</span>
+<span class="gi">+    mtx.nLockTime = nHeight;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add critical data</span>
+<span class="gi">+    mtx.criticalData = criticalData;</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Create and send the transaction</span>
+<span class="gi">+    std::string strError;</span>
+<span class="gi">+    if (vpwallets.empty()){</span>
+<span class="gi">+        strError = &quot;Error: no wallets are available&quot;;</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strError);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    CCoinControl coinControl;</span>
+<span class="gi">+    int nChange = -1;</span>
+<span class="gi">+    CAmount nFeeOut;</span>
+<span class="gi">+    std::string strFail;</span>
+<span class="gi">+    std::set&lt;int&gt; setSubtractFeeFromOutputs;</span>
+<span class="gi">+    setSubtractFeeFromOutputs.insert(0);</span>
+<span class="gi">+    if (!vpwallets[0]-&gt;FundTransaction(mtx, nFeeOut, nChange, strFail, false, setSubtractFeeFromOutputs, coinControl)) {</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strFail);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!vpwallets[0]-&gt;SignTransaction(mtx)) {</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, &quot;Failed to sign transaction!&quot;);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    CWalletTx wtx;</span>
+<span class="gi">+    wtx.fTimeReceivedIsTxTime = true;</span>
+<span class="gi">+    wtx.fFromMe = true;</span>
+<span class="gi">+    wtx.BindWallet(vpwallets[0]);</span>
+<span class="gi">+</span>
+<span class="gi">+    wtx.SetTx(MakeTransactionRef(std::move(mtx)));</span>
+<span class="gi">+</span>
+<span class="gi">+    CReserveKey reserveKey(vpwallets[0]);</span>
+<span class="gi">+    CValidationState state;</span>
+<span class="gi">+    if (!vpwallets[0]-&gt;CommitTransaction(wtx, reserveKey, g_connman.get(), state)) {</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, state.GetRejectReason());</span>
+<span class="gi">+    }</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue ret(UniValue::VOBJ);</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    UniValue obj(UniValue::VOBJ);</span>
+<span class="gi">+    obj.push_back(Pair(&quot;txid&quot;, wtx.GetHash().ToString()));</span>
+<span class="gi">+    ret.push_back(Pair(&quot;txid&quot;, obj));</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+// TODO rename or change return value</span>
+<span class="gi">+UniValue listsidechaindeposits(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 1)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;listsidechaindeposits\n&quot;</span>
+<span class="gi">+            &quot;Called by sidechain, return list of deposits\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;nsidechain\&quot;      (numeric, required) The sidechain number\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;listsidechaindeposits&quot;, &quot;\&quot;nsidechain\&quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;listsidechaindeposits&quot;, &quot;\&quot;nsidechain\&quot;&quot;)</span>
+<span class="gi">+            );</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Check for active wallet</span>
+<span class="gi">+    std::string strError;</span>
+<span class="gi">+    if (vpwallets.empty()) {</span>
+<span class="gi">+        strError = &quot;Error: no wallets are available&quot;;</span>
+<span class="gi">+        throw JSONRPCError(RPC_WALLET_ERROR, strError);</span>
+<span class="gi">+    }</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    // Is nSidechain valid?</span>
+<span class="gi">+    uint8_t nSidechain = std::stoi(request.params[0].getValStr());</span>
+<span class="gi">+    if (!IsSidechainNumberValid(nSidechain))</span>
+<span class="gi">+        throw std::runtime_error(&quot;Invalid sidechain number&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Get latest deposit from sidechain DB deposit cache</span>
+<span class="gi">+    std::vector&lt;SidechainDeposit&gt; vDeposit = scdb.GetDeposits(nSidechain);</span>
+<span class="gi">+    if (!vDeposit.size())</span>
+<span class="gi">+        throw std::runtime_error(&quot;No deposits in cache&quot;);</span>
+<span class="gi">+    const SidechainDeposit&amp; deposit = vDeposit.back();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add deposit txid to set</span>
+<span class="gi">+    uint256 txid = deposit.tx.GetHash();</span>
+<span class="gi">+    std::set&lt;uint256&gt; setTxids;</span>
+<span class="gi">+    setTxids.insert(txid);</span>
+<span class="gi">+</span>
+<span class="gi">+    LOCK(cs_main);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Get deposit output</span>
+<span class="gi">+    CBlockIndex* pblockindex = NULL;</span>
+<span class="gi">+    Coin coin;</span>
+<span class="gi">+    COutPoint c(txid, deposit.n);</span>
+<span class="gi">+    if (pcoinsTip-&gt;GetCoin(c, coin) &amp;&amp; coin.nHeight &gt; 0 &amp;&amp; coin.nHeight &lt;= chainActive.Height())</span>
+<span class="gi">+        pblockindex = chainActive[coin.nHeight];</span>
+<span class="gi">+</span>
+<span class="gi">+    if (pblockindex == NULL)</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Can&#39;t get coins&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Read block containing deposit output</span>
+<span class="gi">+    CBlock block;</span>
+<span class="gi">+    if(!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus()))</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Can&#39;t read block from disk&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Look for deposit transaction</span>
+<span class="gi">+    bool found = false;</span>
+<span class="gi">+    for (const auto&amp; tx : block.vtx)</span>
+<span class="gi">+        if (tx-&gt;GetHash() == txid)</span>
+<span class="gi">+            found = true;</span>
+<span class="gi">+    if (!found)</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;transaction not found in specified block&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Serialize and take hex of txout proof</span>
+<span class="gi">+    CDataStream ssMB(SER_NETWORK, PROTOCOL_VERSION | SERIALIZE_TRANSACTION_NO_WITNESS);</span>
+<span class="gi">+    CMerkleBlock mb(block, setTxids);</span>
+<span class="gi">+    ssMB &lt;&lt; mb;</span>
+<span class="gi">+    std::string strProofHex = HexStr(ssMB.begin(), ssMB.end());</span>
+<span class="gi">+</span>
+<span class="gi">+    // Calculate user payout</span>
+<span class="gi">+    CAmount amtSidechainUTXO = CAmount(0);</span>
+<span class="gi">+    CAmount amtUserInput = CAmount(0);</span>
+<span class="gi">+    CAmount amtReturning = CAmount(0);</span>
+<span class="gi">+    CAmount amtWithdrawn = CAmount(0);</span>
+<span class="gi">+    GetSidechainValues(deposit.tx, amtSidechainUTXO, amtUserInput, amtReturning, amtWithdrawn);</span>
+<span class="gi">+</span>
+<span class="gi">+    std::vector&lt;COutput&gt; vSidechainCoins;</span>
+<span class="gi">+    vpwallets[0]-&gt;AvailableSidechainCoins(vSidechainCoins, nSidechain);</span>
+<span class="gi">+</span>
+<span class="gi">+    amtSidechainUTXO = 0;</span>
+<span class="gi">+    for (const COutput&amp; output : vSidechainCoins)</span>
+<span class="gi">+        amtSidechainUTXO += output.tx-&gt;tx-&gt;vout[output.i].nValue;</span>
+<span class="gi">+    CAmount amtUserPayout = amtReturning;</span>
+<span class="gi">+</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue ret(UniValue::VOBJ);</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    UniValue obj(UniValue::VOBJ);</span>
+<span class="gi">+    obj.push_back(Pair(&quot;nsidechain&quot;, deposit.nSidechain));</span>
+<span class="gi">+    obj.push_back(Pair(&quot;keyid&quot;, deposit.keyID.ToString()));</span>
+<span class="gi">+    obj.push_back(Pair(&quot;amountuserpayout&quot;, ValueFromAmount(amtUserPayout)));</span>
+<span class="gi">+    obj.push_back(Pair(&quot;txhex&quot;, EncodeHexTx(deposit.tx)));</span>
+<span class="gi">+    obj.push_back(Pair(&quot;proofhex&quot;, strProofHex));</span>
+<span class="gi">+</span>
+<span class="gi">+    ret.push_back(Pair(&quot;deposit&quot;, obj));</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+UniValue receivewtprime(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 2)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;receivewtprime\n&quot;</span>
+<span class="gi">+            &quot;Called by sidechain to announce new WT^ for verification\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;nsidechain\&quot;      (int, required) The sidechain number\n&quot;</span>
+<span class="gi">+            &quot;2. \&quot;rawtx\&quot;           (string, required) The raw transaction hex\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;receivewtprime&quot;, &quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;receivewtprime&quot;, &quot;&quot;)</span>
+<span class="gi">+     );</span>
+<span class="gi">+</span>
+<span class="gi">+    // Is nSidechain valid?</span>
+<span class="gi">+    int nSidechain = request.params[0].get_int();</span>
+<span class="gi">+    if (!IsSidechainNumberValid(nSidechain))</span>
+<span class="gi">+        throw std::runtime_error(&quot;Invalid sidechain number!&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Create CTransaction from hex</span>
+<span class="gi">+    CMutableTransaction mtx;</span>
+<span class="gi">+    std::string hex = request.params[1].get_str();</span>
+<span class="gi">+    if (!DecodeHexTx(mtx, hex))</span>
+<span class="gi">+        throw std::runtime_error(&quot;Invalid transaction hex!&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    CTransaction wtPrime(mtx);</span>
+<span class="gi">+</span>
+<span class="gi">+    if (wtPrime.IsNull())</span>
+<span class="gi">+        throw std::runtime_error(&quot;Invalid WT^ hex&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add WT^ to sidechain DB and start verification</span>
+<span class="gi">+    if (!scdb.AddWTPrime(nSidechain, wtPrime))</span>
+<span class="gi">+        throw std::runtime_error(&quot;WT^ rejected (duplicate?)&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Return WT^ hash to verify it has been received</span>
+<span class="gi">+    UniValue ret(UniValue::VOBJ);</span>
+<span class="gi">+    ret.push_back(Pair(&quot;wtxid&quot;, wtPrime.GetHash().GetHex()));</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+UniValue receivewtprimeupdate(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 2)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;receivewtprimeupdate\n&quot;</span>
+<span class="gi">+            &quot;Receive an update for a WT^\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;height\&quot;                      (numeric, required) the block height\n&quot;</span>
+<span class="gi">+            &quot;2. \&quot;updates\&quot;                     (array, required) A json array of json objects\n&quot;</span>
+<span class="gi">+            &quot;     [\n&quot;</span>
+<span class="gi">+            &quot;       {\n&quot;</span>
+<span class="gi">+            &quot;         \&quot;sidechainnumber\&quot;:n,    (numeric, required) The sidechain number\n&quot;</span>
+<span class="gi">+            &quot;         \&quot;hashWTPrime\&quot;:id,       (string,  required) The WT^ hash\n&quot;</span>
+<span class="gi">+            &quot;         \&quot;workscore\&quot;:n           (numeric, required) The updated workscore\n&quot;</span>
+<span class="gi">+            &quot;       } \n&quot;</span>
+<span class="gi">+            &quot;       ,...\n&quot;</span>
+<span class="gi">+            &quot;     ]\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;receivewtprimeupdate&quot;, &quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;receivewtprimeupdate&quot;, &quot;&quot;)</span>
+<span class="gi">+     );</span>
+<span class="gi">+</span>
+<span class="gi">+    RPCTypeCheck(request.params, {UniValue::VNUM, UniValue::VARR}, true);</span>
+<span class="gi">+    if (request.params[0].isNull() || request.params[1].isNull())</span>
+<span class="gi">+        throw JSONRPCError(RPC_INVALID_PARAMETER, &quot;Invalid parameter, arguments 1 and 2 must be non-null&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    int nHeight = request.params[0].get_int();</span>
+<span class="gi">+    SidechainUpdatePackage updatePackage;</span>
+<span class="gi">+    updatePackage.nHeight = nHeight;</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue inputs = request.params[1].get_array();</span>
+<span class="gi">+    for (unsigned int idx = 0; idx &lt; inputs.size(); idx++) {</span>
+<span class="gi">+        const UniValue&amp; input = inputs[idx];</span>
+<span class="gi">+        const UniValue&amp; o = input.get_obj();</span>
+<span class="gi">+</span>
+<span class="gi">+        // Get sidechain number</span>
+<span class="gi">+        const UniValue&amp; sidechainnumber_v = find_value(o, &quot;sidechainnumber&quot;);</span>
+<span class="gi">+        if (!sidechainnumber_v.isNum())</span>
+<span class="gi">+            throw JSONRPCError(RPC_INVALID_PARAMETER, &quot;Invalid parameter, missing sidechain number&quot;);</span>
+<span class="gi">+        uint8_t nSidechain = sidechainnumber_v.get_int();</span>
+<span class="gi">+</span>
+<span class="gi">+        // Is nSidechain valid?</span>
+<span class="gi">+        if (!IsSidechainNumberValid(nSidechain))</span>
+<span class="gi">+            throw std::runtime_error(&quot;Invalid sidechain number&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+        // Get WT^ hash</span>
+<span class="gi">+        uint256 hashWTPrime = ParseHashO(o, &quot;hashWTPrime&quot;);</span>
+<span class="gi">+        if (hashWTPrime.IsNull())</span>
+<span class="gi">+            throw JSONRPCError(RPC_INVALID_PARAMETER, &quot;Invalid parameter, missing WT^ hash&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+        // Get updated work score</span>
+<span class="gi">+        const UniValue&amp; workscore_v = find_value(o, &quot;workscore&quot;);</span>
+<span class="gi">+        if (!workscore_v.isNum())</span>
+<span class="gi">+            throw JSONRPCError(RPC_INVALID_PARAMETER, &quot;Invalid parameter, missing updated workscore&quot;);</span>
+<span class="gi">+        uint16_t nWorkScore = workscore_v.get_int();</span>
+<span class="gi">+</span>
+<span class="gi">+        // create MSG</span>
+<span class="gi">+        SidechainUpdateMSG update;</span>
+<span class="gi">+        update.nSidechain = nSidechain;</span>
+<span class="gi">+        update.hashWTPrime = hashWTPrime;</span>
+<span class="gi">+        update.nWorkScore = nWorkScore;</span>
+<span class="gi">+</span>
+<span class="gi">+        // add to package</span>
+<span class="gi">+        updatePackage.vUpdate.push_back(update);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add created package to SCDB WT^ update cache</span>
+<span class="gi">+    scdb.AddSidechainNetworkUpdatePackage(updatePackage);</span>
+<span class="gi">+</span>
+<span class="gi">+    return true;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+UniValue getbmmproof(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 2)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;getbmmproof\n&quot;</span>
+<span class="gi">+            &quot;Called by sidechain\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;1. \&quot;blockhash\&quot;      (string, required) mainchain blockhash with h*\n&quot;</span>
+<span class="gi">+            &quot;2. \&quot;criticalhash\&quot;   (string, required) h* to create proof of\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;getbmmproof&quot;, &quot;\&quot;blockhash\&quot;, \&quot;criticalhash\&quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;getbmmproof&quot;, &quot;\&quot;blockhash\&quot;, \&quot;criticalhash\&quot;&quot;)</span>
+<span class="gi">+            );</span>
+<span class="gi">+</span>
+<span class="gi">+    uint256 hashBlock = uint256S(request.params[0].get_str());</span>
+<span class="gi">+    uint256 hashCritical = uint256S(request.params[1].get_str());</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!mapBlockIndex.count(hashBlock))</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Block not found&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    CBlockIndex* pblockindex = mapBlockIndex[hashBlock];</span>
+<span class="gi">+    if (pblockindex == NULL)</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;pblockindex null&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    CBlock block;</span>
+<span class="gi">+    if(!ReadBlockFromDisk(block, pblockindex, Params().GetConsensus()))</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Failed to read block from disk&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!block.vtx.size())</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;No txns in block&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    bool fCriticalHashFound = false;</span>
+<span class="gi">+    const CTransaction &amp;txCoinbase = *(block.vtx[0]);</span>
+<span class="gi">+    for (const CTxOut&amp; out : txCoinbase.vout) {</span>
+<span class="gi">+        const CScript&amp; scriptPubKey = out.scriptPubKey;</span>
+<span class="gi">+</span>
+<span class="gi">+        if (scriptPubKey.size() &lt; sizeof(uint256) + 6)</span>
+<span class="gi">+            continue;</span>
+<span class="gi">+        if (scriptPubKey[0] != OP_RETURN)</span>
+<span class="gi">+            continue;</span>
+<span class="gi">+</span>
+<span class="gi">+        // Get h*</span>
+<span class="gi">+        std::vector&lt;unsigned char&gt; vch (scriptPubKey.begin() + 6, scriptPubKey.begin() + 38);</span>
+<span class="gi">+</span>
+<span class="gi">+        // TODO return the bytes</span>
+<span class="gi">+        // Get Bytes</span>
+<span class="gi">+        if (scriptPubKey.size() &gt; 38) {</span>
+<span class="gi">+            std::vector&lt;unsigned char&gt; vchBytes(scriptPubKey.begin() + 38, scriptPubKey.end());</span>
+<span class="gi">+        }</span>
+<span class="gi">+</span>
+<span class="gi">+        if (hashCritical == uint256(vch))</span>
+<span class="gi">+            fCriticalHashFound = true;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!fCriticalHashFound)</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;H* not found in block&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    std::string strProof = &quot;&quot;;</span>
+<span class="gi">+    if (!GetTxOutProof(txCoinbase.GetHash(), hashBlock, strProof))</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Could not get txoutproof...&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    std::string strCoinbaseHex = EncodeHexTx(txCoinbase);</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue ret(UniValue::VOBJ);</span>
+<span class="gi">+    UniValue obj(UniValue::VOBJ);</span>
+<span class="gi">+    obj.push_back(Pair(&quot;proof&quot;, strProof));</span>
+<span class="gi">+    obj.push_back(Pair(&quot;coinbasehex&quot;, strCoinbaseHex));</span>
+<span class="gi">+    ret.push_back(Pair(&quot;proof&quot;, obj));</span>
+<span class="gi">+</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+UniValue listpreviousblockhashes(const JSONRPCRequest&amp; request)</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (request.fHelp || request.params.size() != 0)</span>
+<span class="gi">+        throw std::runtime_error(</span>
+<span class="gi">+            &quot;listpreviousblockhashes\n&quot;</span>
+<span class="gi">+            &quot;Called by sidechain\n&quot;</span>
+<span class="gi">+            &quot;\nArguments:\n&quot;</span>
+<span class="gi">+            &quot;\nExamples:\n&quot;</span>
+<span class="gi">+            + HelpExampleCli(&quot;listpreviousblockhashes&quot;, &quot;&quot;)</span>
+<span class="gi">+            + HelpExampleRpc(&quot;listpreviousblockhashes&quot;, &quot;&quot;)</span>
+<span class="gi">+            );</span>
+<span class="gi">+</span>
+<span class="gi">+    int nHeight = chainActive.Height();</span>
+<span class="gi">+    int nStart = nHeight - 4;</span>
+<span class="gi">+    if (!(nHeight &gt; 0) || !(nStart &gt; 0))</span>
+<span class="gi">+        throw JSONRPCError(RPC_INTERNAL_ERROR, &quot;Insufficient blocks connected to complete request!&quot;);</span>
+<span class="gi">+</span>
+<span class="gi">+    std::vector&lt;uint256&gt; vHash;</span>
+<span class="gi">+    for (int i = nStart; i &lt;= nHeight; i++) {</span>
+<span class="gi">+        uint256 hashBlock = chainActive[i]-&gt;GetBlockHash();</span>
+<span class="gi">+        vHash.push_back(hashBlock);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    UniValue ret(UniValue::VARR);</span>
+<span class="gi">+    for (const uint256&amp; hash : vHash) {</span>
+<span class="gi">+        UniValue obj(UniValue::VOBJ);</span>
+<span class="gi">+        obj.push_back(Pair(&quot;hash&quot;, hash.ToString()));</span>
+<span class="gi">+        ret.push_back(obj);</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    return ret;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+ UniValue echo(const JSONRPCRequest&amp; request)
+ {
+     if (request.fHelp)
+<span class="gu">@@ -640,6 +1154,15 @@ static const CRPCCommand commands[] =</span>
+     { &quot;hidden&quot;,             &quot;echo&quot;,                   &amp;echo,                   {&quot;arg0&quot;,&quot;arg1&quot;,&quot;arg2&quot;,&quot;arg3&quot;,&quot;arg4&quot;,&quot;arg5&quot;,&quot;arg6&quot;,&quot;arg7&quot;,&quot;arg8&quot;,&quot;arg9&quot;}},
+     { &quot;hidden&quot;,             &quot;echojson&quot;,               &amp;echo,                   {&quot;arg0&quot;,&quot;arg1&quot;,&quot;arg2&quot;,&quot;arg3&quot;,&quot;arg4&quot;,&quot;arg5&quot;,&quot;arg6&quot;,&quot;arg7&quot;,&quot;arg8&quot;,&quot;arg9&quot;}},
+     { &quot;hidden&quot;,             &quot;getinfo&quot;,                &amp;getinfo_deprecated,     {}},
+<span class="gi">+</span>
+<span class="gi">+    /* Used by sidechain (not shown in help) */</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;createcriticaldatatx&quot;,     &amp;createcriticaldatatx,      {&quot;amount&quot;, &quot;height&quot;, &quot;criticalhash&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;createbmmcriticaldatatx&quot;,  &amp;createbmmcriticaldatatx,   {&quot;amount&quot;, &quot;height&quot;, &quot;criticalhash&quot;, &quot;nsidechain&quot;, &quot;ndag&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;listsidechaindeposits&quot;,    &amp;listsidechaindeposits,     {&quot;nsidechain&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;receivewtprime&quot;,           &amp;receivewtprime,            {&quot;nsidechain&quot;,&quot;rawtx&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;receivewtprimeupdate&quot;,     &amp;receivewtprimeupdate,      {&quot;height&quot;,&quot;update&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;getbmmproof&quot;,              &amp;getbmmproof,               {&quot;blockhash&quot;, &quot;criticalhash&quot;}},</span>
+<span class="gi">+    { &quot;hidden&quot;,             &quot;listpreviousblockhashes&quot;,  &amp;listpreviousblockhashes,   {}},</span>
+ };
+ 
+ void RegisterMiscRPCCommands(CRPCTable &amp;t)
+<span class="gh">diff --git a/src/qt/bitcoingui.cpp b/src/qt/bitcoingui.cpp</span>
+old mode 100644
+new mode 100755
+<span class="gh">index 4e868b7c1..d1736dc8c</span>
+<span class="gd">--- a/src/qt/bitcoingui.cpp</span>
+<span class="gi">+++ b/src/qt/bitcoingui.cpp</span>
+<span class="gu">@@ -17,6 +17,7 @@</span>
+ #include &lt;qt/platformstyle.h&gt;
+ #include &lt;qt/rpcconsole.h&gt;
+ #include &lt;qt/utilitydialog.h&gt;
+<span class="gi">+#include &lt;qt/sidechaintabledialog.h&gt;</span>
+ 
+ #ifdef ENABLE_WALLET
+ #include &lt;qt/walletframe.h&gt;
+<span class="gu">@@ -109,6 +110,7 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *</span>
+     openRPCConsoleAction(0),
+     openAction(0),
+     showHelpMessageAction(0),
+<span class="gi">+    showSidechainTableDialogAction(0),</span>
+     trayIcon(0),
+     trayIconMenu(0),
+     notificator(0),
+<span class="gu">@@ -158,6 +160,8 @@ BitcoinGUI::BitcoinGUI(const PlatformStyle *_platformStyle, const NetworkStyle *</span>
+         /** Create wallet frame and make it the central widget */
+         walletFrame = new WalletFrame(_platformStyle, this);
+         setCentralWidget(walletFrame);
+<span class="gi">+</span>
+<span class="gi">+        sidechainTableDialog = new SidechainTableDialog(this);</span>
+     } else
+ #endif // ENABLE_WALLET
+     {
+<span class="gu">@@ -377,6 +381,9 @@ void BitcoinGUI::createActions()</span>
+     showHelpMessageAction-&gt;setMenuRole(QAction::NoRole);
+     showHelpMessageAction-&gt;setStatusTip(tr(&quot;Show the %1 help message to get a list with possible Bitcoin command-line options&quot;).arg(tr(PACKAGE_NAME)));
+ 
+<span class="gi">+    showSidechainTableDialogAction = new QAction(platformStyle-&gt;TextColorIcon(&quot;:/icons/history&quot;), tr(&quot;&amp;Sidechain Tables&quot;), this);</span>
+<span class="gi">+    showSidechainTableDialogAction-&gt;setStatusTip(tr(&quot;Show Sidechain tables&quot;));</span>
+<span class="gi">+</span>
+     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
+     connect(aboutAction, SIGNAL(triggered()), this, SLOT(aboutClicked()));
+     connect(aboutQtAction, SIGNAL(triggered()), qApp, SLOT(aboutQt()));
+<span class="gu">@@ -398,6 +405,7 @@ void BitcoinGUI::createActions()</span>
+         connect(usedSendingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedSendingAddresses()));
+         connect(usedReceivingAddressesAction, SIGNAL(triggered()), walletFrame, SLOT(usedReceivingAddresses()));
+         connect(openAction, SIGNAL(triggered()), this, SLOT(openClicked()));
+<span class="gi">+        connect(showSidechainTableDialogAction, SIGNAL(triggered()), this, SLOT(showSidechainTableDialog()));</span>
+     }
+ #endif // ENABLE_WALLET
+ 
+<span class="gu">@@ -443,6 +451,7 @@ void BitcoinGUI::createMenuBar()</span>
+     if(walletFrame)
+     {
+         help-&gt;addAction(openRPCConsoleAction);
+<span class="gi">+        help-&gt;addAction(showSidechainTableDialogAction);</span>
+     }
+     help-&gt;addAction(showHelpMessageAction);
+     help-&gt;addSeparator();
+<span class="gu">@@ -498,13 +507,13 @@ void BitcoinGUI::setClientModel(ClientModel *_clientModel)</span>
+         }
+ #endif // ENABLE_WALLET
+         unitDisplayControl-&gt;setOptionsModel(_clientModel-&gt;getOptionsModel());
+<span class="gd">-        </span>
+<span class="gi">+</span>
+         OptionsModel* optionsModel = _clientModel-&gt;getOptionsModel();
+         if(optionsModel)
+         {
+             // be aware of the tray icon disable state change reported by the OptionsModel object.
+             connect(optionsModel,SIGNAL(hideTrayIconChanged(bool)),this,SLOT(setTrayIconVisible(bool)));
+<span class="gd">-        </span>
+<span class="gi">+</span>
+             // initialize the disable state of the tray icon with the current value in the model.
+             setTrayIconVisible(optionsModel-&gt;getHideTrayIcon());
+         }
+<span class="gu">@@ -614,6 +623,7 @@ void BitcoinGUI::createTrayIconMenu()</span>
+     trayIconMenu-&gt;addSeparator();
+     trayIconMenu-&gt;addAction(optionsAction);
+     trayIconMenu-&gt;addAction(openRPCConsoleAction);
+<span class="gi">+    trayIconMenu-&gt;addAction(showSidechainTableDialogAction);</span>
+ #ifndef Q_OS_MAC // This is built-in on Mac
+     trayIconMenu-&gt;addSeparator();
+     trayIconMenu-&gt;addAction(quitAction);
+<span class="gu">@@ -670,6 +680,11 @@ void BitcoinGUI::showHelpMessageClicked()</span>
+ }
+ 
+ #ifdef ENABLE_WALLET
+<span class="gi">+void BitcoinGUI::showSidechainTableDialog()</span>
+<span class="gi">+{</span>
+<span class="gi">+    sidechainTableDialog-&gt;exec();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+ void BitcoinGUI::openClicked()
+ {
+     OpenURIDialog dlg(this);
+<span class="gu">@@ -1046,7 +1061,7 @@ void BitcoinGUI::setHDStatus(int hdEnabled)</span>
+     labelWalletHDStatusIcon-&gt;setPixmap(platformStyle-&gt;SingleColorIcon(hdEnabled ? &quot;:/icons/hd_enabled&quot; : &quot;:/icons/hd_disabled&quot;).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
+     labelWalletHDStatusIcon-&gt;setToolTip(hdEnabled ? tr(&quot;HD key generation is &lt;b&gt;enabled&lt;/b&gt;&quot;) : tr(&quot;HD key generation is &lt;b&gt;disabled&lt;/b&gt;&quot;));
+ 
+<span class="gd">-    // eventually disable the QLabel to set its opacity to 50% </span>
+<span class="gi">+    // eventually disable the QLabel to set its opacity to 50%</span>
+     labelWalletHDStatusIcon-&gt;setEnabled(hdEnabled);
+ }
+ 
+<span class="gh">diff --git a/src/qt/bitcoingui.h b/src/qt/bitcoingui.h</span>
+old mode 100644
+new mode 100755
+<span class="gh">index ddb7ecb76..9e8fd6e2a</span>
+<span class="gd">--- a/src/qt/bitcoingui.h</span>
+<span class="gi">+++ b/src/qt/bitcoingui.h</span>
+<span class="gu">@@ -25,6 +25,7 @@ class OptionsModel;</span>
+ class PlatformStyle;
+ class RPCConsole;
+ class SendCoinsRecipient;
+<span class="gi">+class SidechainTableDialog;</span>
+ class UnitDisplayStatusBarControl;
+ class WalletFrame;
+ class WalletModel;
+<span class="gu">@@ -111,6 +112,7 @@ private:</span>
+     QAction *openRPCConsoleAction;
+     QAction *openAction;
+     QAction *showHelpMessageAction;
+<span class="gi">+    QAction *showSidechainTableDialogAction;</span>
+ 
+     QSystemTrayIcon *trayIcon;
+     QMenu *trayIconMenu;
+<span class="gu">@@ -119,6 +121,11 @@ private:</span>
+     HelpMessageDialog *helpMessageDialog;
+     ModalOverlay *modalOverlay;
+ 
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    /** Sidechain table dialog (for testing) */</span>
+<span class="gi">+    SidechainTableDialog *sidechainTableDialog;</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+     /** Keep track of previous number of blocks, to detect progress */
+     int prevBlocks;
+     int spinnerFrame;
+<span class="gu">@@ -207,6 +214,9 @@ private Q_SLOTS:</span>
+ 
+     /** Show open dialog */
+     void openClicked();
+<span class="gi">+</span>
+<span class="gi">+    /** Show sidechain table dialog */</span>
+<span class="gi">+    void showSidechainTableDialog();</span>
+ #endif // ENABLE_WALLET
+     /** Show configuration dialog */
+     void optionsClicked();
+<span class="gu">@@ -233,7 +243,7 @@ private Q_SLOTS:</span>
+ 
+     /** Show progress dialog e.g. for verifychain */
+     void showProgress(const QString &amp;title, int nProgress);
+<span class="gd">-    </span>
+<span class="gi">+</span>
+     /** When hideTrayIcon setting is changed in OptionsModel hide or show the icon accordingly. */
+     void setTrayIconVisible(bool);
+ 
+<span class="gh">diff --git a/src/qt/forms/sendcoinsdialog.ui b/src/qt/forms/sendcoinsdialog.ui</span>
+old mode 100644
+new mode 100755
+<span class="gh">index 195a5560f..fb937df68</span>
+<span class="gd">--- a/src/qt/forms/sendcoinsdialog.ui</span>
+<span class="gi">+++ b/src/qt/forms/sendcoinsdialog.ui</span>
+<span class="gu">@@ -6,8 +6,8 @@</span>
+    &lt;rect&gt;
+     &lt;x&gt;0&lt;/x&gt;
+     &lt;y&gt;0&lt;/y&gt;
+<span class="gd">-    &lt;width&gt;850&lt;/width&gt;</span>
+<span class="gd">-    &lt;height&gt;526&lt;/height&gt;</span>
+<span class="gi">+    &lt;width&gt;1051&lt;/width&gt;</span>
+<span class="gi">+    &lt;height&gt;706&lt;/height&gt;</span>
+    &lt;/rect&gt;
+   &lt;/property&gt;
+   &lt;property name=&quot;windowTitle&quot;&gt;
+<span class="gu">@@ -587,8 +587,8 @@</span>
+        &lt;rect&gt;
+         &lt;x&gt;0&lt;/x&gt;
+         &lt;y&gt;0&lt;/y&gt;
+<span class="gd">-        &lt;width&gt;830&lt;/width&gt;</span>
+<span class="gd">-        &lt;height&gt;104&lt;/height&gt;</span>
+<span class="gi">+        &lt;width&gt;1029&lt;/width&gt;</span>
+<span class="gi">+        &lt;height&gt;70&lt;/height&gt;</span>
+        &lt;/rect&gt;
+       &lt;/property&gt;
+       &lt;layout class=&quot;QVBoxLayout&quot; name=&quot;verticalLayout_2&quot; stretch=&quot;0,1&quot;&gt;
+<span class="gu">@@ -761,15 +761,15 @@</span>
+           &lt;/item&gt;
+           &lt;item&gt;
+            &lt;widget class=&quot;QLabel&quot; name=&quot;fallbackFeeWarningLabel&quot;&gt;
+<span class="gi">+            &lt;property name=&quot;font&quot;&gt;</span>
+<span class="gi">+             &lt;font&gt;</span>
+<span class="gi">+              &lt;weight&gt;75&lt;/weight&gt;</span>
+<span class="gi">+              &lt;bold&gt;true&lt;/bold&gt;</span>
+<span class="gi">+             &lt;/font&gt;</span>
+<span class="gi">+            &lt;/property&gt;</span>
+             &lt;property name=&quot;toolTip&quot;&gt;
+              &lt;string&gt;Using the fallbackfee can result in sending a transaction that will take several hours or days (or never) to confirm. Consider choosing your fee manually or wait until you have validated the complete chain.&lt;/string&gt;
+             &lt;/property&gt;
+<span class="gd">-            &lt;property name=&quot;font&quot;&gt;</span>
+<span class="gd">-            &lt;font&gt;</span>
+<span class="gd">-                &lt;weight&gt;75&lt;/weight&gt;</span>
+<span class="gd">-                &lt;bold&gt;true&lt;/bold&gt;</span>
+<span class="gd">-            &lt;/font&gt;</span>
+<span class="gd">-            &lt;/property&gt;</span>
+             &lt;property name=&quot;text&quot;&gt;
+              &lt;string&gt;Warning: Fee estimation is currently not possible.&lt;/string&gt;
+             &lt;/property&gt;
+<span class="gu">@@ -851,10 +851,23 @@</span>
+                     &lt;string&gt;If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &amp;quot;per kilobyte&amp;quot; only pays 250 satoshis in fee, while &amp;quot;total at least&amp;quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.&lt;/string&gt;
+                    &lt;/property&gt;
+                    &lt;property name=&quot;text&quot;&gt;
+<span class="gd">-                    &lt;string&gt;per kilobyte&lt;/string&gt;</span>
+<span class="gi">+                    &lt;string&gt;per &amp;amp;kilobyte&lt;/string&gt;</span>
+                    &lt;/property&gt;
+                   &lt;/widget&gt;
+                  &lt;/item&gt;
+<span class="gi">+                 &lt;item&gt;</span>
+<span class="gi">+                  &lt;widget class=&quot;QRadioButton&quot; name=&quot;radioCustomAtLeast&quot;&gt;</span>
+<span class="gi">+                   &lt;property name=&quot;toolTip&quot;&gt;</span>
+<span class="gi">+                    &lt;string&gt;If the custom fee is set to 1000 satoshis and the transaction is only 250 bytes, then &amp;quot;per kilobyte&amp;quot; only pays 250 satoshis in fee, while &amp;quot;total at least&amp;quot; pays 1000 satoshis. For transactions bigger than a kilobyte both pay by kilobyte.&lt;/string&gt;</span>
+<span class="gi">+                   &lt;/property&gt;</span>
+<span class="gi">+                   &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+                    &lt;string&gt;total at &amp;amp;least&lt;/string&gt;</span>
+<span class="gi">+                   &lt;/property&gt;</span>
+<span class="gi">+                   &lt;attribute name=&quot;buttonGroup&quot;&gt;</span>
+<span class="gi">+                    &lt;string notr=&quot;true&quot;&gt;groupCustomFee&lt;/string&gt;</span>
+<span class="gi">+                   &lt;/attribute&gt;</span>
+<span class="gi">+                  &lt;/widget&gt;</span>
+<span class="gi">+                 &lt;/item&gt;</span>
+                  &lt;item&gt;
+                   &lt;widget class=&quot;BitcoinAmountField&quot; name=&quot;customFee&quot;/&gt;
+                  &lt;/item&gt;
+<span class="gu">@@ -923,7 +936,7 @@</span>
+                &lt;item&gt;
+                 &lt;widget class=&quot;QRadioButton&quot; name=&quot;radioSmartFee&quot;&gt;
+                  &lt;property name=&quot;text&quot;&gt;
+<span class="gd">-                  &lt;string&gt;Recommended:&lt;/string&gt;</span>
+<span class="gi">+                  &lt;string&gt;&amp;amp;Recommended:&lt;/string&gt;</span>
+                  &lt;/property&gt;
+                  &lt;property name=&quot;checked&quot;&gt;
+                   &lt;bool&gt;true&lt;/bool&gt;
+<span class="gu">@@ -953,7 +966,7 @@</span>
+                &lt;item&gt;
+                 &lt;widget class=&quot;QRadioButton&quot; name=&quot;radioCustomFee&quot;&gt;
+                  &lt;property name=&quot;text&quot;&gt;
+<span class="gd">-                  &lt;string&gt;Custom:&lt;/string&gt;</span>
+<span class="gi">+                  &lt;string&gt;C&amp;amp;ustom:&lt;/string&gt;</span>
+                  &lt;/property&gt;
+                  &lt;attribute name=&quot;buttonGroup&quot;&gt;
+                   &lt;string notr=&quot;true&quot;&gt;groupFee&lt;/string&gt;
+<span class="gu">@@ -1113,6 +1126,9 @@</span>
+              &lt;property name=&quot;toolTip&quot;&gt;
+               &lt;string&gt;With Replace-By-Fee (BIP-125) you can increase a transaction&#39;s fee after it is sent. Without this, a higher fee may be recommended to compensate for increased transaction delay risk.&lt;/string&gt;
+              &lt;/property&gt;
+<span class="gi">+             &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+              &lt;string&gt;Request Replace-By-Fee&lt;/string&gt;</span>
+<span class="gi">+             &lt;/property&gt;</span>
+             &lt;/widget&gt;
+            &lt;/item&gt;
+           &lt;/layout&gt;
+<span class="gu">@@ -1204,6 +1220,47 @@</span>
+        &lt;/property&gt;
+       &lt;/widget&gt;
+      &lt;/item&gt;
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;spacer name=&quot;horizontalSpacer_8&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;orientation&quot;&gt;</span>
+<span class="gi">+        &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;sizeType&quot;&gt;</span>
+<span class="gi">+        &lt;enum&gt;QSizePolicy::Maximum&lt;/enum&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;sizeHint&quot; stdset=&quot;0&quot;&gt;</span>
+<span class="gi">+        &lt;size&gt;</span>
+<span class="gi">+         &lt;width&gt;40&lt;/width&gt;</span>
+<span class="gi">+         &lt;height&gt;20&lt;/height&gt;</span>
+<span class="gi">+        &lt;/size&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/spacer&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;Line&quot; name=&quot;line&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;orientation&quot;&gt;</span>
+<span class="gi">+        &lt;enum&gt;Qt::Vertical&lt;/enum&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;QPushButton&quot; name=&quot;sidechainDepositButton&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+        &lt;string&gt;Sidechain Deposit&lt;/string&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+        &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+         &lt;normaloff&gt;:/icons/tx_inout&lt;/normaloff&gt;:/icons/tx_inout&lt;/iconset&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;Line&quot; name=&quot;line_2&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;orientation&quot;&gt;</span>
+<span class="gi">+        &lt;enum&gt;Qt::Vertical&lt;/enum&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+      &lt;item&gt;
+       &lt;spacer name=&quot;horizontalSpacer&quot;&gt;
+        &lt;property name=&quot;orientation&quot;&gt;
+<span class="gu">@@ -1278,6 +1335,7 @@</span>
+  &lt;/resources&gt;
+  &lt;connections/&gt;
+  &lt;buttongroups&gt;
+<span class="gi">+  &lt;buttongroup name=&quot;groupCustomFee&quot;/&gt;</span>
+   &lt;buttongroup name=&quot;groupFee&quot;/&gt;
+  &lt;/buttongroups&gt;
+ &lt;/ui&gt;
+<span class="gh">diff --git a/src/qt/forms/sidechaindepositdialog.ui b/src/qt/forms/sidechaindepositdialog.ui</span>
+new file mode 100755
+<span class="gh">index 000000000..11a15e9b5</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/forms/sidechaindepositdialog.ui</span>
+<span class="gu">@@ -0,0 +1,142 @@</span>
+<span class="gi">+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gi">+&lt;ui version=&quot;4.0&quot;&gt;</span>
+<span class="gi">+ &lt;class&gt;SidechainDepositDialog&lt;/class&gt;</span>
+<span class="gi">+ &lt;widget class=&quot;QDialog&quot; name=&quot;SidechainDepositDialog&quot;&gt;</span>
+<span class="gi">+  &lt;property name=&quot;geometry&quot;&gt;</span>
+<span class="gi">+   &lt;rect&gt;</span>
+<span class="gi">+    &lt;x&gt;0&lt;/x&gt;</span>
+<span class="gi">+    &lt;y&gt;0&lt;/y&gt;</span>
+<span class="gi">+    &lt;width&gt;594&lt;/width&gt;</span>
+<span class="gi">+    &lt;height&gt;149&lt;/height&gt;</span>
+<span class="gi">+   &lt;/rect&gt;</span>
+<span class="gi">+  &lt;/property&gt;</span>
+<span class="gi">+  &lt;property name=&quot;windowTitle&quot;&gt;</span>
+<span class="gi">+   &lt;string&gt;Sidechain Deposit&lt;/string&gt;</span>
+<span class="gi">+  &lt;/property&gt;</span>
+<span class="gi">+  &lt;layout class=&quot;QGridLayout&quot; name=&quot;gridLayout&quot;&gt;</span>
+<span class="gi">+   &lt;item row=&quot;4&quot; column=&quot;0&quot;&gt;</span>
+<span class="gi">+    &lt;layout class=&quot;QHBoxLayout&quot; name=&quot;horizontalLayoutAmount&quot; stretch=&quot;0&quot;&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;BitcoinAmountField&quot; name=&quot;payAmount&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;sizePolicy&quot;&gt;</span>
+<span class="gi">+        &lt;sizepolicy hsizetype=&quot;MinimumExpanding&quot; vsizetype=&quot;Fixed&quot;&gt;</span>
+<span class="gi">+         &lt;horstretch&gt;0&lt;/horstretch&gt;</span>
+<span class="gi">+         &lt;verstretch&gt;0&lt;/verstretch&gt;</span>
+<span class="gi">+        &lt;/sizepolicy&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+    &lt;/layout&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;5&quot; column=&quot;0&quot; colspan=&quot;3&quot;&gt;</span>
+<span class="gi">+    &lt;spacer name=&quot;verticalSpacer&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;orientation&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;Qt::Vertical&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;sizeType&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QSizePolicy::Expanding&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;sizeHint&quot; stdset=&quot;0&quot;&gt;</span>
+<span class="gi">+      &lt;size&gt;</span>
+<span class="gi">+       &lt;width&gt;20&lt;/width&gt;</span>
+<span class="gi">+       &lt;height&gt;40&lt;/height&gt;</span>
+<span class="gi">+      &lt;/size&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+    &lt;/spacer&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;3&quot; column=&quot;0&quot;&gt;</span>
+<span class="gi">+    &lt;layout class=&quot;QHBoxLayout&quot; name=&quot;payToLayout&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;spacing&quot;&gt;</span>
+<span class="gi">+      &lt;number&gt;0&lt;/number&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;QValidatedLineEdit&quot; name=&quot;payTo&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;toolTip&quot;&gt;</span>
+<span class="gi">+        &lt;string&gt;The Bitcoin address to send the payment to&lt;/string&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+        &lt;string/&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;placeholderText&quot;&gt;</span>
+<span class="gi">+        &lt;string&gt;Sidechain address (deposit recipient)&lt;/string&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonPaste&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+        &lt;string&gt;Paste&lt;/string&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+        &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+         &lt;normaloff&gt;:/icons/editpaste&lt;/normaloff&gt;:/icons/editpaste&lt;/iconset&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+     &lt;item&gt;</span>
+<span class="gi">+      &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonClear&quot;&gt;</span>
+<span class="gi">+       &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+        &lt;string&gt;Clear&lt;/string&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+       &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+        &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+         &lt;normaloff&gt;:/icons/remove&lt;/normaloff&gt;:/icons/remove&lt;/iconset&gt;</span>
+<span class="gi">+       &lt;/property&gt;</span>
+<span class="gi">+      &lt;/widget&gt;</span>
+<span class="gi">+     &lt;/item&gt;</span>
+<span class="gi">+    &lt;/layout&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;0&quot; column=&quot;0&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QLabel&quot; name=&quot;label&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+      &lt;string&gt;Deposit to sidechain:&lt;/string&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;2&quot; column=&quot;0&quot; colspan=&quot;2&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QComboBox&quot; name=&quot;comboBoxSidechains&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;maxCount&quot;&gt;</span>
+<span class="gi">+      &lt;number&gt;2147483647&lt;/number&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;3&quot; column=&quot;1&quot; rowspan=&quot;2&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonDeposit&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;sizePolicy&quot;&gt;</span>
+<span class="gi">+      &lt;sizepolicy hsizetype=&quot;Minimum&quot; vsizetype=&quot;Minimum&quot;&gt;</span>
+<span class="gi">+       &lt;horstretch&gt;0&lt;/horstretch&gt;</span>
+<span class="gi">+       &lt;verstretch&gt;0&lt;/verstretch&gt;</span>
+<span class="gi">+      &lt;/sizepolicy&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+      &lt;string&gt;Deposit&lt;/string&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+      &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+       &lt;normaloff&gt;:/icons/send&lt;/normaloff&gt;:/icons/send&lt;/iconset&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;default&quot;&gt;</span>
+<span class="gi">+      &lt;bool&gt;true&lt;/bool&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+  &lt;/layout&gt;</span>
+<span class="gi">+ &lt;/widget&gt;</span>
+<span class="gi">+ &lt;customwidgets&gt;</span>
+<span class="gi">+  &lt;customwidget&gt;</span>
+<span class="gi">+   &lt;class&gt;QValidatedLineEdit&lt;/class&gt;</span>
+<span class="gi">+   &lt;extends&gt;QLineEdit&lt;/extends&gt;</span>
+<span class="gi">+   &lt;header&gt;qt/qvalidatedlineedit.h&lt;/header&gt;</span>
+<span class="gi">+  &lt;/customwidget&gt;</span>
+<span class="gi">+  &lt;customwidget&gt;</span>
+<span class="gi">+   &lt;class&gt;BitcoinAmountField&lt;/class&gt;</span>
+<span class="gi">+   &lt;extends&gt;QLineEdit&lt;/extends&gt;</span>
+<span class="gi">+   &lt;header&gt;qt/bitcoinamountfield.h&lt;/header&gt;</span>
+<span class="gi">+   &lt;container&gt;1&lt;/container&gt;</span>
+<span class="gi">+  &lt;/customwidget&gt;</span>
+<span class="gi">+ &lt;/customwidgets&gt;</span>
+<span class="gi">+ &lt;resources&gt;</span>
+<span class="gi">+  &lt;include location=&quot;../bitcoin.qrc&quot;/&gt;</span>
+<span class="gi">+ &lt;/resources&gt;</span>
+<span class="gi">+ &lt;connections/&gt;</span>
+<span class="gi">+&lt;/ui&gt;</span>
+<span class="gh">diff --git a/src/qt/forms/sidechaintabledialog.ui b/src/qt/forms/sidechaintabledialog.ui</span>
+new file mode 100755
+<span class="gh">index 000000000..97c13725c</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/forms/sidechaintabledialog.ui</span>
+<span class="gu">@@ -0,0 +1,198 @@</span>
+<span class="gi">+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="gi">+&lt;ui version=&quot;4.0&quot;&gt;</span>
+<span class="gi">+ &lt;class&gt;SidechainTableDialog&lt;/class&gt;</span>
+<span class="gi">+ &lt;widget class=&quot;QDialog&quot; name=&quot;SidechainTableDialog&quot;&gt;</span>
+<span class="gi">+  &lt;property name=&quot;geometry&quot;&gt;</span>
+<span class="gi">+   &lt;rect&gt;</span>
+<span class="gi">+    &lt;x&gt;0&lt;/x&gt;</span>
+<span class="gi">+    &lt;y&gt;0&lt;/y&gt;</span>
+<span class="gi">+    &lt;width&gt;850&lt;/width&gt;</span>
+<span class="gi">+    &lt;height&gt;425&lt;/height&gt;</span>
+<span class="gi">+   &lt;/rect&gt;</span>
+<span class="gi">+  &lt;/property&gt;</span>
+<span class="gi">+  &lt;property name=&quot;windowTitle&quot;&gt;</span>
+<span class="gi">+   &lt;string&gt;Sidechain Tables&lt;/string&gt;</span>
+<span class="gi">+  &lt;/property&gt;</span>
+<span class="gi">+  &lt;property name=&quot;sizeGripEnabled&quot;&gt;</span>
+<span class="gi">+   &lt;bool&gt;true&lt;/bool&gt;</span>
+<span class="gi">+  &lt;/property&gt;</span>
+<span class="gi">+  &lt;layout class=&quot;QGridLayout&quot; name=&quot;gridLayout&quot;&gt;</span>
+<span class="gi">+   &lt;item row=&quot;0&quot; column=&quot;1&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QFrame&quot; name=&quot;frame_2&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShape&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShadow&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::Raised&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;layout class=&quot;QVBoxLayout&quot; name=&quot;verticalLayout_2&quot;&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QLabel&quot; name=&quot;label_2&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+         &lt;string&gt;D2 &amp;quot;Withdrawal DB&amp;quot;&lt;/string&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QTableView&quot; name=&quot;tableViewD2&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;font&quot;&gt;</span>
+<span class="gi">+         &lt;font&gt;</span>
+<span class="gi">+          &lt;family&gt;Ubuntu Mono&lt;/family&gt;</span>
+<span class="gi">+         &lt;/font&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;alternatingRowColors&quot;&gt;</span>
+<span class="gi">+         &lt;bool&gt;true&lt;/bool&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;textElideMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;Qt::ElideNone&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;verticalScrollMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;QAbstractItemView::ScrollPerPixel&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;horizontalScrollMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;QAbstractItemView::ScrollPerPixel&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;gridStyle&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;Qt::SolidLine&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;wordWrap&quot;&gt;</span>
+<span class="gi">+         &lt;bool&gt;false&lt;/bool&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;attribute name=&quot;horizontalHeaderMinimumSectionSize&quot;&gt;</span>
+<span class="gi">+         &lt;number&gt;20&lt;/number&gt;</span>
+<span class="gi">+        &lt;/attribute&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+     &lt;/layout&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;0&quot; column=&quot;0&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QFrame&quot; name=&quot;frame&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShape&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShadow&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::Raised&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;layout class=&quot;QVBoxLayout&quot; name=&quot;verticalLayout&quot;&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QLabel&quot; name=&quot;label&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+         &lt;string&gt;D1 &amp;quot;Escrow DB&amp;quot;&lt;/string&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QTableView&quot; name=&quot;tableViewD1&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;font&quot;&gt;</span>
+<span class="gi">+         &lt;font&gt;</span>
+<span class="gi">+          &lt;family&gt;Ubuntu Mono&lt;/family&gt;</span>
+<span class="gi">+          &lt;italic&gt;false&lt;/italic&gt;</span>
+<span class="gi">+         &lt;/font&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;editTriggers&quot;&gt;</span>
+<span class="gi">+         &lt;set&gt;QAbstractItemView::NoEditTriggers&lt;/set&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;alternatingRowColors&quot;&gt;</span>
+<span class="gi">+         &lt;bool&gt;true&lt;/bool&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;textElideMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;Qt::ElideNone&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;verticalScrollMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;QAbstractItemView::ScrollPerPixel&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;horizontalScrollMode&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;QAbstractItemView::ScrollPerPixel&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;gridStyle&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;Qt::SolidLine&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;wordWrap&quot;&gt;</span>
+<span class="gi">+         &lt;bool&gt;false&lt;/bool&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;attribute name=&quot;horizontalHeaderMinimumSectionSize&quot;&gt;</span>
+<span class="gi">+         &lt;number&gt;20&lt;/number&gt;</span>
+<span class="gi">+        &lt;/attribute&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+     &lt;/layout&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+   &lt;item row=&quot;1&quot; column=&quot;0&quot; colspan=&quot;2&quot;&gt;</span>
+<span class="gi">+    &lt;widget class=&quot;QFrame&quot; name=&quot;frame_3&quot;&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShape&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::StyledPanel&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;property name=&quot;frameShadow&quot;&gt;</span>
+<span class="gi">+      &lt;enum&gt;QFrame::Raised&lt;/enum&gt;</span>
+<span class="gi">+     &lt;/property&gt;</span>
+<span class="gi">+     &lt;layout class=&quot;QHBoxLayout&quot; name=&quot;horizontalLayout&quot;&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonTest&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;sizePolicy&quot;&gt;</span>
+<span class="gi">+         &lt;sizepolicy hsizetype=&quot;Maximum&quot; vsizetype=&quot;Fixed&quot;&gt;</span>
+<span class="gi">+          &lt;horstretch&gt;0&lt;/horstretch&gt;</span>
+<span class="gi">+          &lt;verstretch&gt;0&lt;/verstretch&gt;</span>
+<span class="gi">+         &lt;/sizepolicy&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+         &lt;string&gt;Add demo data&lt;/string&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+         &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+          &lt;normaloff&gt;:/icons/warning&lt;/normaloff&gt;:/icons/warning&lt;/iconset&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonClear&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+         &lt;string&gt;Clear demo data&lt;/string&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+         &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+          &lt;normaloff&gt;:/icons/remove&lt;/normaloff&gt;:/icons/remove&lt;/iconset&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;spacer name=&quot;horizontalSpacer&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;orientation&quot;&gt;</span>
+<span class="gi">+         &lt;enum&gt;Qt::Horizontal&lt;/enum&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;sizeHint&quot; stdset=&quot;0&quot;&gt;</span>
+<span class="gi">+         &lt;size&gt;</span>
+<span class="gi">+          &lt;width&gt;40&lt;/width&gt;</span>
+<span class="gi">+          &lt;height&gt;20&lt;/height&gt;</span>
+<span class="gi">+         &lt;/size&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/spacer&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+      &lt;item&gt;</span>
+<span class="gi">+       &lt;widget class=&quot;QPushButton&quot; name=&quot;pushButtonClose&quot;&gt;</span>
+<span class="gi">+        &lt;property name=&quot;sizePolicy&quot;&gt;</span>
+<span class="gi">+         &lt;sizepolicy hsizetype=&quot;Maximum&quot; vsizetype=&quot;Fixed&quot;&gt;</span>
+<span class="gi">+          &lt;horstretch&gt;0&lt;/horstretch&gt;</span>
+<span class="gi">+          &lt;verstretch&gt;0&lt;/verstretch&gt;</span>
+<span class="gi">+         &lt;/sizepolicy&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;text&quot;&gt;</span>
+<span class="gi">+         &lt;string&gt;Close&lt;/string&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+        &lt;property name=&quot;icon&quot;&gt;</span>
+<span class="gi">+         &lt;iconset resource=&quot;../bitcoin.qrc&quot;&gt;</span>
+<span class="gi">+          &lt;normaloff&gt;:/icons/quit&lt;/normaloff&gt;:/icons/quit&lt;/iconset&gt;</span>
+<span class="gi">+        &lt;/property&gt;</span>
+<span class="gi">+       &lt;/widget&gt;</span>
+<span class="gi">+      &lt;/item&gt;</span>
+<span class="gi">+     &lt;/layout&gt;</span>
+<span class="gi">+    &lt;/widget&gt;</span>
+<span class="gi">+   &lt;/item&gt;</span>
+<span class="gi">+  &lt;/layout&gt;</span>
+<span class="gi">+ &lt;/widget&gt;</span>
+<span class="gi">+ &lt;resources&gt;</span>
+<span class="gi">+  &lt;include location=&quot;../bitcoin.qrc&quot;/&gt;</span>
+<span class="gi">+ &lt;/resources&gt;</span>
+<span class="gi">+ &lt;connections/&gt;</span>
+<span class="gi">+&lt;/ui&gt;</span>
+<span class="gh">diff --git a/src/qt/sendcoinsdialog.cpp b/src/qt/sendcoinsdialog.cpp</span>
+old mode 100644
+new mode 100755
+<span class="gh">index 871822ccb..f56e655b7</span>
+<span class="gd">--- a/src/qt/sendcoinsdialog.cpp</span>
+<span class="gi">+++ b/src/qt/sendcoinsdialog.cpp</span>
+<span class="gu">@@ -13,6 +13,7 @@</span>
+ #include &lt;qt/optionsmodel.h&gt;
+ #include &lt;qt/platformstyle.h&gt;
+ #include &lt;qt/sendcoinsentry.h&gt;
+<span class="gi">+#include &lt;qt/sidechaindepositdialog.h&gt;</span>
+ 
+ #include &lt;base58.h&gt;
+ #include &lt;chainparams.h&gt;
+<span class="gu">@@ -21,6 +22,7 @@</span>
+ #include &lt;ui_interface.h&gt;
+ #include &lt;txmempool.h&gt;
+ #include &lt;policy/fees.h&gt;
+<span class="gi">+#include &lt;validation.h&gt;</span>
+ #include &lt;wallet/fees.h&gt;
+ 
+ #include &lt;QFontMetrics&gt;
+<span class="gu">@@ -28,6 +30,7 @@</span>
+ #include &lt;QSettings&gt;
+ #include &lt;QTextDocument&gt;
+ 
+<span class="gi">+</span>
+ static const std::array&lt;int, 9&gt; confTargets = { {2, 4, 6, 12, 24, 48, 144, 504, 1008} };
+ int getConfTargetForIndex(int index) {
+     if (index+1 &gt; static_cast&lt;int&gt;(confTargets.size())) {
+<span class="gu">@@ -123,6 +126,11 @@ SendCoinsDialog::SendCoinsDialog(const PlatformStyle *_platformStyle, QWidget *p</span>
+     ui-&gt;customFee-&gt;setValue(settings.value(&quot;nTransactionFee&quot;).toLongLong());
+     ui-&gt;checkBoxMinimumFee-&gt;setChecked(settings.value(&quot;fPayOnlyMinFee&quot;).toBool());
+     minimizeFeeSection(settings.value(&quot;fFeeSectionMinimized&quot;).toBool());
+<span class="gi">+</span>
+<span class="gi">+    // Disable sidechain deposit button if drivechains aren&#39;t activated</span>
+<span class="gi">+    if (!IsDrivechainEnabled(chainActive.Tip(), Params().GetConsensus())) {</span>
+<span class="gi">+        ui-&gt;sidechainDepositButton-&gt;setEnabled(false);</span>
+<span class="gi">+    }</span>
+ }
+ 
+ void SendCoinsDialog::setClientModel(ClientModel *_clientModel)
+<span class="gu">@@ -362,6 +370,7 @@ void SendCoinsDialog::on_sendButton_clicked()</span>
+     // now send the prepared transaction
+     WalletModel::SendCoinsReturn sendStatus = model-&gt;sendCoins(currentTransaction);
+     // process sendStatus and on error generate message shown to user
+<span class="gi">+</span>
+     processSendCoinsReturn(sendStatus);
+ 
+     if (sendStatus.status == WalletModel::OK)
+<span class="gu">@@ -920,3 +929,9 @@ void SendConfirmationDialog::updateYesButton()</span>
+         yesButton-&gt;setText(tr(&quot;Yes&quot;));
+     }
+ }
+<span class="gi">+</span>
+<span class="gi">+void SendCoinsDialog::on_sidechainDepositButton_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    SidechainDepositDialog scDialog;</span>
+<span class="gi">+    scDialog.exec();</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/src/qt/sendcoinsdialog.h b/src/qt/sendcoinsdialog.h</span>
+old mode 100644
+new mode 100755
+<span class="gh">index 7c27785d1..85784a602</span>
+<span class="gd">--- a/src/qt/sendcoinsdialog.h</span>
+<span class="gi">+++ b/src/qt/sendcoinsdialog.h</span>
+<span class="gu">@@ -95,6 +95,8 @@ private Q_SLOTS:</span>
+     void updateMinFeeLabel();
+     void updateSmartFeeLabel();
+ 
+<span class="gi">+    void on_sidechainDepositButton_clicked();</span>
+<span class="gi">+</span>
+ Q_SIGNALS:
+     // Fired when a message should be reported to the user
+     void message(const QString &amp;title, const QString &amp;message, unsigned int style);
+<span class="gh">diff --git a/src/qt/sidechaindepositdialog.cpp b/src/qt/sidechaindepositdialog.cpp</span>
+new file mode 100755
+<span class="gh">index 000000000..06ec0cfa6</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechaindepositdialog.cpp</span>
+<span class="gu">@@ -0,0 +1,157 @@</span>
+<span class="gi">+// Copyright (c) 2017 The Bitcoin Core developers</span>
+<span class="gi">+// Distributed under the MIT software license, see the accompanying</span>
+<span class="gi">+// file COPYING or http://www.opensource.org/licenses/mit-license.php.</span>
+<span class="gi">+</span>
+<span class="gi">+#include &quot;sidechaindepositdialog.h&quot;</span>
+<span class="gi">+#include &quot;forms/ui_sidechaindepositdialog.h&quot;</span>
+<span class="gi">+</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;base58.h&gt;</span>
+<span class="gi">+#include &quot;bitcoinunits.h&quot;</span>
+<span class="gi">+#include &quot;chain.h&quot;</span>
+<span class="gi">+#include &quot;guiutil.h&quot;</span>
+<span class="gi">+#include &quot;net.h&quot;</span>
+<span class="gi">+#include &quot;primitives/transaction.h&quot;</span>
+<span class="gi">+#include &quot;sidechain.h&quot;</span>
+<span class="gi">+#include &quot;txdb.h&quot;</span>
+<span class="gi">+#include &quot;validation.h&quot;</span>
+<span class="gi">+#include &quot;wallet/wallet.h&quot;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QClipboard&gt;</span>
+<span class="gi">+#include &lt;QComboBox&gt;</span>
+<span class="gi">+#include &lt;QMessageBox&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainDepositDialog::SidechainDepositDialog(QWidget *parent) :</span>
+<span class="gi">+    QDialog(parent),</span>
+<span class="gi">+    ui(new Ui::SidechainDepositDialog)</span>
+<span class="gi">+{</span>
+<span class="gi">+    ui-&gt;setupUi(this);</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    if (IsDrivechainEnabled(chainActive.Tip(), Params().GetConsensus())) {</span>
+<span class="gi">+        for (const Sidechain&amp; s : ValidSidechains) {</span>
+<span class="gi">+            ui-&gt;comboBoxSidechains-&gt;addItem(QString::fromStdString(s.GetSidechainName()));</span>
+<span class="gi">+        }</span>
+<span class="gi">+    } else {</span>
+<span class="gi">+        ui-&gt;pushButtonDeposit-&gt;setEnabled(false);</span>
+<span class="gi">+    }</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainDepositDialog::~SidechainDepositDialog()</span>
+<span class="gi">+{</span>
+<span class="gi">+    delete ui;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainDepositDialog::on_pushButtonDeposit_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    QMessageBox messageBox;</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    if (vpwallets.empty()) {</span>
+<span class="gi">+        messageBox.setWindowTitle(&quot;Wallet Error!&quot;);</span>
+<span class="gi">+        messageBox.setText(&quot;No active wallets to create the deposit.&quot;);</span>
+<span class="gi">+        messageBox.exec();</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    if (vpwallets[0]-&gt;IsLocked()) {</span>
+<span class="gi">+        // Locked wallet message box</span>
+<span class="gi">+        messageBox.setWindowTitle(&quot;Wallet locked!&quot;);</span>
+<span class="gi">+        messageBox.setText(&quot;Wallet must be unlocked to create sidechain deposit.&quot;);</span>
+<span class="gi">+        messageBox.exec();</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    }</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!validateDepositAmount()) {</span>
+<span class="gi">+        // Invalid deposit amount message box</span>
+<span class="gi">+        messageBox.setWindowTitle(&quot;Invalid deposit amount!&quot;);</span>
+<span class="gi">+        messageBox.setText(&quot;Check the amount you have entered and try again.&quot;);</span>
+<span class="gi">+        messageBox.exec();</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    unsigned int nSidechain = ui-&gt;comboBoxSidechains-&gt;currentIndex();</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!IsSidechainNumberValid(nSidechain)) {</span>
+<span class="gi">+        // Should never be displayed</span>
+<span class="gi">+        messageBox.setWindowTitle(&quot;Invalid sidechain selected&quot;);</span>
+<span class="gi">+        messageBox.exec();</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Get keyID</span>
+<span class="gi">+    CBitcoinAddress address(ui-&gt;payTo-&gt;text().toStdString());</span>
+<span class="gi">+    CKeyID keyID;</span>
+<span class="gi">+    if (!address.GetKeyID(keyID)) {</span>
+<span class="gi">+        // Invalid address message box</span>
+<span class="gi">+        messageBox.setWindowTitle(&quot;Invalid Bitcoin address!&quot;);</span>
+<span class="gi">+        messageBox.setText(&quot;Check the address you have entered and try again.&quot;);</span>
+<span class="gi">+        messageBox.exec();</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Attempt to create the deposit</span>
+<span class="gi">+    const CAmount&amp; nValue = ui-&gt;payAmount-&gt;value();</span>
+<span class="gi">+    CTransactionRef tx;</span>
+<span class="gi">+    std::string strFail = &quot;&quot;;</span>
+<span class="gi">+    if (!vpwallets.empty()) {</span>
+<span class="gi">+        if (!vpwallets[0]-&gt;CreateSidechainDeposit(tx, strFail, nSidechain, nValue, keyID)) {</span>
+<span class="gi">+            // Create transaction error message box</span>
+<span class="gi">+            messageBox.setWindowTitle(&quot;Creating deposit transaction failed!&quot;);</span>
+<span class="gi">+            QString createError = &quot;Error creating transaction!\n\n&quot;;</span>
+<span class="gi">+            createError += QString::fromStdString(strFail);</span>
+<span class="gi">+            messageBox.setText(createError);</span>
+<span class="gi">+            messageBox.exec();</span>
+<span class="gi">+            return;</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Successful deposit message box</span>
+<span class="gi">+    messageBox.setWindowTitle(&quot;Deposit transaction created!&quot;);</span>
+<span class="gi">+    QString result = &quot;Deposited to &quot; + QString::fromStdString(GetSidechainName(nSidechain));</span>
+<span class="gi">+    result += &quot; Sidechain.\n&quot;;</span>
+<span class="gi">+    result += &quot;txid: &quot; + QString::fromStdString(tx-&gt;GetHash().ToString());</span>
+<span class="gi">+    result += &quot;\n&quot;;</span>
+<span class="gi">+    result += &quot;Amount deposited: &quot;;</span>
+<span class="gi">+    result += BitcoinUnits::formatWithUnit(BitcoinUnit::BTC, nValue, false, BitcoinUnits::separatorAlways);</span>
+<span class="gi">+    messageBox.setText(result);</span>
+<span class="gi">+    messageBox.exec();</span>
+<span class="gi">+#endif</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainDepositDialog::on_pushButtonPaste_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    // Paste text from clipboard into recipient field</span>
+<span class="gi">+    ui-&gt;payTo-&gt;setText(QApplication::clipboard()-&gt;text());</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainDepositDialog::on_pushButtonClear_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    ui-&gt;payTo-&gt;clear();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+bool SidechainDepositDialog::validateDepositAmount()</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (!ui-&gt;payAmount-&gt;validate()) {</span>
+<span class="gi">+        ui-&gt;payAmount-&gt;setValid(false);</span>
+<span class="gi">+        return false;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Sending a zero amount is invalid</span>
+<span class="gi">+    if (ui-&gt;payAmount-&gt;value(0) &lt;= 0) {</span>
+<span class="gi">+        ui-&gt;payAmount-&gt;setValid(false);</span>
+<span class="gi">+        return false;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    // Reject dust outputs:</span>
+<span class="gi">+    if (GUIUtil::isDust(ui-&gt;payTo-&gt;text(), ui-&gt;payAmount-&gt;value())) {</span>
+<span class="gi">+        ui-&gt;payAmount-&gt;setValid(false);</span>
+<span class="gi">+        return false;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    return true;</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/src/qt/sidechaindepositdialog.h b/src/qt/sidechaindepositdialog.h</span>
+new file mode 100755
+<span class="gh">index 000000000..8ca5967a3</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechaindepositdialog.h</span>
+<span class="gu">@@ -0,0 +1,35 @@</span>
+<span class="gi">+// Copyright (c) 2017 The Bitcoin Core developers</span>
+<span class="gi">+// Distributed under the MIT software license, see the accompanying</span>
+<span class="gi">+// file COPYING or http://www.opensource.org/licenses/mit-license.php.</span>
+<span class="gi">+</span>
+<span class="gi">+#ifndef SIDECHAINDEPOSITDIALOG_H</span>
+<span class="gi">+#define SIDECHAINDEPOSITDIALOG_H</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QDialog&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+namespace Ui {</span>
+<span class="gi">+class SidechainDepositDialog;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+class SidechainDepositDialog : public QDialog</span>
+<span class="gi">+{</span>
+<span class="gi">+    Q_OBJECT</span>
+<span class="gi">+</span>
+<span class="gi">+public:</span>
+<span class="gi">+    explicit SidechainDepositDialog(QWidget *parent = 0);</span>
+<span class="gi">+    ~SidechainDepositDialog();</span>
+<span class="gi">+</span>
+<span class="gi">+private Q_SLOTS:</span>
+<span class="gi">+    void on_pushButtonDeposit_clicked();</span>
+<span class="gi">+</span>
+<span class="gi">+    void on_pushButtonPaste_clicked();</span>
+<span class="gi">+</span>
+<span class="gi">+    void on_pushButtonClear_clicked();</span>
+<span class="gi">+</span>
+<span class="gi">+private:</span>
+<span class="gi">+    Ui::SidechainDepositDialog *ui;</span>
+<span class="gi">+</span>
+<span class="gi">+    bool validateDepositAmount();</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+#endif // SIDECHAINDEPOSITDIALOG_H</span>
+<span class="gh">diff --git a/src/qt/sidechainescrowtablemodel.cpp b/src/qt/sidechainescrowtablemodel.cpp</span>
+new file mode 100755
+<span class="gh">index 000000000..f104e809e</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechainescrowtablemodel.cpp</span>
+<span class="gu">@@ -0,0 +1,228 @@</span>
+<span class="gi">+#include &lt;qt/sidechainescrowtablemodel.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;qt/guiconstants.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;base58.h&gt;</span>
+<span class="gi">+#include &lt;pubkey.h&gt;</span>
+<span class="gi">+#include &lt;random.h&gt;</span>
+<span class="gi">+#include &lt;sidechain.h&gt;</span>
+<span class="gi">+#include &lt;validation.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+#include &lt;wallet/wallet.h&gt;</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;math.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QIcon&gt;</span>
+<span class="gi">+#include &lt;QMetaType&gt;</span>
+<span class="gi">+#include &lt;QTimer&gt;</span>
+<span class="gi">+#include &lt;QVariant&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+Q_DECLARE_METATYPE(SidechainEscrowTableObject)</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainEscrowTableModel::SidechainEscrowTableModel(QObject *parent) :</span>
+<span class="gi">+    QAbstractTableModel(parent)</span>
+<span class="gi">+{</span>
+<span class="gi">+    // This timer will be fired repeatedly to update the model</span>
+<span class="gi">+    pollTimer = new QTimer(this);</span>
+<span class="gi">+    connect(pollTimer, SIGNAL(timeout()), this, SLOT(updateModel()));</span>
+<span class="gi">+    pollTimer-&gt;start(MODEL_UPDATE_DELAY);</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+int SidechainEscrowTableModel::rowCount(const QModelIndex &amp; /*parent*/) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    return model.size();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+int SidechainEscrowTableModel::columnCount(const QModelIndex &amp; /*parent*/) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    return 7;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+QVariant SidechainEscrowTableModel::data(const QModelIndex &amp;index, int role) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (!index.isValid()) {</span>
+<span class="gi">+        return false;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    int col = index.column();</span>
+<span class="gi">+    int row = index.row();</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!model.at(row).canConvert&lt;SidechainEscrowTableObject&gt;())</span>
+<span class="gi">+        return QVariant();</span>
+<span class="gi">+</span>
+<span class="gi">+    SidechainEscrowTableObject object = model.at(row).value&lt;SidechainEscrowTableObject&gt;();</span>
+<span class="gi">+</span>
+<span class="gi">+    switch (role) {</span>
+<span class="gi">+    case Qt::DisplayRole:</span>
+<span class="gi">+    {</span>
+<span class="gi">+        // Escrow Number</span>
+<span class="gi">+        if (col == 0) {</span>
+<span class="gi">+            return object.nSidechain;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Active</span>
+<span class="gi">+        if (col == 1) {</span>
+<span class="gi">+            return object.fActive;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Escrow Name</span>
+<span class="gi">+        if (col == 2) {</span>
+<span class="gi">+            return object.name;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Address</span>
+<span class="gi">+        if (col == 3) {</span>
+<span class="gi">+            return object.address;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // CTIP - TxID</span>
+<span class="gi">+        if (col == 4) {</span>
+<span class="gi">+            return object.CTIPTxID;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // CTIP - Index</span>
+<span class="gi">+        if (col == 5) {</span>
+<span class="gi">+            return object.CTIPIndex;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Private key</span>
+<span class="gi">+        if (col == 6) {</span>
+<span class="gi">+            return object.privKey;</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    return QVariant();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+QVariant SidechainEscrowTableModel::headerData(int section, Qt::Orientation orientation, int role) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (role == Qt::DisplayRole) {</span>
+<span class="gi">+        if (orientation == Qt::Horizontal) {</span>
+<span class="gi">+            switch (section) {</span>
+<span class="gi">+            case 0:</span>
+<span class="gi">+                return QString(&quot;#&quot;);</span>
+<span class="gi">+            case 1:</span>
+<span class="gi">+                return QString(&quot;Active&quot;);</span>
+<span class="gi">+            case 2:</span>
+<span class="gi">+                return QString(&quot;Name&quot;);</span>
+<span class="gi">+            case 3:</span>
+<span class="gi">+                return QString(&quot;Address&quot;);</span>
+<span class="gi">+            case 4:</span>
+<span class="gi">+                return QString(&quot;CTIP TxID&quot;);</span>
+<span class="gi">+            case 5:</span>
+<span class="gi">+                return QString(&quot;CTIP Index&quot;);</span>
+<span class="gi">+            case 6:</span>
+<span class="gi">+                return QString(&quot;Private Key&quot;);</span>
+<span class="gi">+            }</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    return QVariant();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainEscrowTableModel::updateModel()</span>
+<span class="gi">+{</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+    // Check for active wallet</span>
+<span class="gi">+    if (vpwallets.empty())</span>
+<span class="gi">+        return;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Get required locks upfront. This avoids the GUI from getting stuck on</span>
+<span class="gi">+    // periodical polls if the core is holding the locks for a longer time -</span>
+<span class="gi">+    // for example, during a wallet rescan.</span>
+<span class="gi">+    TRY_LOCK(cs_main, lockMain);</span>
+<span class="gi">+    if(!lockMain)</span>
+<span class="gi">+        return;</span>
+<span class="gi">+    TRY_LOCK(vpwallets[0]-&gt;cs_wallet, lockWallet);</span>
+<span class="gi">+    if(!lockWallet)</span>
+<span class="gi">+        return;</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    // TODO this is functional but not great</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear old data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    int nSidechains = ValidSidechains.size();</span>
+<span class="gi">+    beginInsertRows(QModelIndex(), 0, nSidechains - 1);</span>
+<span class="gi">+</span>
+<span class="gi">+    for (const Sidechain&amp; s : ValidSidechains) {</span>
+<span class="gi">+        SidechainEscrowTableObject object;</span>
+<span class="gi">+        object.nSidechain = s.nSidechain;</span>
+<span class="gi">+        object.fActive = true; // TODO</span>
+<span class="gi">+        object.name = QString::fromStdString(s.GetSidechainName());</span>
+<span class="gi">+</span>
+<span class="gi">+        // Sidechain deposit address</span>
+<span class="gi">+        CKeyID sidechainKey;</span>
+<span class="gi">+        sidechainKey.SetHex(s.sidechainKey);</span>
+<span class="gi">+        CSidechainAddress address;</span>
+<span class="gi">+        address.Set(sidechainKey);</span>
+<span class="gi">+</span>
+<span class="gi">+        object.address = QString::fromStdString(address.ToString());</span>
+<span class="gi">+        object.privKey = s.sidechainPriv;</span>
+<span class="gi">+</span>
+<span class="gi">+        // Get the sidechain CTIP info</span>
+<span class="gi">+        {</span>
+<span class="gi">+            std::vector&lt;COutput&gt; vSidechainCoins;</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+            vpwallets[0]-&gt;AvailableSidechainCoins(vSidechainCoins, s.nSidechain);</span>
+<span class="gi">+#endif</span>
+<span class="gi">+            if (vSidechainCoins.size()) {</span>
+<span class="gi">+                object.CTIPIndex = QString::number(vSidechainCoins.front().i);</span>
+<span class="gi">+                object.CTIPTxID = QString::fromStdString(vSidechainCoins.front().tx-&gt;GetHash().ToString());</span>
+<span class="gi">+            } else {</span>
+<span class="gi">+                object.CTIPIndex = &quot;NA&quot;;</span>
+<span class="gi">+                object.CTIPTxID = &quot;NA&quot;;</span>
+<span class="gi">+            }</span>
+<span class="gi">+        }</span>
+<span class="gi">+        model.append(QVariant::fromValue(object));</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    endInsertRows();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainEscrowTableModel::AddDemoData()</span>
+<span class="gi">+{</span>
+<span class="gi">+    // Stop updating the model with real data</span>
+<span class="gi">+    pollTimer-&gt;stop();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear old data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    int nSidechains = ValidSidechains.size();</span>
+<span class="gi">+    beginInsertRows(QModelIndex(), 0, nSidechains - 1);</span>
+<span class="gi">+</span>
+<span class="gi">+    for (const Sidechain&amp; s : ValidSidechains) {</span>
+<span class="gi">+        SidechainEscrowTableObject object;</span>
+<span class="gi">+        object.nSidechain = s.nSidechain;</span>
+<span class="gi">+        object.fActive = true; // TODO</span>
+<span class="gi">+        object.name = QString::fromStdString(s.GetSidechainName());</span>
+<span class="gi">+</span>
+<span class="gi">+        // Sidechain deposit address</span>
+<span class="gi">+        CKeyID sidechainKey;</span>
+<span class="gi">+        sidechainKey.SetHex(s.sidechainKey);</span>
+<span class="gi">+        CSidechainAddress address;</span>
+<span class="gi">+        address.Set(sidechainKey);</span>
+<span class="gi">+</span>
+<span class="gi">+        object.address = QString::fromStdString(address.ToString());</span>
+<span class="gi">+        object.privKey = s.sidechainPriv;</span>
+<span class="gi">+</span>
+<span class="gi">+        // Add demo CTIP data</span>
+<span class="gi">+        object.CTIPIndex = QString::number(s.nSidechain % 2 == 0 ? 0 : 1);</span>
+<span class="gi">+        object.CTIPTxID = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+</span>
+<span class="gi">+        model.append(QVariant::fromValue(object));</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    endInsertRows();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainEscrowTableModel::ClearDemoData()</span>
+<span class="gi">+{</span>
+<span class="gi">+    // Clear demo data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Start updating the model with real data again</span>
+<span class="gi">+    pollTimer-&gt;start();</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/src/qt/sidechainescrowtablemodel.h b/src/qt/sidechainescrowtablemodel.h</span>
+new file mode 100755
+<span class="gh">index 000000000..bc2594ffc</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechainescrowtablemodel.h</span>
+<span class="gu">@@ -0,0 +1,47 @@</span>
+<span class="gi">+﻿#ifndef SIDECHAINESCROWTABLEMODEL_H</span>
+<span class="gi">+#define SIDECHAINESCROWTABLEMODEL_H</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QAbstractTableModel&gt;</span>
+<span class="gi">+#include &lt;QList&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+QT_BEGIN_NAMESPACE</span>
+<span class="gi">+class QTimer;</span>
+<span class="gi">+QT_END_NAMESPACE</span>
+<span class="gi">+</span>
+<span class="gi">+struct SidechainEscrowTableObject</span>
+<span class="gi">+{</span>
+<span class="gi">+    uint8_t nSidechain;</span>
+<span class="gi">+    bool fActive;</span>
+<span class="gi">+    QString name;</span>
+<span class="gi">+    QString privKey;</span>
+<span class="gi">+    QString address;</span>
+<span class="gi">+    QString CTIPTxID;</span>
+<span class="gi">+    QString CTIPIndex;</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+class SidechainEscrowTableModel : public QAbstractTableModel</span>
+<span class="gi">+{</span>
+<span class="gi">+    Q_OBJECT</span>
+<span class="gi">+</span>
+<span class="gi">+public:</span>
+<span class="gi">+    explicit SidechainEscrowTableModel(QObject *parent = 0);</span>
+<span class="gi">+    int rowCount(const QModelIndex &amp;parent = QModelIndex()) const;</span>
+<span class="gi">+    int columnCount(const QModelIndex &amp;parent = QModelIndex()) const;</span>
+<span class="gi">+    QVariant data(const QModelIndex &amp;index, int role = Qt::DisplayRole) const;</span>
+<span class="gi">+    QVariant headerData(int section, Qt::Orientation orientation, int role) const;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Populate the model with demo data</span>
+<span class="gi">+    void AddDemoData();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear demo data and start syncing with real data again</span>
+<span class="gi">+    void ClearDemoData();</span>
+<span class="gi">+</span>
+<span class="gi">+public Q_SLOTS:</span>
+<span class="gi">+    void updateModel();</span>
+<span class="gi">+</span>
+<span class="gi">+private:</span>
+<span class="gi">+    QList&lt;QVariant&gt; model;</span>
+<span class="gi">+    QTimer *pollTimer;</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+#endif // SIDECHAINESCROWTABLEMODEL_H</span>
+<span class="gh">diff --git a/src/qt/sidechaintabledialog.cpp b/src/qt/sidechaintabledialog.cpp</span>
+new file mode 100755
+<span class="gh">index 000000000..5cdfe02cf</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechaintabledialog.cpp</span>
+<span class="gu">@@ -0,0 +1,80 @@</span>
+<span class="gi">+#include &lt;qt/sidechaintabledialog.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;qt/sidechainescrowtablemodel.h&gt;</span>
+<span class="gi">+#include &lt;qt/sidechainwithdrawaltablemodel.h&gt;</span>
+<span class="gi">+#include &lt;qt/forms/ui_sidechaintabledialog.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QHeaderView&gt;</span>
+<span class="gi">+#include &lt;QScrollBar&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;chain.h&gt;</span>
+<span class="gi">+#include &lt;chainparams.h&gt;</span>
+<span class="gi">+#include &lt;validation.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainTableDialog::SidechainTableDialog(QWidget *parent) :</span>
+<span class="gi">+    QDialog(parent),</span>
+<span class="gi">+    ui(new Ui::SidechainTableDialog)</span>
+<span class="gi">+{</span>
+<span class="gi">+    ui-&gt;setupUi(this);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Initialize models</span>
+<span class="gi">+    escrowModel = new SidechainEscrowTableModel(this);</span>
+<span class="gi">+    withdrawalModel = new SidechainWithdrawalTableModel(this);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add models to table views</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;setModel(escrowModel);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;setModel(withdrawalModel);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Resize cells (in a backwards compatible way)</span>
+<span class="gi">+#if QT_VERSION &lt; 0x050000</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;setResizeMode(QHeaderView::ResizeToContents);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;setResizeMode(QHeaderView::ResizeToContents);</span>
+<span class="gi">+#else</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;setSectionResizeMode(QHeaderView::ResizeToContents);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;setSectionResizeMode(QHeaderView::ResizeToContents);</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+    // Don&#39;t stretch last cell of horizontal header</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;setStretchLastSection(false);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;setStretchLastSection(false);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Hide vertical header</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;verticalHeader()-&gt;setVisible(false);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;verticalHeader()-&gt;setVisible(false);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Left align the horizontal header text</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;setDefaultAlignment(Qt::AlignLeft);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;setDefaultAlignment(Qt::AlignLeft);</span>
+<span class="gi">+</span>
+<span class="gi">+    // Set horizontal scroll speed to per 3 pixels (very smooth, default is awful)</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;setHorizontalScrollMode(QAbstractItemView::ScrollPerPixel);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;setHorizontalScrollMode(QAbstractItemView::ScrollPerPixel);</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;horizontalHeader()-&gt;horizontalScrollBar()-&gt;setSingleStep(3); // 3 Pixels</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;horizontalHeader()-&gt;horizontalScrollBar()-&gt;setSingleStep(3); // 3 Pixels</span>
+<span class="gi">+</span>
+<span class="gi">+    // Disable word wrap</span>
+<span class="gi">+    ui-&gt;tableViewD1-&gt;setWordWrap(false);</span>
+<span class="gi">+    ui-&gt;tableViewD2-&gt;setWordWrap(false);</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainTableDialog::~SidechainTableDialog()</span>
+<span class="gi">+{</span>
+<span class="gi">+    delete ui;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainTableDialog::on_pushButtonClose_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    this-&gt;close();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainTableDialog::on_pushButtonTest_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    escrowModel-&gt;AddDemoData();</span>
+<span class="gi">+    withdrawalModel-&gt;AddDemoData();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainTableDialog::on_pushButtonClear_clicked()</span>
+<span class="gi">+{</span>
+<span class="gi">+    escrowModel-&gt;ClearDemoData();</span>
+<span class="gi">+    withdrawalModel-&gt;ClearDemoData();</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/src/qt/sidechaintabledialog.h b/src/qt/sidechaintabledialog.h</span>
+new file mode 100755
+<span class="gh">index 000000000..40da6d4f8</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechaintabledialog.h</span>
+<span class="gu">@@ -0,0 +1,33 @@</span>
+<span class="gi">+#ifndef SIDECHAINTABLEDIALOG_H</span>
+<span class="gi">+#define SIDECHAINTABLEDIALOG_H</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QDialog&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+class SidechainEscrowTableModel;</span>
+<span class="gi">+class SidechainWithdrawalTableModel;</span>
+<span class="gi">+</span>
+<span class="gi">+namespace Ui {</span>
+<span class="gi">+class SidechainTableDialog;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+class SidechainTableDialog : public QDialog</span>
+<span class="gi">+{</span>
+<span class="gi">+    Q_OBJECT</span>
+<span class="gi">+</span>
+<span class="gi">+public:</span>
+<span class="gi">+    explicit SidechainTableDialog(QWidget *parent = 0);</span>
+<span class="gi">+    ~SidechainTableDialog();</span>
+<span class="gi">+</span>
+<span class="gi">+private Q_SLOTS:</span>
+<span class="gi">+    void on_pushButtonClose_clicked();</span>
+<span class="gi">+    void on_pushButtonTest_clicked();</span>
+<span class="gi">+    void on_pushButtonClear_clicked();</span>
+<span class="gi">+</span>
+<span class="gi">+private:</span>
+<span class="gi">+    Ui::SidechainTableDialog *ui;</span>
+<span class="gi">+    SidechainEscrowTableModel *escrowModel;</span>
+<span class="gi">+    SidechainWithdrawalTableModel *withdrawalModel;</span>
+<span class="gi">+</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+#endif // SIDECHAINTABLEDIALOG_H</span>
+<span class="gh">diff --git a/src/qt/sidechainwithdrawaltablemodel.cpp b/src/qt/sidechainwithdrawaltablemodel.cpp</span>
+new file mode 100755
+<span class="gh">index 000000000..f06d72e77</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechainwithdrawaltablemodel.cpp</span>
+<span class="gu">@@ -0,0 +1,263 @@</span>
+<span class="gi">+#include &lt;qt/sidechainwithdrawaltablemodel.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;qt/guiconstants.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;random.h&gt;</span>
+<span class="gi">+#include &lt;sidechain.h&gt;</span>
+<span class="gi">+#include &lt;sidechaindb.h&gt;</span>
+<span class="gi">+#include &lt;validation.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#ifdef ENABLE_WALLET</span>
+<span class="gi">+#include &lt;wallet/wallet.h&gt;</span>
+<span class="gi">+#endif</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;math.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QIcon&gt;</span>
+<span class="gi">+#include &lt;QMetaType&gt;</span>
+<span class="gi">+#include &lt;QTimer&gt;</span>
+<span class="gi">+#include &lt;QVariant&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;base58.h&gt;</span>
+<span class="gi">+#include &lt;script/standard.h&gt;</span>
+<span class="gi">+#include &lt;qt/guiutil.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;qt/bitcoinaddressvalidator.h&gt;</span>
+<span class="gi">+#include &lt;qt/bitcoinunits.h&gt;</span>
+<span class="gi">+#include &lt;qt/qvalidatedlineedit.h&gt;</span>
+<span class="gi">+#include &lt;qt/walletmodel.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;primitives/transaction.h&gt;</span>
+<span class="gi">+#include &lt;init.h&gt;</span>
+<span class="gi">+#include &lt;policy/policy.h&gt;</span>
+<span class="gi">+#include &lt;protocol.h&gt;</span>
+<span class="gi">+#include &lt;script/script.h&gt;</span>
+<span class="gi">+#include &lt;script/standard.h&gt;</span>
+<span class="gi">+#include &lt;util.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+Q_DECLARE_METATYPE(SidechainWithdrawalTableObject)</span>
+<span class="gi">+</span>
+<span class="gi">+SidechainWithdrawalTableModel::SidechainWithdrawalTableModel(QObject *parent) :</span>
+<span class="gi">+    QAbstractTableModel(parent)</span>
+<span class="gi">+{</span>
+<span class="gi">+    // This timer will be fired repeatedly to update the model</span>
+<span class="gi">+    pollTimer = new QTimer(this);</span>
+<span class="gi">+    connect(pollTimer, SIGNAL(timeout()), this, SLOT(updateModel()));</span>
+<span class="gi">+    pollTimer-&gt;start(MODEL_UPDATE_DELAY);</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+int SidechainWithdrawalTableModel::rowCount(const QModelIndex &amp; /*parent*/) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    return model.size();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+int SidechainWithdrawalTableModel::columnCount(const QModelIndex &amp; /*parent*/) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    return 6;</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+QVariant SidechainWithdrawalTableModel::data(const QModelIndex &amp;index, int role) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (!index.isValid()) {</span>
+<span class="gi">+        return false;</span>
+<span class="gi">+    }</span>
+<span class="gi">+</span>
+<span class="gi">+    int row = index.row();</span>
+<span class="gi">+    int col = index.column();</span>
+<span class="gi">+</span>
+<span class="gi">+    if (!model.at(row).canConvert&lt;SidechainWithdrawalTableObject&gt;())</span>
+<span class="gi">+        return QVariant();</span>
+<span class="gi">+</span>
+<span class="gi">+    SidechainWithdrawalTableObject object = model.at(row).value&lt;SidechainWithdrawalTableObject&gt;();</span>
+<span class="gi">+</span>
+<span class="gi">+    switch (role) {</span>
+<span class="gi">+    case Qt::DisplayRole:</span>
+<span class="gi">+    {</span>
+<span class="gi">+        // Sidechain name</span>
+<span class="gi">+        if (col == 0) {</span>
+<span class="gi">+            return object.sidechain;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Age</span>
+<span class="gi">+        if (col == 1) {</span>
+<span class="gi">+            return object.nAge;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Max age</span>
+<span class="gi">+        if (col == 2) {</span>
+<span class="gi">+            return object.nMaxAge;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Acks</span>
+<span class="gi">+        if (col == 3) {</span>
+<span class="gi">+            return object.nAcks;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // Approved</span>
+<span class="gi">+        if (col == 4) {</span>
+<span class="gi">+            return object.fApproved;</span>
+<span class="gi">+        }</span>
+<span class="gi">+        // WT^ hash</span>
+<span class="gi">+        if (col == 5) {</span>
+<span class="gi">+            return object.hashWTPrime;</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    return QVariant();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+QVariant SidechainWithdrawalTableModel::headerData(int section, Qt::Orientation orientation, int role) const</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (role == Qt::DisplayRole) {</span>
+<span class="gi">+        if (orientation == Qt::Horizontal) {</span>
+<span class="gi">+            switch (section) {</span>
+<span class="gi">+            case 0:</span>
+<span class="gi">+                return QString(&quot;Sidechain&quot;);</span>
+<span class="gi">+            case 1:</span>
+<span class="gi">+                return QString(&quot;Age&quot;);</span>
+<span class="gi">+            case 2:</span>
+<span class="gi">+                return QString(&quot;Max Age&quot;);</span>
+<span class="gi">+            case 3:</span>
+<span class="gi">+                return QString(&quot;Acks&quot;);</span>
+<span class="gi">+            case 4:</span>
+<span class="gi">+                return QString(&quot;Approved&quot;);</span>
+<span class="gi">+            case 5:</span>
+<span class="gi">+                return QString(&quot;WT^ hash&quot;);</span>
+<span class="gi">+            }</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    return QVariant();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainWithdrawalTableModel::updateModel()</span>
+<span class="gi">+{</span>
+<span class="gi">+    if (!scdb.HasState())</span>
+<span class="gi">+        return;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear old data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    int nSidechains = ValidSidechains.size();</span>
+<span class="gi">+    beginInsertColumns(QModelIndex(), model.size(), model.size() + nSidechains);</span>
+<span class="gi">+    for (const Sidechain&amp; s : ValidSidechains) {</span>
+<span class="gi">+        std::vector&lt;SidechainWTPrimeState&gt; vState = scdb.GetState(s.nSidechain);</span>
+<span class="gi">+        for (const SidechainWTPrimeState&amp; wt : vState) {</span>
+<span class="gi">+            SidechainWithdrawalTableObject object;</span>
+<span class="gi">+            object.sidechain = QString::fromStdString(s.GetSidechainName());</span>
+<span class="gi">+            object.hashWTPrime = QString::fromStdString(wt.hashWTPrime.ToString());</span>
+<span class="gi">+            object.nAcks = wt.nWorkScore;</span>
+<span class="gi">+            object.nAge = abs(wt.nBlocksLeft - SIDECHAIN_VERIFICATION_PERIOD);</span>
+<span class="gi">+            object.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+            object.fApproved = scdb.CheckWorkScore(wt.nSidechain, wt.hashWTPrime);</span>
+<span class="gi">+</span>
+<span class="gi">+            model.append(QVariant::fromValue(object));</span>
+<span class="gi">+        }</span>
+<span class="gi">+    }</span>
+<span class="gi">+    endInsertColumns();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainWithdrawalTableModel::AddDemoData()</span>
+<span class="gi">+{</span>
+<span class="gi">+    // Stop updating the model with real data</span>
+<span class="gi">+    pollTimer-&gt;stop();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear old data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    beginInsertRows(QModelIndex(), 0, 5);</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 1</span>
+<span class="gi">+    SidechainWithdrawalTableObject object1;</span>
+<span class="gi">+    object1.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_TEST));</span>
+<span class="gi">+    object1.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object1.nAcks = 42;</span>
+<span class="gi">+    object1.nAge = 50;</span>
+<span class="gi">+    object1.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object1.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 2</span>
+<span class="gi">+    SidechainWithdrawalTableObject object2;</span>
+<span class="gi">+    object2.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_HIVEMIND));</span>
+<span class="gi">+    object2.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object2.nAcks = 13141;</span>
+<span class="gi">+    object2.nAge = 21358;</span>
+<span class="gi">+    object2.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object2.fApproved = true;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 3</span>
+<span class="gi">+    SidechainWithdrawalTableObject object3;</span>
+<span class="gi">+    object3.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_HIVEMIND));</span>
+<span class="gi">+    object3.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object3.nAcks = 1637;</span>
+<span class="gi">+    object3.nAge = 2000;</span>
+<span class="gi">+    object3.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object3.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 4</span>
+<span class="gi">+    SidechainWithdrawalTableObject object4;</span>
+<span class="gi">+    object4.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_CASH));</span>
+<span class="gi">+    object4.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object4.nAcks = 705;</span>
+<span class="gi">+    object4.nAge = 26215;</span>
+<span class="gi">+    object4.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object4.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 5</span>
+<span class="gi">+    SidechainWithdrawalTableObject object5;</span>
+<span class="gi">+    object5.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_ROOTSTOCK));</span>
+<span class="gi">+    object5.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object5.nAcks = 10;</span>
+<span class="gi">+    object5.nAge = 10;</span>
+<span class="gi">+    object5.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object5.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 6</span>
+<span class="gi">+    SidechainWithdrawalTableObject object6;</span>
+<span class="gi">+    object6.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_TEST));</span>
+<span class="gi">+    object6.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object6.nAcks = 1256;</span>
+<span class="gi">+    object6.nAge = 1378;</span>
+<span class="gi">+    object6.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object6.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 7</span>
+<span class="gi">+    SidechainWithdrawalTableObject object7;</span>
+<span class="gi">+    object7.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_CASH));</span>
+<span class="gi">+    object7.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object7.nAcks = SIDECHAIN_MIN_WORKSCORE + 10;</span>
+<span class="gi">+    object7.nAge = SIDECHAIN_MIN_WORKSCORE + 11;</span>
+<span class="gi">+    object7.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object7.fApproved = true;</span>
+<span class="gi">+</span>
+<span class="gi">+    // WT^ 8</span>
+<span class="gi">+    SidechainWithdrawalTableObject object8;</span>
+<span class="gi">+    object8.sidechain = QString::fromStdString(GetSidechainName(SIDECHAIN_HIVEMIND));</span>
+<span class="gi">+    object8.hashWTPrime = QString::fromStdString(GetRandHash().ToString());</span>
+<span class="gi">+    object8.nAcks = 1;</span>
+<span class="gi">+    object8.nAge = 26142;</span>
+<span class="gi">+    object8.nMaxAge = SIDECHAIN_VERIFICATION_PERIOD;</span>
+<span class="gi">+    object8.fApproved = false;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Add demo objects to model</span>
+<span class="gi">+    model.append(QVariant::fromValue(object1));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object2));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object3));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object4));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object5));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object6));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object7));</span>
+<span class="gi">+    model.append(QVariant::fromValue(object8));</span>
+<span class="gi">+</span>
+<span class="gi">+    endInsertRows();</span>
+<span class="gi">+}</span>
+<span class="gi">+</span>
+<span class="gi">+void SidechainWithdrawalTableModel::ClearDemoData()</span>
+<span class="gi">+{</span>
+<span class="gi">+    // Clear demo data</span>
+<span class="gi">+    beginResetModel();</span>
+<span class="gi">+    model.clear();</span>
+<span class="gi">+    endResetModel();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Start updating the model with real data again</span>
+<span class="gi">+    pollTimer-&gt;start();</span>
+<span class="gi">+}</span>
+<span class="gh">diff --git a/src/qt/sidechainwithdrawaltablemodel.h b/src/qt/sidechainwithdrawaltablemodel.h</span>
+new file mode 100755
+<span class="gh">index 000000000..d6e5cbce5</span>
+<span class="gd">--- /dev/null</span>
+<span class="gi">+++ b/src/qt/sidechainwithdrawaltablemodel.h</span>
+<span class="gu">@@ -0,0 +1,48 @@</span>
+<span class="gi">+#ifndef SIDECHAINWITHDRAWALTABLEMODEL_H</span>
+<span class="gi">+#define SIDECHAINWITHDRAWALTABLEMODEL_H</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;uint256.h&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+#include &lt;QAbstractTableModel&gt;</span>
+<span class="gi">+#include &lt;QList&gt;</span>
+<span class="gi">+</span>
+<span class="gi">+QT_BEGIN_NAMESPACE</span>
+<span class="gi">+class QTimer;</span>
+<span class="gi">+QT_END_NAMESPACE</span>
+<span class="gi">+</span>
+<span class="gi">+struct SidechainWithdrawalTableObject</span>
+<span class="gi">+{</span>
+<span class="gi">+    QString sidechain;</span>
+<span class="gi">+    QString hashWTPrime;</span>
+<span class="gi">+    uint16_t nAcks;</span>
+<span class="gi">+    uint32_t nAge;</span>
+<span class="gi">+    uint32_t nMaxAge;</span>
+<span class="gi">+    bool fApproved;</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+class SidechainWithdrawalTableModel : public QAbstractTableModel</span>
+<span class="gi">+{</span>
+<span class="gi">+    Q_OBJECT</span>
+<span class="gi">+</span>
+<span class="gi">+public:</span>
+<span class="gi">+    explicit SidechainWithdrawalTableModel(QObject *parent = 0);</span>
+<span class="gi">+    int rowCount(const QModelIndex &amp;parent = QModelIndex()) const;</span>
+<span class="gi">+    int columnCount(const QModelIndex &amp;parent = QModelIndex()) const;</span>
+<span class="gi">+    QVariant data(const QModelIndex &amp;index, int role = Qt::DisplayRole) const;</span>
+<span class="gi">+    QVariant headerData(int section, Qt::Orientation orientation, int role) const;</span>
+<span class="gi">+</span>
+<span class="gi">+    // Populate the model with demo data</span>
+<span class="gi">+    void AddDemoData();</span>
+<span class="gi">+</span>
+<span class="gi">+    // Clear demo data and start syncing with real data again</span>
+<span class="gi">+    void ClearDemoData();</span>
+<span class="gi">+</span>
+<span class="gi">+public Q_SLOTS:</span>
+<span class="gi">+    void updateModel();</span>
+<span class="gi">+</span>
+<span class="gi">+private:</span>
+<span class="gi">+    QList&lt;QVariant&gt; model;</span>
+<span class="gi">+    QTimer *pollTimer;</span>
+<span class="gi">+};</span>
+<span class="gi">+</span>
+<span class="gi">+#endif // SIDECHAINWITHDRAWALTABLEMODEL_H</span>
+<span class="gh">diff --git a/src/qt/transactiontablemodel.cpp b/src/qt/transactiontablemodel.cpp</span>
+<span class="gh">index 626d4c0bd..e1183e448 100644</span>
+<span class="gd">--- a/src/qt/transactiontablemodel.cpp</span>
+<span class="gi">+++ b/src/qt/transactiontablemodel.cpp</span>
+<span class="gu">@@ -741,6 +741,7 @@ static void NotifyTransactionChanged(TransactionTableModel *ttm, CWallet *wallet</span>
+ {
+     // Find transaction in wallet
+     std::map&lt;uint256, CWalletTx&gt;::iterator mi = wallet-&gt;mapWallet.find(hash);
+<span class="gi">+</span>
+     // Determine whether to show transaction or not (determine this here so that no relocking is needed in GUI thread)
+     bool inWallet = mi != wallet-&gt;mapWallet.end();
+     bool showTransaction = (inWallet &amp;&amp; TransactionRecord::showTransaction(mi-&gt;second));
+<span class="gu">@@ -752,7 +753,9 @@ static void NotifyTransactionChanged(TransactionTableModel *ttm, CWallet *wallet</span>
+         vQueueNotifications.push_back(notification);
+         return;
+     }
+<span class="gi">+</span>
+     notification.invoke(ttm);
+<span class="gi">+</span>
+ }
+ 
+ static void ShowProgress(TransactionTableModel *ttm, const std::string &amp;title, int nProgress)
+<span class="gh">diff --git a/src/qt/walletmodel.cpp b/src/qt/walletmodel.cpp</span>
+<span class="gh">index 541114e5f..1b323872c 100644</span>
+<span class="gd">--- a/src/qt/walletmodel.cpp</span>
+<span class="gi">+++ b/src/qt/walletmodel.cpp</span>
+<span class="gu">@@ -328,12 +328,10 @@ WalletModel::SendCoinsReturn WalletModel::sendCoins(WalletModelTransaction &amp;tran</span>
+             else if (!rcp.message.isEmpty()) // Message from normal bitcoin:URI (bitcoin:123...?message=example)
+                 newTx-&gt;vOrderForm.push_back(make_pair(&quot;Message&quot;, rcp.message.toStdString()));
+         }
+<span class="gd">-</span>
+         CReserveKey *keyChange = transaction.getPossibleKeyChange();
+         CValidationState state;
+         if(!wallet-&gt;CommitTransaction(*newTx, *keyChange, g_connman.get(), state))
+             return SendCoinsReturn(TransactionCommitFailed, QString::fromStdString(state.GetRejectReason()));
+<span class="gd">-</span>
+         CDataStream ssTx(SER_NETWORK, PROTOCOL_VERSION);
+         ssTx &lt;&lt; *newTx-&gt;tx;
+         transaction_array.append(&amp;(ssTx[0]), ssTx.size());
+</pre></div>
+</body>
+</html>
