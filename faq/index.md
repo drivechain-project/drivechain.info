@@ -7,7 +7,7 @@ Updated 04/2018
 
 Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), my latest YouTube video. I know many people prefer the YouTube format these days.
 
-## 0. Four Common Misconceptions
+## 0. Five Common Misconceptions
 
 Here I highlight four big hangups that people seem to have over and over.
 
