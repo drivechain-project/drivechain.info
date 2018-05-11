@@ -286,7 +286,65 @@ In my view, SHoM is too similar to an extension block. And it therefore lacks dr
 
 ## 3. Usefulness ## {#usefulness}
 
-### I have heard that it will take 3-6 months to transfer money from the sidechain to the mainchain. Won't that be too slow to be useful?
+### How can we ensure that Great Altcoins are transformed into Sidechains? ### {#conveyor}
+
+It actually shouldn't be difficult at all! If Altcoins are useful, they should have fee-paying users. Therefore, miners should want to claim these fees by making the Altcoin a blind-merged-mined drivechain.
+
+Bitcoin Miners are actually the chief *victims* of Altcoin-value-dilution -- other miners are getting money that *they* could have for free, if the Altcoins were instead merged-mined sidechains.
+
+I think the issue is confusing, because most of the Altcoins we see today are *not* useful and therefore we would *not* want to absorb them into Bitcoin. And therefore, it is hard for Bitcoiners of today to imagine that absorption happening.
+
+But really, if you think about it, if a given Altcoin persists as an Altcoin [and is not made into a sidechain], then that very fact is *evidence* that the Altcoin in question probably isn't useful to anyone. Or else, it is because it has features that *can't* be copied by *any* sidechain (see Monero answer), in which case this question is moot.
+
+
+### Why would anyone make a sidechain, when instead they could make a great ICO Scam and/or Altcoin? ### {#vs-alt}
+
+Four Part Answer:
+
+#### i. Free Rider Problem #### {#free-rider}
+
+First, I acknowledge that ICOs/Premines/Altcoins do help, sometimes, to solve a free-rider problem of R&D of a coin.
+
+However, despite Bitcoin's disadvantage, it still seems to get all of the interesting, serious research. So apparently the lure of prestige is strong enough to motivate a healthy amount of R&D. Many universities regularly support Bitcoin R&D, especially MIT and Stanford.  
+
+Also, for-profit corporations (including Blockstream on the right as well as Coinbase on the left) support project R&D.
+
+Finally, IMHO, most interesting work is done by hobbyists. Einstein, for instance, was a patent clerk when he wrote his four famous papers. Too much "financial support" and we lose the intrinsic motivation and the hunger for success.
+
+Whatever the case may be, a great deal of software is written and evangelized today, without the "motivation" of doing an ICO (Ubuntu, Mozilla Firefox, etc). In fact, to most Makers, token sales are *not* a real incentive, they are instead a distraction and a hindrance.
+
+#### ii. Labor Theory of Value Fallacy #### {#LTOV}
+
+Second, this question [mis-emphasizes the *makers*](https://en.wikipedia.org/wiki/Labor_theory_of_value) of the technology. But instead it should emphasize *users*. It should ask, "why should users use a sidechain, over an Altcoin/ICO scam?". After all, made-but-unused things are irrelevant (and people will quickly stop making them); and vice-versa (all useful things that can be made eventually will be made).
+
+That second question (the proper one) has some good answers: relative to Altcoins, sidechains can offer better convenience, quality control, and hashrate security. Most importantly, they shield the user from exchange rate risk.
+
+This exchange rate risk is important in two senses. The first [trivial] sense is that the user does not have to deal with fluctuations in Altcoin/Bitcoin prices (which can be quite tremendous). The second [important] sense is that an Altcoin's price may crash to zero.
+
+#### iii. The Death of the Altcoins #### {#alt-death}
+
+A world without Altcoins may sound far-fetched today, but let us ask: "Where are all of these buy orders for Altcoins coming from?". Certainly, there is a mixture of "fundamental" and "greedy" motivations -- the fundamental is to take advantage of the Altcoin's distinct feature set [now or in the future], and the greedy is to later resell the Altcoin to a greater fool (or "more appreciative collector").
+
+It should be clear that, once sidechains allow BTC to copy Alts, the fundamental motivation cannot survive. Even [recreational gambling and money-laundering](http://www.truthcoin.info/blog/altcoins-are-not-coins/) (to the extent that they are happening in Alts now, which [is unclear](http://www.truthcoin.info/blog/bitcoin-post-maximalism/#2-rising-altcoin-utility)) may continue to take place in sidechains designed for these purposes (probably a Counterparty-style "crypto Art" sidechain, and a Zcash sidechain).
+
+I do not see how the greedy motivation can survive either. After all, "greed" alone is insufficient for scams -- there must also be *gullibility*. Specifically, there must be a *pretext* [a narrative that is plausible, but false] of future fundamental value. For example, Ethereum's pretext was "smart contracts"; for DASH it was "privacy" and sometimes "governance"; BitShares was "crypto finance" (or something). But with sidechains up and running, these pretexts cannot survive -- after all, if the "smart contract" feature is a success, it will inevitably be copied. Alts will just be the suckers, who do all of the R&D and get none of the credit.
+
+Sidechains are unable to emulate an Altcoin's *community*. So the pretext-of-value will necessarily shift in this direction. But this is very unlikely to work for two reasons. First, as far as salience/recognizability is concerned, Bitcoin is still the leader -- no one has heard of EOS but *not* heard of Bitcoin. Second, *new* Alt-communities have literally nothing to offer to new users. So these newcomers will look around and join "the biggest" community aka Bitcoin. It is basic network effects.
+
+A final ingredient, which I intend to provide [on a sidechain no less!], is the ability to *short Altcoins* (to [short anything](http://bitcoinhivemind.com/papers/3_PM_Applications.pdf) in fact). This allows money to be made, as the bubble pops. Currently, in contrast, there is no easy way to profit from the overvalued Altcoin market.
+
+![image](https://img-9gag-fun.9cache.com/photo/6602736_700b_v1.jpg)
+
+#### iv. InterChain Combat #### {#interchain-combat}
+
+Currently, the blockchain projects are [at war](http://junseth.com/post/119882298052/blockchains-are-war). During the XT dispute, DoS attacks were apparently [so severe that they resulted in widespread Internet failure and even power grid failure](https://blog.plan99.net/the-resolution-of-the-bitcoin-experiment-dabb30201f7#7175)! People are...saying mean things to each other on social media, to say the least.
+
+These behaviors are attempts to "persuade" devs/promoters to change their crypto-allegiance. But if you develop on a sidechain, you are probably safe from this bullying/harassment.
+
+Moreover, if there were just one crypto-project, then there would be no need for all of this "persuasion" in the first place. (This is why Maximalism is a moral position. )
+
+
+### I have heard that it will take 3-6 months to transfer money from the sidechain to the mainchain. Won't that be too slow to be useful? ### {#liquidity}
 
 Yes, [per sidechain] only one withdrawal can succeed every 3 months. Two can be in progress at once, if and only if one is more than halfway finished. Which means that we can expect total withdrawal time to take between 3 months (best case) and 4.5 months (worst case).
 
@@ -340,15 +398,6 @@ One simple solution would be to cap the quantity of BTC that can be moved to eac
 Other than that, I would point out that Bitcoin has always been the "money of principle", and that we survived the MtGox announcement (in which ~850,000/12,400,000 = 6.85% of the total BTC were assumed to be stolen).
 
 
-### How can we ensure that Great Altcoins are transformed into Sidechains? ### {#conveyor}
-
-It actually shouldn't be difficult at all! If Altcoins are useful, they should have fee-paying users. Therefore, miners should want to claim these fees by making the Altcoin a blind-merged-mined drivechain.
-
-Bitcoin Miners are actually the chief *victims* of Altcoin-value-dilution -- other miners are getting money that *they* could have for free, if the Altcoins were instead merged-mined sidechains.
-
-I think the issue is confusing, because most of the Altcoins we see today are *not* useful and therefore we would *not* want to absorb them into Bitcoin. And therefore, it is hard for Bitcoiners of today to imagine that absorption happening.
-
-But really, if you think about it, if a given Altcoin persists as an Altcoin [and is not made into a sidechain], then that very fact is *evidence* that the Altcoin in question probably isn't useful to anyone. Or else, it is because it has features that *can't* be copied by *any* sidechain (see Monero answer), in which case this question is moot.
 
 
 
