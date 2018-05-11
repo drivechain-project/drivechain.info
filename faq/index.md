@@ -315,9 +315,11 @@ Whatever the case may be, a great deal of software is written and evangelized to
 
 #### ii. Labor Theory of Value Fallacy #### {#LTOV}
 
-Second, this question [mis-emphasizes the *makers*](https://en.wikipedia.org/wiki/Labor_theory_of_value) of the technology. But instead it should emphasize *users*. It should ask, "why should users use a sidechain, over an Altcoin/ICO scam?". After all, made-but-unused things are irrelevant (and people will quickly stop making them); and vice-versa (all useful things that can be made eventually will be made).
+Second, this question [mis-emphasizes the *makers*](https://en.wikipedia.org/wiki/Labor_theory_of_value) of the technology. Instead, it should emphasize *users*. It should ask, "why should users use a sidechain, over an Altcoin/ICO scam?". After all, made-but-unused things are irrelevant (and people will quickly stop making them); and vice-versa (all useful things that can be made eventually will be made).
 
 That second question (the proper one) has some good answers: relative to Altcoins, sidechains can offer better convenience, quality control, and hashrate security. Most importantly, they shield the user from exchange rate risk.
+
+<img src="https://img-9gag-fun.9cache.com/photo/6602736_700b_v1.jpg" width="290" height="465" />
 
 This exchange rate risk is important in two senses. The first [trivial] sense is that the user does not have to deal with fluctuations in Altcoin/Bitcoin prices (which can be quite tremendous). The second [important] sense is that an Altcoin's price may crash to zero.
 
@@ -333,7 +335,6 @@ Sidechains are unable to emulate an Altcoin's *community*. So the pretext-of-val
 
 A final ingredient, which I intend to provide [on a sidechain no less!], is the ability to *short Altcoins* (to [short anything](http://bitcoinhivemind.com/papers/3_PM_Applications.pdf) in fact). This allows money to be made, as the bubble pops. Currently, in contrast, there is no easy way to profit from the overvalued Altcoin market.
 
-<img src="https://img-9gag-fun.9cache.com/photo/6602736_700b_v1.jpg" width="290" height="465" />
 
 #### iv. InterChain Combat #### {#interchain-combat}
 
