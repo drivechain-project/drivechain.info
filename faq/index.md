@@ -333,7 +333,7 @@ Sidechains are unable to emulate an Altcoin's *community*. So the pretext-of-val
 
 A final ingredient, which I intend to provide [on a sidechain no less!], is the ability to *short Altcoins* (to [short anything](http://bitcoinhivemind.com/papers/3_PM_Applications.pdf) in fact). This allows money to be made, as the bubble pops. Currently, in contrast, there is no easy way to profit from the overvalued Altcoin market.
 
-![image](https://img-9gag-fun.9cache.com/photo/6602736_700b_v1.jpg)
+<img src="https://img-9gag-fun.9cache.com/photo/6602736_700b_v1.jpg" width="290" height="465" />
 
 #### iv. InterChain Combat #### {#interchain-combat}
 
