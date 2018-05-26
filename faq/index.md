@@ -9,7 +9,7 @@ Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtub
 
 ## 0. Five Common Misconceptions
 
-Here I highlight four big hangups that people seem to have over and over.
+Here I highlight five big hangups that people seem to have over and over.
 
 ### i. "51% hashrate can steal BTC" ### {#i}
 
@@ -75,9 +75,9 @@ However, it is also impossible to do, if no one has an incentive to do it. Witho
 
 We solve this by harmonizing ownership and control -- the miners are the only ones with enough skin in the game to make this decision, so they should be the ones who control which sidechains are "evicted". So the 51% theft possibility is actually a *feature*, not a bug. We want it there, filtering out sidechains that interact badly (just like we want miners to "evict" txns that are double spends).
 
-### v. User Paternalism Fallacy ### {#v}
+### v. User Paternalism Fallacy / Sidechain Homogeneity ### {#v}
 
-Some sidechains are bound to be "low quality", for whatever reason. Perhaps because they are not popular enough to be secure, or perhaps they have been constructed by saboteurs. Depositing into these would be a bad idea.
+Not all sidechains are the same -- some are bound to be "low quality". This could be because they are not popular enough to be secure, or because they have been constructed by saboteurs. Depositing into these would be a bad idea.
 
 It is natural to want to "protect" people from their mistakes.
 
