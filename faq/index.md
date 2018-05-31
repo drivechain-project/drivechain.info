@@ -429,11 +429,17 @@ Since it relies on embedded consensus, this trick requires a "regular" PoW block
 
 ### A crazy person on Twitter is saying that miners don't get all of the txn-fee revenues under BMM. So BMM is at a disadvantage and miners will not want to use it? ### {#bmm-econ}
 
-It is true that sidechain nodes (called "Simons") do get to keep a portion of the sidechain's tx fees. Therefore, not all of it will go to the mainchain miners (called "Marys"). However, the Simons compete on making this portion as low as possible, and the technical details allow it to go quite low, even (theoretically) to the Satoshi or sub-satoshi level. In contrast, a Bitcoin full node today may cost $20 or $50 per month in bandwidth alone. And the complaints regarding "miner centralization" all concern bandwidth-hog sidechains where the cost may be 10 or even 1000 times higher. For a super-intensive "ESPN 4K Sidechain" of some kind, miners have the option of killing their full node, and using BMM instead. Instead of paying thousands per month on the sidechain node, they (or their pool admin) can simply surrender a $0.10 gratuity per block (which comes to $432 per month). Or, as I say above, the gratuity may fall even further than that, as little prevents it from taking on the smallest possible value.
+It is true that sidechain nodes (called "Simons") do get to keep a portion of the sidechain's tx fees. Therefore, not all of it will go to the mainchain miners (called "Marys"). However, the Simons compete on making this portion as low as possible, and the technical details allow it to go quite low, even (theoretically) to the Satoshi or sub-satoshi level. In contrast, a Bitcoin full node today may cost $20 or $50 per month in bandwidth alone. And the complaints regarding "miner centralization" all concern bandwidth-hog sidechains where the cost may be 10 or even 1000 times higher.
+
+For a super-intensive "ESPN 4K Sidechain" of some kind, miners have the option of killing their full node, and using BMM instead. Instead of paying thousands per month on the sidechain node, they (or their pool admin) can simply surrender a $0.10 gratuity per block (which comes to $432 per month). Or, as I say above, the gratuity may fall even further than that, as little prevents it from taking on the smallest possible value.
 
 If the fullnode costs are too *low* to justify BMM...well that simply indicates that there's no problem and no one needs to care. 
 
 [Here is a more detailed explanation.](/media/blind-merged-mining-econ/)
+
+Furthermore, I regard "miner centralization" to be an unfalsifiable theory, and therefore unscientific.
+
+Finally, the theory that "sidechains cause miner centralization" does not make sense, even in its own terms. For the theory would imply that many things would cause mining centralization, and most of these are unpreventable and much more harmful. For example "an individual choosing to offer $5 to a miner, for each block (s)he solves, if they reveal their mailing address" would also "cause miner centralization", and this cannot be prevented.
 
 
 
