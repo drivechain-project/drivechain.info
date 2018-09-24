@@ -321,6 +321,14 @@ We have two UTXOs:
 * 5 BTC -- Change from when we sent 16 of our 21 starting BTC to the sidechain.
 * 9.98996640 BTC -- the 10 BTC side-to-main transfer, minus various sidechain and mainchain fees.
 
+## 4. Other Features
+
+This release has: 
+
+1. New PoW algorithm -- for testing purposes, obviously.
+2. UTXO loader -- faster than doing an initial chain-sync.
+3. One-way replay protection -- the best of both worlds, this replays transactions until the user installs the software, after which each of the user's txns inherit permanent replay protection as they are used. It is user-based, not time-of-fork-based.
+
 
 ## Conclusion
 
@@ -330,5 +338,4 @@ Nonetheless, it's good to be able to show people what exactly Drivechain does: i
 
 If this "multi-network coin" idea is found to be viable, it has profound implications for the crypto's most salient problems. Bitcoin would be able to copy any technology, including: larger blocks, Turing-completeness, and ring signatures.
 
-As a result, there would be no need to fight about which features Bitcoin "should" have (or over which features "define" Bitcoin). Technologists would be free to build interesting blockchain technology and add it to Bitcoin, without going through the conservative review process. And furthermore, the base mainchain "layer-1" would be free to quickly ossify and stabilize.
-
+As a result, there would be no need to fight about which features Bitcoin "should" have (or over which features "define" Bitcoin). Technologists would be free to build interesting blockchain technology and add it to Bitcoin, without going through the conservative review process. And furthermore, the "base layer" would be free to quickly ossify and stabilize.
