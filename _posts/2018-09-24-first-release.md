@@ -66,7 +66,7 @@ Alternatively, you can just join the Blank Network. It doesn't load any UTXOs, s
 In the near future, we plan to release a "Drivenet-BCH" that has the Bitcoin Cash UTXO set.
 
 
-## 3. A Visual Tour
+## 3. Step-by-Step Tour
 
 Up to date as of 24 Sept 2018.
 
