@@ -7,9 +7,9 @@ date: 2018-09-24
 
 ## 1. Announcement
 
-I am happy to announce the first Drivechain release!!
+I am happy to announce **the first Drivechain release!!**
 
-The release is two version of Btwo parts:
+The release is in two parts:
 
 1. Bitcoin Core 16.99, [modified to support drivechain technology](https://github.com/drivechain-project/diff).
 2. Bitcoin Core 16.99, modified to be a vanilla, minimalist, 'blank' sidechain. It is a sidechain whose capabilities are the same as Bitcoin Core's.
@@ -18,21 +18,14 @@ The release is two version of Btwo parts:
 
 ## 2. Getting the Files
 
-Expert technologists can find the source code on Github here: https://github.com/DriveNetTESTDRIVE/DriveNet
+Source code here: https://github.com/DriveNetTESTDRIVE/DriveNet
 
-Non-technical users should try the binaries below.
-
-### Google Drive
-
-The binary files are hosted on Google Drive: **[https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)**
-
-At this early stage, Google Drive is just the simplest way of distributing files.
+The binary files (for less-technical users) are hosted on Google Drive: **[https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)**
 
 ![image](/media/post1/dl-1.png)
 
 ![image](/media/post1/dl-2.png)
 
-Thanks, Google!
 
 ### SHA-256 Hashes
 
@@ -79,7 +72,13 @@ Up to date as of 24 Sept 2018.
 
 Here I present a visual guide. It assumes only very basic computer knowledge. 
 
-First, we send money from the mainchain to a sidechain. Then, we send the sidechain-BTC to ourselves, and finally we send it back to the mainchain.
+We will: 
+
+* Send BTC from the mainchain to a sidechain.
+* Use the sidechain (send BTC from ourselves to ourselves).
+* Send the sidechain-BTC back to the mainchain.
+
+Follow along, and expand each image if you get lost. Or [download all the images](/media/dc-release-images.zip) at once and scroll through them as an album.
 
 ### A. Setting Up
 
@@ -271,7 +270,7 @@ Then click send:
 
 ### G. The Slow Return
 
-A key feature of Drivechain is [often phrased] as its "slow return":
+A key feature of Drivechain is its "slow return" (as it's often phrased):
 
 ![image](/media/post1/slow-return.png)
 
