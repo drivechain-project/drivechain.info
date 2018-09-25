@@ -162,7 +162,7 @@ The last method is not recommended, because *you should never type your private 
 
 Don't worry about asking me for BTC. For testing purposes, CryptAxe and I modded the UTXO set to give ourselves 100,000 each. We're loaded! Plus these are useless testnet coins.
 
-Mining should be easy, at first. Although if you do mine, you will probably be unwilling or unable able [to set up blind merged mining](https://github.com/DriveNetTESTDRIVE/docs/blob/master/BMM.md) and so your presence may be somewhat chaotic for other users.
+Mining should be easy, at first. Although if you do mine, you may be unwilling or unable [to set up blind merged mining](https://github.com/DriveNetTESTDRIVE/docs/blob/master/BMM.md) and so your presence may be somewhat chaotic for other users.
 
 But that's what testing is for, I suppose!
 
