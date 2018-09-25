@@ -7,13 +7,15 @@ date: 2018-09-24 5:00:00
 
 
 
-Up to date as of 24 Sept 2018.
+Up to date as of 25 Sept 2018.
 
 ## 1. Intro
 
 Here I present a visual guide. It assumes only very basic computer knowledge. 
 
-We will: 
+( But it does assume, for now, that you run Linux. Even if you run Mac/Windows, you can use Linux for free by downloading [VirtualBox](https://www.virtualbox.org/) and [Ubuntu](https://www.ubuntu.com/). You'll should make a virtual machine with about 20 GB of space and 4 GB of RAM. )
+
+In this guide, we will:
 
 * Send BTC from the mainchain to a sidechain.
 * Use the sidechain (send BTC from ourselves to ourselves).
@@ -160,9 +162,11 @@ The last method is not recommended, because *you should never type your private 
 
 Don't worry about asking me for BTC. For testing purposes, CryptAxe and I modded the UTXO set to give ourselves 100,000 each. We're loaded! Plus these are useless testnet coins.
 
-Mining should be easy, at first. Although if you do mine, you will probably be unwilling or unable able [to set up blind merged mining](https://github.com/drivechain-project/testing) and so your presence may be somewhat chaotic. But that's what testing is for, I suppose.
+Mining should be easy, at first. Although if you do mine, you will probably be unwilling or unable able [to set up blind merged mining](https://github.com/DriveNetTESTDRIVE/docs/blob/master/BMM.md) and so your presence may be somewhat chaotic for other users.
 
-Here I assume you just ask for some, but using the "Receive" tab > "Request Payment" > "Copy Address".
+But that's what testing is for, I suppose!
+
+In this guide, I will assume you have asked for some BTC. You'd do this, of course, by using the "Receive" tab > "Request Payment" > "Copy Address".
 
 ![image](/media/post1/18.png)
 
