@@ -35,7 +35,7 @@ This release has some additional characteristics:
 
 1. New PoW algorithm (with reset difficulty).
 2. UTXO loader -- this is much faster than doing an initial chain-sync. And it also lets us very easily release other versions (BCH, BTG, etc). Finally, it lets us easily mint our own testnet coins.
-3. One-way replay protection -- the best of both worlds, this setup grants permanent replay protection to UTXOs once they *as they are used*, but not before. It is user-based, not 'time of fork'-based.
+3. One-way replay protection -- the best of both worlds, this setup replays all transactions *until their owners say otherwise*, at which point they get permanent replay protection. In practice, it forces all exchanges to list the new coin; and it equalizes txn-fees for miners (across each chain). It is user-based, not 'time of fork'-based. 
 
 
 ## Work in Progress
