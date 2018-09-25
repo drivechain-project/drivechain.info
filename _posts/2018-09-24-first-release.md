@@ -21,9 +21,6 @@ Source code here: https://github.com/DriveNetTESTDRIVE/DriveNet
 
 The binary files (for less-technical users) are hosted on Google Drive: **[https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)**
 
-![image](/media/post1/dl-1.png)
-
-![image](/media/post1/dl-2.png)
 
 ## Usage Tour
 
