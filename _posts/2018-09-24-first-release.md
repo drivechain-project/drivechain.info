@@ -25,7 +25,9 @@ The binary files (for less-technical users) are hosted on Google Drive: **[https
 
 ![image](/media/post1/dl-2.png)
 
-After getting the files, **[check out the usage tour](/blog/usage-tour/)** to take the software for a spin and see what it can do!
+## Usage Tour
+
+After getting the files, **[check out the USAGE TOUR](/blog/usage-tour/)** to take the software for a spin and see what it can do!
 
 ## Other Features
 
