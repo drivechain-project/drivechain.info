@@ -268,7 +268,7 @@ A key feature of Drivechain is its "slow return" (as it's often phrased):
 
 ![image](/media/post1/slow-return.png)
 
-Normally this process would take 3-6 months, but for testing purposes we have dramatically sped it up.
+Normally this process would take 3-6 months, but for testing purposes we have sped it up to a matter of minutes (and, at most, 23 hours).
 
 See also: [FAQ Question "I have heard that it will take 3-6 months to transfer money from the sidechain to the mainchain. Won't that be too slow to be useful?""](http://www.drivechain.info/faq/#liquidity)
 
