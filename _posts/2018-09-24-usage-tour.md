@@ -13,7 +13,7 @@ Up to date as of 25 Sept 2018.
 
 Here I present a visual guide. It assumes only very basic computer knowledge. 
 
-( But it does assume, for now, that you run Linux. Even if you run Mac/Windows, you can use Linux for free by downloading [VirtualBox](https://www.virtualbox.org/) and [Ubuntu](https://www.ubuntu.com/). You'll should make a virtual machine with about 20 GB of space and 4 GB of RAM. )
+( But it does assume, for now, that you run Linux. Even if you run Mac/Windows, you can use Linux for free by downloading [VirtualBox](https://www.virtualbox.org/) and [Ubuntu](https://www.ubuntu.com/). You'll should make a virtual machine with about 40 GB of space and 4 GB of RAM. )
 
 In this guide, we will:
 
