@@ -57,24 +57,13 @@ div.desc {
 
 
 
-Drivechain allows multiple blockchains to all agree to share the same 21,000,000 Bitcoins. These networks are otherwise autonomous.
+Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc. 
 
-### Problems With Today's Mono-Chain Setup
+Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
 
-* Blockchain technology has **economic tradeoffs**, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
-* Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about **competition** from other projects (Ethereum, Z-Cash, Ripple).
-* Satoshi, creator of Bitcoin, [wanted to support many transaction types](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214), but knew that his design was **prohibitively inflexible**.
-* Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is **constrained** as a medium of exchange -- and therefore at a competitive disadvantage.
+Hang out with us [here at the Drivechain Release Telegram Group](http://t.me/DcInsiders).
 
-Instead, sidechains are alt-chains that all use the same Bitcoin token. They start with zero coins; they accept Bitcoin deposits, conduct Bitcoin transfers, and finally dispense Bitcoin withdrawals.
-
-
-### Presentation
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gUbGT70wy5k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-
-### Memes
+### Explainer Memes
 
 
 
@@ -133,8 +122,9 @@ Instead, sidechains are alt-chains that all use the same Bitcoin token. They sta
 
 
 
+## More Info
 
-### Drawback
+### The Catch
 
 Drivechain (intentionally) offloads some message-processing to other chains, and doesn't check up on them.
 
@@ -148,7 +138,7 @@ Thus, the network will only accept an incorrect withdrawal under one condition: 
 
 This is justified by observing that, in our pre-sidechain world, miners always want things to be correct. In theory, the [incentives of miners and investors](http://www.truthcoin.info/images/bitcoin-incentives.png) are very strongly aligned: both are compensated most when the exchange rate is highest. And, in practice, we do *not* see large reorganizations (where miners can "steal", by first depositing BTC to major exchanges, then selling that BTC for fiat (which they withdraw), and finally rewriting the last 3 or 4 days of chain history, to un-confirm the original deposits). These reorgs would devastate the exchange rate, as they would cast doubt on the entire Bitcoin experiment. The thesis of Drivechain is that sidechain-theft would also devastate the exchange rate, as it would cast doubt on the entire *sidechain* experiment (which would itself cast doubt on the Bitcoin experiment, given the anti-competitive power of sidechains).
 
-More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
+There are also [situations where we'd *want* 51+% hashrate to redirect a sidechain's funds](http://www.truthcoin.info/blog/contracts-oracles-sidechains/). So it is important to ensure that, in these cases, miners actually do direct the refunds (to themselves). More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
 
 Please [read the FAQ](/faq/index.html)!
 
@@ -164,9 +154,11 @@ Here is a short metaphor for the risks of using a sidechain:
 
 The lengthy multi-month delay might sound prohibitively inconvenient, but it isn't because of instant atomic cross-chain swaps. Investment-banker-types will buy your side-BTC with their main-BTC, at competitive rates. So, in practice, the delay can be avoided by paying a neglibible, market-based fee.
 
-The model is sound because we assume that miners are uninterested in "stealing" (see above). 
+The model is sound because we assume that miners are uninterested in "stealing" (see above).
 
-### Bitcoin Improvement Proposals (BIPs)
+
+
+### BIPs and Code Documentation
 
 Drivechain is so big it actually fits into two BIPs over three files:
 
@@ -180,71 +172,17 @@ See also:
 * The ["big diff"](https://github.com/drivechain-project/diff) (our code changes from Bitcoin Core) -- now broken down by [[ignorable] UI changes](/media/mainchainUIDIFF.html) and [[important] non-UI](/media/mainchainBMMDIFF.html).
 
 
-### Screenshots, Testing Guide, Demo Video
 
-Check out our great **[Testing Guide](https://github.com/drivechain-project/testing)**!
+## Benefits
 
-![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageWithdraw.png)
+### Problems With Today's Mono-Chain Setup
 
-![image](https://raw.githubusercontent.com/drivechain-project/testing/master/SidechainPageBMMAutomationConnected.png)
+* Blockchain technology has **economic tradeoffs**, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
+* Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about **competition** from other projects (Ethereum, Z-Cash, Ripple).
+* Satoshi, creator of Bitcoin, [wanted to support many transaction types](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214), but knew that his design was **prohibitively inflexible**.
+* Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is **constrained** as a medium of exchange -- and therefore at a competitive disadvantage.
 
-View our [Demo Video](https://drive.google.com/file/d/0B0apsclL6jccNEViRy00TThJd2M/view) (Jan 2017).
-
-
-Old Gallery:
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/shot-1.png">
-      <img src="/media/shot-1.png" alt="shot1" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/shot-2.png">
-      <img src="/media/shot-2.png" alt="shot2" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/shot-3.png">
-      <img src="/media/shot-3.png" alt="shot3" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/shot-4.png">
-      <img src="/media/shot-4.png" alt="shot4" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/shot-5.png">
-      <img src="/media/shot-5.png" alt="shot5" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
+Instead, sidechains are alt-chains that all use the same Bitcoin token. They start with zero coins; they accept Bitcoin deposits, conduct Bitcoin transfers, and finally dispense Bitcoin withdrawals.
 
 
 ### Main Benefits
@@ -258,9 +196,9 @@ Old Gallery:
 1. **Anti-Scam**: SCs filter out get-rich-quick schemes (the 'get rich' part is now impossible). Therefore, good projects can stand out and receive our attention.
 2. **Faster Progress**: SCs let us test new features. The tests are safe -- if these features fail, they won't take down the main network. However, the tests are also informative -- real BTC is on the line.
 
-### Contact
+## Contact
 
 <p><u>Email:</u> truthcoin /at/gmail/</p>
 <p><u>PGP Key:</u> <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0xAA4B3330F162C410">F162C410</a></p>
-<p>I attempt to respond immediately to all <a href="https://twitter.com/Truthcoin">Twitter</a> inquiries.</p>
+<p>I'm usually on <a href="https://twitter.com/Truthcoin">Twitter</a> 8-9 AM and 5-6 PM.</p>
 
