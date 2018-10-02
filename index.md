@@ -61,7 +61,9 @@ Drivechain allows BTC to travel to other software applications, and back. With D
 
 Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
 
-Hang out with us [here at the Drivechain Release Telegram Group](http://t.me/DcInsiders).
+Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
+
+Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/), both by [@abrkn](https://twitter.com/abrkn).
 
 ### Explainer Memes
 
