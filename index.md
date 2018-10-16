@@ -65,6 +65,12 @@ Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the 
 
 Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/), both by [@abrkn](https://twitter.com/abrkn).
 
+### Good Recent Interviews
+
+1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
+2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
+
+
 ### Explainer Memes
 
 
