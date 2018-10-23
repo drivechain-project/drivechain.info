@@ -104,11 +104,13 @@ Start the software by running "./drivenet-qt":
 
 Drivenet will create a bunch of files and directories.
 
+( You may see a message allowing you to choose the location of the drivenet files. This guide uses the default option "./drivenet". )
+
 But you will get this error message:
 
 ![image](/media/post1/9.png)
 
-Time to use the loaded_coins.dat file. Navigate to your newly-created /.drivenet/ folder:
+Time to use the loaded_coins.dat file. Navigate to your newly-created /.drivenet/ folder (by clicking into the Files window and pressing "control + L"):
 
 ![image](/media/post1/10.png)
 
@@ -126,11 +128,11 @@ While we are waiting for that, we can at least start up the sidechain.
 
 ### C. Starting up 'Sidechain One'
 
-To start up 'Sidechain One', go into the sidechain folder ("/bitcoin-0.16.99/"). And enter the /bin/ directory.
+To start up 'Sidechain One', go into the sidechain folder ("/bitcoin-0.16.99/" in these images, in later versions the folder is named "/sidechain-N-0.16.99/"). And enter the /bin/ directory.
 
 ![image](/media/post1/13.png)
 
-Open the terminal again:
+Open a second terminal, the same way as before:
 
 ![image](/media/post1/14.png)
 
@@ -154,6 +156,7 @@ First, in order to send some BTC, you'll need some BTC to send!
 
 You can get some by:
 
+* Using our [Faucet for free coins](https://drivenet-faucet.herokuapp.com).
 * Mining some ( Help > Debug window > Console > "setgenerate true"). 
 * Asking me for some [in our new telegram group](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g).
 * NOT RECOMMENDED importing your private key ( Help > Debug window > Console > "import <KEY>") NOT RECOMMENDED
