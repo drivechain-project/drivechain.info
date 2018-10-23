@@ -159,7 +159,7 @@ You can get some by:
 * Using our [Faucet for free coins](https://drivenet-faucet.herokuapp.com).
 * Mining some ( Help > Debug window > Console > "setgenerate true"). 
 * Asking me for some [in our new telegram group](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g).
-* NOT RECOMMENDED importing your private key ( Help > Debug window > Console > "import <KEY>") NOT RECOMMENDED
+* NOT RECOMMENDED claiming a UTXO that you own on the BTC network by importing your private key ( Help > Debug window > Console > "import <KEY>") NOT RECOMMENDED
 
 The last method is not recommended, because *you should never type your private key into software, unless you've checked that software very carefully*. Which, at this point, you have not. Furthermore, if you misunderstand how we have implemented replay protection, you may destroy your regular (non-drivenet) BTC funds. 
 
