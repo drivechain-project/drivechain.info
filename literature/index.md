@@ -36,9 +36,11 @@ To this, only three modifications have since been made:
 
 ### Consensus and Dissent -- July 2018 ### {#bob}
 
-Judging from the questions, very few people in the audience understood this talk.
+Judging from the questions, some people were confused by this talk.
 
-So here is a 'watching guide'. The talk is in two parts:
+So below is a 'watching guide'...
+
+The talk is about sidechains, and in two parts:
 
 I. Sidechain myths:
 
@@ -54,12 +56,13 @@ I. Sidechain myths:
 
 II. Agreeing on Consensus
 
-  1. In Bitcoin, new software releases can either be optional or mandatory. If they are optional, then LargeBlockers can solve their problems (including all scaling, blocksize, smart-contracting and protocol interoperability problems) with soft-forked extension blocks. But in our reality, their problems were not solved this way. Network upgrades have another feature, which I call ["loudness"](http://www.truthcoin.info/blog/protocol-upgrade-terminology/), which tends to make software upgrades mandatory. But, absent sidechains, such a process [contradicts Nakamoto consensus](http://www.truthcoin.info/blog/against-the-hard-fork/) and is unworkable.
+  1. In Bitcoin, new software releases can either be optional or mandatory.
+  * * If they are optional, then LargeBlockers can solve their problems (including all scaling, blocksize, smart-contracting and protocol interoperability problems) with soft-forked extension blocks. But in our reality, their problems were not solved this way. Network upgrades have another feature, which I call ["loudness"](http://www.truthcoin.info/blog/protocol-upgrade-terminology/), which tends to make software upgrades mandatory.
+  * * However, absent sidechains, such a *mandatory* process [contradicts Nakamoto consensus](http://www.truthcoin.info/blog/against-the-hard-fork/), and reduces the concept of "running your own node" to meaninglessness.
 
 [Watch it Here (41 mins)](https://www.youtube.com/watch?v=15lBZQTN-eg) 
 
 [Slides](/media/slides/consensus-and-dissent.pdf)
-
 
 
 ### Overview and Misconceptions -- January 2018
