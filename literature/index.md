@@ -45,20 +45,20 @@ The talk is about sidechains, and in two parts:
 I. Sidechain myths:
 
   1. The myth that: "sidechain can have a **negative effects** on their parent chain(s), merely by existing".
-  * * This myth relies on the premise that "miners will yield to temptation that harms their network". It is false because it conflates revenue (costless benefit) with profit (benefits net of costs).
-  * * Moreover, it is irrelevant because it has nothing to do with sidechains (it applies to any offer of money anyone could make to a miner, including state-sponsored attacks, and merged-mined *Altcoins*).
+  * This myth relies on the premise that "miners will yield to temptation that harms their network". It is false because it conflates revenue (costless benefit) with profit (benefits net of costs).
+  * Moreover, it is irrelevant because it has nothing to do with sidechains (it applies to any offer of money anyone could make to a miner, including state-sponsored attacks, and merged-mined *Altcoins*).
   2. The myth that "**miners can steal** from sidechains".
-  * * In truth, miners "can" construct the blockchain in any way they "choose", and in so doing can can redirect all circulating BTC to themselves. The source of funds (sidechains, LN-channels, or base mainchain txns) makes no significant difference.
-  * * Proponents of this myth downplay, and even stigmatize, the only relevant aspect of the question: ["what are miners motivated to do"](http://www.drivechain.info/media/meme3.png).
+  * In truth, miners "can" construct the blockchain in any way they "choose", and in so doing can can redirect all circulating BTC to themselves. The source of funds (sidechains, LN-channels, or base mainchain txns) makes no significant difference.
+  * Proponents of this myth downplay, and even stigmatize, the only relevant aspect of the question: ["what are miners motivated to do"](http://www.drivechain.info/media/meme3.png).
   3. The first myth is not only wrong, but backwards.
-  * * A sidechain's aggregate txn-fee-revenues must always exceed its aggregate node operating costs. The surplus profit, then, is converted to a higher equilibrium "security budget" (see [here](https://medium.com/coinmonks/bitcoin-security-a-negative-exponential-95e78b6b575#665a) and [here](http://www.truthcoin.info/blog/pow-and-mining/)).
-  * * So sidechain infrastructure is not only tame, but necessary. Without it, low-txn-fee Altcoins will proliferate, causing Bitcoins security budget to plummet. Mixed with Bitcoins low blocksize limit, the long-run implications are disastrous.
+  * A sidechain's aggregate txn-fee-revenues must always exceed its aggregate node operating costs. The surplus profit, then, is converted to a higher equilibrium "security budget" (see [here](https://medium.com/coinmonks/bitcoin-security-a-negative-exponential-95e78b6b575#665a) and [here](http://www.truthcoin.info/blog/pow-and-mining/)).
+  * So sidechain infrastructure is not only tame, but necessary. Without it, low-txn-fee Altcoins will proliferate, causing Bitcoins security budget to plummet. Mixed with Bitcoins low blocksize limit, the long-run implications are disastrous.
 
 II. Agreeing on Consensus
 
   1. In Bitcoin, new software releases can either be optional or mandatory.
-  * * If they are optional, then LargeBlockers can solve their problems (including all scaling, blocksize, smart-contracting and protocol interoperability problems) with soft-forked extension blocks. But in our reality, their problems were not solved this way. Network upgrades have another feature, which I call ["loudness"](http://www.truthcoin.info/blog/protocol-upgrade-terminology/), which tends to make software upgrades mandatory.
-  * * However, absent sidechains, such a *mandatory* process [contradicts Nakamoto consensus](http://www.truthcoin.info/blog/against-the-hard-fork/), and reduces the concept of "running your own node" to meaninglessness.
+  * If they are optional, then LargeBlockers can solve their problems (including all scaling, blocksize, smart-contracting and protocol interoperability problems) with soft-forked extension blocks. But in our reality, their problems were not solved this way. Network upgrades have another feature, which I call ["loudness"](http://www.truthcoin.info/blog/protocol-upgrade-terminology/), which tends to make software upgrades mandatory.
+  * However, absent sidechains, such a *mandatory* process [contradicts Nakamoto consensus](http://www.truthcoin.info/blog/against-the-hard-fork/), and reduces the concept of "running your own node" to meaninglessness.
 
 [Watch it Here (41 mins)](https://www.youtube.com/watch?v=15lBZQTN-eg) 
 
