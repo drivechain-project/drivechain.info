@@ -32,15 +32,20 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+### Modern Overviews ### {#about}
+
+These are two good interviews, each recorded *after* the DriveNET software release:
+
+1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind
+2. A [Let’s Talk Bitcoin Episode (#377)](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
+
 
 
 ### Consensus and Dissent -- July 2018 ### {#bob}
 
-Judging from the questions, some people were confused by this talk.
+Judging from the questions, some people were confused by this talk. So below is a 'watching guide'.
 
-So below is a 'watching guide'...
-
-The talk is about sidechains, and in two parts:
+The talk was about sidechains, and was in two parts:
 
 I. Sidechain myths:
 
@@ -49,7 +54,7 @@ I. Sidechain myths:
   * Moreover, it is irrelevant because it has nothing to do with sidechains (it applies to any offer of money anyone could make to a miner, including state-sponsored attacks, and merged-mined *Altcoins*).
   2. The myth that "**miners can steal** from sidechains".
   * In truth, miners "can" construct the blockchain in any way they "choose", and in so doing can can redirect all circulating BTC to themselves. The source of funds (sidechains, LN-channels, or base mainchain txns) makes no significant difference.
-  * Proponents of this myth downplay, and even stigmatize, the only relevant aspect of the question: ["what are miners motivated to do"](http://www.drivechain.info/media/meme3.png).
+  * Proponents of this myth downplay, and even stigmatize, the only relevant aspect of the question: "Why aren't miners doing this today?", in other words: ["What are miners motivated to do?"](http://www.drivechain.info/media/meme3.png).
   3. The first myth is not only wrong, but backwards.
   * A sidechain's aggregate txn-fee-revenues must always exceed its aggregate node operating costs. The surplus profit, then, is converted to a higher equilibrium "security budget" (see [here](https://medium.com/coinmonks/bitcoin-security-a-negative-exponential-95e78b6b575#665a) and [here](http://www.truthcoin.info/blog/pow-and-mining/)).
   * So sidechain infrastructure is not only tame, but necessary. Without it, low-txn-fee Altcoins will proliferate, causing Bitcoins security budget to plummet. Mixed with Bitcoins low blocksize limit, the long-run implications are disastrous.
