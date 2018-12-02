@@ -282,7 +282,9 @@ Keep in mind that, in order to use Bitcoin as money, every user must check every
 
 In my view, SHoM is too similar to an extension block. And it therefore lacks drivechain's most important features.
 
+### What about [NiPoPoW](https://twitter.com/coindesk/status/953493657042202624) by A. Kiayias and D. Zindros ? ### {#nipopow}
 
+I [tweeted my thoughts](https://twitter.com/Truthcoin/status/1060586199843135490) on this article. I am happy that the authors worked on this, but I do not think that I can use it for anything.
 
 ## 3. Usefulness ## {#usefulness}
 
