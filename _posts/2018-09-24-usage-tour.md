@@ -26,7 +26,10 @@ Follow along, and expand each image if you get lost. Or [download all the images
 
 ## 2. Getting the Drivechain Files
 
-Source code here: https://github.com/DriveNetTESTDRIVE/DriveNet
+Source code here:
+
+1. [Mainchain](https://github.com/DriveNetTESTDRIVE/DriveNet)
+2. [Sidechain One](https://github.com/drivechain-project/bitcoin/tree/sidechainBMM)
 
 The binary files (for less-technical users) are hosted on Google Drive: **[https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)**
 
