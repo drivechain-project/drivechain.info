@@ -70,6 +70,8 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
 2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
+Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain (not by me!).
+
 
 ### Explainer Memes
 
