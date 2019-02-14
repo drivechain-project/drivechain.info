@@ -134,6 +134,20 @@ Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [exp
 
 ## More Info
 
+Drivechain is made of two technologies:
+
+
+1. **Hashrate Escrow** -- A "Container UTXO" that compresses 3-6 months of blockchain data into a fixed 32-bytes.
+2. **Blind Merged Mining** -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
+
+View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
+
+Please [read the FAQ](/faq/index.html)!
+
+
+
+<!--
+  
 ### The Catch
 
 Drivechain (intentionally) offloads some message-processing to other chains, and doesn't check up on them.
@@ -150,8 +164,6 @@ This is justified by observing that, in our pre-sidechain world, miners always w
 
 There are also [situations where we'd *want* 51+% hashrate to redirect a sidechain's funds](http://www.truthcoin.info/blog/contracts-oracles-sidechains/). So it is important to ensure that, in these cases, miners actually do direct the refunds (to themselves). More on Drivechain's [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
 
-Please [read the FAQ](/faq/index.html)!
-
 
 
 ### The Box Metaphor
@@ -166,7 +178,7 @@ The lengthy multi-month delay might sound prohibitively inconvenient, but it isn
 
 The model is sound because we assume that miners are uninterested in "stealing" (see above).
 
-
+-->
 
 ### BIPs and Code Documentation
 
@@ -183,7 +195,7 @@ See also:
 
 
 
-## Benefits
+## Purpose
 
 ### Problems With Today's Mono-Chain Setup
 
