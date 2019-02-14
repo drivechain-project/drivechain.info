@@ -88,7 +88,7 @@ Miners are not customers, they are suppliers. After a certain point, what is goo
 
 Third, txn-censorship is a privacy-failure; it has nothing to do with pools or sidechains or merged mining. If Bitcoin had strong privacy, users would be protected from censorship. Adversaries could only respond by 'censoring everything'; but if they can manage that, then we are doomed in any case. 
 
-Fourth, while critics bill out merged mining as threat to Bitcoin, the reverse is probably the case: going *without* merged-mining is the bigger threat to Bitcoin. For MM is likely to be the only decentralization-preserving way to boost on-chain fee-revenues; and these need to be boosted.
+Fourth, while critics bill out merged mining as threat to Bitcoin, the reverse is probably the case: going *without* merged-mining is the bigger threat to Bitcoin. For MM is likely to be the only decentralization-preserving way to boost on-chain fee-revenues; and [these need to be boosted](http://www.truthcoin.info/blog/security-budget/).
 
 Fifth, and again most importantly, merged mining (the vanilla, non-blind version) is unblockable. There is nothing the user can do to prevent miners from doing it. And miners earn more money by doing it. So, even if we make every possible concession to Critique 2, that it is bad and that everything in it will happen, then we would just end up in a world where experimental software takes the form of Altcoins -- these would be vanilla merged mined and ultimately we would reach the same "high overhead pool" result.
 
