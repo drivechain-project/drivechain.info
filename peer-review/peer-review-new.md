@@ -4,7 +4,7 @@
 
 Visit the [old peer review page](http://www.drivechain.info/peer-review/index.html).
 
-## What the major remaining critiques of Drivechain?
+## What are the major remaining critiques of Drivechain?
 
 Most critiques have been asked-and-answered. And the overwhelming majority of people are excited about the potential. But two major critiques persist.
 
@@ -106,7 +106,7 @@ Watch: ["Drivechain: Overview and Misconceptions"](https://www.youtube.com/watch
 
 ### Dissenters
 
-I have presented these arguments several times, in various media (writing, youtube, meme, conference presentation). But, I admit, I some remain unconvinced.
+I have presented these arguments several times, in various media (writing, youtube, meme, conference presentation). But, I admit, some remain unconvinced.
 
 In the interest of honesty and full disclosure, here are some technical experts who still endorse Critique #1:
 
