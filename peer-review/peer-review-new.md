@@ -110,29 +110,29 @@ I have presented these arguments several times, in various media (writing, youtu
 
 In the interest of honesty and full disclosure, here are some technical experts who still endorse Critique #1:
 
-Peter Todd ([Feb 2019](https://cryptodaily.co.uk/2019/02/peter-todd-explains-why-mimblewimble-should-not-be-implemented-as-bitcoin-sidechain))
-Giacomo Zucco ([Jan 2019](https://twitter.com/giacomozucco/status/1090720661696364558))
-Jimmy Song (["at least a little bit"](https://www.youtube.com/watch?v=-Re9xVzmYeI))
-Gregory Maxwell ([July 2017](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-July/014726.html))
+* Peter Todd ([Feb 2019](https://cryptodaily.co.uk/2019/02/peter-todd-explains-why-mimblewimble-should-not-be-implemented-as-bitcoin-sidechain))
+* Giacomo Zucco ([Jan 2019](https://twitter.com/giacomozucco/status/1090720661696364558))
+* Jimmy Song (["at least a little bit"](https://www.youtube.com/watch?v=-Re9xVzmYeI))
+* Gregory Maxwell ([July 2017](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-July/014726.html))
 
 
 
 And here are those who endorse Critique #2:
 
 
-Peter Todd ([Feb 2019](https://cryptodaily.co.uk/2019/02/peter-todd-explains-why-mimblewimble-should-not-be-implemented-as-bitcoin-sidechain))
-Andrew Poelstra / Gregory Maxwell ([Dec 2018](https://youtu.be/NA1xSe2nLoY?t=5635))
-Matt Corallo (Oct 2016)
+* Peter Todd ([Feb 2019](https://cryptodaily.co.uk/2019/02/peter-todd-explains-why-mimblewimble-should-not-be-implemented-as-bitcoin-sidechain))
+* Andrew Poelstra / Gregory Maxwell ([Dec 2018](https://youtu.be/NA1xSe2nLoY?t=5635))
+* Matt Corallo (Oct 2016)
 
 
 ### Wall of Fame
 
 Notable people who never fell for either mistake, or who came around:
 
-Person 1 (May 2017)
-Person 2 (June 2017)
-Person 3 (June 2018)
-Person 4 (Feb 2019)
+* Person 1 (May 2017)
+* Person 2 (June 2017)
+* Person 3 (June 2018)
+* Person 4 (Feb 2019)
 
 ( Names blanked out temporarily, and mixed in below. )
 
@@ -140,31 +140,31 @@ Person 4 (Feb 2019)
 
 People whose opinion on Drivechain we don't know (please tell us!), plus the four people above:
 
-Adam Back
-Bryan Bishop
-Luke Dashjr
-฿tcDrak
-Andrew Chow
-Christian Decker
-Nicolas Dorier
-Thaddeus Dryja
-Johnson Lau
-Eric Lombrozo
-Jameson Lopp
-Cory Fields
-Mark Freidenbach
-Alex Morcos
-John Newbery
-Laolu "roasbeef" Osuntokun
-Joseph Poon
-Jeremy Rubin
-Rusty Russell
-Gregory Sanders
-Jonas Schnelli
-Patrick Strateman
-Amir Taaki
-Warren Togami
-Wladimir van der Laan
-Pieter Wuille
+* Adam Back
+* Bryan Bishop
+* Luke Dashjr
+* ฿tcDrak
+* Andrew Chow
+* Christian Decker
+* Nicolas Dorier
+* Thaddeus Dryja
+* Johnson Lau
+* Eric Lombrozo
+* Jameson Lopp
+* Cory Fields
+* Mark Freidenbach
+* Alex Morcos
+* John Newbery
+* Laolu "roasbeef" Osuntokun
+* Joseph Poon
+* Jeremy Rubin
+* Rusty Russell
+* Gregory Sanders
+* Jonas Schnelli
+* Patrick Strateman
+* Amir Taaki
+* Warren Togami
+* Wladimir van der Laan
+* Pieter Wuille
 
 Message me if there is an error in the list. Or an omission.
