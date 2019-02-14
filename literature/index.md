@@ -41,6 +41,13 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 
 
 
+### TabConf 2019 ### {#tab-2019}
+
+I give an update on the state of Drivechain Peer Review. I also attempt to describe "leeching" --how different chains can attack each other-- and how Drivechain is the only thing that prevents it.
+
+* [Slides](/media/slides/tab-2019.pdf)
+* Video (coming soon)
+
 ### Consensus and Dissent -- July 2018 ### {#bob}
 
 Judging from the questions, some people were confused by this talk. So below is a 'watching guide'.
