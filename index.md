@@ -72,6 +72,9 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 
 Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain (not by me!).
 
+### Critiques and Controversy
+
+View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 ### Explainer Memes
 
@@ -131,16 +134,12 @@ Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [exp
 
 
 
-
 ## More Info
 
 Drivechain is made of two technologies:
 
-
 1. **Hashrate Escrow** -- A "Container UTXO" that compresses 3-6 months of blockchain data into a fixed 32-bytes.
 2. **Blind Merged Mining** -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
-
-View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 Please [read the FAQ](/faq/index.html)!
 
