@@ -15,7 +15,7 @@ They boil down to the following:
 
 It is somewhat distressing that these critiques remain, because both of them are completely false. Each is a complex blend of false premises, self-contradiction, ignoratio elenchi, and even outright deception. For each, there is so much to say, about how wrong they are, that --when I am speaking in person-- I often trip myself up by trying to articulate all of them at once.
 
-### 1. Does drivechain allow miners to steal funds?
+### 1. Does drivechain allow miners to steal funds? ### {#1}
 
 Short Answer: This seemingly innocuous question is [very misleading](https://english.stackexchange.com/questions/261148/whats-the-term-for-fallaciously-including-an-assumption-in-a-question?noredirect=1&lq=1) -- it is a bit like asking "Does the free market allow entrepreneurs to go bankrupt?". If an entrepreneur is servicing their customers poorly, then they should, and will, go bankrupt.
 
@@ -50,7 +50,7 @@ Consumer sovereignty is a basic principle of Bitcoin. Users are allowed to handl
 Those who say otherwise have simply betrayed the liberty movement and the free software movement.
 
 
-### 2. Does Drivechain increase the risk of txn-censorship by giving economic advantages to large pools, making them inevitable; while simultaneously making large pools less anonymous and more susceptible to coercion?
+### 2. Does Drivechain increase the risk of txn-censorship by giving economic advantages to large pools, making them inevitable; while simultaneously making large pools less anonymous and more susceptible to coercion? ### {#2}
 
 Short Answer: No.
 
