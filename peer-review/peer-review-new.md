@@ -43,7 +43,7 @@ In other words, if a particular sidechain is holding Bitcoin's exchange rate dow
 
 Fourth, the very idea of "can" (in the phrase "miners can steal") is a complete misrepresentation of how Bitcoin works. In a naive sense, miners can always steal BTC, whether it is on drivechains on the mainchain or even in LN-channels. This is because miners control the contents of The Blockchain absolutely. But the true question has always been: "will" miners steal. And, in answering it, we have always relied on *theories* about miners' choices, motivations, and behavior. We then apply these theories to a given design -- in vanilla Bitcoin, we observe that miners must make choices and pay their costs in advance, are next held hostage for a while, and are then ultimately paid out by the protocol *in BTC*. 
 
-The purport of this "can"-language, I think, is to imply --falsely-- that the Drivechain design puts user's BTC into immediately risk of being easily claimed by miners in the very next block. And, therefore, that I am being naive in assuming that miners will not do this! But the truth is that I built features into Drivechain (especially the slow, transparent, high-effort withdrawal process), that I assume will convince *profit-maximizing* miners that harvesting the sidechains (for their txn-fees and value-boosting properties) is more lucrative than devouring them.
+The purport of this "can"-language, I think, is to imply --falsely-- that the Drivechain design puts user's BTC into immediate risk of being easily claimed by miners in the very next block. And, therefore, that I am being naive in assuming that miners will not do this! But the truth is that I built features into Drivechain (especially the slow, transparent, high-effort withdrawal process), that I assume will convince *profit-maximizing* miners that harvesting the sidechains (for their txn-fees and value-boosting properties) is more lucrative than devouring them.
 
 Fifth, and most important, the argument only applies to BTC that users have deposited to a sidechain! Non-sidechain funds are completely unaffected by sidechains, of course.
 
@@ -86,9 +86,9 @@ And it gets worse. Consider that the fees that are *first* to be censored would 
 
 Second, as with the "miners can steal" language, this critique is grounded in poor Bitcoin Philosophy. Critics intentionally conflate "node centralization" and "miner centralization", in the hopes that, by reusing a word, the audience can be tricked into thinking that the two concepts are similar to each other. In reality they have nothing to do with each other. Node centralization (the [real one](http://www.truthcoin.info/blog/measuring-decentralization/)) makes life harder for the user, and is self-evidently bad.
 
-But with mining it is a different story. While "mining", the process, is the core element of Bitcoin's design, the mere act of "finding a block" is utterly neutral. If this block contributes to the longest chain, it is good; if it contributes to a reorg chain, then it is bad. So if we make mining "easier", we also make attacking Bitcoin easier. And in fact, when the difficult adjusts upwards, there is cheering and applause (as there was with the SegWit UASF).
+But with mining it is a different story. While "mining", the process, is the core element of Bitcoin's design, the mere act of "finding a block" is utterly neutral. If this block contributes to the longest chain, it is good; if it contributes to a reorg chain, then it is bad. So if we make mining "easier", we also make attacking Bitcoin easier. And in fact, when the difficultly adjusts upwards, there is cheering and applause (as there was with the SegWit UASF).
 
-Miners are not customers, they are suppliers. After a certain point, what is good for one is *bad* for the other. One example is "forced teamwork in the name of efficiency", aka "mining centralization" -- it is inconvenient for miners...but good for users.
+Miners are not customers, they are suppliers. After a certain point, what is good for one is *bad* for the other. For example: "forced teamwork in the name of efficiency" (aka "mining centralization") is inconvenient for miners...but good for users.
 
 Third, txn-censorship is a privacy-failure; it has nothing to do with pools or sidechains or merged mining. If Bitcoin had strong privacy, users would be protected from censorship. Adversaries could only respond by 'censoring everything'; but if they can manage that, then we are doomed in any case. 
 
@@ -171,4 +171,7 @@ People whose opinion on Drivechain we don't know (please tell us!), plus the fou
 * Wladimir van der Laan
 * Pieter Wuille
 
-Message me if there is an error in the list. Or an omission.
+### See Also
+
+* (forthcoming) [Why Drivechain is Hard to Understand](/link-forthcoming/) -- Strange quirks of DC that make it different from previous soft forks of Bitcoin.
+* (forthcoming) [Conflicts of Interest](/link-forthcoming/) -- Almost everyone who could peer review drivechain, stands to lose a lot of money if it succeeds.
