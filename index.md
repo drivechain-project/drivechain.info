@@ -57,13 +57,9 @@ div.desc {
 
 
 
-Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc. 
+Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc.
 
-Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
-
-Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
-
-Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
+In other words, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors. 
 
 ### Good Recent Interviews
 
@@ -71,6 +67,14 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
 Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain (not by me!).
+
+### Getting Started
+
+Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
+
+Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
+
+Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
 
 ### Critiques and Controversy
 
