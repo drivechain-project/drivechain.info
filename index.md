@@ -59,7 +59,7 @@ div.desc {
 
 Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc.
 
-In other words, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors. 
+Among other things, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors. 
 
 ### Good Recent Interviews
 
