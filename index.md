@@ -142,8 +142,8 @@ View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/p
 
 Drivechain is made of two technologies:
 
-1. **Hashrate Escrow** -- A "Container UTXO" that compresses 3-6 months of blockchain data into a fixed 32-bytes.
-2. **Blind Merged Mining** -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
+1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/pull/642) -- "Container UTXOs" that compress 3-6 months of blockchain data into a fixed 32-bytes.
+2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/pull/643) -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
 
 Please [read the FAQ](/faq/index.html)!
 
@@ -183,6 +183,9 @@ The model is sound because we assume that miners are uninterested in "stealing" 
 
 -->
 
+
+<!--
+  out of date / in-flux; removed temporarily
 ### BIPs and Code Documentation
 
 Drivechain is so big it actually fits into two BIPs over three files:
@@ -193,9 +196,10 @@ Drivechain is so big it actually fits into two BIPs over three files:
 
 See also:
 
-* BIP pull requests, [#642](https://github.com/bitcoin/bips/pull/642) and [#643](https://github.com/bitcoin/bips/pull/643).
+* BIP pull requests, [#642]() and [#643](https://github.com/bitcoin/bips/pull/643).
 * The ["big diff"](https://github.com/drivechain-project/diff) (our code changes from Bitcoin Core) -- now broken down by [[ignorable] UI changes](/media/mainchainUIDIFF.html) and [[important] non-UI](/media/mainchainBMMDIFF.html).
 
+-->
 
 
 ## Purpose
