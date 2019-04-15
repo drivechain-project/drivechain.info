@@ -7,8 +7,8 @@ title: Releases
 
 Includes: 
 
-* DriveNet-21
-* testchain-2
+* DriveNet-22
+* testchain-3
 
 Link here: [https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
 
