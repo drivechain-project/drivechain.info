@@ -27,6 +27,22 @@ This is new/unstable software assume that it is a virus that will set your compu
 
 ## Selected Release Notes
 
+### DriveNet-22 -- April 15, 2019
+
+DriveNet-22 and testchain-3. 
+
+We are resetting / starting with a new blockchain. You need to clear out both your DriveNet (~/.drivenet) and testchain (~/.testchain) data directories to use the new version. No sidechains will be active when you first start up DriveNet-qt.
+
+* Sidechain activation period lowered to 256 blocks with a maximum failure count of 64; for faster / more testing.
+
+Bug fixes and improvements to BMM including:
+
+* Add 4 bytes of the previous sidechain block hash to BMM request. In addition to the sidechain number and some identifying bytes, BMM requests now include 4 bytes of the previous sidechain block hash.
+* Add optional signalling of WT^ hash in sidechain block headers. Added a WT^ hash field to sidechain block headers, for signalling the current WT^ that the mainchain should be voting on.
+* Fixed issue where BMM / critical data transaction fee outputs were not being collected by the miner. If you mine a block that includes these transactions, you will receive the fees at the same address as the coinbase payout.
+* Fixed issue with depositing to a sidechain after a WT^ payout has happened on that sidechain. Fix WT^ spend tracking, update CTIP properly. 
+
+
 ### DriveNet-21 -- April 8, 2019
 
 Bugfixes and Cleanup
