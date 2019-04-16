@@ -56,17 +56,20 @@ div.desc {
 
 
 
-
 Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc.
 
-Among other things, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors. 
+Among other things, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors.
 
-### Good Recent Interviews
+### Selected Recent Interviews
 
 1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
 2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
-Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), an [explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain (not by me!).
+Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain.
+
+### Critiques and Controversy
+
+View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 ### Getting Started
 
@@ -75,10 +78,6 @@ Go [here for a guide on **downloading and using this software**](http://www.driv
 Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
 
 Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
-
-### Critiques and Controversy
-
-View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 ### Explainer Memes
 
@@ -137,17 +136,14 @@ View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/p
 <div class="clearfix"></div>
 
 
+### More Info
 
-## More Info
-
-Drivechain is made of two technologies:
+Drivechain is made of two BTC soft-forks:
 
 1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/pull/642) -- "Container UTXOs" that compress 3-6 months of blockchain data into a fixed 32-bytes.
 2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/pull/643) -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
 
 Please [read the FAQ](/faq/index.html)!
-
-
 
 <!--
   
@@ -202,7 +198,7 @@ See also:
 -->
 
 
-## Purpose
+## Even More Info
 
 ### Problems With Today's Mono-Chain Setup
 
