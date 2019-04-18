@@ -130,9 +130,9 @@ In a different time, this nuance would be easier to understand. But instead we l
 
 Blockstream markets their Liquid product as "the first production sidechain":
 
-But something in that phrase has to be false. Either [Liquid isn't a sidechain; or else (if sidechain is redefined) then Liquid isn't "the first" of that thing](www.drivechain.info/blog/liquid).
+But something in that phrase has to be false. Either [Liquid isn't a sidechain; or else (if sidechain is redefined) then Liquid isn't "the first" of that thing](http://www.drivechain.info/blog/liquid/).
 
-The problem, is that --in order to actually launch [my real project](www.BitcoinHivemind.com)-- I inadvertently need to create the Real First Bitcoin Prodution Sidechain. So, while I would much prefer to avoid contradicting Blockstream, in practice this is not possible. There's just no way to tell the truth about Drivechain without contradicting Blockstream.
+The problem, is that --in order to actually launch [my real project](http://www.bitcoinhivemind.com/)-- I inadvertently need to create the Real First Bitcoin Prodution Sidechain. So, while I would much prefer to avoid contradicting Blockstream, in practice this is not possible. There's just no way to tell the truth about Drivechain without contradicting Blockstream.
 
 Blockstream is extremely popular, and has a lot of money to award in acquisitions, consulting revenues, conference sponsorships, and sinecure jobs. And I do not give out such awards. So, the people who agree with them, shout it very loudly, and the people who agree with me, keep quiet about it for political reasons.
 
@@ -168,9 +168,15 @@ Notice also that this process was accompanied by similar misunderstandings:
     which the software had already decided was valid
 -->
 
+<!--
 
 ## Conclusion
 
 Drivechain was published in Nov 2015, but misunderstandings about it persist to this day. Nearly all of these were anticipated (and dealt with) in the original post.
 
 So it is worth asking why these misunderstandings persist. Above, I have listed some reasons why they might.
+--->
+
+--------
+
+### Footnotes
