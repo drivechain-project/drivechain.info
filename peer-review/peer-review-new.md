@@ -1,4 +1,4 @@
-
+﻿
 ## Peer Review (and Drivechain Controversies)
 
 
@@ -173,5 +173,5 @@ People whose opinion on Drivechain we don't know (please tell us!), plus the fou
 
 ### See Also
 
-* (forthcoming) [Why Drivechain is Hard to Understand](/link-forthcoming/) -- Strange quirks of DC that make it different from previous soft forks of Bitcoin.
+* [Why Drivechain is Hard to Understand](http://www.drivechain.info/blog/hard-to-understand/) -- Strange quirks of DC that make it different from previous soft forks of Bitcoin.
 * (forthcoming) [Conflicts of Interest](/link-forthcoming/) -- Almost everyone who could peer review drivechain, stands to lose a lot of money if it succeeds.
