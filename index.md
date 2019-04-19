@@ -64,7 +64,7 @@ Key benefits -- *only* obtainable via Drivechain:
 * BTC development becomes anti-fragile with respect to [CoreDev mistakes](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
 * BTC maintains [hashrate security in the long run](http://www.truthcoin.info/blog/security-budget/).
 * BTC can [scale to credit-card level txn-processing](http://www.truthcoin.info/blog/gigachain/) -- **without changing the [CONOP](http://www.truthcoin.info/blog/measuring-decentralization/) of Bitcoin Core**. These cheap txns have [optimal fungibility](http://www.truthcoin.info/blog/deniability/) and [supply vital pretext](http://www.truthcoin.info/blog/expensive-privacy/#3-applied-to-bitcoin-itself) to the BTC ecosystem. 
-* BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially the ability to [combat poverty, death, injustice and civil unrest on a global scale](http://bitcoinhivemind.com/).
+* BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
 
 
 ### Selected Recent Interviews
