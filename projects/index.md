@@ -28,25 +28,31 @@ Forged in the Chamber of Secrets by the Dark Lord himself, this hyper-specialize
 [Link.](https://download.wpsoftware.net/bitcoin/wizardry/mimblewimble.txt)
 [Link.](https://github.com/ignopeverell/grin)
 
-### 4. Rootstock
+### 4. Liquid
+
+Blockstream's exchange-centric project, supporting: digital asset issuance, confidential transactions/confidential assets, and rapid confirmations.
+
+[Link.](https://elementsproject.org/)
+
+### 5. Rootstock
 
 A reimplementation of Ethereum, led by Bitcoin veteran and world-class security researcher Sergio Demian Learner. Has less self-deception than Ethereum, and less dream-selling, but has more "actual work" and professional ethics.
 
 [Link.](http://www.rsk.co/)
 
-### 5. The Elements Project
+### 6. The Elements Project
 
 Blockstream's Labratory. Where extremely technical (and highly ambitious) features are tested before they make their way to Bitcoin Core.
 
 [Link.](https://elementsproject.org/)
 
-### 6. SiaCoin
+### 7. SiaCoin
 
 A P2P Dropbox. Matches users who want to back up files, to users with unused hard drive space. Sortof an "AirBnB" of hard drive space.
 
 [Link.](https://sia.tech/)
 
-### 7. Bitcoin Codex
+### 8. Bitcoin Codex
 
 A re-design of Namecoin as a sidechain. Has the potential to greately improve internet safety, privacy, and reliability.
 
@@ -57,26 +63,26 @@ A re-design of Namecoin as a sidechain. Has the potential to greately improve in
 
 These are great projects, whose codebase we might use as a sidechain of Bitcoin.
 
-### 8. Monero
+### 9. Monero
 
 Uses ring signatures for greater transaction privacy, at the chain level.
 
 [Link.](https://getmonero.org/)
 
-### 9. Zcash
+### 10. Zcash
 
 This project uses zk-snarks for extreme privacy. In fact it's so private that no one really understands what's going on in here.
 
 [Link.](https://z.cash/)
 
-### 10. Original Ripple
+### 11. Original Ripple
 
 [Link.](https://bitcointalk.org/index.php?topic=297287.0)
 
 Original Ripple allowed users to extend credit to their friends, and for that credit to then be extended to friends-of-friends in a big trust network.
 
 
-### 11. BitMessage
+### 12. BitMessage
 
 A P2P message system emphasizing privacy. With BTC fees, we might have a solution to the problem of e-mail spam. We could then break Google's hold over our entire communications infrastructure (and password-reset infrastructure). Perhaps even LinkedIn and even Facebook would end up disrupted.
 
@@ -84,13 +90,13 @@ A P2P message system emphasizing privacy. With BTC fees, we might have a solutio
 
 Edit: I think this particular use would [not require drivechain per se](https://twitter.com/Truthcoin/status/935670042141908993).
 
-### 12. Counterparty
+### 13. Counterparty
 
 Digital asset market, with P2P trades. These assets are usually for games, or collectables, but they *may* also be backed by TTPs to enable ‘stocks on the blockchain’, 'gold on the blockchain', 'airline miles'.
 
 [Link.](http://counterparty.io/)
 
-### 13. DropZone
+### 14. DropZone
 
 Physical contraband market. Currently the production version uses Bitcoin Testnet for messages. A sidechain might be more stable, and might allow for the system to automatically confirm that BTC payments have taken place.
 

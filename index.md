@@ -58,7 +58,14 @@ div.desc {
 
 Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc.
 
-Among other things, it allows BTC (the coin) to automatically recover from Product-Market-Fit errors.
+Key benefits -- *only* obtainable via Drivechain:
+
+* Two existential threats to BTC are neutralized -- [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) campaigns, and [altcoin-competition](http://www.drivechain.info/faq/#alt-death).
+* BTC development becomes anti-fragile with respect to [CoreDev mistakes](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
+* BTC maintains [hashrate security in the long run](http://www.truthcoin.info/blog/security-budget/).
+* BTC can [scale to credit-card level txn-processing](http://www.truthcoin.info/blog/gigachain/) -- **without changing the [CONOP](http://www.truthcoin.info/blog/measuring-decentralization/) of Bitcoin Core**. These cheap txns have [optimal fungibility](http://www.truthcoin.info/blog/deniability/) and [supply vital pretext](http://www.truthcoin.info/blog/expensive-privacy/#3-applied-to-bitcoin-itself) to the BTC ecosystem. 
+* BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
+
 
 ### Selected Recent Interviews
 
@@ -202,7 +209,7 @@ See also:
 
 ### Problems With Today's Mono-Chain Setup
 
-* Blockchain technology has **economic tradeoffs**, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time.
+* Blockchain technology has **economic tradeoffs**, and [users disagree](https://www.reddit.com/r/btc/comments/4zqd7g/roger_ver_does_your_bitcoin_classic_pool_on/d6yk872/?context=10000) over the optimal tradeoff. But only one group can have their way at a time. Instead we need multiple heterogenous layers ([Satoshi](https://bitcointalk.org/index.php?topic=1790.msg28917#msg28917), [Finney](https://bitcointalk.org/index.php?topic=2500.msg34211#msg34211)).
 * Bitcoin [investors](https://bitcointalk.org/index.php?topic=375643.0) must worry about **competition** from other projects (Ethereum, Z-Cash, Ripple).
 * Satoshi, creator of Bitcoin, [wanted to support many transaction types](http://satoshi.nakamotoinstitute.org/posts/bitcointalk/126/#selection-21.69-21.214), but knew that his design was **prohibitively inflexible**.
 * Bitcoin is supposed to be used as [money](http://nakamotoinstitute.org/shelling-out/), but if it cannot be used on some networks, it is **constrained** as a medium of exchange -- and therefore at a competitive disadvantage.
