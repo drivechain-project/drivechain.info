@@ -121,7 +121,7 @@ Drivechain was published in Nov 2015, and I presented it at Scaling III (Oct 201
 
 For better or for worse, they succeeded. Any talk of cooperating with miners quickly became passé, and it instead became fashionable to view miners with hatred and fear, to regard them as enemies of Bitcoin, and to dismiss them as being --not merely tame (as had previously been said), but-- pitiably inconsequential to anything
 
-Drivechain grants miners some agency, especially in the creation/deletion of new sidechains. This is often interpreted as 'giving power to miners'. But it does not "give" power from one group to another; it creates power ex nihilo. After all, there are currently zero sidechains, and no way to create any. Furthermore, the created powers disable older more dangerous powers (such as miner-sourced hard-fork-campaigns unnecessary). And since mining is brutally competitive, they are less powers, and more "burdensome responsibilities" -- like switching a class over from pass/fail to letter grades.
+Drivechain grants miners some agency, especially in the creation/deletion of new sidechains. This is often interpreted as 'giving power to miners'. But it does not "give" power from one group to another; it creates power ex nihilo. After all, there are currently zero sidechains, and no way to create any. Furthermore, the created powers disable older more dangerous powers (such as miner-sourced hard-fork-campaigns unnecessary). And since mining is brutally competitive, they are less powers, and more "burdensome responsibilities" -- like switching an overachieving class from 'pass/fail' to 'letter grades' (groan!).
 
 In a different time, this nuance would be easier to understand. But instead we live in the time of "miners are bad NPCs cheer".
 
