@@ -91,15 +91,6 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 ### Explainer Memes
 
 
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme0.png">
-      <img src="/media/meme0.png" alt="meme0" width="400" height="200">
-    </a>
-  
-  </div>
-</div>
 
 <div class="responsive">
   <div class="gallery">
@@ -131,6 +122,7 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
   </div>
 </div>
 
+<!--
 <div class="responsive">
   <div class="gallery">
   
@@ -141,6 +133,8 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
   </div>
 </div>
 
+-->
+
 <div class="responsive">
   <div class="gallery">
   
@@ -148,6 +142,16 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
       <img src="/media/meme5.png" alt="meme5" width="300" height="200">
     </a>
 	
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme0.png">
+      <img src="/media/meme0.png" alt="meme0" width="400" height="200">
+    </a>
+  
   </div>
 </div>
 
