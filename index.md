@@ -56,12 +56,14 @@ div.desc {
 
 
 
-Drivechain allows BTC to travel to other software applications, and back. With DC, Bitcoin-owners can use their BTC on Ethereum-clones, BCH-clones, Monero-clones, etc.
+Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Bitcoin Core nodes never need to care what any sidechain is doing, but BTC-owners can opt-in to new features or tradeoffs.
+
+Sidechain-deposits are instant and zero-trust. Withdrawals are hashrate-controlled and arbitrary, but rate-limited (1 per 92 days) and audit-able (compressed to 32 bytes). Sidechain users can sell their default risk using atomic swaps -- also instant and zero-trust.
 
 Key benefits -- *only* obtainable via Drivechain:
 
-* Two existential threats to BTC are neutralized -- [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) campaigns, and [altcoin-competition](http://www.drivechain.info/faq/#alt-death).
-* BTC development becomes anti-fragile with respect to [CoreDev mistakes](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
+* Three existential threats to BTC are neutralized -- [altcoin-competition](http://www.drivechain.info/faq/#alt-death), [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) [campaigns](https://www.coindesk.com/bitcoins-bogeyman-cometh-segwit2x-51-attack), and [extension block](http://www.drivechain.info/faq/#ext-blocks) [campaigns](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
+* BTC development becomes anti-fragile with respect to CoreDev mistakes.
 * BTC maintains [hashrate security in the long run](http://www.truthcoin.info/blog/security-budget/).
 * BTC can [scale to credit-card level txn-processing](http://www.truthcoin.info/blog/gigachain/) -- **without changing the [CONOP](http://www.truthcoin.info/blog/measuring-decentralization/) of Bitcoin Core**. These cheap txns have [optimal fungibility](http://www.truthcoin.info/blog/deniability/) and [supply vital pretext](http://www.truthcoin.info/blog/expensive-privacy/#3-applied-to-bitcoin-itself) to the BTC ecosystem. 
 * BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
@@ -89,6 +91,15 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 ### Explainer Memes
 
 
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme0.png">
+      <img src="/media/meme0.png" alt="meme0" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
 
 <div class="responsive">
   <div class="gallery">
