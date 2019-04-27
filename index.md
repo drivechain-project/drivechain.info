@@ -56,7 +56,7 @@ div.desc {
 
 
 
-Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Bitcoin Core nodes never need to care what any sidechain is doing, but BTC-owners can opt-in to new features or tradeoffs.
+Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Bitcoin Core nodes never need to care what any sidechain is doing.
 
 Sidechain-deposits are instant and zero-trust. Withdrawals are hashrate-controlled and arbitrary, but rate-limited (1 per 92 days) and audit-able (compressed to 32 bytes). Sidechain users can sell their default risk using atomic swaps -- also instant and zero-trust.
 
