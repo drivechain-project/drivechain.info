@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Literature
 ---
@@ -45,7 +45,7 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 Basic 20 minute overview of Drivechain, with a comparison to the Lightning Network.
 
 * [Slides](/media/slides/construct-2019.pdf)
-* [Transcript](/media/slides/construct-2019-speech.docx)
+* [Transcript](/media/slides/construct-2019-speech.pdf)
 * Video (coming soon)
 
 
