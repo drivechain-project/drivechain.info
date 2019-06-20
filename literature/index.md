@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Literature
 ---
@@ -40,13 +40,23 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 2. A [Let’s Talk Bitcoin Episode (#377)](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
 
+### Construct 2019 (at Consensus NYC) ### {#consensus-2019}
+
+Basic 20 minute overview of Drivechain, with a comparison to the Lightning Network.
+
+* [Slides](/media/slides/construct-2019.pdf)
+* [Transcript](/media/slides/construct-2019-speech.pdf)
+* Video (coming soon)
+
+
 
 ### TabConf 2019 ### {#tab-2019}
 
 I give an update on the state of Drivechain Peer Review. I also attempt to describe "leeching" --how different chains can attack each other-- and how Drivechain is the only thing that prevents it.
 
 * [Slides](/media/slides/tab-2019.pdf)
-* Video (coming soon)
+* [Video](https://www.youtube.com/watch?v=uJSWSTEDOF0)
+* Bonus: [Me on a panel](https://www.youtube.com/watch?v=V3cvH2eWqfU).
 
 ### Consensus and Dissent -- July 2018 ### {#bob}
 
