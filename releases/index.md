@@ -7,8 +7,10 @@ title: Releases
 
 Includes: 
 
-* DriveNet-22
-* testchain-3
+* DriveNet-24
+* loaded-coins file
+* (No sidechain-template release for this version, yet)
+
 
 Link here: [https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
 
@@ -26,6 +28,41 @@ The GitHub links are here:
 This is new/unstable software assume that it is a virus that will set your computer on fire then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
 ## Selected Release Notes
+
+### DriveNet24 -- June 12, 2019
+
+"Beta Release"
+
+Important:
+
+You will need to move loaded_coins_drivenet_0_24_00.dat into your data directory and rename it loaded_coins.dat
+
+example: cp loaded_coins_drivenet_0_24_00.dat ~/.drivenet/loaded_coins.dat
+
+Updates include:
+
+  * The re-activation of loaded coins for testing. Only the first few releases imported a UTXO set (in those cases the entire bitcoin core UTXO set) before we turned it off due to some bugs and the large  setup / import time.
+
+In this version we have a loaded coins UTXO set with a few outputs for beta testers to use. There are no UTXOs from bitcoin core for the beta. If you would like one of the limited testing outputs (1,000 testnet coins) just ask.
+
+* Loaded coins bug fixes:
+* * Correctly handle spent status of loaded coins when a block is disconnected for a reorg etc. This is different than a normal UTXO as the transaction which created the UTXO doesn't actually exist in any of the blocks we rewind.
+* * Fix pointer bug that would cause errors during shutdown after importing a private key that owns a loaded coin UTXO.
+* Fix sidechain database synchronization issues during startup sometimes caused by VerifyDB()
+* Fix sidechain database and sidechain activation bugs during reindexing
+* Fix bugs in IsBMMRequest
+* Fix SCDB sync bugs during init
+* Refactoring, comments updated, more debug logging added, add a ton of unit tests
+* If you do run into an issue, you should be able to fix anything now simply by reindexing (./drivenet-qt —reindex)
+
+
+### DriveNet-23 -- April 25, 2019
+
+New Stuff:
+
+* "beta" version of **GUI themes**. Settings->Options->Display : Theme (dropdown selection box)
+* No need to delete any of your existing data.
+
 
 ### DriveNet-22 -- April 15, 2019
 
