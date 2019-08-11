@@ -112,38 +112,7 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
   </div>
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme3.png">
-      <img src="/media/meme3.png" alt="meme3" width="100" height="500">
-    </a>
-	
-  </div>
-</div>
 
-<!--
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme4.png">
-      <img src="/media/meme4.png" alt="meme4" width="300" height="200">
-    </a>
-	
-  </div>
-</div>
-
--->
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme5.png">
-      <img src="/media/meme5.png" alt="meme5" width="300" height="200">
-    </a>
-	
-  </div>
-</div>
 
 <div class="responsive">
   <div class="gallery">
@@ -177,6 +146,44 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
   
   </div>
 </div>
+
+
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme3.png">
+      <img src="/media/meme3.png" alt="meme3" width="100" height="500">
+    </a>
+	
+  </div>
+</div>
+
+<!--
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme4.png">
+      <img src="/media/meme4.png" alt="meme4" width="300" height="200">
+    </a>
+	
+  </div>
+</div>
+
+-->
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme5.png">
+      <img src="/media/meme5.png" alt="meme5" width="300" height="200">
+    </a>
+	
+  </div>
+</div>
+
+
 
 
 
