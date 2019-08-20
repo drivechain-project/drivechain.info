@@ -3,31 +3,65 @@ layout: page
 title: Releases
 ---
 
+
 ## Latest Version
 
 Includes: 
 
-* DriveNet-24
-* loaded-coins file
-* (No sidechain-template release for this version, yet)
-
+* DriveNet-25 ( DriveNet-0.25.00-x86_64-linux-gnu.tar.gz )
+* loaded-coins file ( loaded_coins_590000.tar.gz )
+* (sidechain-template coming soon)
 
 Link here: [https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
+
+
+GitHub links: 
+
+* [DriveNet](https://github.com/DriveNetTESTDRIVE/)
+* [TestChain](https://github.com/drivechain-project/bitcoin/tree/sidetests)
+* [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
+
+
+## How to Run
+
+1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
+2. Download DriveNet-0.25.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+3. Start DriveNet-25. It will create some directories, give an error message about loaded coins, then exit.
+4. Download loaded_coins_590000.tar.gz, verify sha256, extract.
+5. Move loaded_coins_590000.dat to ~/.drivenet/loaded_coins.dat
+6. Start DriveNet-25 again. It will install the UTXO set into your node (~10 minutes).
+
+Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collect coins.
+
+
 
 ## FAQ
 
 ### Why is this on Google Drive?
 
-Because we also host a 4 GB file (of BTC's UTXOs) there, for "importing". And we haven't switched back yet.
-
-The GitHub links are here: 
-
-* [DriveNet](https://github.com/DriveNetTESTDRIVE/)
-* [TestChain](https://github.com/drivechain-project/bitcoin/tree/sidechainBMM)
+Because we also host a 4 GB file (of BTC's UTXOs) there, for "importing".
 
 This is new/unstable software assume that it is a virus that will set your computer on fire then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
 ## Selected Release Notes
+
+### DriveNet25 -- August 20, 2019
+
+BTC UTXOs shapshot at block #590,000. In many ways, this software acts as if it hard forked from BTC on August 14th. [Ask us](http://www.t.me/DcInsiders) for testnet coins!
+
+* New integration script: https://github.com/CryptAxe/DriveChainIntegration
+* * Just run ./drivechainintegration.sh , and the script will clone, build, and then run DriveNet, activate a sidechain, deposit to and withdraw from the sidechain. It's just a basic test for now, and the script could use some refactoring already but if you're feeling adventurous you can give it a try. You'll need all of the bitcoin dependencies as this will actually compile the software. I have them listed here: https://github.com/CryptAxe/Setup/blob/master/setup.sh
+* Major improvements to sidechain template. To make it easier for other people to create new sidechains.
+* Superior automation -- nearly everything is exposed to the RPC / CLI interfaces now. Previously, most drivechain specific functions were all only accessible via GUI.
+* BMM code has been refactored
+* Mainchain WT^ voting is accessible to GUI and RPC, which should be available in a next release on this same chain.
+ * Refactored code that was caching WT^(s) on the sidechain and turned it into a more general purpose BMM cache. Now it caches the results of BMM proof validation, and eventually should also cache the results of deposit validation. This saves a ton of local RPC requests depending on your nodes BMM validation settings it could save thousands of requests during a reindex and startup.
+* Made BMM validation easily configurable. Previously you would have to actually set values in validation.cpp and re-compile if you wanted to specify the level of BMM validation your node will perform. Now this can be done with these startup params: 
+ (-verifybmmcheckblock, -verifybmmreadblock, verifybmmacceptheader)
+* * So, for example to run with maximum BMM validation: ./src/qt/testchain-qt —verifybmmcheckblock —verifybmmreadblock —verifybmmacceptheader
+* * The same options will be made available for deposit validation soon.
+* Fixed a bug with the size of sidechain git commit hashes. Should have been stored / read as uint160 not uint256. (This bug caused the commit hash to actually be wrong if you list active sidechains)
+
 
 ### DriveNet24 -- June 12, 2019
 

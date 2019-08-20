@@ -190,7 +190,7 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 Drivechain is made of two BTC soft-forks:
 
 1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/pull/642) -- "Container UTXOs" that compress 3-6 months of blockchain data into a fixed 32-bytes.
-2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/pull/643) -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
+2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
 
 Please [read the FAQ](/faq/index.html)!
 
