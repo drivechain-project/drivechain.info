@@ -56,9 +56,9 @@ div.desc {
 
 
 
-Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Bitcoin Core nodes never need to care what any sidechain is doing.
+Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Those who don't opt-in, never need to care what any sidechain is doing. 
 
-Sidechain-deposits are instant and zero-trust. Withdrawals are hashrate-controlled and arbitrary, but rate-limited (1 per 92 days) and audit-able (compressed to 32 bytes). Sidechain users can sell their default risk using atomic swaps -- also instant and zero-trust.
+Settlement is arbitrary, but rate-limited (1 per 92 days) and audit-able (a mere 32 bytes total).
 
 Key benefits -- *only* obtainable via Drivechain:
 
@@ -69,27 +69,14 @@ Key benefits -- *only* obtainable via Drivechain:
 * BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
 
 
-### Selected Recent Interviews
+### BIPs 
 
-1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
-2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
+Drivechain is made of two BIPs, 300 and 301:
 
-Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain.
-
-### Critiques and Controversy
-
-View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
-
-### Getting Started
-
-Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
-
-Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
-
-Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
+1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) -- "Container UTXOs" that compress 3-6 months of transaction data into a fixed 32-bytes.
+2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
 
 ### Explainer Memes
-
 
 
 <div class="responsive">
@@ -185,14 +172,29 @@ Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and thi
 <div class="clearfix"></div>
 
 
-### More Info
+### Selected Recent Interviews
 
-Drivechain is made of two BTC soft-forks:
+1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
+2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
-1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/pull/642) -- "Container UTXOs" that compress 3-6 months of blockchain data into a fixed 32-bytes.
-2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- Replaces the act of running a sidechain node with the act of including a single high-fee transaction.
+Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain.
+
+
+### Critiques and Controversy
+
+View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 Please [read the FAQ](/faq/index.html)!
+
+
+### Getting Started
+
+Go [here for a guide on **downloading and using this software**](http://www.drivechain.info/blog/usage-tour/). It has screenshots to help walk you through the process.
+
+Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
+
+Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
+
 
 <!--
   

@@ -1,7 +1,7 @@
 baseurl: "" # The subpath of your site. Use "" if you're hosting a blog at the root level.
 blogurl: "/blog" # Blog subpath
 url: "http://www.drivechain.info" # the base hostname & protocol for your site
-title: "Drivechain: Enabling Bitcoin Sidechains"
+title: "Drivechain: Peer-to-Peer Bitcoin Sidechains"
 markdown: kramdown
 
 # This is used by feed.xml. Uncomment if you want to use it.
