@@ -193,7 +193,7 @@ Go [here for a guide on **downloading and using this software**](http://www.driv
 
 Hang out with us by [joining](https://t.me/joinchat/C-POgRCPpB_-ki-csUGE9g) the [Drivechain Telegram Group](http://t.me/DcInsiders).
 
-Check out this [DriveNet Faucet](http://drivenet-faucet.herokuapp.com/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift-web.herokuapp.com/) project, and [this blockexplorer](https://dn.drivechain.ai/). All by [@abrkn](https://twitter.com/abrkn).
+Check out this [this blockexplorer](https://explorer.drivechain.info/), and this [SideShift (Instant Sidechain Withdrawal Service)](http://sideshift.ai) project, by [@abrkn](https://twitter.com/abrkn).
 
 
 <!--
