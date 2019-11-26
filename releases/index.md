@@ -8,19 +8,26 @@ title: Releases
 
 Includes: 
 
-* DriveNet-25 ( DriveNet-0.25.00-x86_64-linux-gnu.tar.gz )
+* DriveNet-29 ( DriveNet-0.29.00-x86_64-linux-gnu.tar.gz )
 * loaded-coins file ( loaded_coins_590000.tar.gz )
-* (sidechain-template coming soon)
+* TestChain-2 ( A Sample sidechain; testchain-2.00.04-x86_64-linux-gnu.tar.gz )
+
+Sha256:
+
+    drivechain-0.29.00-x86_64-linux-gnu.tar.gz d3b791d1c80320cda019ad323c6493dac428ef76d0ea2c9e0747773c67ace8ca
 
 Link here: [https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
 
 
 GitHub links: 
 
-* [DriveNet](https://github.com/DriveNetTESTDRIVE/)
-* [TestChain](https://github.com/drivechain-project/bitcoin/tree/sidetests)
+* [DriveNet](https://github.com/drivechain-project/mainchain/)
+* [TestChain](https://github.com/drivechain-project/sidechains)
 * [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 
+Block Explorer:
+
+* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
 
 ## How to Run
 
@@ -33,6 +40,11 @@ GitHub links:
 
 Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collect coins.
 
+### How to Mine
+
+Please use the updated BMM documentation if you'd like to set up BMM mining once the testchain sidechain has been activated. 
+https://github.com/drivechain-project/docs/blob/master/BMM.md
+
 
 
 ## FAQ
@@ -43,7 +55,96 @@ Because we also host a 4 GB file (of BTC's UTXOs) there, for "importing".
 
 This is new/unstable software assume that it is a virus that will set your computer on fire then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
+
 ## Selected Release Notes
+
+
+### DriveNet29 -- November 26, 2019
+
+
+Here is a pull request of all v28 --> v29 changes: https://github.com/drivechain-project/mainchain/pull/2
+
+
+* Refactoring and bug fixes for WT^ workscore calculation. 
+* Save custom WT^ voting setting to disk so you don't have to set them again after restart
+* New RPC commands for showing WT^(s) which have been approved and paid out, as well as interacting with WT^ votes: listspentwtprimes, listwtprimevotes, setwtprimevote, clearwtprimevotes
+* Add WT^ vote table model & view to GUI so that you can view and set WT^ votes via GUI
+* Move optional and required Drivechain .dat files to "datadir/drivechain" subdirectory for cleaner more organized datadir
+* Add spent WT^ cache to SCDB and persist on disk
+* Fix WT^ spending bug when blocks are disconnected / reorged.
+
+
+### DriveNet28 -- October 23, 2019
+
+New version of DriveNet (and the testchain sidechain) are ready for you guys to use!
+
+The newest version of DriveNet is drivenet-0.28.06 (we had 6 revisions of this release during the testing process)
+
+You'll need to delete your data directories for this new release as we are starting with a new genesis block. Save your loaded_coins.dat file if you don't want to re-download it though as we are using the same loaded coins snapshot.
+
+
+There are a ton of changes in this release. Check out the commit lists:
+
+* Mainchain commits: https://github.com/drivechain-project/mainchain/commits/master
+* Sidechain commits: https://github.com/drivechain-project/sidechains/commits/testchain
+
+All drivechain code is now at https://github.com/drivechain-project.
+
+
+Mainchain GUI changes
+=====================
+
+* Add sidechain fee warning & sidechain deposit confirmation pop up window
+* Set default WT^ vote from sidechain page
+* Add note about abandoned sidechain deposits to the transactions table
+* Require manually setting a fee for sidechain deposits
+
+Mainchain updates
+=================
+
+* Add formatted CTIP amount to listsidechainctip RPC
+* Refactor and update ConnectBlock WT^ spending code
+* Added some more logging outputs
+* Add getscdbhash & gettotalscdb hash RPC commands for debugging and integration testing script purposes
+* Automatically abandon expired BMM request from the wallet after they are removed from your mempool
+* Automatically abandon failed sidechain deposits after they are removed from your mempool
+
+Mainchain bug fixes
+===================
+* Sidechain database (SCDB) block disconnection bug fixes
+* Add complete SCDB::Undo function that can handle various edge cases and make sure that SCDB is re-synchronized after a block is disconnected.
+* Fix SCDB reindex edge case bugs
+* Sidechain proposal miner code fixes & updates
+* Fix CTIP updates when a block is disconnected
+* Fix deposit ordering bugs when loading from deposit cache
+* Loaded coins bug fixes, refactoring, cleanup
+* Remove a LOCK that shouldn't have been there (caused miner bugs)
+* Don't signal RBF for BMM requests 
+* Fix fee & input selection / calculation bugs for sidechain deposit wallet code
+* Fix miner WT^ spend bug at the end of a WT^ verification period that would have the miner spend a WT^ after it has expired - resulting in their block being rejected as invalid even by their own node.
+
+Sidechain GUI changes
+=====================
+* Add a basic version of "train schedule" to the sidechain page which gives an estimate of when the next WT^ will be created if there are pending withdrawals
+
+* If the connection to mainchain fails show an error message. If the user doing BMM on the sidechain then disable networking until the mainchain connection is restored
+
+Sidechain updates
+=================
+
+* Sidechain nodes create WT^(s) in a deterministic way and other sidechain nodes can replicate and verify new WT^(s). The function VerifyWTPrimes() has been added for this purpose.
+
+Sidechain bug fixes
+===================
+
+* Refactoring of WT^ transaction creation
+* Fix CTIP payout amount bugs on sidechain
+* Refactor / new version of deposit sorting & payout calculation
+* Fixes and refactoring of deposit payout transaction code
+* Check more frequently on the mainchain connection
+* Some RPC function param names corrected
+* Fix WT ldb ID uniqueness bug - if a wt duplicated both mainchain destination and amount - leveldb would overwrite the older entry. 
+
 
 ### DriveNet25 -- August 20, 2019
 
