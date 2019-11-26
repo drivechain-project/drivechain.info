@@ -88,19 +88,21 @@ There are a ton of changes in this release. Check out the commit lists:
 * Mainchain commits: https://github.com/drivechain-project/mainchain/commits/master
 * Sidechain commits: https://github.com/drivechain-project/sidechains/commits/testchain
 
-All drivechain code is now at https://github.com/drivechain-project.
+
+#### a. Code Has Moved
+
+* All drivechain code is now at https://github.com/drivechain-project.
 
 
-Mainchain GUI changes
-=====================
+#### b. Mainchain GUI changes
 
 * Add sidechain fee warning & sidechain deposit confirmation pop up window
 * Set default WT^ vote from sidechain page
 * Add note about abandoned sidechain deposits to the transactions table
 * Require manually setting a fee for sidechain deposits
 
-Mainchain updates
-=================
+
+#### c. Mainchain updates
 
 * Add formatted CTIP amount to listsidechainctip RPC
 * Refactor and update ConnectBlock WT^ spending code
@@ -109,8 +111,9 @@ Mainchain updates
 * Automatically abandon expired BMM request from the wallet after they are removed from your mempool
 * Automatically abandon failed sidechain deposits after they are removed from your mempool
 
-Mainchain bug fixes
-===================
+
+#### d. Mainchain bug fixes
+
 * Sidechain database (SCDB) block disconnection bug fixes
 * Add complete SCDB::Undo function that can handle various edge cases and make sure that SCDB is re-synchronized after a block is disconnected.
 * Fix SCDB reindex edge case bugs
@@ -123,19 +126,18 @@ Mainchain bug fixes
 * Fix fee & input selection / calculation bugs for sidechain deposit wallet code
 * Fix miner WT^ spend bug at the end of a WT^ verification period that would have the miner spend a WT^ after it has expired - resulting in their block being rejected as invalid even by their own node.
 
-Sidechain GUI changes
-=====================
-* Add a basic version of "train schedule" to the sidechain page which gives an estimate of when the next WT^ will be created if there are pending withdrawals
 
+#### e. Sidechain GUI changes
+
+* Add a basic version of "train schedule" to the sidechain page which gives an estimate of when the next WT^ will be created if there are pending withdrawals
 * If the connection to mainchain fails show an error message. If the user doing BMM on the sidechain then disable networking until the mainchain connection is restored
 
-Sidechain updates
-=================
+#### f. Sidechain updates
 
 * Sidechain nodes create WT^(s) in a deterministic way and other sidechain nodes can replicate and verify new WT^(s). The function VerifyWTPrimes() has been added for this purpose.
 
-Sidechain bug fixes
-===================
+
+#### g. Sidechain bug fixes
 
 * Refactoring of WT^ transaction creation
 * Fix CTIP payout amount bugs on sidechain
@@ -144,6 +146,7 @@ Sidechain bug fixes
 * Check more frequently on the mainchain connection
 * Some RPC function param names corrected
 * Fix WT ldb ID uniqueness bug - if a wt duplicated both mainchain destination and amount - leveldb would overwrite the older entry. 
+
 
 
 ### DriveNet25 -- August 20, 2019
