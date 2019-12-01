@@ -56,9 +56,14 @@ div.desc {
 
 ### Peer-to-Peer Bitcoin Sidechains
 
-Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Those who don't opt-in, never need to care what any sidechain is doing. 
+Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Those who don't opt-in, never need to care what any sidechain is doing.
 
-Settlement is arbitrary, but rate-limited (1 per 92 days) and audit-able (a mere 32 bytes total).
+As with the Lightning Network, DC-users move their coins into a "layer-2" -- a zone where BTC can change hands an unlimited number of times. Eventually, just the *net* effect of these transfers is recorded back on layer-1.
+
+Bitcoin Core can't observe any layer-2 (by design), so we need a way to discourage fraudulent "netting". LN counters theft via "justice transactions"; DC via forsaken mining revenues. LN-netting is private and instant; DC-netting is public and VERY slow (once per ~3 months).
+
+
+
 
 Key benefits -- *only* obtainable via Drivechain:
 
