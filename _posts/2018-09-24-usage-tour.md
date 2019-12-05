@@ -6,8 +6,8 @@ date: 2018-09-24 5:00:00
 ---
 
 
+Updated slightly on Dec 4, 2019. This guide still holds up pretty well!
 
-Up to date as of 25 Sept 2018.
 
 ## 1. Intro
 
@@ -28,8 +28,8 @@ Follow along, and expand each image if you get lost. Or [download all the images
 
 Source code here:
 
-1. [Mainchain](https://github.com/DriveNetTESTDRIVE/DriveNet)
-2. [Sidechain One](https://github.com/drivechain-project/bitcoin/tree/sidechainBMM)
+1. [Mainchain](https://github.com/drivechain-project/mainchain)
+2. [Testchain](https://github.com/drivechain-project/sidechains) -- called "Sidechain One" in this guide.
 
 The binary files (for less-technical users) are hosted on Google Drive: **[https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)**
 
