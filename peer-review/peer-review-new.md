@@ -81,14 +81,21 @@ Short Answer: No.
 Longer Answer:
 
 <h4 id="2-overview">
-Overview
+Overview of Complaint
 </h4>
 
-This complaint imagines, for example, that it costs $5 million / year to run all sidechains (or one big sidechain), and that these chains produce $100 million / year in transaction fees. Then, a miner with only 4% of the hashrate will pay $5M, but can only earn $4M. So they'll have to shut down their node, and move to a larger pool.
 
-Separately, it alleges that pool operators who mine profitable sidechains, will have an edge over pools who do not. And, of course: no hasher will want to partner with a pool that declines to give them their share of some free money. Therefore, eventually, running all of the sidechains will become de facto mandatory.
+This complaint is a story in three parts.
 
-Thirdly, it alleges that sidechain software makes the pool operators less anonymous and easier to coerce. Specifically, regulators will be able to force pool operators to censor transactions.
+First, the complaint asks us to consider "burdensome sidechains" which are expensive to run, but profitable.
+
+So imagine that all "sidechain" software costs $5 M / year to run, but "sidiechains" bring in $100 M / year (in txn fee revenue). A solo miner with only 4% of the hashrate would earn $4M from "sidechains" (just 4% of the total $100M). But "sidechains" would cost this miner a fixed $5M. So this miner does not run any sidechains. But conversely, a solo miner with 12% would run sidechains -- they'd pay $5M (fixed) and earn $12. This miner now earns a higher ROI (the $12/$5 ROI blends in with the subsistence ROI he was earning pre-sidechains). Because of sidechains, larger miners are rewarded more.
+
+The same problem applies to pools. The pool operators who mine "sidechains", will have an edge over those who do not. Pools which turn down the free money, will not attract Hashers. Therefore, eventually, "running all profitable sidechains" will become an activity that is de facto mandatory.
+
+So far, nothing bad or even unusual has happened -- mining has always entailed high-effort "de facto mandatory" activities (optimizing chip designs, locating cheap sources of electrical power, etc).
+
+But the third and final part of the complaint, alleges that sidechain software (hypothetically) also makes the pool operators less anonymous and easier to coerce. Regulators will be able to force pool operators to censor transactions -- specifically, now that the pools have been forced into a vulnerable state, they will be coerced into censoring *mainchain transactions* that were previously (before the arrival of sidechains) un-censorable.
 
 This plausible-sounding story is false from beginning to end.
 
@@ -110,25 +117,27 @@ A Nonsense Problem
 2.1
 </h5>
 
-First, the 'second act' (of the story above), conflates "an inducement" with outright "slavery". It says that, if miners earn $0.10 of profit by selling t-shirts or something, then eventually t-shirts will become a mandatory part of the protocol, and that whoever can control t-shirts can control Bitcoin mining.
+First, the 'second act' of the story above ("...runnning all sidechains is de facto mandatory"), conflates "an inducement" with "total slavery". The DC-skeptics are arguing: if miners earn $0.10 of profit by selling t-shirts (or whatever), then eventually t-shirts will become a mandatory part of the protocol, and that whoever can control t-shirts can control Bitcoin mining.
 
-This premise is almost certainly false. The claim that 'wasteful competitors will go bankrupt in the long run' is quite different from the claim that 'every $0.10 of profit is mandatory'. Intelligent humans can decline to take $0.10, if they have any real or imagined concerns about running the sidechain.
+That premise is as silly as it sounds. The claim that 'wasteful competitors will go bankrupt in the long run' is quite different, from the claim that 'every $0.10 of profit is mandatory'. Intelligent humans can decline to take $0.10, if they have any real or imagined concerns about running the sidechain.
 
-But, even if this premise were true, the argument ends up contradicting itself. Remember that the third act called upon us to believe that pools would bow to coercive forces, and start censoring transactions from blocks. But, crucially: pools lose profits when they censor. Each time they decline to include a valid fee-paying txn, they pay the opportunity cost of those lost fees, and they save nothing on "costs". So it comes directly out of profit.
+But if the premise were true, the argument gets worse! It ends up contradicting itself. The end of the story called upon us to believe that pools would bow to coercive forces, and censor transactions from blocks. But, crucially: pools lose profits when they censor. Each time they decline a valid fee-paying txn, they pay the opportunity cost of those lost fees (and save nothing on "costs"). So it comes directly out of profit.
 
-But earlier we assumed that 'every $0.10 of profit is mandatory'. Which means that censorship is absolutely prohibited. So, either the pools are "required" to earn every cent, in which case they can never censor a single txn, or else they aren't (in which case they do not necessarily need to run every sidechain).
+But earlier we assumed that 'every $0.10 of profit is mandatory'. Which means that censorship is absolutely prohibited. So, either the pools are "required" to earn every cent, in which case they can never censor a single txn, or else they aren't (in which case they are not "required" to run every sidechain).
 
-And it gets worse. Consider that the fees that are *first* to be censored would certainly be the sidechain's high-overhead, low-fee-magnitude txns. At absolute worst, the system would regress toward exactly the state it is in right now: one with all of the sidechain-txns censored. If pool-coercing censorship is still possible after *that* point, then sidechains are not to blame for it, by definition.
+And it gets worse. The *first* txns to be censored would certainly be the sidechain's high-overhead, low-fee-magnitude txns. So, even if the story of the complaint somehow comes true (inconsistent though it is), the Bitcoin system would just regress toward the state it is in now: one with all of the sidechain-txns censored. If pool-coercing censorship is still possible after *that* point, then sidechains are not to blame for it, by definition.
 
 <h5 id="2-2">
 2.2
 </h5>
 
-Second, as with the "miners can steal" language, this critique is grounded in poor Bitcoin Philosophy. Critics intentionally conflate "node centralization" and "miner centralization", in the hopes that, by reusing a word, the audience can be tricked into thinking that the two concepts are similar to each other. In reality they have nothing to do with each other. Node centralization (the [real one](http://www.truthcoin.info/blog/measuring-decentralization/)) makes life harder for the user, and is self-evidently bad.
+Second, as with the "miners can steal" language, this critique is grounded in poor Bitcoin Philosophy. Critics intentionally conflate "node centralization" and "miner centralization", in the hopes that, by reusing a word, the audience can be tricked into thinking that the two concepts are similar to each other. In reality they have nothing to do with each other.
 
-But with mining it is a different story. While "mining", the process, is the core element of Bitcoin's design, the mere act of "finding a block" is utterly neutral. If this block contributes to the longest chain, it is good; if it contributes to a reorg chain, then it is bad. So if we make mining "easier", we also make attacking Bitcoin easier. And in fact, when the difficultly adjusts upwards, there is cheering and applause (as there was with the SegWit UASF).
+Node centralization (the [real one](http://www.truthcoin.info/blog/measuring-decentralization/)) makes life harder for the user, and is self-evidently bad. But with mining it is a different story. While "mining", the process, is the core element of Bitcoin's design, the mere act of "finding a block" is utterly neutral -- when a new block attaches to the longest chain, it was "good"; but if a new-found block attaches to an attacking reorg chain, then it was "bad". So if we make "mining" easier, we also make "attacking Bitcoin" easier.
 
-Miners are not customers, they are suppliers. After a certain point, what is good for one is *bad* for the other. For example: "forced teamwork in the name of efficiency" (aka "mining centralization") is inconvenient for miners...but good for users.
+This is implicity recognized in Bitcoin culture -- when the difficultly adjusts upwards, there is cheering and applause. As there was with the SegWit UASF. People cheer when mining becomes *harder*.
+
+Miners are not Bitcoin-customers, they are Bitcoin-suppliers. After all the Pareto improvements have been found, what is good for customers will be *bad* for suppliers. For example: "forced teamwork in the name of efficiency" (aka "mining centralization") is inconvenient for miners...but good for users.
 
 <h5 id="2-3">
 2.3
@@ -140,13 +149,28 @@ Third, txn-censorship is a privacy-failure; it has nothing to do with pools or s
 2.4
 </h5>
 
-Fourth, while critics bill out merged mining as threat to Bitcoin, the reverse is probably the case: going *without* merged-mining is the bigger threat to Bitcoin. For MM is likely to be the only decentralization-preserving way to boost on-chain fee-revenues; and [these need to be boosted](http://www.truthcoin.info/blog/security-budget/).
+Fourth, while critics bill out merged mining as "threat" to Bitcoin, the reverse is probably the case: going *without* merged-mining is the bigger threat to Bitcoin. For MM is likely to be the only decentralization-preserving way to boost on-chain fee-revenues; and [these need to be boosted](http://www.truthcoin.info/blog/security-budget/).
 
 <h5 id="2-5">
 2.5
 </h5>
 
-Fifth, and again most importantly, merged mining (the vanilla, non-blind version) is unblockable. There is nothing the user can do to prevent miners from doing it. And miners earn more money by doing it. So, even if we make every possible concession to Critique 2, that it is bad and that everything in it will happen, then we would just end up in a world where experimental software takes the form of Altcoins -- these would be vanilla merged mined and ultimately we would reach the same "high overhead pool" result.
+Fifth, and again most importantly, merged mining (the vanilla, non-blind version) is unblockable. There is nothing the user can do to prevent miners from doing it. And miners earn more money by doing it. So, even if we make every possible concession to Critique 2, that it is bad and that everything in it will happen, then we would just end up in a world where experimental software takes the form of Altcoins -- these would be vanilla merged mined (as Namecoin is today) and ultimately we would reach the same "high overhead pool" result.
+
+<!--
+<h5 id="2-6">
+2.6
+</h5>
+
+As an afterthought, it is worth noting that basically none of the premises of the story were sound.
+
+Sidechain software that costs $5 million per year to run? Regular users (non-miners) must run SC-nodes, in order to safely use the new features. And these users earn zero txn fees (in fact, they are *paying* the txn fees)! So which users are running these "burdensome sidechains"? Wouldn't the sidechains just die off immediately? If it cost 5 million to run a Bitcoin node, that would probably just be the death of Bitcoin.
+
+If we consider the fixed costs already faced by miners (equipment, long term power contracts, human capital) and mining pools (reputational capital), it is highly implausible that "sidechain software" could ever realistically become "burdensome" in the first place.
+
+And pools can easily hide a node somewhere, and pass instructions to hashers via TOR/VPN. The hashers only need the BlockTemplate which is barely a few kilobytes.
+
+-->
 
 
 ### Other Critiques
