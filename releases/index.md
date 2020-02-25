@@ -4,41 +4,56 @@ title: Releases
 ---
 
 
-## Latest Version
-
-Includes: 
-
-* DriveNet-29 ( DriveNet-0.29.00-x86_64-linux-gnu.tar.gz )
-* loaded-coins file ( loaded_coins_590000.tar.gz )
-* TestChain-2 ( A Sample sidechain; testchain-2.00.04-x86_64-linux-gnu.tar.gz )
-
-Sha256:
-
-    drivechain-0.29.00-x86_64-linux-gnu.tar.gz d3b791d1c80320cda019ad323c6493dac428ef76d0ea2c9e0747773c67ace8ca
-
-Link here: [https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
+## Version 30 -- Latest Version (Feb 25, 2020)!!
 
 
-GitHub links: 
+### Binaries (Linux Only)
+
+* On [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
+
+
+### Sha256
+
+    drivechain-0.30.00-x86_64-linux-gnu.tar.gz
+    d10c52613d1c4e5d85277244956bdcbd3be040202d022bec207d4dc4a85a5eb4
+
+    testchain-4.00.00-x86_64-linux-gnu.tar.gz
+    7cee6f6757f1004776f66d3adec4b8b20b670ff14a1495c4277027d85b8f2a29
+
+
+### Source
 
 * [DriveNet](https://github.com/drivechain-project/mainchain/)
 * [TestChain](https://github.com/drivechain-project/sidechains)
 * [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 
-Block Explorer:
+### Block Explorer
 
 * [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
 
-## How to Run
+### How to Run
 
 1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download DriveNet-0.25.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-3. Start DriveNet-25. It will create some directories, give an error message about loaded coins, then exit.
+2. Download drivechain-0.30.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+3. Run! (/bin/drivenet-qt)
+4. Download testchain-4.00.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+5. Run! (/bin/testchain-qt)
+
+For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
+
+
+<!--
+
+1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
+2. Download drivechain-0.30.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+3. Start DriveNet-30. It will create some directories, give an error message about loaded coins, then exit.
 4. Download loaded_coins_590000.tar.gz, verify sha256, extract.
 5. Move loaded_coins_590000.dat to ~/.drivenet/loaded_coins.dat
 6. Start DriveNet-25 again. It will install the UTXO set into your node (~10 minutes).
 
 Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collect coins.
+
+-->
 
 ### How to Mine
 
@@ -57,6 +72,23 @@ This is new/unstable software assume that it is a virus that will set your compu
 
 
 ## Selected Release Notes
+
+### DriveNet30 -- February 25, 2020
+
+Mainchain ("DriveNet 0.30.00"): 
+
+ * Fully backwards compatible -- (would sync with Bitcoin Core 0.12.0 [for example], if 0.12 had our genesis block)
+ * NODE_DRIVECHAIN signaling / service flag 
+ * Overview page now has a "More" frame, and a "sidechain status"
+ * * click on a wt^ to go to the WT^ table
+ * No "loaded coins" -- fresh blockchain, new genesis block. 
+
+Sidechain ("TestChain 4.00.00"): 
+
+* All BMM checks now enabled by default
+ * testchaind handles disconnections the same way as Qt (checks for mainchain connection in a few different places)
+* Refactoring of BMM block creation
+* Refactoring of sidechain client / refreshbmm RPC
 
 
 ### DriveNet29 -- November 26, 2019
