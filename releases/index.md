@@ -68,7 +68,7 @@ https://github.com/drivechain-project/docs/blob/master/BMM.md
 
 Because we also host a 4 GB file (of BTC's UTXOs) there, for "importing".
 
-This is new/unstable software assume that it is a virus that will set your computer on fire then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
+This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
 
 ## Selected Release Notes
