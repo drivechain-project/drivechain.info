@@ -54,7 +54,7 @@ div.desc {
 </style>
 </head>
 
-### **[DOWNLOADS PAGE](http://www.drivechain.info/releases/index.html)**
+## **[DOWNLOADS PAGE](http://www.drivechain.info/releases/index.html)**
 
 ### Peer-to-Peer Bitcoin Sidechains
 
