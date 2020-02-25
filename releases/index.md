@@ -6,8 +6,24 @@ title: Releases
 
 ## Version 30 -- Latest Version (Feb 25, 2020)!!
 
+### What's New?
 
-### Binaries (Linux Only)
+Mainchain ("DriveNet 0.30.00"): 
+
+ * Fully backwards compatible -- (would sync with Bitcoin Core 0.12.0 [for example], if 0.12 had our genesis block)
+ * NODE_DRIVECHAIN signaling / service flag 
+ * Overview page now has a "More" frame, and a "sidechain status"
+ * * click on a wt^ to go to the WT^ table
+ * No "loaded coins" -- fresh blockchain, new genesis block. 
+
+Sidechain ("TestChain 4.00.00"): 
+
+* All BMM checks now enabled by default
+ * testchaind handles disconnections the same way as Qt (checks for mainchain connection in a few different places)
+* Refactoring of BMM block creation
+* Refactoring of sidechain client / refreshbmm RPC
+
+### **Binaries (Linux Only)**
 
 * On [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
 
@@ -21,7 +37,7 @@ title: Releases
     7cee6f6757f1004776f66d3adec4b8b20b670ff14a1495c4277027d85b8f2a29
 
 
-### Source
+### **Source**
 
 * [DriveNet](https://github.com/drivechain-project/mainchain/)
 * [TestChain](https://github.com/drivechain-project/sidechains)
