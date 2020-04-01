@@ -1,10 +1,9 @@
 ---
 layout: page
 title: Drivechain
-subtitle: when devs compete, users win
+subtitle: "when devs compete, users win"
 ---
 
-### "when devs compete, users win"
 
 <head>
 <style>
@@ -54,6 +53,11 @@ div.desc {
     display: table;
     clear: both;
 }
+
+h2{
+  margin-bottom: 0px;
+}
+
 </style>
 </head>
 
