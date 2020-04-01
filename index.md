@@ -4,6 +4,8 @@ title: Drivechain
 subtitle: when devs compete, users win
 ---
 
+### "when devs compete, users win"
+
 <head>
 <style>
 div.gallery {
