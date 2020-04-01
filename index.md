@@ -54,7 +54,7 @@ div.desc {
     clear: both;
 }
 
-h2{
+h1{
   margin-bottom: 0px;
 }
 
