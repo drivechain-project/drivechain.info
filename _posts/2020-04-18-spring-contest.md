@@ -32,7 +32,7 @@ Here are comments on the table:
 * After the table ends, the contest is OVER. Which means that, if nothing is submitted before the last day of the calendar, then no prizes will be awarded at all. :-(
 
 
-### Victory Conditions / Deliverables
+### What's the Goal?
 
 How does one win the race?
 
@@ -44,6 +44,7 @@ But, obviously, this will be much easier said than done!
 
 And it will be much easier for some people than others. Some Altcoins were created by forking an older version of Bitcoin Core. The Sidechain Template was *also* created by forking an older version of Bitcoin Core. Thus, the *original creators* of these Bitcoin-derived Altcoins, would just need to redo something they had already done.
 
+### Details on Deliverables
 
 Here are the details:
 
@@ -65,10 +66,19 @@ Here are even more details:
 * * I am skilled enough to compile Bitcoin Core, as well as the sidechain template -- so for your sake I hope your entry is about-that-easy to compile.
 4. The "Justified Diff" is the git "diff" between our sidechain template source code, and your sidechain-x source code. Every change that you make, must be "justified". Justification can be done in two ways.
 * * The first, easiest, and most-preferred way, is to "cite your source". Ie, use a comment to hyperlink back to the Altcoin code-repository.
-* * The second way is to write a comment-block explaining, in English, first: why you could not "cite Altcoin source-code" and second: explaining what the source code is doing. If I cannot make sense of your explanation, you will (probably) fail the test. Sorry! (see below)
+* * The second way is to write a comment-block explaining, in English, first: why you could not "cite Altcoin source-code" and second: explaining what the source code is doing. If I cannot make sense of your explanation, your submission will (probably) fail the test. Sorry! (see below)
+
+### How Can I Ensure That My Submission Passes the Test?
+
+* Many of these details will be in the Monday announcement.
+* One important guideline is to *not break the Sidechain Template*. The submission must be able to do the things that it did, before you started messing with it, especially:
+* * receive coins from the Mainchain,
+* * find blocks (and reject invalid blocks, ban bad peers, etc)
+* * send coins back from Sidechain to Mainchain back.
+* The second guideline is to replicate the altcoin, "warts and all". Whatever "altcoin-cli does", "sidechain-cli" should do.
 
 
-Furthermore:
+### Administrative Details
 
 * I plan to check the contest inbox for new submissions, between the hours of noon-7 PM, Eastern Standard Time. And I plan to then test any new ones that have arrived.
 * Submissions will be checked in the order they were received. In other words -- in whatever order they arrive in my protonmail inbox.
@@ -79,19 +89,13 @@ Furthermore:
 * * If you fail twice, then you become "low low priority". And so on. If I, at my sole and absolute discretion, feel that you aren't actual a serious submitter and are just wasting my time with endless nonsense submission, I reserve the right to disqualify you.
 
 
-### How Can I Ensure That My Submission Passes the Test?
-
-* Many of these details will be in the Monday announcement.
-* One important guideline is to *not break the Sidechain Template*. The submission must be able to do the things that it did, before you started messing with it, especially:
-* * receive coins from the Mainchain,
-* * find blocks (and reject invalid blocks, ban bad peers, etc)
-* * send coins back from Sidechain to Mainchain back.
-* The second guideline is to replicate the altcoin "warts and all". Whatever the altcoin-cli does, the sidechain-cli should do.
-
-
-
-## More Commentary
+### More Commentary
 
 * We are constantly fixing sidechain bugs! So, if something breaks, it *might* not have been your fault. Obviously, this could lead to a horrible mess, but our newest version has no *known* bugs, and it has a GUI that tries to explain very clearly what is going on.
 * The "Justified Diff" isn't just for *my* benefit. *Anyone* who runs a sidechain full node will need to make sure that *they* know what it is doing. After all, as a layer-2, SC-nodes must have RPC-access to a full Bitcoin node.
 
+---
+
+#### Stay Tuned
+
+More details will be posted HERE, in 48 hours (Monday 5 PM Eastern time).
