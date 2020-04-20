@@ -99,3 +99,65 @@ Here are even more details:
 #### Stay Tuned
 
 More details will be posted HERE, in 48 hours (Monday 5 PM Eastern time).
+
+
+---
+
+### Zcash Sidechain! 
+
+
+
+Zcash would make a pretty great sidechain of Bitcoin, don't you think?
+
+
+1. **Much less work** -- Zcash is a code fork of Bitcoin. And so is our Sidechain Template! So, most of the source code already overlaps.
+2. **Perfect Compliments** -- Bitcoin prides itself on its transparency and auditability (particularly with respect to the 21 million coin limit, and the validity of individual txns). However, as a result, it has some privacy drawbacks. Zcash is a great compliment -- it has extreme privacy but is a newer, riskier, technology.
+3. **Synergy** -- Zcash alone is not "meta-private". But as an optional sidechain, it *is* meta-private. In other words, as a sidechain, you can privately use Zcash-tech, but publicly say "I have never used Zcash, and never will", and no one can prove you wrong. Also, Z-side would allow you to privately cash out Z-coins (to BTC), without interacting with another human being; with Zcash alone, one would need to find a counterparty (and, in practice, probably use a major exchange).
+
+---
+
+
+### The Task!
+
+#### Summary
+
+The Zcash Github is here: https://github.com/zcash/zcash
+Our Sidechain Template (testchain-5.02) is here: http://www.drivechain.info/releases/index.html
+
+You must take from the Zcash GitHub, and add to the Sidechain Template.
+
+Here is [a specific list of all Zcash cli-commands](/media/all-zcash-commands-ordered.txt), that I have sorted and organized. The commands with double-asterisks are the ones you must focus on. The others you can just ignore.
+
+You are NOT responsible for older zk-snarks (ie, you are responsible for sapling, NOT sprout). You are NOT responsible for any of the "deprecated", nor "experimental, disabled by default" features.
+
+In general, these two commands are the main goal:
+
+* z_merge
+* z_sendmany
+
+...and their subsidiary functions (ie: z_listaddress, and wallet management).
+
+#### The Evaluation
+
+I will test both softwares, by simply generating some new Zcash keys, and then running the exact same commands through both. I should get the exact same *output* from both!
+
+Then I will try to withdraw some z-side test coin from its sidechain to its mainchain. 
+
+That's it!
+
+
+#### Helpful Notes (?)
+
+* zcash's t-addresses are NOT exactly similar to our templates s-addresses. You can do whatever you like, but the smart thing is probably to modify the Zcash code to accept our s-addresses.
+* You are NOT responsible for ANY of the other eccentricities of Zcash. For example, their Equihash stuff. You are only responsible for the zk-snarks.
+* We have produced two pieces of software -- the "mainchain" and the "sidechain template" (called "testchain"). Both of these are Github forks of Bitcoin Core 16.99.
+* To find sidechain blocks -- you must "mine regularly" on the mainchain ("setgenerate true" in the console) while enabling BMM on the sidechain. This is because the sidechain template is set up to use blind-merged-mining. (As always), you will need to wait 100 mainchain blocks, before spending any mainchain coins.
+
+### Some References
+
+* Here is a [Zcash explorer](https://explorer.testnet.z.cash/tx/cf4f3da2e434f68b6e361303403344e22a9ff9a8fda9abc180d9520d0ca6527d)
+* Here is the Zcash protocol specification is here (although I'm not sure how helpful it will be): https://github.com/zcash/zips/blob/master/protocol/protocol.pdf
+* Here are [some technical notes on Blind-Merged-Mining](/media/bmm-notes.txt) (used by the sidechain template).
+* Here are the Drivechain BIPs -- [300](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) and [301](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki). Ideally you should be able to ignore this completely.
+
+---
