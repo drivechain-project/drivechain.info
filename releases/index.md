@@ -18,7 +18,7 @@ title: Releases
     testchain-5.02.00-x86_64-linux-gnu.tar.gz
     d1e200d2aa7eee51b29938065b08c5d7168ab7e895b1c3758d611a5ce8fa1f2c
 
-### **Source**
+### **Source** (GitHub)
 
 * [DriveNet](https://github.com/drivechain-project/mainchain/)
 * [TestChain](https://github.com/drivechain-project/sidechains)
@@ -107,10 +107,11 @@ Bugfixes:
 ### How to Run
 
 1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download drivechain-0.30.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+2. Download drivechain-0.31.01-x86_64-linux-gnu.tar.gz, verify sha256, extract.
 3. Run! (/bin/drivenet-qt)
-4. Download testchain-4.00.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+4. Download testchain-5.02.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
 5. Run! (/bin/testchain-qt)
+
 
 For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
 
@@ -151,7 +152,7 @@ https://github.com/drivechain-project/docs/blob/master/BMM.md
 
 ### Why is this on Google Drive?
 
-Because we also host a 4 GB file (of BTC's UTXOs) there, for "importing".
+Because we sometimes also host a 4 GB file (of BTC's UTXOs) there, for "importing".
 
 This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
