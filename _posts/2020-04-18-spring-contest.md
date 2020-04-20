@@ -126,7 +126,7 @@ Our Sidechain Template (testchain-5.02) is here: http://www.drivechain.info/rele
 
 You must take from the Zcash GitHub, and add to the Sidechain Template.
 
-Here is [a specific list of all Zcash cli-commands](/media/all-zcash-commands-ordered.txt), that I have sorted and organized. The commands with double-asterisks are the ones you must focus on. The others you can just ignore.
+Here is [a specific list of all Zcash cli-commands](/media/contest/all-zcash-commands-ordered.txt), that I have sorted and organized. The commands with double-asterisks are the ones you must focus on. The others you can just ignore.
 
 You are NOT responsible for older zk-snarks (ie, you are responsible for sapling, NOT sprout). You are NOT responsible for any of the "deprecated", nor "experimental, disabled by default" features.
 
@@ -157,7 +157,7 @@ That's it!
 
 * Here is a [Zcash explorer](https://explorer.testnet.z.cash/tx/cf4f3da2e434f68b6e361303403344e22a9ff9a8fda9abc180d9520d0ca6527d)
 * Here is the Zcash protocol specification is here (although I'm not sure how helpful it will be): https://github.com/zcash/zips/blob/master/protocol/protocol.pdf
-* Here are [some technical notes on Blind-Merged-Mining](/media/bmm-notes.txt) (used by the sidechain template).
+* Here are [some technical notes on Blind-Merged-Mining](/media/contest/bmm-notes.txt) (used by the sidechain template).
 * Here are the Drivechain BIPs -- [300](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) and [301](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki). Ideally you should be able to ignore this completely.
 
 ---

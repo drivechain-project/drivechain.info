@@ -1,0 +1,305 @@
+
+## Misc
+
+  getinfo
+  help
+  stop
+  ** zcbenchmark **
+
+
+
+## Basics
+
+### Get A New Address
+
+  getnewaddress
+  ** z_getnewaddress **
+
+  validateaddress
+  ** z_validateaddress **
+
+### List Your Addresses
+
+  listaddressgroupings
+  ** z_listaddresses **
+
+### Watch-only Addresses
+
+  importpubkey
+
+### Address --> Private Key
+
+  dumpprivkey
+  ** z_exportkey **
+
+### Private Key --> Address
+
+  importprivkey
+  ** z_importkey **
+
+
+## Key Usage
+
+  signmessage
+  verifymessage
+
+
+## Viewing Coins
+
+### After sending some to $t_addr or $z_addr
+
+  listreceivedbyaddress
+  getreceivedbyaddress $t_addr
+  ** z_listreceivedbyaddress $z_addr **
+
+  listunspent # ( minconf maxconf  ["address",...] )
+  ** z_listunspent # ( minconf maxconf includeWatchonly ["zaddr",...] ) **
+
+  getbalance ( "account" minconf includeWatchonly )
+  ** z_getbalance "address" ( minconf ) **
+
+  getunconfirmedbalance
+  ** z_gettotalbalance ( minconf includeWatchonly ) **
+
+
+
+## Transactions
+
+### Viewing TxIDs
+
+  listtransactions
+        ** size **
+
+  ** gettransaction** 
+  gettxout $mytx 0  # output-specific
+        ** version **
+
+### Fees
+
+  ? estimatefee 6 ?
+  ? estimatepriority 6 ?
+  settxfee 0.00001   #ZEC/kB
+
+### Sending Money
+
+  sendtoaddress
+  sendmany 
+
+  ** getrawtransaction **
+  ** decoderawtransaction ** 
+
+
+
+## THE IMPORTANT ONES!
+
+  ** z_mergetoaddress **
+  ** z_sendmany **
+
+  ** z_getoperationresult **
+  ** z_getoperationstatus **
+
+
+
+(You cannot break wallet I/O.)
+
+
+
+
+Unimportant Stuff: Below
+--------------------------------------------------------------------------
+
+
+== Rawtransactions ==
+createrawtransaction [{"txid":"id","vout":n},...] {"address":amount,...} ( locktime ) ( expiryheight )
+
+decodescript "hex"
+fundrawtransaction "hexstring" includeWatching
+
+sendrawtransaction "hexstring" ( allowhighfees )
+signrawtransaction "hexstring" ( [{"txid":"id","vout":n,"scriptPubKey":"hex","redeemScript":"hex"},...] ["privatekey1",...] sighashtype )
+
+
+
+
+### Inclusion Proofs
+
+gettxoutproof '["8653c6f6f6b5e315715c1661b7add897e30bff8d9425bed86eadaf3585fdebde"]'
+verifytxoutproof # takes the hex proof, returns the TxID
+
+
+
+
+
+
+## Blockchain
+
+### Global
+
+getblockchaininfo
+getblockcount
+getbestblockhash
+getdifficulty
+gettxoutsetinfo
+
+getchaintips # tracks orphaning info
+
+verifychain ( checklevel numblocks )
+
+### Blocks
+
+getblockhash $(zcash-cli getblockcount)
+getblock 764797
+getblockheader 0000000001ef1ff9d4e601ea7026cc078e6968e380c38462a60afef78cc047b8 true
+
+
+### Mempool
+
+getmempoolinfo
+getrawmempool ( verbose )
+
+
+
+## Network / Peers
+
+addnode "node" "add|remove|onetry"
+clearbanned
+disconnectnode "node" 
+getaddednodeinfo dns ( "node" )
+getconnectioncount
+getdeprecationinfo
+getnettotals
+getnetworkinfo
+getpeerinfo
+listbanned
+ping
+setban "ip(/netmask)" "add|remove" (bantime) (absolute)
+
+
+
+## Wallet
+
+### Info
+
+getwalletinfo
+z_listoperationids
+
+getbalance "" 0 true
+getunconfirmedbalance
+
+listsinceblock 0000000001ef1ff9d4e601ea7026cc078e6968e380c38462a60afef78cc047b8
+
+### Input/Ouput
+
+backupwallet "destination"
+dumpwallet "filename"
+
+importaddress "address" ( "label" rescan p2sh )
+importwallet "filename"
+
+z_exportwallet "filename"
+z_importwallet "filename"
+
+encryptwallet "passphrase"
+
+### Other
+
+lockunspent unlock [{"txid":"txid","vout":n},...]
+listlockunspent
+
+keypoolrefill ( newsize )
+
+
+
+
+
+======================================================
+
+Subsumed Into Blind Merged Mining
+
+== Generating ==
+generate numblocks
+getgenerate
+setgenerate generate ( genproclimit )
+
+== Mining ==
+getblocksubsidy height
+getblocktemplate ( "jsonrequestobject" )
+getlocalsolps
+getmininginfo
+getnetworkhashps ( blocks height )
+getnetworksolps ( blocks height )
+prioritisetransaction <txid> <priority delta> <fee delta>
+submitblock "hexdata" ( "jsonparametersobject" )
+
+
+
+
+
+=====================================================================================
+## Not really necessary
+
+### MultiSig Addresses
+
+addmultisigaddress nrequired ["key",...] ( "account" )
+createmultisig nrequired ["key",...]
+
+   # zcash-cli createmultisig
+   #              2
+   #              "[\"t16sSauSf5pF2UkUwvKGq4qjNRzBZYqgEL5\",
+   #                \"t171sgjn4YtPu27adkKGrdDwzRTxnRkBfKV\"]
+   #              "
+
+
+z_shieldcoinbase
+
+## "Experimental Features"
+
+ getaddressbalance 
+ getaddressdeltas
+ getaddressmempool
+ getaddresstxids
+ getaddressutxos
+
+ getblockdeltas 0000000001ef1ff9d4e601ea7026cc078e6968e380c38462a60afef78cc047b8
+ getblockhashes high low ( {"noOrphans": true|false, "logicalTimes": true|false} )
+
+ getspentinfo {"txid": "txidhex", "index": n}
+
+ # getrawchangeaddress # "not for normal use"
+
+ z_getpaymentdisclosure "txid" "js_index" "output_index" ("message") 
+ z_validatepaymentdisclosure "paymentdisclosure"
+
+## Deprecated
+
+getaccount "zcashaddress"
+getaccountaddress "account"
+getaddressesbyaccount "account"
+listaccounts 0 true
+
+getreceivedbyaccount ""
+listreceivedbyaccount 0 true true # ( minconf includeempty includeWatchonly)
+
+move "fromaccount" "toaccount" amount ( minconf "comment" )
+sendfrom "fromaccount" "tozcashaddress" amount ( minconf "comment" "comment-to" )
+setaccount "zcashaddress" "account"
+
+# zcrawjoinsplit rawtx inputs outputs vpub_old vpub_new
+# zcrawkeygen
+# zcrawreceive zcsecretkey encryptednote
+
+## Migration / Sprout Only
+
+z_getmigrationstatus
+
+z_getnewaddress "sprout"
+z_addr_sprout="zcDXFXFE8bzodrKTSyJQXQMn8j46eCFy3qzKqEjfen1mHJNrzR7T7YexnbiLczvy35ZFiQGyaRkHofPT955NuZb1xhq2Q6x"
+z_setmigration enabled
+
+z_exportviewingkey "zaddr"
+z_importviewingkey "vkey" ( rescan startHeight )
+
+## Couldn't figure out what this is doing.
+
+zcsamplejoinsplit
+

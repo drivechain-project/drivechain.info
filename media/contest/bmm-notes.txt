@@ -1,0 +1,23 @@
+
+Some technical notes on Blind Merged Mining
+============================================
+
+RPC version of automatically scanning for BMM blocks...:
+https://github.com/drivechain-project/sidechains/blob/testchain/src/rpc/misc.cpp#L466-L533
+
+GUI version...:
+https://github.com/drivechain-project/sidechains/blob/testchain/src/qt/sidechainpage.cpp#L568-L637
+
+...both call the SidechainClient::RefreshBMM function
+https://github.com/drivechain-project/sidechains/blob/testchain/src/sidechainclient.cpp#L343-L449
+
+Automated BMM (if the checkbox is enabled or the RPC function is called without any options) will use:
+
+* RequestBMMProof:
+https://github.com/drivechain-project/sidechains/blob/testchain/src/sidechainclient.cpp#L191-L243 , and
+* SendBMMCriticalDataRequest
+https://github.com/drivechain-project/sidechains/blob/testchain/src/sidechainclient.cpp#L246-L296
+
+Validation will verify BMM in a few different places with the VerifyCriticalHashProof function in validation...: https://github.com/drivechain-project/sidechains/blob/testchain/src/validation.cpp#L3258-L3315
+
+...which will call this sidechain client function (also called VerifyCriticalHashProof): https://github.com/drivechain-project/sidechains/blob/testchain/src/sidechainclient.cpp#L168-L189
