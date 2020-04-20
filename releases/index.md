@@ -4,38 +4,19 @@ title: Releases
 ---
 
 
-## Version 30 -- Latest Version (Feb 25, 2020)!!
-
-### What's New?
-
-Mainchain ("DriveNet 0.30.00"): 
-
- * Fully backwards compatible -- (would sync with Bitcoin Core 0.12.0 [for example], if 0.12 had our genesis block)
- * NODE_DRIVECHAIN signaling / service flag 
- * Overview page now has a "More" frame, and a "sidechain status"
- * * click on a wt^ to go to the WT^ table
- * No "loaded coins" -- fresh blockchain, new genesis block. 
-
-Sidechain ("TestChain 4.00.00"): 
-
-* All BMM checks now enabled by default
- * testchaind handles disconnections the same way as Qt (checks for mainchain connection in a few different places)
-* Refactoring of BMM block creation
-* Refactoring of sidechain client / refreshbmm RPC
+## Version 31.01 -- Latest Version (April 19, 2020)!!
 
 ### **Binaries (Linux Only)**
 
 * On [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
 
-
 ### Sha256
 
-    drivechain-0.30.00-x86_64-linux-gnu.tar.gz
-    d10c52613d1c4e5d85277244956bdcbd3be040202d022bec207d4dc4a85a5eb4
+    drivechain-0.31.01-x86_64-linux-gnu.tar.gz
+    78f9a837f82887217deb45b6540dfb0f5640b56112d5b3bf8afe26185e63003c
 
-    testchain-4.00.00-x86_64-linux-gnu.tar.gz
-    7cee6f6757f1004776f66d3adec4b8b20b670ff14a1495c4277027d85b8f2a29
-
+    testchain-5.02.00-x86_64-linux-gnu.tar.gz
+    d1e200d2aa7eee51b29938065b08c5d7168ab7e895b1c3758d611a5ce8fa1f2c
 
 ### **Source**
 
@@ -43,9 +24,85 @@ Sidechain ("TestChain 4.00.00"):
 * [TestChain](https://github.com/drivechain-project/sidechains)
 * [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 
-### Block Explorer
+### What's New?
 
-* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
+#### Mainchain (v 31.01)
+
+GUI:
+
+* Bottom bar simplified and more informative.
+* Added withdrawal-details -- if a sidechain full node is connected, mainchain will now display details about the WT^.
+* Sidechain escrow status moved to the manage window.
+
+Deposits and BMM-Spends:
+
+* abandonbmm: Automatically abandons (and allows the coins to be spent again) immediately and BMM requests that were removed from the mempool. Also checks the mempool for any BMM requests that should be removed and abandons those as well.
+* abandondeposits: Does the same thing as abandonbmm but for deposits. Deposits that fail will immediately be refunded and the coins spendable again instead of waiting for the wallet to handle it automatically. 
+* Update mempool entries to track whether they are sidechain deposits, to improve the speed of looking them up / removing them.
+* BMM mempool removal / expiration bug fixes and speed improvements 
+* Keep track of removed BMM transactions and failed sidechain deposits so that 
+they can be manually abandoned using new RPC commands if you don't want to wait
+a long time for the wallet to do it automatically.
+* Make the mempool track whether a BMM / critical data request transaction was added since the last block (this makes the new —minerbreakforbmm startup parameter possible) 
+* Add —minerbreakforbmm startup parameter. Now you don't have to use the —minersleep option to mine BMM blocks. The miner will now automatically add BMM transactions to the block it is mining if —minerbreakforbmm is set. This happens more or less instantly, no more need for a pause.
+* Improved sidechain deposit validation code
+
+Bugfixes:
+
+* Fix bugs that would rarely cause lockup due to validation interface syncing deadlock issue. Known issue with bitcoin core that cannot really be fixed. If a sidechain deposit was created at the exact same time as a new block and the deposit function tried to sync the validation interface queue this would sometimes call ActivateBestChain which can cause a deadlock situation. 
+* Updated mempool deposit (CTIP) handling: Improved speed and bug fixes that could lead to txn-mempool-conflict errors or deposits staying in the mempool that should have been removed. 
+* Fixed sidechain deposit bug where a block is disconnected and a now invalid deposit remained in the mempool
+* Fixed bug where miner would include now invalid deposits in the same block that a WT^ spent the same output as a deposit
+
+Withdrawal-Tracking:
+
+* Huge improvements to the sidechain withdrawal table model. Now there is only one instance initialized, and it is only refreshed when a new block is connected. This greatly reduces calls to the sidechain database.
+
+
+
+
+
+#### Sidechain (v 5.02)
+
+GUI: 
+
+* Added "WT^ explorer" to sidechain GUI ("Parent Chain"). This will let you watch the latest WT^ (withdrawal) or lookup any WT^ in the database. You will be able to see the total wealth of the sidechain, the amount that a WT^ will be withdrawing, and the addresses / amounts that are going to the mainchain. 
+* Sidechain BMM tab default refresh rate changed to 1 second
+* Added note about new "--minerbreakforbmm" mainchain startup parameter to sidechain BMM page
+* Update sidechain currency unit to "SC1" instead of "BTC"
+
+New RPC commands:
+
+* getmainblockhash: Call the mainchain getblockhash RPC from the sidechain
+* updatemainblockcache: Manually update the cache of mainchain block hashes and handle a reorg if one is detected
+* verifymainblockcache: Manually verify the cache of mainchain block hashes with the local mainchain node
+* rebroadcastwtprimehex: Manually re-broadcast the sidechains raw WT^ txn cache to the local mainchain node
+
+Major Improvements:
+
+* Add mainchain block hash cache & mainchain reorg detection / handling (this is a big one, see: https://github.com/drivechain-project/sidechains/commit/d9d9c33209e4edc140400fe7d184af2e8e9f12a4) 
+* Added a ton of BMMCache tests (see https://github.com/drivechain-project/sidechains/commit/f03f10eba27ad356843f9295079321927470577e)
+* Refactored BMM updates / scanning for BMM commits on the mainchain - much faster now and with reduced RPC calls.
+* Change the DoS score for BMM verification failure of new header / block from 100 to 1. (In rare cases, the sidechain may receive a new block before the local mainchain node it is connected to receives the block with the BMM proof.)
+* Greatly improved processing speed of sidechain deposits (especially when there are a large number of them)
+
+Other Improvements:
+
+* Display hashMainBlock in GetBlock RPC
+* Add DB_LAST_SIDECHAIN_DEPOSIT key & value to txdb (leveldb) this makes looking up the last sidechain deposit a lot faster
+* Add a std::mutex and std::lock_guard to protect mainchain block cache updates
+* Changed DEFAULT_CHECK_LEVEL (for VerifyDB during startup) from 3 to 4.
+* Cleaned up leveldb index code - faster and less duplicate keys
+* Moved tracking of the last sidechain WT^ (withdrawal) to leveldb database
+* Improved pop up error messages
+* Peer banning is now logged
+
+Bugfixes:
+
+* Fix lock order bugs
+* Improved BMM verification speed
+* Fixed WT^ (Withdrawal) replication bugs
+* Fix miner bug: don't create a deposit payout transaction that makes the block too large
 
 ### How to Run
 
@@ -56,6 +113,14 @@ Sidechain ("TestChain 4.00.00"):
 5. Run! (/bin/testchain-qt)
 
 For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
+
+* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
+
+
+### Block Explorer
+
+* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
+
 
 
 <!--
@@ -71,11 +136,15 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 -->
 
+<!--
+	now obsolete -- now, people are better off using the GUI!
+
 ### How to Mine
 
 Please use the updated BMM documentation if you'd like to set up BMM mining once the testchain sidechain has been activated. 
 https://github.com/drivechain-project/docs/blob/master/BMM.md
 
+-->
 
 
 ## FAQ
