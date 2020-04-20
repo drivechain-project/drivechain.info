@@ -155,6 +155,7 @@ That's it!
 
 ### Some References
 
+* For developers, this [Drivechain Integration Script](https://github.com/drivechain-project/DriveChainIntegration) is probably helpful.
 * Here is a [Zcash explorer](https://explorer.testnet.z.cash/tx/cf4f3da2e434f68b6e361303403344e22a9ff9a8fda9abc180d9520d0ca6527d)
 * Here is the Zcash protocol specification is here (although I'm not sure how helpful it will be): https://github.com/zcash/zips/blob/master/protocol/protocol.pdf
 * Here are [some technical notes on Blind-Merged-Mining](/media/contest/bmm-notes.txt) (used by the sidechain template).
