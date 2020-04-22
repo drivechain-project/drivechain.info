@@ -104,7 +104,7 @@ Bugfixes:
 * Fixed WT^ (Withdrawal) replication bugs
 * Fix miner bug: don't create a deposit payout transaction that makes the block too large
 
-### How to Run
+## How to Run
 
 1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
 2. Download drivechain-0.31.01-x86_64-linux-gnu.tar.gz, verify sha256, extract.
@@ -112,11 +112,11 @@ Bugfixes:
 4. Download testchain-5.02.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
 5. Run! (/bin/testchain-qt)
 
+### Usage Tour
 
 For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
 
 * If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
-
 
 ### Block Explorer
 
@@ -157,7 +157,7 @@ Because we sometimes also host a 4 GB file (of BTC's UTXOs) there, for "importin
 This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
 
-## Selected Release Notes
+## Selected Older Release Notes
 
 ### DriveNet30 -- February 25, 2020
 
