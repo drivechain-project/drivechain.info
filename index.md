@@ -131,7 +131,7 @@ Drivechain is made of two BIPs, 300 and 301:
   </div>
 </div>
 
--->
+
 
 <div class="responsive">
   <div class="gallery">
@@ -142,6 +142,8 @@ Drivechain is made of two BIPs, 300 and 301:
 	
   </div>
 </div>
+
+-->
 
 <div class="responsive">
   <div class="gallery">
