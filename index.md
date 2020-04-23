@@ -259,6 +259,70 @@ See also:
 
 -->
 
+## Screenshots
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/screenshots/both.png">
+      <img src="/media/screenshots/both.png" alt="both" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/mainchain.png">
+      <img src="/media/mainchain.png" alt="mainchain" width="310" height="300">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/sidechain.png">
+      <img src="/media/sidechain.png" alt="sidechain" width="310" height="300">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/screenshots/deposits.png">
+      <img src="/media/screenshots/deposits.png" alt="deposits" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/screenshots/withdrawals.png">
+      <img src="/media/screenshots/withdrawals.png" alt="withdrawals" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/propose.png">
+      <img src="/media/propose.png" alt="propose" width="310" height="300">
+    </a>
+  
+  </div>
+</div>
+
+<div class="clearfix"></div>
 
 ## Even More Info
 
