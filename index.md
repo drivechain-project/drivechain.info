@@ -261,11 +261,24 @@ See also:
 
 ## Screenshots
 
+![image](/media/screenshots/both.png)
+
+![image](/media/screenshots/mainchain.png)
+
+![image](/media/screenshots/sidechain.png)
+
+![image](/media/screenshots/withdrawals.png)
+
+![image](/media/screenshots/deposits.png)
+
+![image](/media/screenshots/propose.png)
+
+<!--
 
 <div class="responsive">
   <div class="gallery">
   
-    <a href="/media/screenshots/both.png">
+    <a href="">
       <img src="/media/screenshots/both.png" alt="both" width="400" height="200">
     </a>
   
@@ -323,6 +336,8 @@ See also:
 </div>
 
 <div class="clearfix"></div>
+
+-->
 
 ## Even More Info
 
