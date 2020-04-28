@@ -185,6 +185,12 @@ Drivechain is made of two BIPs, 300 and 301:
 <div class="clearfix"></div>
 
 
+### The Tradeoffs
+
+![image](/media/risk-tradeoffs.png)
+
+
+
 ### Selected Recent Interviews
 
 1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
