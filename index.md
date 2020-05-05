@@ -63,15 +63,16 @@ div.desc {
 
 ### Peer-to-Peer Bitcoin Sidechains
 
-Drivechain allows BTC to travel back-and-forth to [other software applications](http://www.drivechain.info/projects/index.html) (called "sidechains"). Thus, BTC-owners can opt-in to new features or tradeoffs. Those who don't opt-in, never need to care what any sidechain is doing.
+Drivechain allows Bitcoin to *create*, *delete*, *send BTC to*, and *receieve BTC from* ["Layer-2"s](https://www.binance.vision/glossary/layer-2) called "sidechains". Sidechains are Altcoins that lack a native "coin" -- instead, pre-existing coins [from a different blockchain] must first be sent over.
 
-As with the Lightning Network, DC-users move their coins into a "layer-2" -- a zone where BTC can change hands an unlimited number of times. Eventually, just the *net* effect of these transfers is recorded back on layer-1.
+Once on a sidechain, coins can change hands an unlimited number of times, and in an unlimited number of *new ways*. Thus, BTC-owners can opt-in to [new features or tradeoffs](http://www.drivechain.info/projects/index.html). Meanwhile, the Bitcoiners who don't opt-in, never need to care what any sidechain is doing.
 
-Bitcoin Core can't observe any layer-2 (by design), so we need a way to discourage fraudulent "netting". LN counters theft via "justice transactions"; DC via forsaken mining revenues. LN-netting is private and instant; DC-netting is public and VERY slow (once per ~3 months).
+Transfers from sidechain back to the mainchain (ie, from Layer 2 back to Layer 1) are not done via *verifiable proof*, but instead via *conjecture-and-refutation*. A "bundle" of transfers is asserted, and then slowly "ACKed" over time. After 3 months of ACKing, the bundle succeeds. Thus, the SC:BTC market price cannot deviate significantly from a 1:1 ratio.
 
 
+### Key Benefits
 
-Key benefits -- *only* obtainable via Drivechain:
+*Only* obtainable via Drivechain:
 
 * Three existential threats to BTC are neutralized -- [altcoin-competition](http://www.drivechain.info/faq/#alt-death), [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) [campaigns](https://www.coindesk.com/bitcoins-bogeyman-cometh-segwit2x-51-attack), and [extension block](http://www.drivechain.info/faq/#ext-blocks) [campaigns](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
 * BTC development becomes anti-fragile with respect to CoreDev mistakes.
