@@ -42,7 +42,7 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 
 ### Construct 2019 (at Consensus NYC) ### {#consensus-2019}
 
-Basic 20 minute overview of Drivechain, with a comparison to the Lightning Network.
+20 minute overview of Drivechain design and security model. Includes comparison with the Lightning Network.
 
 * [Slides](/media/slides/construct-2019.pdf)
 * [Transcript](/media/slides/construct-2019-speech.pdf)
