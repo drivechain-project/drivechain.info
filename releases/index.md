@@ -12,11 +12,12 @@ title: Releases
 
 ### Sha256
 
-    drivechain-0.31.01-x86_64-linux-gnu.tar.gz
-    78f9a837f82887217deb45b6540dfb0f5640b56112d5b3bf8afe26185e63003c
+    drivechain-0.33.03-x86_64-linux-gnu.tar.gz
+    ab579d466dbb21e4ccd52ef6a84eb5f9c28a48769c1ad1105f255a53c5df7342
 
-    testchain-5.02.00-x86_64-linux-gnu.tar.gz
-    d1e200d2aa7eee51b29938065b08c5d7168ab7e895b1c3758d611a5ce8fa1f2c
+    testchain-6.03.00-x86_64-linux-gnu.tar.gz
+    f20e1f628c7b6702184b3dce1157ce30cfb47d5988ab13d6d3a6199e8ee31032
+
 
 ### **Source** (GitHub)
 
@@ -25,6 +26,73 @@ title: Releases
 * [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 
 ### What's New?
+
+Almost [too many](https://github.com/drivechain-project/sidechains/pull/106) [improvements](https://github.com/drivechain-project/mainchain/pull/11) to list.
+
+Here are a few big ones:
+
+* Easy tracking of user's withdrawals:
+* * Sidechain has a fully fleshed out "Withdrawal Explorer" GUI. And a helpful "lower ribbon" in the SC window.
+* * Mainchain can double-click to "open up" Withdrawal Txns (as they are being ACKed) to see their contents.
+* Much easier for users to understand withdrawal fees -- mainchain tx fees and sidechain fees are explicitly broken out. Withdrawals are dynamically sorted by Mainchain fee.
+* Easy to see/explore the entire past History of withdrawals.
+* BMM Miner -- now fully configured by default. Has 'start' and 'stop' buttons.
+* Mainchain GUI Miner, with useful info; convenient button for reclaiming failed BMM requests.
+
+
+## How to Run
+
+1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
+2. Download drivechain-0.31.01-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+3. Run! (/bin/drivenet-qt)
+4. Download testchain-5.02.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+5. Run! (/bin/testchain-qt)
+
+### Usage Tour
+
+For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
+
+* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
+
+### Block Explorer
+
+* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
+
+
+
+<!--
+
+1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
+2. Download drivechain-0.30.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+3. Start DriveNet-30. It will create some directories, give an error message about loaded coins, then exit.
+4. Download loaded_coins_590000.tar.gz, verify sha256, extract.
+5. Move loaded_coins_590000.dat to ~/.drivenet/loaded_coins.dat
+6. Start DriveNet-25 again. It will install the UTXO set into your node (~10 minutes).
+
+Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collect coins.
+
+-->
+
+### How to Mine
+
+On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
+
+On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
+
+
+
+## FAQ
+
+### Why is this on Google Drive?
+
+Because we sometimes also host a 4 GB file (of BTC's UTXOs) there, for "importing".
+
+This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
+
+
+## Selected Older Release Notes
+
+### April 20, 2020
 
 #### Mainchain (v 31.01)
 
@@ -104,60 +172,6 @@ Bugfixes:
 * Fixed WT^ (Withdrawal) replication bugs
 * Fix miner bug: don't create a deposit payout transaction that makes the block too large
 
-## How to Run
-
-1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download drivechain-0.31.01-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-3. Run! (/bin/drivenet-qt)
-4. Download testchain-5.02.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-5. Run! (/bin/testchain-qt)
-
-### Usage Tour
-
-For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
-
-* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
-
-### Block Explorer
-
-* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
-
-
-
-<!--
-
-1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download drivechain-0.30.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-3. Start DriveNet-30. It will create some directories, give an error message about loaded coins, then exit.
-4. Download loaded_coins_590000.tar.gz, verify sha256, extract.
-5. Move loaded_coins_590000.dat to ~/.drivenet/loaded_coins.dat
-6. Start DriveNet-25 again. It will install the UTXO set into your node (~10 minutes).
-
-Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collect coins.
-
--->
-
-<!--
-	now obsolete -- now, people are better off using the GUI!
-
-### How to Mine
-
-Please use the updated BMM documentation if you'd like to set up BMM mining once the testchain sidechain has been activated. 
-https://github.com/drivechain-project/docs/blob/master/BMM.md
-
--->
-
-
-## FAQ
-
-### Why is this on Google Drive?
-
-Because we sometimes also host a 4 GB file (of BTC's UTXOs) there, for "importing".
-
-This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
-
-
-## Selected Older Release Notes
 
 ### DriveNet30 -- February 25, 2020
 
