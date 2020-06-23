@@ -43,10 +43,12 @@ Here are a few big ones:
 ## How to Run
 
 1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download drivechain-0.31.01-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+2. Download drivechain-0.33.03-x86_64-linux-gnu.tar.gz, verify sha256, extract.
 3. Run! (/bin/drivenet-qt)
-4. Download testchain-5.02.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
+4. Download testchain-6.03.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
 5. Run! (/bin/testchain-qt)
+
+    
 
 ### Usage Tour
 
