@@ -78,104 +78,6 @@ Transfers from sidechain back to the mainchain (ie, from Layer 2 back to Layer 1
 * **Developers** -- Freedom to manage your own blockchain, and to keep out those who would ruin your masterpiece.
 
 
-### Explainer Memes
-
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme1.png">
-      <img src="/media/meme1.png" alt="meme1" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme2.png">
-      <img src="/media/meme2.png" alt="meme2" width="200" height="300">
-    </a>
-	
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme3.png">
-      <img src="/media/meme3.png" alt="meme3" width="100" height="500">
-    </a>
-	
-  </div>
-</div>
-
-<!--
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme4.png">
-      <img src="/media/meme4.png" alt="meme4" width="300" height="200">
-    </a>
-	
-  </div>
-</div>
-
-
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme5.png">
-      <img src="/media/meme5.png" alt="meme5" width="300" height="200">
-    </a>
-	
-  </div>
-</div>
-
--->
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme0.png">
-      <img src="/media/meme0.png" alt="meme0" width="400" height="200">
-    </a>
-  
-  </div>
-</div>
-
-
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme-reqs.png">
-      <img src="/media/meme-reqs.png" alt="meme-reqs" width="400" height="200">
-    </a>
-  
-  </div>
-</div>
-
-
-<div class="responsive">
-  <div class="gallery">
-  
-    <a href="/media/meme-vital-few.png">
-      <img src="/media/meme-vital-few.png" alt="meme-vtial-few" width="300" height="200">
-    </a>
-  
-  </div>
-</div>
-
-
-
-
-
-<div class="clearfix"></div>
-
-
 ### The Tradeoffs
 
 It is very risky for Bitcoin to go *without* Drivechain.
@@ -199,7 +101,7 @@ Drivechain is made of two BIPs, 300 and 301:
 Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain.
 
 
-### More Benefits
+### Key Benefits
 
 *Only* obtainable via Drivechain:
 
@@ -287,6 +189,10 @@ See also:
 
 -->
 
+
+
+
+
 ## Screenshots
 
 ![image](/media/screenshots/both.png)
@@ -366,6 +272,99 @@ See also:
 <div class="clearfix"></div>
 
 -->
+
+## Explainer Memes
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme1.png">
+      <img src="/media/meme1.png" alt="meme1" width="200" height="300">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme2.png">
+      <img src="/media/meme2.png" alt="meme2" width="200" height="300">
+    </a>
+  
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme3.png">
+      <img src="/media/meme3.png" alt="meme3" width="100" height="500">
+    </a>
+  
+  </div>
+</div>
+
+<!--
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme4.png">
+      <img src="/media/meme4.png" alt="meme4" width="300" height="200">
+    </a>
+  
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme5.png">
+      <img src="/media/meme5.png" alt="meme5" width="300" height="200">
+    </a>
+  
+  </div>
+</div>
+
+-->
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme0.png">
+      <img src="/media/meme0.png" alt="meme0" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme-reqs.png">
+      <img src="/media/meme-reqs.png" alt="meme-reqs" width="400" height="200">
+    </a>
+  
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+  
+    <a href="/media/meme-vital-few.png">
+      <img src="/media/meme-vital-few.png" alt="meme-vtial-few" width="300" height="200">
+    </a>
+  
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
 
 ## Even More Info
 
