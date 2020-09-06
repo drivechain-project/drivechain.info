@@ -70,23 +70,13 @@ Once on a sidechain, coins can change hands an unlimited number of times, and in
 Transfers from sidechain back to the mainchain (ie, from Layer 2 back to Layer 1) are not done via *verifiable proof*, but instead via *conjecture-and-refutation*. A "bundle" of transfers is asserted, and then slowly "ACKed" over time. After 3 months of ACKing, the bundle succeeds. Thus, the SC:BTC market price cannot deviate significantly from a 1:1 ratio. [More info](http://www.drivechain.info/literature/index.html#consensus-2019).
 
 
-### Key Benefits
+### Better for Everyone
 
-*Only* obtainable via Drivechain:
+* **Users** -- Get (eventually) *every* feature of every crypto-coin.
+* **Investors** -- Permanent solution to the problem of rival coins (and hard-forking).
+* **Miners** -- Automatically collect txn fees from all chains at once (no node software needed).
+* **Developers** -- Freedom to manage your own blockchain, and to keep out those who would ruin your masterpiece.
 
-* Three existential threats to BTC are neutralized -- [altcoin-competition](http://www.drivechain.info/faq/#alt-death), [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) [campaigns](https://www.coindesk.com/bitcoins-bogeyman-cometh-segwit2x-51-attack), and [extension block](http://www.drivechain.info/faq/#ext-blocks) [campaigns](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
-* BTC development becomes anti-fragile with respect to CoreDev mistakes.
-* BTC maintains [hashrate security in the long run](http://www.truthcoin.info/blog/security-budget/).
-* BTC can [scale to credit-card level txn-processing](http://www.truthcoin.info/blog/gigachain/) -- **without changing the [CONOP](http://www.truthcoin.info/blog/measuring-decentralization/) of Bitcoin Core**. These cheap txns have [optimal fungibility](http://www.truthcoin.info/blog/deniability/) and [supply vital pretext](http://www.truthcoin.info/blog/expensive-privacy/#3-applied-to-bitcoin-itself) to the BTC ecosystem. 
-* BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
-
-
-### BIPs 
-
-Drivechain is made of two BIPs, 300 and 301:
-
-1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) -- "Container UTXOs" that compress 3-6 months of transaction data into a fixed 32-bytes.
-2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
 
 ### Explainer Memes
 
@@ -188,8 +178,17 @@ Drivechain is made of two BIPs, 300 and 301:
 
 ### The Tradeoffs
 
+It is very risky for Bitcoin to go *without* Drivechain.
+
 ![image](/media/risk-tradeoffs.png)
 
+
+### BIPs 
+
+Drivechain is made of two BIPs, 300 and 301:
+
+1. [**Hashrate Escrows**](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) -- "Container UTXOs" that compress 3-6 months of transaction data into a fixed 32-bytes.
+2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
 
 
 ### Selected Recent Interviews
@@ -200,11 +199,31 @@ Drivechain is made of two BIPs, 300 and 301:
 Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://twitter.com/specialenmity/status/1071204861524537345) Drivechain.
 
 
+### More Benefits
+
+*Only* obtainable via Drivechain:
+
+* Three existential threats to BTC are neutralized -- [altcoin-competition](http://www.drivechain.info/faq/#alt-death), [hard fork](http://www.truthcoin.info/blog/against-the-hard-fork/) [campaigns](https://www.coindesk.com/bitcoins-bogeyman-cometh-segwit2x-51-attack), and [extension block](http://www.drivechain.info/faq/#ext-blocks) [campaigns](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-April/014004.html).
+* BTC development becomes anti-fragile with respect to CoreDev mistakes.
+* BTC maintains [hashrate security in the long run](http://www.truthcoin.info/blog/security-budget/).
+* BTC can [scale to credit-card level txn-processing](http://www.truthcoin.info/blog/gigachain/) -- **without changing the [CONOP](http://www.truthcoin.info/blog/measuring-decentralization/) of Bitcoin Core**. These cheap txns have [optimal fungibility](http://www.truthcoin.info/blog/deniability/) and [supply vital pretext](http://www.truthcoin.info/blog/expensive-privacy/#3-applied-to-bitcoin-itself) to the BTC ecosystem. 
+* BTC gains [new, experimental abilities](http://www.drivechain.info/projects/index.html), especially [P2P event derivatives](http://bitcoinhivemind.com/).
+
+
 ### Critiques and Controversy
 
 View [the main critiques of Drivechain](http://www.drivechain.info/peer-review/peer-review-new/).
 
 Please [read the FAQ](/faq/index.html)!
+
+Read [Why Drivechain is Hard for Bitcoiners to Understand](https://www.drivechain.info/blog/hard-to-understand/).
+
+
+### Pro-Drivechain Evidence
+
+* The ever-present **disagreement over consensus rules** (blocksize controversy, rise of Ethereum/Altcoins, BCH/BSV/Amaury split, activation logic disputes). Cultural enforcement of meta-consensus has attracted [sociopath](https://meaningness.com/geeks-mops-sociopaths) "guardians of Bitcoin" who are making everyone miserable.
+* The degree of **heterogeneity among people** (some preferring govt-aligned exchanges and custodial wallets, others always running a full node, others preferring Electrum, etc). If BTC caters only to the paranoid, then it can never be mainstream; we must somehow please everyone. 
+* The **unwillingness of txn fees to rise** *above* $5 (and to *stay above $5 permanently*), see [here](http://www.truthcoin.info/blog/security-budget/).
 
 
 ### Getting Started
