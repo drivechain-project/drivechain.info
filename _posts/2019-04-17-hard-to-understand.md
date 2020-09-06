@@ -52,7 +52,7 @@ Well, regular txns need to worry about being reorged out of the chain, but withd
 
 ### 4. New Mindset: Non-Core Software Might Be Good
 
-The engineering task of "how to sidechain", is basically the task of "how to most efficiently abandon the mainchain host software".
+The engineering task of "how to sidechain", is basically the task of "how to most efficiently abandon the mainchain host software". Ie, how to abandon Bitcoin Core (without destroying Bitcoin Core, or harming the 21 million BTC).
 
 The problem is that Bitcoin-Culture has evolved [an extreme aversion to all non-BTC projects](https://www.reddit.com/r/btc/comments/9i8obh/everything_wrong_with_the_btc_community_in_one/).
 
