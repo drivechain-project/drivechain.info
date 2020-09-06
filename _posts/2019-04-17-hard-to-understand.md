@@ -52,13 +52,15 @@ Well, regular txns need to worry about being reorged out of the chain, but withd
 
 ### 4. New Mindset: Non-Core Software Might Be Good
 
-Bitcoin-Culture has evolved [an extreme aversion to non-BTC projects](https://www.reddit.com/r/btc/comments/9i8obh/everything_wrong_with_the_btc_community_in_one/). A tremendous amount of this aversion is justified[^n], and it was highly reinforced during the 2016-2017 Scaling War, in which the Core prevailed over its rivals.
+The engineering task of "how to sidechain", is basically the task of "how to most efficiently abandon the mainchain host software".
+
+The problem is that Bitcoin-Culture has evolved [an extreme aversion to all non-BTC projects](https://www.reddit.com/r/btc/comments/9i8obh/everything_wrong_with_the_btc_community_in_one/).
+
+A tremendous amount of this aversion is justified[^n], and it was highly reinforced during the 2016-2017 Scaling War, in which the Core prevailed over its rivals.
 
 [^n]: Much of it is cognitive dissonance -- it is the only way someone can process a world, where they work hard to make obscure and under-appreciated changes to Bitcoin, while meanwhile the ICO scam down the street gets $30 million dollars in a weekend.
 
-The problem, is that the engineering task of "how to sidechain", is basically the task of "how to most efficiently abandon the mainchain host software".
-
-This simply baffles most Bitcoiners -- experts and laypeople included. They have been trained to think that Core is the best, and everyone using non-Core software is evil or misguided.
+However, that aversion has now become overgeneralized. As of 2019, Bitcoiners now regard Core as infallible: opposition to Core is opposition to goodness, and all who use non-Core software are misguided or evil. So most Bitcoiners are baffled by Drivechain and can't understand what it would even be used for.
 
 <!--
 #### i. Upside Down
