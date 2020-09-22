@@ -4,7 +4,7 @@ title: Releases
 ---
 
 
-## Version 33.03 -- Latest Version (June 22nd, 2020)!!
+## Version 33.03 -- Latest Version (Sept 22nd, 2020)!!
 
 ### **Binaries (Linux Only)**
 
@@ -12,12 +12,11 @@ title: Releases
 
 ### Sha256
 
-    drivechain-0.33.03-x86_64-linux-gnu.tar.gz
-    ab579d466dbb21e4ccd52ef6a84eb5f9c28a48769c1ad1105f255a53c5df7342
+    drivenet-0.34.00-x86_64-linux-gnu.tar.gz
+    57e961c45c696fff91b9ec97b041bd416fe3bdc28fae2730c4a0c389b3c9ee3e
 
-    testchain-6.03.00-x86_64-linux-gnu.tar.gz
-    f20e1f628c7b6702184b3dce1157ce30cfb47d5988ab13d6d3a6199e8ee31032
-
+    testchain-7.00.00-x86_64-linux-gnu.tar.gz
+    d49036c259fea46796e07b03eac3b3a22abac3a15e406b925534f3c7287d61cd  
 
 ### **Source** (GitHub)
 
@@ -27,17 +26,25 @@ title: Releases
 
 ### What's New?
 
-Almost [too many](https://github.com/drivechain-project/sidechains/pull/106) [improvements](https://github.com/drivechain-project/mainchain/pull/11) to list.
 
-Here are a few big ones:
+* Withdrawals
+* * Withdrawls can now be canceled. Use RPC 'createwtrefundrequest', or right-click from the GUI.
+* If a withdrawal bundle (WT^) fails there will be a waiting period before the next WT^ -- use this time to cancel a withdrawal.
+* Withdrawal bundles (WT^s) expire early, when they fall so far behind they can no longer succeed. This allows a new withdrawal bundle to be created ASAP. 
+* GUI 
+* * BMM table overhaul - the BMM table has been upgraded to include a lot more information.
+* * New amount field widget (testing on the sidechain first) that replaces all fields where you would enter a Bitcoin amount
+* * The "train schedule" UI is now accurate, and so has been re-enabled.
+* * Manual BMM tab has been demoted to a button (since it took up a lot of space and no one uses it).
+* * Similarly, the "old" tab on mainchain & sidechain "Receive" area, has been demoted to a button. 
+* * The mainchain "Active Sidechains" list is much cleaner now.
+* Minor Changes
+* * Fix very unlikely leveldb object issue, where a normal transaction would be misidentified as a sidechain object transaction.
+* * Removed —mainchainrpcport command line / config file option. Now subsumed by —mainchainregtest, as the mainchain regtest port will automatically be used for RPC communication.
+* * 'refreshbmm' now returns much more data
+* * Sidechain has RPC 'getwt', which returns all of the data for a sidechain withdrawal.
 
-* Easy tracking of user's withdrawals:
-* * Sidechain has a fully fleshed out "Withdrawal Explorer" GUI. And a helpful "lower ribbon" in the SC window.
-* * Mainchain can double-click to "open up" Withdrawal Txns (as they are being ACKed) to see their contents.
-* Much easier for users to understand withdrawal fees -- mainchain tx fees and sidechain fees are explicitly broken out. Withdrawals are dynamically sorted by Mainchain fee.
-* Easy to see/explore the entire past History of withdrawals.
-* BMM Miner -- now fully configured by default. Has 'start' and 'stop' buttons.
-* Mainchain GUI Miner, with useful info; convenient button for reclaiming failed BMM requests.
+
 
 
 ## How to Run
@@ -94,7 +101,26 @@ This is new/unstable software -- assume that it is a virus that will set your co
 
 ## Selected Older Release Notes
 
+
+
+### June 22nd, 2020 (v33.03)
+
+Almost [too many](https://github.com/drivechain-project/sidechains/pull/106) [improvements](https://github.com/drivechain-project/mainchain/pull/11) to list.
+
+Here are a few big ones:
+
+* Easy tracking of user's withdrawals:
+* * Sidechain has a fully fleshed out "Withdrawal Explorer" GUI. And a helpful "lower ribbon" in the SC window.
+* * Mainchain can double-click to "open up" Withdrawal Txns (as they are being ACKed) to see their contents.
+* Much easier for users to understand withdrawal fees -- mainchain tx fees and sidechain fees are explicitly broken out. Withdrawals are dynamically sorted by Mainchain fee.
+* Easy to see/explore the entire past History of withdrawals.
+* BMM Miner -- now fully configured by default. Has 'start' and 'stop' buttons.
+* Mainchain GUI Miner, with useful info; convenient button for reclaiming failed BMM requests.
+
+
 ### April 20, 2020
+
+So many improvements, we need to split the list into sections:
 
 #### Mainchain (v 31.01)
 
