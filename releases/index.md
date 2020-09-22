@@ -4,7 +4,7 @@ title: Releases
 ---
 
 
-## Version 33.03 -- Latest Version (Sept 22nd, 2020)!!
+## Version 34.03 -- Latest Version (Sept 22nd, 2020)!!
 
 ### **Binaries (Linux Only)**
 
