@@ -4,7 +4,7 @@ title: Releases
 ---
 
 
-## Version 34.00 -- Latest Version (Sept 22nd, 2020)!!
+## Version 34.01 -- Latest Version (Sept 25nd, 2020)!!
 
 ### **Binaries (Linux Only)**
 
@@ -12,8 +12,8 @@ title: Releases
 
 ### Sha256
 
-    drivenet-0.34.00-x86_64-linux-gnu.tar.gz
-    57e961c45c696fff91b9ec97b041bd416fe3bdc28fae2730c4a0c389b3c9ee3e
+    drivenet-0.34.01-x86_64-linux-gnu.tar.gz
+    2796e27356fbe655217ead4d40f098a7626901d0d6e92458259116b9e2b80361  
 
     testchain-7.00.00-x86_64-linux-gnu.tar.gz
     d49036c259fea46796e07b03eac3b3a22abac3a15e406b925534f3c7287d61cd  
