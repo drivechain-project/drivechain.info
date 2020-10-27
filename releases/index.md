@@ -4,7 +4,11 @@ title: Releases
 ---
 
 
-## Version 34.01 -- Latest Version (Sept 25nd, 2020)!!
+
+
+
+
+## Version 34.01 -- Latest Version (October 18th, 2020)
 
 ### **Binaries (Linux Only)**
 
@@ -12,11 +16,10 @@ title: Releases
 
 ### Sha256
 
-    drivenet-0.34.01-x86_64-linux-gnu.tar.gz
-    2796e27356fbe655217ead4d40f098a7626901d0d6e92458259116b9e2b80361  
-
-    testchain-7.00.00-x86_64-linux-gnu.tar.gz
-    d49036c259fea46796e07b03eac3b3a22abac3a15e406b925534f3c7287d61cd  
+    4a752414a17b84183b8073d4f22b8af91865b2ccfb0991256aa92e3e79f92522  drivenet-0.35.00-win64.zip
+    9f86187e88face5e70503a80823ff65527e6c3459d312414feb55000ce6326f0  drivenet-0.35.00-x86_64-linux-gnu.tar.gz
+    cf81a676bdf753d57ca99b72970b902268888ebdfe121b4e147bb3814cea4796  testchain-8.00.00-x86_64-linux-gnu.tar.gz
+    d0da9d77f7edc598eb422603016f8c70e2e9193e85e514870f7e7c8bec1fec46  trainchain-1001.00.00-x86_64-linux-gnu.tar.gz
 
 ### **Source** (GitHub)
 
@@ -26,23 +29,15 @@ title: Releases
 
 ### What's New?
 
-
-* Withdrawals
-* * Withdrawls can now be canceled. Use RPC 'createwtrefundrequest', or right-click from the GUI.
-* If a withdrawal bundle (WT^) fails there will be a waiting period before the next WT^ -- use this time to cancel a withdrawal.
-* Withdrawal bundles (WT^s) expire early, when they fall so far behind they can no longer succeed. This allows a new withdrawal bundle to be created ASAP. 
-* GUI 
-* * BMM table overhaul - the BMM table has been upgraded to include a lot more information.
-* * New amount field widget (testing on the sidechain first) that replaces all fields where you would enter a Bitcoin amount
-* * The "train schedule" UI is now accurate, and so has been re-enabled.
-* * Manual BMM tab has been demoted to a button (since it took up a lot of space and no one uses it).
-* * Similarly, the "old" tab on mainchain & sidechain "Receive" area, has been demoted to a button. 
-* * The mainchain "Active Sidechains" list is much cleaner now.
-* Minor Changes
-* * Fix very unlikely leveldb object issue, where a normal transaction would be misidentified as a sidechain object transaction.
-* * Removed —mainchainrpcport command line / config file option. Now subsumed by —mainchainregtest, as the mainchain regtest port will automatically be used for RPC communication.
-* * 'refreshbmm' now returns much more data
-* * Sidechain has RPC 'getwt', which returns all of the data for a sidechain withdrawal.
+* Windows binaries!
+* Automatically abandon failed BMM requests periodically (GUI version only)
+* Add error checking for sidechain .dat files during init
+* Updated testchain configuration file generator
+* Fixed bugs related to sidechain deposits when there are multiple active sidechains. 
+* Bitcoin Core patch https://github.com/bitcoin/bitcoin/pull/13622 to remove network request counting from wallet txns - remove DoS vector 
+* Fixes & improvements to BMM transaction abandonment code
+* Fix reindex init bug: ignore sidechain number during AcceptBlock if we are reading from disk and reindexing
+* Removed unused code from sidechain database & refactoring
 
 
 
@@ -101,6 +96,26 @@ This is new/unstable software -- assume that it is a virus that will set your co
 
 ## Selected Older Release Notes
 
+
+
+### Sept 25nd, 2020 (v34.01)
+
+* Withdrawals
+* * Withdrawls can now be canceled. Use RPC 'createwtrefundrequest', or right-click from the GUI.
+* If a withdrawal bundle (WT^) fails there will be a waiting period before the next WT^ -- use this time to cancel a withdrawal.
+* Withdrawal bundles (WT^s) expire early, when they fall so far behind they can no longer succeed. This allows a new withdrawal bundle to be created ASAP. 
+* GUI 
+* * BMM table overhaul - the BMM table has been upgraded to include a lot more information.
+* * New amount field widget (testing on the sidechain first) that replaces all fields where you would enter a Bitcoin amount
+* * The "train schedule" UI is now accurate, and so has been re-enabled.
+* * Manual BMM tab has been demoted to a button (since it took up a lot of space and no one uses it).
+* * Similarly, the "old" tab on mainchain & sidechain "Receive" area, has been demoted to a button. 
+* * The mainchain "Active Sidechains" list is much cleaner now.
+* Minor Changes
+* * Fix very unlikely leveldb object issue, where a normal transaction would be misidentified as a sidechain object transaction.
+* * Removed —mainchainrpcport command line / config file option. Now subsumed by —mainchainregtest, as the mainchain regtest port will automatically be used for RPC communication.
+* * 'refreshbmm' now returns much more data
+* * Sidechain has RPC 'getwt', which returns all of the data for a sidechain withdrawal.
 
 
 ### June 22nd, 2020 (v33.03)
