@@ -89,9 +89,11 @@ II. Agreeing on Consensus
 
 ### Overview and Misconceptions -- January 2018
 
-This is the best presentation to [watch](https://www.youtube.com/watch?v=gUbGT70wy5k), if you can only watch one. It has all the facts and almost all of the "criticisms".
+This is the best presentation to watch, if you can only watch one. It has all the facts and almost all of the "criticisms".
 
 [Slides](/media/slides/dc-overview-misconceptions.pdf)
+
+[Video](https://www.youtube.com/watch?v=gUbGT70wy5k)
 
 
 ### Construct -- January 2017
