@@ -15,13 +15,17 @@ title: Releases
 * WINDOWS (x64) (Mainchain only, for now)
 * * [Mainchain v35.00 - setup.exe](/releases/bin/drivenet-0.35.00-win64-setup.exe)
 * * [Mainchain v35.00 - directory.zip](/releases/bin/drivenet-0.35.00-win64.zip)
+
+
 * LINUX
-* * [drivenet-0.35.00-x86_64-linux-gnu.tar.gz](/releases/bin/drivenet-0.35.00-x86_64-linux-gnu.tar.gz)
-* * [Sidechain #1 - Testchain v8.00.0](/releases/bin/testchain-8.00.00-x86_64-linux-gnu.tar.gz)
-* * [Sidechain #2 - Trainchain v1001.00.0](/releases/bin/trainchain-1001.00.00-x86_64-linux-gnu.tar.gz)
+* * [Mainchain v35.0 tar.gz](/releases/bin/drivenet-0.35.00-x86_64-linux-gnu.tar.gz)
+* * [SC #1 - Testchain v8.00 tar.gz](/releases/bin/testchain-8.00.00-x86_64-linux-gnu.tar.gz)
+* * [SC #2 - Trainchain v1001.00 tar.gz](/releases/bin/trainchain-1001.00.00-x86_64-linux-gnu.tar.gz)
 
 
 * Historical Releases on [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
+
+Note: Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). Coincidentally, this is very secure (by layperson standards), because if you only download/run DriveNet from within the VirtualBox, it should be impossible for DriveNet to touch the rest of your Mac/Windows computer.
 
 ### Sha256
 
