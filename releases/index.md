@@ -8,7 +8,7 @@ title: Releases
 
 
 
-## Version 34.01 -- Latest Version (October 18th, 2020)
+## Version 35.00 -- Latest Version (October 18th, 2020)
 
 ### **Binaries**
 
