@@ -12,12 +12,12 @@ title: Releases
 -->
 
 |Software|Linux|Windows|Mac|Source|
-|--------|-----|-------|---|------|
-|Mainchain v36|[tar.gz](/releases/bin/drivechain-0.36.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v1|[tar.gz](/releases/bin/thunder-1.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v1| | | |[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|--------|:---:|:-----:|:-:|:----:|
+|**Mainchain v36**|[tar.gz](/releases/bin/drivechain-0.36.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v1|[tar.gz](/releases/bin/thunder-1.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v1|n/a|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -27,45 +27,50 @@ Historical Releases archived on [Google Drive](https://drive.google.com/drive/fo
 
 ### What's New?
 
-* Deposit UX
-* * You now get immediate graphical feedback when you make a deposit. The GUI tracks coins every step of the way, from your wallet, into "limbo" (between chains), and finally into the sidechain.
-* * Sidechain addresses no longer need to start with an "s". In fact, the mainchain now deposits coins wherever you say, no questions asked. It can therefore send to an address of any shape or size -- if the SC recognizes it, the coins will show up. Thus we can deposit to, for example, zcash t-addresses or testchain bech32 addresses.
-* * New RPC command 'formatdepositaddress' will take any sidechain address and format it in the XX_XXXXXX_XX format now used for deposits.
+**Deposit UX**
+
+* You now get immediate graphical feedback when you make a deposit. The GUI tracks coins every step of the way, from your wallet, into "limbo" (between chains), and finally into the sidechain.
+* Sidechain addresses no longer need to start with an "s". In fact, the mainchain now deposits coins wherever you say, no questions asked. It can therefore send to an address of any shape or size -- if the SC recognizes it, the coins will show up. Thus we can deposit to, for example, zcash t-addresses or testchain bech32 addresses.
+* New RPC command 'formatdepositaddress' will take any sidechain address and format it in the XX_XXXXXX_XX format now used for deposits.
 * * Deposit code works much faster.
-* GUI / Quality-of-Life
-* * "Abandon failed BMM transactions" - now has best-of-both-worlds treatment. If the checkbox on the miner dialog popup is toggled, it triggers immedately (in addition to triggering every 10 mins from that point afterward).
-* * Hash calculator added to mainchain Tools menu
-* * "Sidechain management" upgrades. Setting WT^ votes and adding / removing sidechains is now more simple and easier to find.
-* * Added sidechain details popup dialog (double click an active sidechain on the sidechain list to see details) 
-* Refactor
-* * Deposit validation mempool rules refactored
+
+**GUI / Quality-of-Life**
+
+* "Abandon failed BMM transactions" - now has best-of-both-worlds treatment. If the checkbox on the miner dialog popup is toggled, it triggers immedately (in addition to triggering every 10 mins from that point afterward).
+* Hash calculator added to mainchain Tools menu
+* "Sidechain management" upgrades. Setting WT^ votes and adding / removing sidechains is now more simple and easier to find.
+* Added sidechain details popup dialog (double click an active sidechain on the sidechain list to see details)
+
+**Refactor**
+
+* Deposit validation mempool rules refactored
 
 
 
 ## Useful Tips
 
-### Useful Tools
+### 1. Useful Tools
 
 * [Block Explorer](http://explorer.drivechain.info/)
 * This [script on Github](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 * Written [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
 
-### How to Mine Blocks
+### 2. How to Mine Blocks
 
 On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
 
 On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
 
 
-### Linux Guide for Noobs
+### 3. Linux Guide for Noobs
 
 Some of the software is Linux-only, especially at first. Linux is also safer to use than other OSes!
 
-#### Linux is Free, and Easy to Use on Mac/Windows
+#### a. Linux is Free, and Easy to Use on Mac/Windows
 
 Note: Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is not only easy, it is very secure (by layperson standards), because it should be impossible for DriveNet to touch the rest of your Mac/Windows computer (it will be confined to the VirtualBox computer).
 
-#### How to Run Drivenet (Linux Noobs)
+#### b. How to Run Drivenet (Linux Noobs)
 
 1. If you have old data directories from previous versions (~/.drivenet, ~/.testchain) please delete them!
 2. Download the **tar.gz** file (above), and extract it.
@@ -95,7 +100,7 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 ## Selected Older Release Notes
 
 
-## Oct 18, 2020 (v35.00)
+### Oct 18, 2020 (v35.00)
 
 * Windows binaries!
 * Automatically abandon failed BMM requests periodically (GUI version only)
