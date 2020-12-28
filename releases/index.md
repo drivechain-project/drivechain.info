@@ -5,86 +5,74 @@ title: Releases
 
 
 
+## Download Latest Version (Dec 28, 2020)
+
+<!--
+/releases/bin/
+-->
+
+|Software|Linux|Windows|Mac|Source|
+|--------|-----|-------|---|------|
+|Mainchain v36|[tar.gz](/releases/bin/drivechain-0.36.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v1|[tar.gz](/releases/bin/thunder-1.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.00-win64-setup-unsigned.exe)| |[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v1| | | |[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
+Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
-## Version 35.00 -- Latest Version (October 18th, 2020)
+Historical Releases archived on [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT).
 
-### **Binaries**
-
-* WINDOWS (x64) (Mainchain only, for now)
-* * [Mainchain v35.00 - setup.exe](/releases/bin/drivenet-0.35.00-win64-setup.exe)
-* * [Mainchain v35.00 - directory.zip](/releases/bin/drivenet-0.35.00-win64.zip)
-
-
-* LINUX
-* * [Mainchain v35.0 tar.gz](/releases/bin/drivenet-0.35.00-x86_64-linux-gnu.tar.gz)
-* * [SC #1 - Testchain v8.00 tar.gz](/releases/bin/testchain-8.00.00-x86_64-linux-gnu.tar.gz)
-* * [SC #2 - Trainchain v1001.00 tar.gz](/releases/bin/trainchain-1001.00.00-x86_64-linux-gnu.tar.gz)
-
-
-* Historical Releases on [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT)
-
-Note: Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). Coincidentally, this is very secure (by layperson standards), because if you only download/run DriveNet from within the VirtualBox, it should be impossible for DriveNet to touch the rest of your Mac/Windows computer.
-
-### Sha256
-
-    drivenet-0.35.00-win64-setup.exe
-    1bf1df8cfae936aa35b0526d1e4d31f1fe876531b8fab916ad3e9a238cb85bc1
-
-    drivenet-0.35.00-win64.zip
-    4a752414a17b84183b8073d4f22b8af91865b2ccfb0991256aa92e3e79f92522
-
-    drivenet-0.35.00-x86_64-linux-gnu.tar.gz
-    9f86187e88face5e70503a80823ff65527e6c3459d312414feb55000ce6326f0
-
-    testchain-8.00.00-x86_64-linux-gnu.tar.gz
-    cf81a676bdf753d57ca99b72970b902268888ebdfe121b4e147bb3814cea4796
-
-    trainchain-1001.00.00-x86_64-linux-gnu.tar.gz
-    d0da9d77f7edc598eb422603016f8c70e2e9193e85e514870f7e7c8bec1fec46  
-
-### **Source** (GitHub)
-
-* [DriveNet](https://github.com/drivechain-project/mainchain/)
-* [TestChain](https://github.com/drivechain-project/sidechains)
-* [Integration Script](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
 
 ### What's New?
 
-* Windows binaries!
-* Automatically abandon failed BMM requests periodically (GUI version only)
-* Add error checking for sidechain .dat files during init
-* Updated testchain configuration file generator
-* Fixed bugs related to sidechain deposits when there are multiple active sidechains. 
-* Bitcoin Core patch https://github.com/bitcoin/bitcoin/pull/13622 to remove network request counting from wallet txns - remove DoS vector 
-* Fixes & improvements to BMM transaction abandonment code
-* Fix reindex init bug: ignore sidechain number during AcceptBlock if we are reading from disk and reindexing
-* Removed unused code from sidechain database & refactoring
+* Deposit UX
+* * You now get immediate graphical feedback when you make a deposit. The GUI tracks coins every step of the way, from your wallet, into "limbo" (between chains), and finally into the sidechain.
+* * Sidechain addresses no longer need to start with an "s". In fact, the mainchain now deposits coins wherever you say, no questions asked. It can therefore send to an address of any shape or size -- if the SC recognizes it, the coins will show up. Thus we can deposit to, for example, zcash t-addresses or testchain bech32 addresses.
+* * New RPC command 'formatdepositaddress' will take any sidechain address and format it in the XX_XXXXXX_XX format now used for deposits.
+* * Deposit code works much faster.
+* GUI / Quality-of-Life
+* * "Abandon failed BMM transactions" - now has best-of-both-worlds treatment. If the checkbox on the miner dialog popup is toggled, it triggers immedately (in addition to triggering every 10 mins from that point afterward).
+* * Hash calculator added to mainchain Tools menu
+* * "Sidechain management" upgrades. Setting WT^ votes and adding / removing sidechains is now more simple and easier to find.
+* * Added sidechain details popup dialog (double click an active sidechain on the sidechain list to see details) 
+* Refactor
+* * Deposit validation mempool rules refactored
 
 
 
+## Useful Tips
 
-## How to Run
+### Useful Tools
 
-1. Delete old data directories if you have any (~/.drivenet, ~/.testchain).
-2. Download drivechain-0.33.03-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-3. Run! (/bin/drivenet-qt)
-4. Download testchain-6.03.00-x86_64-linux-gnu.tar.gz, verify sha256, extract.
-5. Run! (/bin/testchain-qt)
+* [Block Explorer](http://explorer.drivechain.info/)
+* This [script on Github](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
+* Written [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
 
-    
+### How to Mine Blocks
 
-### Usage Tour
+On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
 
-For more details, see the [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
+On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
+
+
+### Linux Guide for Noobs
+
+Some of the software is Linux-only, especially at first. Linux is also safer to use than other OSes!
+
+#### Linux is Free, and Easy to Use on Mac/Windows
+
+Note: Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is not only easy, it is very secure (by layperson standards), because it should be impossible for DriveNet to touch the rest of your Mac/Windows computer (it will be confined to the VirtualBox computer).
+
+#### How to Run Drivenet (Linux Noobs)
+
+1. If you have old data directories from previous versions (~/.drivenet, ~/.testchain) please delete them!
+2. Download the **tar.gz** file (above), and extract it.
+3. Navigate to the qt file (/bin/drivenet-qt).
+4. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
 
 * If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
-
-### Block Explorer
-
-* [Explorer.Drivechain.Info](http://explorer.drivechain.info/)
-
 
 
 <!--
@@ -100,24 +88,24 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 -->
 
-### How to Mine
-
-On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
-
-On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
 
 
-
-## FAQ
-
-### Why is this on Google Drive?
-
-Because we sometimes also host a 4 GB file (of BTC's UTXOs) there, for "importing".
-
-This is new/unstable software -- assume that it is a virus that will set your computer on fire and then steal your BTC. At first, you should only be running it in Qubues / VirtualBox etc.
 
 
 ## Selected Older Release Notes
+
+
+## Oct 18, 2020 (v35.00)
+
+* Windows binaries!
+* Automatically abandon failed BMM requests periodically (GUI version only)
+* Add error checking for sidechain .dat files during init
+* Updated testchain configuration file generator
+* Fixed bugs related to sidechain deposits when there are multiple active sidechains. 
+* Bitcoin Core patch https://github.com/bitcoin/bitcoin/pull/13622 to remove network request counting from wallet txns - remove DoS vector 
+* Fixes & improvements to BMM transaction abandonment code
+* Fix reindex init bug: ignore sidechain number during AcceptBlock if we are reading from disk and reindexing
+* Removed unused code from sidechain database & refactoring
 
 
 
