@@ -13,15 +13,17 @@ They boil down to the following:
 1. "miners can steal sidechain funds"
 2. "merged minded sidechains increase pool overhead, making txn-censorship easier"
 
-It is somewhat distressing that these critiques remain, because both of them are completely false. Each is a complex blend of false premises, self-contradiction, ignoratio elenchi, and even outright deception. For each, there is so much to say, about how wrong they are, that --when I am speaking in person-- I often trip myself up by trying to articulate all of them at once.
+It is distressing that these critiques remain, because both of them are completely false. Each is a complex blend of false premises, self-contradiction, ignoratio elenchi, and even outright deception. There is so much to say, about how wrong they are, that --when I am speaking in person-- I often trip myself up by trying to articulate all of them at once.
 
 <h3 id="1">
 1. Does drivechain allow miners to steal funds?
 </h3>
 
-Short Answer: This seemingly innocuous question is [very misleading](https://english.stackexchange.com/questions/261148/whats-the-term-for-fallaciously-including-an-assumption-in-a-question?noredirect=1&lq=1) -- it is a bit like asking "Does the free market allow entrepreneurs to go bankrupt?". If an entrepreneur is servicing their customers poorly, then they should, and will, go bankrupt.
+Short Answer: This seemingly innocuous question is [totally misleading](https://english.stackexchange.com/questions/261148/whats-the-term-for-fallaciously-including-an-assumption-in-a-question?noredirect=1&lq=1) -- it is a bit like asking "Does the free market allow entrepreneurs to go bankrupt?". If an entrepreneur is servicing their customers poorly, then they should, and will, go bankrupt. 
 
-Similarly, the drivechain security model assumes that the sidechain is "popular" -- useful to both users and miners. If so, it is safe. If not, then it is not.
+The drivechain security model assumes that the sidechain is "popular" -- useful to both users and miners. If so, it is safe. If not, then it is not.
+
+The "miners can steal" feature is not a design flaw, nor is it even a trade-off (ie, as if we had to "settle" for it because it is the best we can do with present technology). It is the only way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4) and thus **removing the miners-can-steal feature cause many sidechains to become insecure**.
 
 Longer Answer (in 5 parts):
 
@@ -44,32 +46,38 @@ Investors and users will have plenty of time to react to tampering. One reaction
 [More reading.](http://www.truthcoin.info/blog/drivechain/#drivechains-security)
 
 <h5 id="1-3">
-1.3 Delousing the Mainchain
+1.3 Delousing the Mainchain / Sidechain Privatization
 </h5>
 
-Third, some sidechains are "bad", and it is actually a good thing if miners have an incentive to "evict" them. It is rather analogous to a city with a large criminal homeless population: some sidechains can be *designed* purposefully, to "leech" off of other sidechains, or even to attack the mainchain directly. How can we make sure that all of the best sidechains are let in, and all of the worst ones are kept out? By giving the decision to whoever has the most skin-in-the-game. Miner's profits are highest when they maximize exchange rate and total transaction fees, so it is reasonable to give the add/remove-sidechain decision to them.
+Third, some sidechains are "bad", and it is **necessary to sidechain security** that miners have an incentive to "evict" them.
 
-In other words, if a particular sidechain is holding Bitcoin's exchange rate down, we would *HOPE* that miners steal from it, and quickly! In the same way that we would hope oncologists would assassinate our cancer cells; or that poorly-run businesses will fall apart and free up capital for better entrepreneurs.
+Passively, sidechains do not affect each other in the slightest (which is, of course, the whole point). But what if a sidechain is *specifically designed* to interfere with some other sidechain (or the mainchain). In 2016, I researched several such problematic sidechain designs (research below). So, we now have a problem: how do we get ride of bad sidechains? Some force has to sweep through the protocol somehow, such that if a sidechain is too problematic it is eventually kicked out of the Bitcoin cryptosystem.
 
-[Further reading](http://www.truthcoin.info/blog/wise-contracts/). [And watching](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4).
+Luckily, an easy solution is at hand: Miner's profits happen to be the highest, when they maximize the BTC exchange rate and the total transaction fees (across all sidechains). They are also the natural "laborers" of the system, and 51% hashrate coalition already has the ability to filter out any unwanted messages from any blockchain (mainchain or sidechain). So it is natural to give the add/remove-sidechain decision to them.
+
+In other words, if a particular sidechain is holding Bitcoin's exchange rate down, or supressing txns on a rival sidechain, then we would *HOPE* that miners steal from it, and quickly! In the same way that we would hope oncologists would assassinate our cancer cells; or that poorly-run businesses will fall apart and free up capital for better entrepreneurs. Best of all, the looming threat of sidechain failure acts as a deterrant -- sidechain developers will want to work hard to present a quality, law-abiding product.
+
+[Further reading](http://www.truthcoin.info/blog/wise-contracts/). [And watching](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4). None of the people advancing the "miners-can-steal" talking point are familiar with this research. They do not know that, for example, a ZK-SNARK peg-out system (which they would presumably prefer, as miners can NOT affect withdrawal-transactions in any special way) would (among other problems) render all P2P oracle sidechains permanently insecure. And it would do so for no reason, since miners could steal from such sidechains anyway (next section).
 
 <h5 id="1-4">
 1.4 Miner-Theft Has Nothing to do With Drivechain
 </h5>
 
-Fourth, the very idea of "can" (in the phrase "miners can steal") is a complete misrepresentation of how Bitcoin works. In a naive sense, miners can always steal BTC, whether it is on drivechains on the mainchain or even in LN-channels. This is because miners control the contents of The Blockchain absolutely. But the true question has always been: "will" miners steal. And, in answering it, we have always relied on *theories* about miners' choices, motivations, and behavior. We then apply these theories to a given design -- in vanilla Bitcoin, we observe that miners must make choices and pay their costs in advance, are next held hostage for a while, and are then ultimately paid out by the protocol *in BTC*. 
+Fourth, the very idea of "can" (in the phrase "miners can steal") is a complete misrepresentation of how Bitcoin works. In a naive sense, miners can always steal BTC, whether it is on drivechains on the mainchain or even in LN-channels. This is because miners control the contents of The Blockchain absolutely. So the true question has always been: "will" miners steal. (See my [Lisbon BoB talk](https://www.drivechain.info/literature/index.html#bob) for more.)
 
-The purport of this "can"-language, I think, is to imply --falsely-- that the Drivechain design puts user's BTC into immediate risk of being easily claimed by miners in the very next block. And, therefore, that I am being naive in assuming that miners will not do this! But the truth is that I built features into Drivechain (especially the slow, transparent, high-effort withdrawal process), that I assume will convince *profit-maximizing* miners that harvesting the sidechains (for their txn-fees and value-boosting properties) is more lucrative than devouring them.
+The purport of this "can"-language, is to imply that the Drivechain design is cavalier and unconcerned -- as if I would allow BTC to be snatched up by miners in the very next block! And that, therefore, I am naive (since I "assume" that miners will just not take these "up for grabs" coins).
+
+Hopefully by now it is obvious that that is misguided. Drivechain assumes that miners *profit-maximize*, and take as many coins for themselves as they possibly can. The withdrawal-process is slow, transparent, and high-effort, and is very tamper-resistant. Miners have an alternative to stealing from sidechains: *harvesting* them, for their txn-fees and value-boosting properties. For some (but not all) sidechains, harvesting will always be more profitable than devouring.
 
 <h5 id="1-5">
 1.5 DC Is An Opt-In Layer-2
 </h5>
 
-Fifth, and most important, the argument only applies to BTC that users have deposited to a sidechain! Non-sidechain funds are completely unaffected by sidechains, of course.
+Fifth, and most important, the "miners-can-steal" argument only applies to BTC that users have deposited to a sidechain! Non-sidechain funds are completely unaffected by sidechains, of course!
 
-Consumer sovereignty is a basic principle of Bitcoin. Users are allowed to handle their funds however they like -- to use unproven wallets, invest in dubious projects, and even to sell -or just straight-up [destroy](https://www.blockchain.com/btc/address/1BitcoinEaterAddressDontSendf59kuE)- their BTC. In particular, they can send BTC into LN-channels, despite the weaker security model. This is because the LN has benefits that (as the user sees it) make up for its risks. It is exactly the same with Drivechain.
+Consumer sovereignty is a core principle of Bitcoin. We all agree: users are allowed to handle their money however they like -- they can use unproven wallets, invest in dubious projects, and even to sell their BTC (or straight-up [destroy](https://www.blockchain.com/btc/address/1BitcoinEaterAddressDontSendf59kuE) their BTC). In particular, we would **all agree** that they can send BTC into LN-channels, despite the weaker security model. This is because the LN has benefits that (as the user sees it) make up for its risks. We would also **all agree** that users have the right to sell their BTC and buy an Altcoin. It is exactly the same with Drivechain.
 
-Those who say otherwise have simply betrayed the liberty movement and the free software movement.
+Those who say otherwise, have simply betrayed the liberty movement and the free software movement. No one in Bitcoin should listen to what they have to say, about anything.
 
 
 <h3 id="2">
