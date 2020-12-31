@@ -23,7 +23,7 @@ Short Answer: This seemingly innocuous question is [totally misleading](https://
 
 The drivechain security model assumes that the sidechain is "popular" -- useful to both users and miners. If so, it is safe. If not, then it is not.
 
-The "miners can steal" feature is not a design flaw, nor is it even a trade-off (ie, as if we had to "settle" for it because it is the best we can do with present technology). It is the only way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4) and thus **removing the miners-can-steal feature cause many sidechains to become insecure**.
+The "miners can steal" feature is not a design flaw, nor is it even a trade-off (ie, as if we had to "settle" for it because it is the best we can do with present technology). It is the only way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4) and thus **removing the miners-can-steal feature will, counter-intuitively, cause many sidechains to become insecure**.
 
 Longer Answer (in 5 parts):
 
@@ -55,7 +55,7 @@ Passively, sidechains do not affect each other in the slightest (which is, of co
 
 Luckily, an easy solution is at hand: Miner's profits happen to be the highest, when they maximize the BTC exchange rate and the total transaction fees (across all sidechains). They are also the natural "laborers" of the system, and 51% hashrate coalition already has the ability to filter out any unwanted messages from any blockchain (mainchain or sidechain). So it is natural to give the add/remove-sidechain decision to them.
 
-In other words, if a particular sidechain is holding Bitcoin's exchange rate down, or supressing txns on a rival sidechain, then we would *HOPE* that miners steal from it, and quickly! In the same way that we would hope oncologists would assassinate our cancer cells; or that poorly-run businesses will fall apart and free up capital for better entrepreneurs. Best of all, the looming threat of sidechain failure acts as a deterrant -- sidechain developers will want to work hard to present a quality, law-abiding product.
+In other words, if a particular sidechain is holding Bitcoin's exchange rate down, or supressing txns on a rival sidechain, then we would *HOPE* (perhaps counterintuitively) that miners steal from it, and quickly! In the same way that we would hope oncologists would assassinate our cancer cells; or that poorly-run businesses will fall apart and free up capital for better entrepreneurs. Best of all, the looming threat of sidechain failure acts as a deterrant -- sidechain developers will want to work hard to present a quality, law-abiding product.
 
 [Further reading](http://www.truthcoin.info/blog/wise-contracts/). [And watching](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4). None of the people advancing the "miners-can-steal" talking point are familiar with this research. They do not know that, for example, a ZK-SNARK peg-out system (which they would presumably prefer, as miners can NOT affect withdrawal-transactions in any special way) would (among other problems) render all P2P oracle sidechains permanently insecure. And it would do so for no reason, since miners could steal from such sidechains anyway (next section).
 
