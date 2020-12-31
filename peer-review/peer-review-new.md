@@ -23,7 +23,7 @@ Short Answer: This seemingly innocuous question is [totally misleading](https://
 
 The drivechain security model assumes that the sidechain is "popular" -- useful to both users and miners. If so, it is safe. If not, then it is not.
 
-The "miners can steal" feature is not a design flaw, nor is it even a trade-off (ie, as if we had to "settle" for it because it is the best we can do with present technology). It is the only way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4) and thus **removing the miners-can-steal feature will, counter-intuitively, cause many sidechains to become insecure**.
+The "miners can steal" feature is not a design flaw, nor is it even a trade-off (as if we had to "settle" for miners-can-steal SPV proofs because they are the best we can do with present technology). Instead, miners-can-steal is the only known way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4), which is necessary for many important sidechain designs. Thus, perhaps counterintuitively, **removing the miners-can-steal feature will cause many sidechains to become insecure**.
 
 Longer Answer (in 5 parts):
 
