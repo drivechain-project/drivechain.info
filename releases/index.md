@@ -14,9 +14,9 @@ title: Releases
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
 |**Mainchain v36**|[tar.gz](/releases/bin/drivechain-0.36.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.01-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v1|[tar.gz](/releases/bin/thunder-1.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|Thunder v1|[tar.gz](/releases/bin/thunder-1.00.01-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
 |zSide v1|n/a|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
