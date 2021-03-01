@@ -17,7 +17,7 @@ title: Releases
 |Testchain v9b|[tar.gz](/releases/bin/testchain-9.00.01b-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v1|[tar.gz](/releases/bin/thunder-1.00.01-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v1b|[tar.gz](/releases/bin/zside-1.00.01-x86_64-linux-gnu.tar.gz)|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|zSide v1b|[tar.gz](/releases/bin/zside-1.00.01b-x86_64-linux-gnu.tar.gz)|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
