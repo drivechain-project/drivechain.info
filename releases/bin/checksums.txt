@@ -22,17 +22,20 @@ thunder-1.00.01-win64-setup-unsigned.exe
 
 # Linux
 
-drivechain-0.36.00-x86_64-linux-gnu.tar.gz
-71790d709c7a90ac61f233680a7c20cd26ab6649d3b176b487187f34f32e3272
+drivechain-0.36.00b-x86_64-linux-gnu.tar.gz
+0648e6d84f61a3b728b8f19ad547a45553c998d419977f1ad2f5958350dbd350
 
-testchain-9.00.01-x86_64-linux-gnu.tar.gz
-b610709217985b7cfda5c310a2ebbcc273b85149642c6a6530f3f9832e36541c
+testchain-9.00.01b-x86_64-linux-gnu.tar.gz
+6d6ee1cc7f74e4a9dd623266a9848920da04052655628a60d1657b3749f11dd3
 
 trainchain-2000.00.00-x86_64-linux-gnu.tar.gz
 6edc249a69bb5be57f453f066a6945335b68f26176dc18701833e880575b41c4
 
 thunder-1.00.01-x86_64-linux-gnu.tar.gz
-8ccbc10054ad718ee1fa5fea4776d854bcb0c8eb0025933788cebe1a7a098bb1  
+8ccbc10054ad718ee1fa5fea4776d854bcb0c8eb0025933788cebe1a7a098bb1
+
+zside-1.00.01b-x86_64-linux-gnu.tar.gz
+26fb2c33e0001ab35f1c509e0e589899de825eef677f3169c4ffdd8bd7d45326
 
 
 ----------------------------------------------------------------

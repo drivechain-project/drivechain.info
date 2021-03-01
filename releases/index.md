@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (Dec 28, 2020)
+## Download Latest Version (Mar 1st, 2020)
 
 <!--
 /releases/bin/
@@ -13,11 +13,11 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v36**|[tar.gz](/releases/bin/drivechain-0.36.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v9|[tar.gz](/releases/bin/testchain-9.00.01-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|**Mainchain v36**|[tar.gz](/releases/bin/drivechain-0.36.00b-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/drivechain-0.36.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v9b|[tar.gz](/releases/bin/testchain-9.00.01b-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/testchain-9.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v2k|[tar.gz](/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v1|[tar.gz](/releases/bin/thunder-1.00.01-x86_64-linux-gnu.tar.gz)|[.exe](/releases/bin/thunder-1.00.01-win64-setup-unsigned.exe)|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v1|n/a|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|zSide v1b|[tar.gz](/releases/bin/zside-1.00.01-x86_64-linux-gnu.tar.gz)|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -27,23 +27,10 @@ Historical Releases archived on [Google Drive](https://drive.google.com/drive/fo
 
 ### What's New?
 
-**Deposit UX**
-
-* You now get immediate graphical feedback when you make a deposit. The GUI tracks coins every step of the way, from your wallet, into "limbo" (between chains), and finally into the sidechain.
-* Sidechain addresses no longer need to start with an "s". In fact, the mainchain now deposits coins wherever you say, no questions asked. It can therefore send to an address of any shape or size -- if the SC recognizes it, the coins will show up. Thus we can deposit to, for example, zcash t-addresses or testchain bech32 addresses.
-* New RPC command 'formatdepositaddress' will take any sidechain address and format it in the XX_XXXXXX_XX format now used for deposits.
-* * Deposit code works much faster.
-
-**GUI / Quality-of-Life**
-
-* "Abandon failed BMM transactions" - now has best-of-both-worlds treatment. If the checkbox on the miner dialog popup is toggled, it triggers immedately (in addition to triggering every 10 mins from that point afterward).
-* Hash calculator added to mainchain Tools menu
-* "Sidechain management" upgrades. Setting WT^ votes and adding / removing sidechains is now more simple and easier to find.
-* Added sidechain details popup dialog (double click an active sidechain on the sidechain list to see details)
-
-**Refactor**
-
-* Deposit validation mempool rules refactored
+* zSide
+* * Now has a Linux binary.
+* * Now has a nice GUI, Melt/Cast.
+* All sidechains now have their activation information in the GUI (Debug window).
 
 
 
@@ -98,6 +85,30 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 
 ## Selected Older Release Notes
+
+
+
+
+### Dec 28, 2020 (v36.00)
+
+**Deposit UX**
+
+* You now get immediate graphical feedback when you make a deposit. The GUI tracks coins every step of the way, from your wallet, into "limbo" (between chains), and finally into the sidechain.
+* Sidechain addresses no longer need to start with an "s". In fact, the mainchain now deposits coins wherever you say, no questions asked. It can therefore send to an address of any shape or size -- if the SC recognizes it, the coins will show up. Thus we can deposit to, for example, zcash t-addresses or testchain bech32 addresses.
+* New RPC command 'formatdepositaddress' will take any sidechain address and format it in the XX_XXXXXX_XX format now used for deposits.
+* * Deposit code works much faster.
+
+**GUI / Quality-of-Life**
+
+* "Abandon failed BMM transactions" - now has best-of-both-worlds treatment. If the checkbox on the miner dialog popup is toggled, it triggers immedately (in addition to triggering every 10 mins from that point afterward).
+* Hash calculator added to mainchain Tools menu
+* "Sidechain management" upgrades. Setting WT^ votes and adding / removing sidechains is now more simple and easier to find.
+* Added sidechain details popup dialog (double click an active sidechain on the sidechain list to see details)
+
+**Refactor**
+
+* Deposit validation mempool rules refactored
+
 
 
 ### Oct 18, 2020 (v35.00)
