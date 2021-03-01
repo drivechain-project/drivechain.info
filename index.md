@@ -78,6 +78,11 @@ Transfers from sidechain back to the mainchain (ie, from Layer 2 back to Layer 1
 * **Developers** -- Freedom to manage your own blockchain, and to keep out those who would ruin your masterpiece.
 
 
+### ZCash Sidechain Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N33iJK2FdpE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ### The Tradeoffs
 
 It is very risky for Bitcoin to go *without* Drivechain.
@@ -93,12 +98,12 @@ Drivechain is made of two BIPs, 300 and 301:
 2. [**Blind Merged Mining**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
 
 
-### Selected Recent Interviews
+### Selected Recent Podcasts
 
-1. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
-2. [Let's Talk Bitcoin -- Episode #377](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
+1. [Van Wirdum Sjorsnado #23](https://twitter.com/BitcoinMagazine/status/1350133309213454340)
+2. [51 Minutes (0:26:00 to 1:17:40)](https://www.youtube.com/embed/VmN6riYe2tI?&rel=0&autoplay=1&start=1605&end=4660) during an [Oct 14 Whalepool Talk on Bitcoin, Drivechain, and Hivemind](https://www.youtube.com/watch?v=VmN6riYe2tI)
 
-Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://fiatjaf.alhur.es/drivechain.html) Drivechain.
+Per [learning theory](https://en.wikipedia.org/wiki/Curse_of_knowledge), here is [an explainer written by someone who just learned](https://fiatjaf.alhur.es/drivechain.html) Drivechain (as is the Sjornado #23).
 
 
 ### Key Benefits

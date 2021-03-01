@@ -40,6 +40,11 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 2. A [Let’s Talk Bitcoin Episode (#377)](https://letstalkbitcoin.com/blog/post/lets-talk-bitcoin-377-sidechains-drivechains-and-the-apple-store)
 
 
+### ZCash Demo Video ### {#zside}
+
+On [YouTube](https://www.youtube.com/watch?v=N33iJK2FdpE). Covers all the steps needed to use a ZCash sidechain on Bitcoin.
+
+
 ### Construct 2019 (at Consensus NYC) ### {#consensus-2019}
 
 20 minute overview of Drivechain design and security model. Includes comparison with the Lightning Network.
