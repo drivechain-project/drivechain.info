@@ -8,34 +8,34 @@ Latest
 
 # Windows
 
-drivechain-0.36.00-win64-setup-unsigned.exe
-cc59c274a4d302297f5594423ae8001fc140d25d312b935c81ca9dd494676ba1
+drivechain-0.37.01-win64-setup.exe
+c6938c4530add2ec1f6f7de8ea76c8d8252e36991a44196920183164df9e0a30
 
-testchain-9.00.01-win64-setup-unsigned.exe
-967cba74527006e819dcfd894087e04be83d8e529520ddba070eb6a7b2227dd8
+testchain-10.00.01-win64-setup.exe
+3d2ed3fa257bcbf662c9e0e665a0f3a36babd9741b9a77defa64e307bd5800d0
 
 trainchain-2000.00.00-win64-setup-unsigned.exe
 96c60a8e2579338c74ab97c72f0c07fdca256a1fb2d465d805fab0ef61b5fbd6
 
-thunder-1.00.01-win64-setup-unsigned.exe
-263c21b36e2b4ecb89c99338cf25ffce855845a4c1887e6accfc4cf51e9cb2f7  
+thunder-2.00.01-win64-setup.exe
+8d7a2f2608a2a78fc0aa009db57a9957f1227a96fafc75923e58c92633a15074
 
 # Linux
 
-drivechain-0.36.00b-x86_64-linux-gnu.tar.gz
-0648e6d84f61a3b728b8f19ad547a45553c998d419977f1ad2f5958350dbd350
+drivechain-0.37.01-x86_64-linux-gnu.tar.gz
+1ffeccc71db5e8f1ba54c628d21e28976c57bb60445bd406d5ee942db019bd22
 
-testchain-9.00.01b-x86_64-linux-gnu.tar.gz
-6d6ee1cc7f74e4a9dd623266a9848920da04052655628a60d1657b3749f11dd3
+testchain-10.00.01-x86_64-linux-gnu.tar.gz
+bab01279814287eb6095bbc220b6b206982cd0dc54a059ada5eb273093c6d013
 
 trainchain-2000.00.00-x86_64-linux-gnu.tar.gz
 6edc249a69bb5be57f453f066a6945335b68f26176dc18701833e880575b41c4
 
-thunder-1.00.01-x86_64-linux-gnu.tar.gz
-8ccbc10054ad718ee1fa5fea4776d854bcb0c8eb0025933788cebe1a7a098bb1
+thunder-2.00.01-x86_64-linux-gnu.tar.gz
+dcc9a5d2ea3ee2a282d973ced28d3cc1611999dd89c3977b872d8ea59751bad2
 
-zside-1.00.01b-x86_64-linux-gnu.tar.gz
-26fb2c33e0001ab35f1c509e0e589899de825eef677f3169c4ffdd8bd7d45326
+zside-2.00.01-x86_64-pc-linux-gnu.tar.gz
+d7d97679db097a38e2e8fe5588ffefc98fa89ebf9136bd1c5c770c6e410c1774
 
 
 ----------------------------------------------------------------

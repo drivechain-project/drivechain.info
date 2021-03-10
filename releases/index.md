@@ -22,19 +22,19 @@ title: Releases
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
-Old releases archived on [Google Drive](https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT).
+Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
 
 
-[linux-main]: https://drive.google.com/file/d/17qzzSXsUc2TrQP9pju5g4vhTeefvDVSK/view?usp=sharing 
-[linux-test]: https://drive.google.com/file/d/1VR9_EshrRw51wZp6b-W_Rs5kpBIKMhHP/view?usp=sharing
+[linux-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+[linux-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-train]: https://www.drivechain.info/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz
-[linux-thund]: https://drive.google.com/file/d/1E3dCR9KhpFeRW0JDqqj3vh3iRgJtPF7B/view?usp=sharing
-[linux-zside]: https://drive.google.com/file/d/1OsIcvxia1W_cyByOvpQHQt1mZVW_7fRD/view?usp=sharing
+[linux-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+[linux-zside]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
-[win-main]: https://drive.google.com/file/d/1wBMI6gGGvFXrzKrHOUm5lFhXkS6lS8QH/view?usp=sharing
-[win-test]: https://drive.google.com/file/d/1Gn9jwH8kBQYZatXudaPMYGguozlXCsjF/view?usp=sharing
+[win-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+[win-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-train]: https://www.drivechain.info/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe
-[win-thund]: https://drive.google.com/file/d/1MGEOAhZDgri554xQaQxo3Os17i4J_BXr/view?usp=sharing
+[win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
 
 
