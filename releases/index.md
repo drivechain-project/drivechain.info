@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (Mar 1st, 2020)
+## Download Latest Version (Mar 9th, 2020)
 
 <!--
 /releases/bin/
@@ -38,7 +38,7 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 
 
 
-### What's New?
+### What's New? v37
 
 * zSide
 * * Now has a Linux binary.
