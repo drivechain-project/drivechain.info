@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (Mar 9th, 2020)
+## Download Latest Version (June 1st, 2021)
 
 <!--
 /releases/bin/
@@ -13,11 +13,11 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v37**|[tar.gz][linux-main]|[.exe][win-main]|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v10|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|**Mainchain v38**|[tar.gz][linux-main]|[.exe][win-main]|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v11|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v2k|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v2|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v2|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|Thunder v3|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v3|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -36,6 +36,17 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 [win-train]: https://www.drivechain.info/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
+
+### What's New? v38
+
+* Mini block explorer
+* * (You can even decode a Merkle tree manually.)
+* Sidechain replacement
+* Sidechain activation bug fixes 
+* Spelling errors on sidechain proposal dialog fixed by Felix Ha (https://github.com/fx-ha)
+* Mempool deposit bug fixes
+* Show sidechain balance on sidechain list
+* Sidechains now have headers / an SPV mode that makes sense.
 
 
 ### What's New? v37

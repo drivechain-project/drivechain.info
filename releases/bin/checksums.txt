@@ -6,6 +6,27 @@ SHA256 Checksums for DriveNet Software
 Latest
 ======
 
+34d1390e0230e37c4d22958b52f4c9fa36190829a86b1ee1658312f65d3b1ab5  drivenet-0.38.00-win64-setup-unsigned.exe
+b58c9c26e216d885bb9320ee13001b98aac7a28512029ca15b0078f7ab75d4e6  drivenet-0.38.00-win64.zip
+f974864df11eb0dcb3744486856cf8923f60e3964314aabc9bcdb9323a1ed286  drivenet-0.38.00-x86_64-linux-gnu.tar.gz
+
+
+a5f2efc7298969fbf903a25accacbb5e3e94456132cff361cb8656f54640716c  testchain-11.00.00-win64-setup-unsigned.exe
+2a2d96ed64d98bdedba95864806379824c98d4668dd32021a8b62c6bb98768d9  testchain-11.00.00-win64.zip
+7a82f2b997be09db96969d59ba22869611ae803757f9dc911c21b9ed62f3b013  testchain-11.00.00-x86_64-linux-gnu.tar.gz
+
+
+f41d33b7e018bcacec4d5e17d5e8976ae8e87e8ba533eeb19faa139f5927a59d  thunder-3.00.00-win64-setup-unsigned.exe
+c416ee2a4314eca8eec5fd78beb66995f700af7dd28db04a58ecb99053ca5980  thunder-3.00.00-win64.zip
+b6dc339d2e2b2e6a0b5c913ad817abf0ee7756305be7bb193997263dda497367  thunder-3.00.00-x86_64-linux-gnu.tar.gz
+
+af80163d765ddb16b84bf6f27965ade8dfbfb618672f5d8c020271409574f4c2  zside-3.00.00-x86_64-linux-gnu.tar.gz
+
+
+
+v37
+=====
+
 # Windows
 
 drivechain-0.37.01-win64-setup.exe
