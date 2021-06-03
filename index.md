@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Drivechain
+title: Drivechain (BIPs 300+301)
 subtitle: "when devs compete, users win"
 ---
 
