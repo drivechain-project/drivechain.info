@@ -32,6 +32,14 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+### Bitcoin 2021 ### {#bitcoin2021}
+
+A 15 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
+
+* [Slides](/media/slides/bitcoin2021.pdf)
+* [Transcript](/media/slides/bitcoin2021-transcript.pdf)
+
+
 ### Modern Overviews ### {#about}
 
 These are two good interviews, each recorded *after* the DriveNET software release:
