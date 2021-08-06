@@ -5,11 +5,12 @@ title: Releases
 
 
 
-## Download Latest Version (June 1st, 2021)
+## Download Latest Version (v39)
 
 <!--
 /releases/bin/
 -->
+
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
@@ -37,24 +38,27 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
 
-### What's New? v38
+### What's New
 
-* Mini block explorer
-* * (You can even decode a Merkle tree manually.)
-* Sidechain replacement
-* Sidechain activation bug fixes 
-* Spelling errors on sidechain proposal dialog fixed by Felix Ha (https://github.com/fx-ha)
-* Mempool deposit bug fixes
-* Show sidechain balance on sidechain list
-* Sidechains now have headers / an SPV mode that makes sense.
-
-
-### What's New? v37
-
-* zSide
-* * Now has a Linux binary.
-* * Now has a nice GUI, Melt/Cast.
-* All sidechains now have their activation information in the GUI (Debug window).
+* Mainchain
+* * Updated deposit validation & RPC interface. Update deposit object members, comments, renaming.
+* * Update SCDB deposit handling, remove AddDepositsFromBlock function.
+* * Improve SCDB deposit lookup speed by caching set of deposit TXID.
+* * Updated BMM validation & RPC interface.
+* * Refactoring and improved drivechain cache initialization (fix VerifyDB bugs, don't re-load caches).
+* * Refactor WT^ and Deposit collection in ConnectBlock.
+* * Update block explorer & tx details dialog.
+* * Updated GetSidechainValues validation to use coins view based on chainTip to check block and coins view including the mempool
+when accepting a deposit into the memory pool worker. (Fixes VerifyDB / block disconnect and reconnect CTIP update errors without
+having to re-load cache during init).
+* Sidechain Template
+* * Overhaul BMM & Deposit validation, reduce sidechain block header size and sidechain deposit transaction size. Simplified validation and RPC communication with mainchain.
+* * Add previous mainchain block commit requirement for coinbases (makes BMM h* much easier to validate, and much easier to understand / think about).
+* * Fix deposit fee collection bug.
+* * Update BMM cache to include verified deposit txids. Write all of the BMM cache to disk instead of persisting in memory only.
+* * Completely remove all unused PoW related code (template is full BMM now, including headers).
+* * Updated deposit sorting: Simplified, more comments, double check CTIP ordering one more time once sorted.
+* * Update block explorer & tx details dialog.
 
 
 
@@ -110,6 +114,21 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 ## Selected Older Release Notes
 
+
+### June 1st, 2021 (v38 / v37)
+
+* Mini block explorer
+* * (You can even decode a Merkle tree manually.)
+* Sidechain replacement
+* Sidechain activation bug fixes 
+* Spelling errors on sidechain proposal dialog fixed by Felix Ha (https://github.com/fx-ha)
+* Mempool deposit bug fixes
+* Show sidechain balance on sidechain list
+* Sidechains now have headers / an SPV mode that makes sense.
+* zSide
+* * Now has a Linux binary.
+* * Now has a nice GUI, Melt/Cast.
+* All sidechains now have their activation information in the GUI (Debug window).
 
 
 
