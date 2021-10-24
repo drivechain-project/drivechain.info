@@ -3,8 +3,32 @@ SHA256 Checksums for DriveNet Software
 
 ----------------------------------------------------------------
 
-Latest
+04cb3e2147fac9f9ceaffe36cc70be1aa2be666d70ae4324fa76f1d1783d0ad1  drivechain-0.40.00-win64-setup-unsigned.exe
+b30cb74e23b18e10bf70d7f3f4de65e3cb928a53ff584dab847771d21cb66d19  drivechain-0.40.00-win64.zip
+ce36c3287c01d68d7b8d754fa59509e9c3f962189f1446c7a2bddace20d80b21  drivechain-0.40.00-x86_64-linux-gnu.tar.gz
+
+bba28da933c0cc553d99990387d4b3df7a243657398103800e81785d5e2775e5  testchain-14.00.00-win64-setup-unsigned.exe
+82bbab58574fa1ae5242ce63d0edc39e20d29df7580cc9f4e0e86e7b2878dd30  testchain-14.00.00-win64.zip
+fa728fea0d7665d653d32956a5bf6015a5bcfbd09b31f2447df896afebab76c8  testchain-14.00.00-x86_64-linux-gnu.tar.gz
+
+6de94b3a77e6f92ac30922a8cb3894a3efc1e923ec5a7b7ecc0c20cf410b8df1  thunder-5.00.00-win64-setup-unsigned.exe
+814687c55a3686475e9b716658f2f1f450ba9a6b7726a391ec7d6a8b366f4149  thunder-5.00.00-win64.zip
+d5a17b78be4a27bb107e6efcbec0764546bf358063a511857bf52cd0991f535e  thunder-5.00.00-x86_64-linux-gnu.tar.gz
+
+4443ea9b97b014d562c72afeb12ed5c74aef81fa5224aa6cc2e1df03928f7056  trainchain-77.00.00-win64-setup-unsigned.exe
+5a1cea53a3e9c2c16c0dadb5c55c87ba24e477ee524fa53cc528b90e0be1f75a  trainchain-77.00.00-win64.zip
+5c862463dab6ce2e3200a6e8d982aa23ca01fb89fb29093ecc2cdafa830d962c  trainchain-77.00.00-x86_64-linux-gnu.tar.gz
+
+2f5ff6aca140a250482ef7aa21f908789ca4aee0eaf1a8106f6c65484ddca24a  zside-5.00.00-x86_64-linux-gnu.tar.gz
+
+
+----------------------------------------------------------------
+
+Older
 ======
+
+
+--
 
 34d1390e0230e37c4d22958b52f4c9fa36190829a86b1ee1658312f65d3b1ab5  drivenet-0.38.00-win64-setup-unsigned.exe
 b58c9c26e216d885bb9320ee13001b98aac7a28512029ca15b0078f7ab75d4e6  drivenet-0.38.00-win64.zip
@@ -22,12 +46,7 @@ b6dc339d2e2b2e6a0b5c913ad817abf0ee7756305be7bb193997263dda497367  thunder-3.00.0
 
 af80163d765ddb16b84bf6f27965ade8dfbfb618672f5d8c020271409574f4c2  zside-3.00.00-x86_64-linux-gnu.tar.gz
 
-
-
-v37
-=====
-
-# Windows
+--
 
 drivechain-0.37.01-win64-setup.exe
 c6938c4530add2ec1f6f7de8ea76c8d8252e36991a44196920183164df9e0a30
@@ -41,7 +60,7 @@ trainchain-2000.00.00-win64-setup-unsigned.exe
 thunder-2.00.01-win64-setup.exe
 8d7a2f2608a2a78fc0aa009db57a9957f1227a96fafc75923e58c92633a15074
 
-# Linux
+---
 
 drivechain-0.37.01-x86_64-linux-gnu.tar.gz
 1ffeccc71db5e8f1ba54c628d21e28976c57bb60445bd406d5ee942db019bd22
@@ -58,11 +77,7 @@ dcc9a5d2ea3ee2a282d973ced28d3cc1611999dd89c3977b872d8ea59751bad2
 zside-2.00.01-x86_64-pc-linux-gnu.tar.gz
 d7d97679db097a38e2e8fe5588ffefc98fa89ebf9136bd1c5c770c6e410c1774
 
-
-----------------------------------------------------------------
-
-Older
-======
+---
 
 drivenet-0.35.00-win64-setup.exe
 1bf1df8cfae936aa35b0526d1e4d31f1fe876531b8fab916ad3e9a238cb85bc1

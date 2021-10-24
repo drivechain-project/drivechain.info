@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (v39)
+## Download Latest Version (v40)
 
 <!--
 /releases/bin/
@@ -14,11 +14,11 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v39**|[tar.gz][linux-main]|[.exe][win-main]|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v12|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v2k|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v4|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v4|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|**Mainchain v40**|[tar.gz][linux-main]|[.exe][win-main]|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v14|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v77|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v5|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v5|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -28,37 +28,46 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 
 [linux-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[linux-train]: https://www.drivechain.info/releases/bin/trainchain-2000.00.00-x86_64-linux-gnu.tar.gz
+[linux-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-zside]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
 [win-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[win-train]: https://www.drivechain.info/releases/bin/trainchain-2000.00.00-win64-setup-unsigned.exe
+[win-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
 
-### What's New
+### What's New (v40, Oct 24, 2021)
 
-* Mainchain
-* * Updated deposit validation & RPC interface. Update deposit object members, comments, renaming.
-* * Update SCDB deposit handling, remove AddDepositsFromBlock function.
-* * Improve SCDB deposit lookup speed by caching set of deposit TXID.
-* * Updated BMM validation & RPC interface.
-* * Refactoring and improved drivechain cache initialization (fix VerifyDB bugs, don't re-load caches).
-* * Refactor WT^ and Deposit collection in ConnectBlock.
-* * Update block explorer & tx details dialog.
-* * Updated GetSidechainValues validation to use coins view based on chainTip to check block and coins view including the mempool
-when accepting a deposit into the memory pool worker. (Fixes VerifyDB / block disconnect and reconnect CTIP update errors without
-having to re-load cache during init).
-* Sidechain Template
-* * Overhaul BMM & Deposit validation, reduce sidechain block header size and sidechain deposit transaction size. Simplified validation and RPC communication with mainchain.
-* * Add previous mainchain block commit requirement for coinbases (makes BMM h* much easier to validate, and much easier to understand / think about).
-* * Fix deposit fee collection bug.
-* * Update BMM cache to include verified deposit txids. Write all of the BMM cache to disk instead of persisting in memory only.
-* * Completely remove all unused PoW related code (template is full BMM now, including headers).
-* * Updated deposit sorting: Simplified, more comments, double check CTIP ordering one more time once sorted.
-* * Update block explorer & tx details dialog.
+
+This update has a lot of small improvements and bug fixes but most notable are the new GUI elements. The overview
+page now shows the latest transactions on the network, latest blocks, and the new "Coin News" section. 
+
+
+Mainchain
+=========
+
+* Built-In Block Explorer
+* * Merkle tree overhauled -- added reverse concatenated bytes (RCB) and split into tabs
+* * Block index details re-ordered, added witness hash
+* blockchain.info-style "transaction fireplace"
+* * showing "latest transactions" (in mempool) and their fee-rates
+* * "latest blocks" (shows recent blocks mined, lined to block explorer)
+* New Feature: CoinNews
+* * This is a completely opt-in GUI feature which automatically organizes OP return data based on its fee rates.
+* * While utterly simple, I think Bitcoin will find it fun and useful. Certainly its something new and harmless.
+* * Added OP_RETURN output database, news creation dialog, news management dialog 
+* * Added 'createopreturntransaction' RPC, graffiti explorer table model, table, popup window (displays all OP_RETURN data)
+
+
+Sidechains
+==========
+
+* Updated sidechain block creation and validation, to include coinbase commitment 
+of the block version and current WT^ hash
+* this completes the "header-ization" of the coinbase. 
+* * (Now each sidechain contains its own header in the coinbase, and each SideHashMerkleRoot cements the block to exactly one place in the BTC blockchain. So, now h* contains all the relevant consensus data -- sidechain block headers and hashes are just for sidechain IBD and convenience).
 
 
 
@@ -114,6 +123,28 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 ## Selected Older Release Notes
 
+
+### Aug 6, 2021 (v39)
+
+* Mainchain
+* * Updated deposit validation & RPC interface. Update deposit object members, comments, renaming.
+* * Update SCDB deposit handling, remove AddDepositsFromBlock function.
+* * Improve SCDB deposit lookup speed by caching set of deposit TXID.
+* * Updated BMM validation & RPC interface.
+* * Refactoring and improved drivechain cache initialization (fix VerifyDB bugs, don't re-load caches).
+* * Refactor WT^ and Deposit collection in ConnectBlock.
+* * Update block explorer & tx details dialog.
+* * Updated GetSidechainValues validation to use coins view based on chainTip to check block and coins view including the mempool
+when accepting a deposit into the memory pool worker. (Fixes VerifyDB / block disconnect and reconnect CTIP update errors without
+having to re-load cache during init).
+* Sidechain Template
+* * Overhaul BMM & Deposit validation, reduce sidechain block header size and sidechain deposit transaction size. Simplified validation and RPC communication with mainchain.
+* * Add previous mainchain block commit requirement for coinbases (makes BMM h* much easier to validate, and much easier to understand / think about).
+* * Fix deposit fee collection bug.
+* * Update BMM cache to include verified deposit txids. Write all of the BMM cache to disk instead of persisting in memory only.
+* * Completely remove all unused PoW related code (template is full BMM now, including headers).
+* * Updated deposit sorting: Simplified, more comments, double check CTIP ordering one more time once sorted.
+* * Update block explorer & tx details dialog.
 
 ### June 1st, 2021 (v38 / v37)
 
