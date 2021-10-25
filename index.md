@@ -208,6 +208,8 @@ See also:
 
 ![image](/media/screenshots/mainchain.png)
 
+![image](/media/screenshots/mainchain-2.png)
+
 ![image](/media/screenshots/sidechain.png)
 
 ![image](/media/screenshots/withdrawals.png)
