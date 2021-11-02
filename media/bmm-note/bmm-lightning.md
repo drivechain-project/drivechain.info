@@ -82,4 +82,4 @@ If the h\* side:block is not found, then (II) and (III) are basically equivalent
 
 ### Accepting the Request
 
-While LN BMMRs are quite different from on-chain BMMRs, both are Accepted in the exact same way.
+While LN BMMRs are quite different from on-chain BMMRs, both are [Accepted](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki#bmm-accept) in the exact same way.
