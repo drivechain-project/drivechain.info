@@ -19,7 +19,7 @@ These "Lightning BMMRs" require Simon to have a LN-channel pathway open with at 
 
 They consist of the following information:
 
-<pre>  
+<pre>
     4-bytes - Message header (0xD0520C6E)   
     1-byte - sidechain number
     32-bytes  - h* side:merkle hash
