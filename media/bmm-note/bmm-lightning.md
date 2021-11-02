@@ -1,10 +1,9 @@
 ---
-title: Lightning BMM Request
-show_author: true
-comments: true
-date: 2019-07-23 05:00:00
----
 
+## Lightning BMM Request
+
+    Paul Sztorc
+    2019-07-23
 
 
 ### Summary
@@ -19,11 +18,13 @@ It is possible to send a Blind Merged Mining (BMM) Request over the Lightning Ne
 These "Lightning BMMRs" require Simon to have a LN-channel pathway open with at least one Mary.
 
 They consist of the following information:
-  
+
+<pre>  
     4-bytes - Message header (0xD0520C6E)   
     1-byte - sidechain number
     32-bytes  - h* side:merkle hash
     32-bytes  - prevSideBlockHash   
+</pre>
 
 ### An extra configuration requirement for Mary
 
