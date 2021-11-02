@@ -1,4 +1,4 @@
----
+
 
 ## Lightning BMM Request
 
@@ -30,7 +30,7 @@ They consist of the following information:
 
 With OnChain BMMRs, Simon could reuse the same h\* all he wanted, because only one OnChain BMMR can be included per main:block per sidechain.
 
-In LNs, the BMMRs are invisible. So, instead, Simon will need to ensure that he '''gives each Mary a different h\*'''. Simon can easily do this, as he controls the side:block and can simply increment a side:nonce somewhere. With a unique h\* per Mary (or, more precisely, per channel), and at most 1 h\* making it into a block (per sidechain), Simon can ensure that he is charged, at most, one time.
+In LNs, the BMMRs are invisible. So, instead, Simon will need to ensure that he **gives each Mary a different h\***. Simon can easily do this, as he controls the side:block and can simply increment a side:nonce somewhere. With a unique h\* per Mary (or, more precisely, per channel), and at most 1 h\* making it into a block (per sidechain), Simon can ensure that he is charged, at most, one time.
 
 ### An Example
 
