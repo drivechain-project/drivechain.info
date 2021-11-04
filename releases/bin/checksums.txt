@@ -3,9 +3,11 @@ SHA256 Checksums for DriveNet Software
 
 ----------------------------------------------------------------
 
-04cb3e2147fac9f9ceaffe36cc70be1aa2be666d70ae4324fa76f1d1783d0ad1  drivechain-0.40.00-win64-setup-unsigned.exe
-b30cb74e23b18e10bf70d7f3f4de65e3cb928a53ff584dab847771d21cb66d19  drivechain-0.40.00-win64.zip
-ce36c3287c01d68d7b8d754fa59509e9c3f962189f1446c7a2bddace20d80b21  drivechain-0.40.00-x86_64-linux-gnu.tar.gz
+d1489bd04b7cc55332e0d556b0bd91a03eb92ca122658cc88584fb7a2a21e180  drivechain-0.40.01-osx64-test.tar.gz
+46a39fe87c6ca6e2b123fde96d838d00d4d79f41e19db7ba228566dc0805ba79  drivechain-0.40.01-osx-test.dmg
+9a4d1ff9da0bc11c6daea47cc22539348bc88506eefd8c43c27184b1d4aa5d40  drivechain-0.40.01-win64-setup-unsigned.exe
+0074c982e1f22b0a2cd6e1faa65f6f18f975377da0c71619f25ddb34e6c9ca30  drivechain-0.40.01-win64.zip
+1dadf74bb474fd4e7076a1b656fd23e65d8c9978701e60a9dfa5b19c3e27da3b  drivechain-0.40.01-x86_64-linux-gnu.tar.gz
 
 bba28da933c0cc553d99990387d4b3df7a243657398103800e81785d5e2775e5  testchain-14.00.00-win64-setup-unsigned.exe
 82bbab58574fa1ae5242ce63d0edc39e20d29df7580cc9f4e0e86e7b2878dd30  testchain-14.00.00-win64.zip

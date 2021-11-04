@@ -14,7 +14,7 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v40**|[tar.gz][linux-main]|[.exe][win-main]|n/a|[Github](https://github.com/drivechain-project/mainchain/)|
+|**Mainchain v40.01**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
 |Testchain v14|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v77|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v5|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
@@ -36,6 +36,9 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 [win-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+
+[mac-main-dmg]: /releases/bin/drivechain-0.40.01-osx-test.dmg
+[mac-main-tar]: /releases/bin/drivechain-0.40.01-osx64-test.tar.gz
 
 
 ### What's New (v40, Oct 24, 2021)
