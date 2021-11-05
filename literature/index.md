@@ -32,6 +32,13 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+### TabConf 2021 ### {#tabconf2021}
+
+A 15 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
+
+* [Slides](/media/slides/tabconf2021.pdf)
+* [Transcript](/media/slides/tabconf-speech.pdf)
+
 ### Bitcoin 2021 ### {#bitcoin2021}
 
 A 15 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
