@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (v40)
+## Download Latest Version (v40.02)
 
 <!--
 /releases/bin/
@@ -37,8 +37,8 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 [win-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
-[mac-main-dmg]: /releases/bin/drivechain-0.40.01-osx-test.dmg
-[mac-main-tar]: /releases/bin/drivechain-0.40.01-osx64-test.tar.gz
+[mac-main-dmg]: /releases/bin/drivechain-0.40.02-osx-unsigned.dmg
+[mac-main-tar]: /releases/bin/drivechain-0.40.02-osx64.tar.gz
 
 
 ### What's New (v40, Oct 24, 2021)
