@@ -14,11 +14,11 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v40.01**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v14|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
+|**Mainchain v40.02**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v14.01|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v77|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v5|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v5|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|Thunder v5.00.01|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v5.00.1|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
