@@ -6,14 +6,12 @@ Visit the [old peer review page](http://www.drivechain.info/peer-review/index.ht
 
 ## What are the major remaining critiques of Drivechain?
 
-Most critiques have been asked-and-answered. And the overwhelming majority of people are excited about the potential. But two major critiques persist.
+The two big critiques of Drivechain, which persist (for some reason), are:
 
-They boil down to the following:
+1. **"miners-can-steal"** -- 51% hashrate can empty the Bip300 sidechain of funds, sending them to a txn of their own choosing.
+2. **"miner side-hustle"** -- It is bad if miners can make money on a side-hustle, because then miners will feel pressured to do the side-hustle. The side-hustle might negatively affect users of Layer1.
 
-1. "miners can steal sidechain funds"
-2. "merged minded sidechains increase pool overhead, making txn-censorship easier"
-
-It is distressing that these critiques remain, because both of them are completely false. Each is a complex blend of false premises, self-contradiction, ignoratio elenchi, and even outright deception. There is so much to say, about how wrong they are, that --when I am speaking in person-- I often trip myself up by trying to articulate all of them at once.
+Both critiques are false. Each is a complex logjam of misconceptions. There is so much to say, about how wrong these critiques are, that I often trip myself up by trying to get everything out at once.
 
 <h3 id="1">
 1. Does drivechain allow miners to steal funds?
@@ -24,6 +22,8 @@ Short Answer: This seemingly innocuous question is [totally misleading](https://
 The drivechain security model assumes that the sidechain is "popular" -- useful to both users and miners. If so, it is safe. If not, then it is not.
 
 The "miners can steal" feature is not a design flaw, nor is it even a trade-off (as if we had to "settle" for miners-can-steal SPV proofs because they are the best we can do with present technology). Instead, miners-can-steal is the only known way of achieving ["sidechain privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&index=1&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4), which is necessary for many important sidechain designs. Thus, perhaps counterintuitively, **removing the miners-can-steal feature will cause many sidechains to become insecure**.
+
+For comparison, *51% hashrate can also steal from the Lightning Network* (by censoring the "Justice txn" from the blockchain). Relative to DC-Miner-theft, LN-Miner-theft is faster, easier, more deniable (enormously lower risk of being caught), and can be fine-tuned so as NOT to invite retribution. Moreover, DC-theft negatively affects miner's fee revenues, whereas LN-theft may have zero effect or even a positive effect. So, if you weren't worried about miners stealing from LN, then don't worry about DC-theft, either.
 
 Longer Answer (in 5 parts):
 
@@ -81,10 +81,16 @@ Those who say otherwise, have simply betrayed the liberty movement and the free 
 
 
 <h3 id="2">
-2. Does Drivechain increase the risk of txn-censorship by giving economic advantages to large pools, making them inevitable; while simultaneously making large pools less anonymous and more susceptible to coercion?
+2. The "Side Hustle" -- Does Drivechain give an advantage to certain mining pools? If so, does this make Drivechain inevitable for pools? Does this harm pools in some way, for example, by making pools less anonymous and more susceptible to coercion?
 </h3>
 
+
 Short Answer: No.
+
+Every mining innovation, can be construed as a "side hustle". For example: mining bitcoin with [Flared Gas](https://www.reuters.com/business/sustainable-business/oil-drillers-bitcoin-miners-bond-over-natural-gas-2021-05-21/). Or: mining via [demand management](https://www.newsweek.com/bitcoin-mining-americas-most-misunderstood-industry-opinion-1669892). Each of those two techniques, requires specialized labor, special conditions, and a certain scale of operation. Each of those innovations "affects mining incentives".
+
+Merged Mining is widely misunderstood, and even many Bitcoin Experts hold beliefs about MM which are exactly backwards from the truth. (See my section ["The Great Lie of [Merged Mining]"](https://www.truthcoin.info/blog/security-budget-ii-mm/#b-the-great-lie-about-mm
+)). The simple truth is: it is good when miners earn a lot of money, it is good when miners spent that money efficiently (which includes professionalization and specialization). That drives the difficulty up as much as possible. The upward difficulty adjustments make it *difficult* to find blocks, which is what we want -- we do not want block-finding to be easy. Merged mining was invented by Satoshi in 2010, for exactly this purpose, and it has been safely in use ever since. Drivechain does not do anything new, in 2021, that Namecoin hasn't already been doing since 2011. 
 
 Longer Answer:
 
@@ -92,8 +98,7 @@ Longer Answer:
 Overview of Complaint
 </h4>
 
-
-This complaint is a story in three parts.
+To me, the complaint makes no sense. Nonetheless, I shall now try to explain this complaint (which I have only ever received from one person), in its absolute worst-case-scenario (ie, its most-problematic form). I hope that is not too confusing as a result. 
 
 First, the complaint asks us to consider "burdensome sidechains" which are expensive to run, but profitable.
 
@@ -224,7 +229,7 @@ Notable people who never fell for either mistake, or who came around:
 
 ( Names blanked out temporarily, and mixed in below. )
 
-### Unknown 
+### Unknown
 
 People whose opinion on Drivechain we don't know (please tell us!), plus the four people above:
 
