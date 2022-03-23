@@ -5,7 +5,7 @@ title: Releases
 
 
 
-## Download Latest Version (v40.02)
+## Download Latest Version (v41.00)
 
 <!--
 /releases/bin/
@@ -14,7 +14,7 @@ title: Releases
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v40.02**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
+|**Mainchain v41.00**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
 |Testchain v14.01|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v77|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v5.00.01|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
@@ -26,52 +26,71 @@ Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
 
 
-[linux-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+[linux-main]: http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz
 [linux-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [linux-zside]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
-[win-main]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
+[win-main]: http://172.105.148.135/drivechain/drivechain-0.41.00-win64-setup.exe
 [win-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 [win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
 
-[mac-main-dmg]: /releases/bin/drivechain-0.40.02-osx-unsigned.dmg
-[mac-main-tar]: /releases/bin/drivechain-0.40.02-osx64.tar.gz
+[mac-main-dmg]: http://172.105.148.135/drivechain/drivechain-0.41.00-osx.dmg
+[mac-main-tar]: http://172.105.148.135/drivechain/drivechain-0.41.00-osx64.tar.gz
 
 
-### What's New (v40, Oct 24, 2021)
+
+## What's New (v41, Mar 23, 2022)
 
 
-This update has a lot of small improvements and bug fixes but most notable are the new GUI elements. The overview
-page now shows the latest transactions on the network, latest blocks, and the new "Coin News" section. 
+* Software is now a hard fork at block 729,792. Mining difficulty will be reset to the initial minimum and non-updated nodes will become incompatible.  Syncing the Bitcoin Core blockchain requires about 450 GB of storage. Enabling txindex will use ~20 GB of additional storage. The pre-pruned "Fast Sync"
+* GUI performance upgrades.
+* Improve BMM request encoding, reduced [minimum BMM bytes in transaction from 13 to 9](https://github.com/drivechain-project/mainchain/commit/48d6ee078d84430b1d7d0285b2bf9f5847a85e82).
+* Updated cache sizes and chain params for faster IDB & sync.
+* Fix BMM request selection miner bug.
+* Update overview page & mempool table with fiat conversion.
+* GUIs allows setting BTC/USD price.
 
 
-Mainchain
-=========
+## How to Run
 
-* Built-In Block Explorer
-* * Merkle tree overhauled -- added reverse concatenated bytes (RCB) and split into tabs
-* * Block index details re-ordered, added witness hash
-* blockchain.info-style "transaction fireplace"
-* * showing "latest transactions" (in mempool) and their fee-rates
-* * "latest blocks" (shows recent blocks mined, lined to block explorer)
-* New Feature: CoinNews
-* * This is a completely opt-in GUI feature which automatically organizes OP return data based on its fee rates.
-* * While utterly simple, I think Bitcoin will find it fun and useful. Certainly its something new and harmless.
-* * Added OP_RETURN output database, news creation dialog, news management dialog 
-* * Added 'createopreturntransaction' RPC, graffiti explorer table model, table, popup window (displays all OP_RETURN data)
+Casual users should use "Fast Sync" below.
 
+### Normal Sync
 
-Sidechains
-==========
+1. If you have old data directories from previous versions (~/.drivenet, ~/.testchain), then delete them!
+2. Download the **tar.gz** file (above), and extract it.
+3. Navigate to the qt file (/bin/drivenet-qt).
+4. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
 
-* Updated sidechain block creation and validation, to include coinbase commitment 
-of the block version and current WT^ hash
-* this completes the "header-ization" of the coinbase. 
-* * (Now each sidechain contains its own header in the coinbase, and each SideHashMerkleRoot cements the block to exactly one place in the BTC blockchain. So, now h* contains all the relevant consensus data -- sidechain block headers and hashes are just for sidechain IBD and convenience).
+* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
 
+### Fast Sync (Casual Users)
+
+The initial block download is slow.
+Let's skip it!
+(This requires an 8.8 GB download.)
+
+Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
+
+    cd ~/Downloads/
+    curl -O http://172.105.148.135/drivechain/DrivechainLinuxPruned728584.tar.gz
+    tar -xvzf DrivechainLinuxPruned728584.tar.gz
+    mkdir ~/.drivechain
+    mv DrivechainLinuxPruned728584/* ~/.drivechain
+    curl -O http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz
+    tar -xvzf drivechain-0.41.00-x86_64-linux-gnu.tar.gz
+    ./drivechain-0.41.00/bin/drivechain-qt --prune=2600
+
+What do those commands do? They:
+
+1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/DrivechainLinuxPruned728584.tar.gz) (warning: 8.8 GB).
+2. Extract the downloaded files.
+3. Move those files to ```~/.drivechain```.
+4. Download [DriveNet](http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz) testnet.
+5. Run Drivechain in pruned mode.
 
 
 ## Useful Tips
@@ -89,22 +108,13 @@ On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
 On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
 
 
-### 3. Linux Guide for Noobs
+### 3. I don't have Linux!!!
 
-Some of the software is Linux-only, especially at first. Linux is also safer to use than other OSes!
+Some of the software is Linux-only.
 
-#### a. Linux is Free, and Easy to Use on Mac/Windows
+Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is not only easy, it is very secure (by layperson standards), because it should be impossible for DriveNet to touch the rest of your Mac/Windows computer (it will be confined to the VirtualBox computer).
 
-Note: Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is not only easy, it is very secure (by layperson standards), because it should be impossible for DriveNet to touch the rest of your Mac/Windows computer (it will be confined to the VirtualBox computer).
 
-#### b. How to Run Drivenet (Linux Noobs)
-
-1. If you have old data directories from previous versions (~/.drivenet, ~/.testchain) please delete them!
-2. Download the **tar.gz** file (above), and extract it.
-3. Navigate to the qt file (/bin/drivenet-qt).
-4. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
-
-* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
 
 
 <!--
@@ -125,6 +135,36 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 
 ## Selected Older Release Notes
+
+
+### What's New (v40, Oct 24, 2021)
+
+
+This update has a lot of small improvements and bug fixes but most notable are the new GUI elements. The overview
+page now shows the latest transactions on the network, latest blocks, and the new "Coin News" section. 
+
+
+Mainchain
+
+* Built-In Block Explorer
+* * Merkle tree overhauled -- added reverse concatenated bytes (RCB) and split into tabs
+* * Block index details re-ordered, added witness hash
+* blockchain.info-style "transaction fireplace"
+* * showing "latest transactions" (in mempool) and their fee-rates
+* * "latest blocks" (shows recent blocks mined, lined to block explorer)
+* New Feature: CoinNews
+* * This is a completely opt-in GUI feature which automatically organizes OP return data based on its fee rates.
+* * While utterly simple, I think Bitcoin will find it fun and useful. Certainly its something new and harmless.
+* * Added OP_RETURN output database, news creation dialog, news management dialog 
+* * Added 'createopreturntransaction' RPC, graffiti explorer table model, table, popup window (displays all OP_RETURN data)
+
+
+Sidechains
+
+* Updated sidechain block creation and validation, to include coinbase commitment 
+of the block version and current WT^ hash
+* this completes the "header-ization" of the coinbase. 
+* * (Now each sidechain contains its own header in the coinbase, and each SideHashMerkleRoot cements the block to exactly one place in the BTC blockchain. So, now h* contains all the relevant consensus data -- sidechain block headers and hashes are just for sidechain IBD and convenience).
 
 
 ### Aug 6, 2021 (v39)

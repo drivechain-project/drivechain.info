@@ -3,11 +3,12 @@ SHA256 Checksums for DriveNet Software
 
 ----------------------------------------------------------------
 
-22ebcb24325AB4BS43Ag68523fff6feabfdc5acfa0be07e6909365b973513914  drivechain-0.40.02-osx64.tar.gz
-cb69026261aba1268ec8f672c6a32a9ae41af395b61e58a30d637f141057e0d3  drivechain-0.40.02-osx-unsigned.dmg
-95f0475eec4f5cd38ac6ba8841895094236b7a9f449e098437ba941c5c221277  drivechain-0.40.02-win64-setup-unsigned.exe
-ebf96c857d3d8d87bc519dc183024f503919ac1f99ed22c895ed08b252e4964c  drivechain-0.40.02-win64.zip
-bb4a89e5bc098e5c42e92af8265c3b34bdbd53f622419065a2c212b28925e7b7  drivechain-0.40.02-x86_64-linux-gnu.tar.gz
+93ec5627ba6c4003a9c02cdf6e1675ebcf8209a82c4cd270f83878f24de6c92e  drivechain-0.41.00-osx64.tar.gz
+5048906cb105d9d7b76c1dc94f5b1e281ebfeb85405aaa45de55df8538a4f93c  drivechain-0.41.00-osx.dmg
+d641ad0dc2047736642c0d7774505e774575251b4830b080017ba0b6aa4fbf71  drivechain-0.41.00-win64-setup.exe
+5fa0826803410e825a542f896a99f71ef6099676259182baff9469743d684be5  drivechain-0.41.00-win64.zip
+a2c2270f2e621bcbe8c896491bca136d364fe28f7d75bce969f39b3177613ca9  drivechain-0.41.00-x86_64-linux-gnu.tar.gz
+8106ce1975e5b3fca60acea56c32cacb10f53b962b4fab3d8c91df815360754a  DrivechainLinuxPruned728584.tar.gz
 
 f8c8f3cbd5cad75cc89bb6b798c708fcb07bce1132d65b23291e9abf7f50d330  testchain-14.01.00-win64-setup-unsigned.exe
 201f363edd109b7f2837071fdc15f0be8d4d370ec1dbf6960a3ac3fb5032fef7  testchain-14.01.00-win64.zip
@@ -30,6 +31,12 @@ f8c8f3cbd5cad75cc89bb6b798c708fcb07bce1132d65b23291e9abf7f50d330  testchain-14.0
 Older
 ======
 
+
+22ebcb24325AB4BS43Ag68523fff6feabfdc5acfa0be07e6909365b973513914  drivechain-0.40.02-osx64.tar.gz
+cb69026261aba1268ec8f672c6a32a9ae41af395b61e58a30d637f141057e0d3  drivechain-0.40.02-osx-unsigned.dmg
+95f0475eec4f5cd38ac6ba8841895094236b7a9f449e098437ba941c5c221277  drivechain-0.40.02-win64-setup-unsigned.exe
+ebf96c857d3d8d87bc519dc183024f503919ac1f99ed22c895ed08b252e4964c  drivechain-0.40.02-win64.zip
+bb4a89e5bc098e5c42e92af8265c3b34bdbd53f622419065a2c212b28925e7b7  drivechain-0.40.02-x86_64-linux-gnu.tar.gz
 
 --
 
