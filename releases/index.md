@@ -5,41 +5,39 @@ title: Releases
 
 
 
-## Download Latest Version (v41.00)
+## Download Latest Version (v41.01)
 
-<!--
-/releases/bin/
--->
-
+[**Folder w/ All Releases**](http://release.drivechain.info/)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v41.00**|[tar.gz][linux-main]|[.exe][win-main]|[dmg][mac-main-dmg], [tar.gz][mac-main-tar]|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v14.01|[tar.gz][linux-test]|[.exe][win-test]|n/a|[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v77|[tar.gz][linux-train]|[.exe][win-train]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v5.00.01|[tar.gz][linux-thund]|[.exe][win-thund]|n/a|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v5.00.1|[tar.gz][linux-zside]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|**Mainchain v41.01**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v15.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v78|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v6.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v6.00.6|[tar.gz][zside-tar]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|BitAssets v1.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
 
+[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-1.00.00-osx.dmg
+[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-1.00.00-win64-setup.exe
+[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-1.00.00-x86_64-linux-gnu.tar.gz
+[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.41.01-osx.dmg
+[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.41.01-win64-setup.exe
+[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.41.01-x86_64-linux-gnu.tar.gz
+[testchain-dmg]: http://172.105.148.135/drivechain/testchain-15.00.00-osx.dmg
+[testchain-exe]: http://172.105.148.135/drivechain/testchain-15.00.00-win64-setup.exe
+[testchain-tar]: http://172.105.148.135/drivechain/testchain-15.00.00-x86_64-linux-gnu.tar.gz
+[thunder-dmg]: http://172.105.148.135/drivechain/thunder-6.00.00-osx.dmg
+[thunder-exe]: http://172.105.148.135/drivechain/thunder-6.00.00-win64-setup.exe
+[thunder-tar]: http://172.105.148.135/drivechain/thunder-6.00.00-x86_64-linux-gnu.tar.gz
+[train-dmg]: http://172.105.148.135/drivechain/trainchain-78.00.00-osx.dmg
+[train-exe]: http://172.105.148.135/drivechain/trainchain-78.00.00-win64-setup.exe
+[train-tar]: http://172.105.148.135/drivechain/trainchain-78.00.00-x86_64-linux-gnu.tar.gz
+[zside-tar]: http://172.105.148.135/drivechain/zside-6.00-x86_64-pc-linux-gnu.tar.gz
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
 Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
-
-
-[linux-main]: http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz
-[linux-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[linux-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[linux-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[linux-zside]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-
-[win-main]: http://172.105.148.135/drivechain/drivechain-0.41.00-win64-setup.exe
-[win-test]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[win-train]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-[win-thund]: https://drive.google.com/drive/folders/1o83i1N4yPbbKT5hVv_IspNVwHV2jUUoT
-
-[mac-main-dmg]: http://172.105.148.135/drivechain/drivechain-0.41.00-osx.dmg
-[mac-main-tar]: http://172.105.148.135/drivechain/drivechain-0.41.00-osx64.tar.gz
-
 
 
 ## What's New (v41, Mar 23, 2022)

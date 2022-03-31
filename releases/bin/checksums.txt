@@ -1,6 +1,52 @@
 
 SHA256 Checksums for DriveNet Software
 
+
+
+d6c0dd9b0eab06e2e4dc1b2980f2fdabbae132c0db62cf61eb03a36b5f3ab7f3  drivechain-0.41.01-osx64.tar.gz
+31944fcd61f9d80d0f1f3afc429fbeb6cc81f17b0544604a9c32631379577f86  drivechain-0.41.01-osx.dmg
+0197186bbbd9a90ed16014fbab8340caf9a30378bef041dbfc3812e3acccda2f  drivechain-0.41.01-win64-setup.exe
+9ff32d8774c818de0763bc1a8337725a8406ef31dc75ae0530ed2f5a3773b666  drivechain-0.41.01-win64.zip
+d3760d6ba3e3ce7f71d7a03bdfdc4482bd039bf5e1dd62b33e8277d888abb856  drivechain-0.41.01-x86_64-linux-gnu.tar.gz
+
+8106ce1975e5b3fca60acea56c32cacb10f53b962b4fab3d8c91df815360754a  DrivechainLinuxPruned728584.tar.gz
+
+461a5efe0ad50fab0afedf272f0c6497ac17a3f95e6b7b917519c857038a54ff  bitassets-1.00.00-osx64.tar.gz
+9031c6e04411b361bb8959c0f635a2a0540d00827280b7149b5c0d5615c9bd5a  bitassets-1.00.00-osx.dmg
+83898104f3a6e6968e837ddb36515c291e0c081128704ed4bffc1ed66b7d7d85  bitassets-1.00.00-win64-setup.exe
+854a37c7016cb66e494f52c38e33c5c9ed92d5f5147d466a4d98cd3e23ad56ad  bitassets-1.00.00-win64.zip
+d01631f4f8cce0f9d87b2c5cb492c36eec2f1610d343f93d591bb368a85592b6  bitassets-1.00.00-x86_64-linux-gnu.tar.gz
+
+96bc2331eb9e6e9fa1ec29b8e005504223c4bd26e70e4e0ebe348edc93539917  testchain-15.00.00-osx64.tar.gz
+e65e0134f32a88e612aed2d0fc5d992b9d2e9d0e19590ca23c8a6e76b42d995b  testchain-15.00.00-osx.dmg
+b2e4fa7ff2355fb258f7ccfbdc50ff23c4e01db48ed57c0ab2899bcc57d271b6  testchain-15.00.00-win64-setup.exe
+096dea603dcc7a147858772e7fe3b0ba28780aa47824ec0937229316378eb286  testchain-15.00.00-win64.zip
+6b59dab6c5f7b8acd6e43f9d40e9b3a4ed3a450dab39d418d9868314f487e286  testchain-15.00.00-x86_64-linux-gnu.tar.gz
+
+0a533e1771ee1fa13dd9266bab1b66162f14c6a43431109980f05fcdd399fe9d  thunder-6.00.00-osx64.tar.gz
+a4c45debf0589da2f6bf16145a0f4785eeaafba872eb754a338d82e5391338c4  thunder-6.00.00-osx.dmg
+0a7ffb4c4fdf423cd68237b73c409838bd088112afb8721415f23a100fc9485d  thunder-6.00.00-win64-setup.exe
+64ff07cf0e73408dc2900202d3046e007782e9c1146c727cc6d08d6ac4a13805  thunder-6.00.00-win64.zip
+db0220792572f261325402026c84d23158eab3a52c115dc8fe411ee958199388  thunder-6.00.00-x86_64-linux-gnu.tar.gz
+
+8b2e5528beaf42024f2323ee064fdcb47db41baf2d3c21f16c23355385e069ca  trainchain-78.00.00-osx64.tar.gz
+3a085aee29298dcf617d4a7609035e11fd2d10b817389dc7b6575fd0321d132e  trainchain-78.00.00-osx.dmg
+a41131cbe5392813b78eaec1a17647dcb8b46e1980b3bab46a138e436dce6af4  trainchain-78.00.00-win64-setup.exe
+8c0d88f342913ed25a80c40751963c8436c56c33254f1f2aea66e944e70b1d96  trainchain-78.00.00-win64.zip
+29515d70c4f01cb0f21e65d7f4c28b5784fe13a8bb3eadd1f39ceefb718a07df  trainchain-78.00.00-x86_64-linux-gnu.tar.gz
+
+a19e7200e965191b2b9f1e0dca0c82a2f88223e283b5c19d1a2681f29e4e5121  zside-6.00-x86_64-pc-linux-gnu.tar.gz
+c4d8120a4234bc043fb8bf0d5598acb46671d3bb21ff3a8a10d54231a53ae506  zside-fetch-params.sh
+
+
+
+------
+
+
+
+
+
+
 ----------------------------------------------------------------
 
 93ec5627ba6c4003a9c02cdf6e1675ebcf8209a82c4cd270f83878f24de6c92e  drivechain-0.41.00-osx64.tar.gz
