@@ -94,7 +94,7 @@ It is very risky for Bitcoin to go *without* Drivechain.
 ![image](/media/risk-tradeoffs.png)
 
 
-### BIPs 
+### BIPs
 
 Drivechain is made of two BIPs:
 
@@ -204,6 +204,17 @@ See also:
 
 ## Screenshots
 
+![image](/media/shot-6.png)
+
+![image](/media/shot-7.png)
+
+![image](/media/shot-8.png)
+
+![image](/media/shot-9.png)
+
+
+<!--
+
 ![image](/media/screenshots/both.png)
 
 ![image](/media/screenshots/mainchain.png)
@@ -218,7 +229,6 @@ See also:
 
 ![image](/media/screenshots/propose.png)
 
-<!--
 
 <div class="responsive">
   <div class="gallery">
