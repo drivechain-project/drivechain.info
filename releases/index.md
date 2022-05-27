@@ -15,7 +15,7 @@ title: Releases
 |Testchain v15.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v78|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v6.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zSide v6.00.6|[tar.gz][zside-tar]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|zCash-DC v5.0.0|n/a|n/a|n/a|[GitLab](https://github.com/nchashch/zcash-sidechain)|
 |BitAssets v1.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
 
 [bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-1.00.00-osx.dmg
