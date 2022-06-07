@@ -5,12 +5,37 @@ title: Releases
 
 
 
-## Download Latest Version (v41.01)
+## Download Latest Version (v42.00)
 
 [**Folder w/ All Releases**](http://release.drivechain.info/)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
+
+|**Mainchain v42**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v16.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v79|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v7.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|zSide v6.00.6|[tar.gz][zside-tar]|n/a|n/a|[GitLab](https://gitlab.com/CryptAxe/zcash-drivechain/-/blob/master/LINUXBUILD.md)|
+|BitAssets v2.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
+
+[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-2.00.00-osx.dmg
+[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-2.00.00-win64-setup.exe
+[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-2.00.00-x86_64-linux-gnu.tar.gz
+[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.42.00-osx.dmg
+[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.42.00-win64-setup.exe
+[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.42.00-x86_64-linux-gnu.tar.gz
+[testchain-dmg]: http://172.105.148.135/drivechain/testchain-16.00.00-osx.dmg
+[testchain-exe]: http://172.105.148.135/drivechain/testchain-16.00.00-win64-setup.exe
+[testchain-tar]: http://172.105.148.135/drivechain/testchain-16.00.00-x86_64-linux-gnu.tar.gz
+[thunder-dmg]: http://172.105.148.135/drivechain/thunder-7.00.00-osx.dmg
+[thunder-exe]: http://172.105.148.135/drivechain/thunder-7.00.00-win64-setup.exe
+[thunder-tar]: http://172.105.148.135/drivechain/thunder-7.00.00-x86_64-linux-gnu.tar.gz
+[train-dmg]: http://172.105.148.135/drivechain/trainchain-79.00.00-osx.dmg
+[train-exe]: http://172.105.148.135/drivechain/trainchain-79.00.00-win64-setup.exe
+[train-tar]: http://172.105.148.135/drivechain/trainchain-79.00.00-x86_64-linux-gnu.tar.gz
+[zside-tar]: http://172.105.148.135/drivechain/zside-7.00-x86_64-pc-linux-gnu.tar.gz
+=======
 |**Mainchain v41.01**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
 |Testchain v15.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
 |Trainchain v78|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
@@ -35,21 +60,33 @@ title: Releases
 [train-tar]: http://172.105.148.135/drivechain/trainchain-78.00.00-x86_64-linux-gnu.tar.gz
 [zside-tar]: http://172.105.148.135/drivechain/zside-6.00-x86_64-pc-linux-gnu.tar.gz
 
+
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
 Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
 
 
-## What's New (v41, Mar 23, 2022)
+
+## What's New (v42, Jun 7, 2022)
+
+* Bip300/301
+* * Sidechain address bytes have been removed -- they were clunky and unnecessary. Sidechain deposit key data is now determined by sidechain number. Sidechain proposal scripts are now significantly smaller as they do not include key data. Plus there is less work for the user to do in the GUI / command line. Sidechain proposals only require a title and sidechain number now. 
+* BMM bug fixe, and size reduced from 9 to 8 bytes.
+* Quality-of-Life
+* * Hash calculator updated to add ascii decoded output, sha512 hash function, and a new HMAC tab.
+* * Basic paper wallet dialog added, but only BIP 39 wordlist generation is enabled for now.
+* zSide
+* * We can now copy zCash via Nikitas "bridge" submodule. This allows us to copy the latest version of zCash, which has Halo2, no trusted setup, orchard addresses, performance improvements allowing shielding on mobile, plus whatever else bugfixes and changes they made.
+* BitAssets
+* * Fixed wallet bug causing balance to vanish from GUI after asset transfer / creation.
+* * Fixed asset creation bug where headline would be replaced with ticker characters.
+* * Fixed bug that caused change from bitasset transfer to be counted as a bitasset.
+* * Fixed wallet code for transferring bitassets to select correct amount of input instead of all assets of a certain type.
+* * Fixed the "My Assets" table to update after transfers instead of waiting for a new block.
+* * Added send all button to asset transfer dialog.
 
 
-* Software is now a hard fork at block 729,792. Mining difficulty will be reset to the initial minimum and non-updated nodes will become incompatible.  Syncing the Bitcoin Core blockchain requires about 450 GB of storage. Enabling txindex will use ~20 GB of additional storage. The pre-pruned "Fast Sync"
-* GUI performance upgrades.
-* Improve BMM request encoding, reduced [minimum BMM bytes in transaction from 13 to 9](https://github.com/drivechain-project/mainchain/commit/48d6ee078d84430b1d7d0285b2bf9f5847a85e82).
-* Updated cache sizes and chain params for faster IDB & sync.
-* Fix BMM request selection miner bug.
-* Update overview page & mempool table with fiat conversion.
-* GUIs allows setting BTC/USD price.
+
 
 
 ## How to Run
@@ -74,20 +111,20 @@ Let's skip it!
 Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
 
     cd ~/Downloads/
-    curl -O http://172.105.148.135/drivechain/DrivechainLinuxPruned728584.tar.gz
-    tar -xvzf DrivechainLinuxPruned728584.tar.gz
+    curl -O http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz
+    tar -xvzf drivechain-linux-pruned-739597.tar.gz
     mkdir ~/.drivechain
-    mv DrivechainLinuxPruned728584/* ~/.drivechain
+    mv drivechain-linux-pruned-739597/* ~/.drivechain
     curl -O http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz
-    tar -xvzf drivechain-0.41.00-x86_64-linux-gnu.tar.gz
-    ./drivechain-0.41.00/bin/drivechain-qt --prune=2600
+    tar -xvzf drivechain-0.42.00-x86_64-linux-gnu.tar.gz
+    ./drivechain-0.42.00/bin/drivechain-qt --prune=2600
 
 What do those commands do? They:
 
-1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/DrivechainLinuxPruned728584.tar.gz) (warning: 8.8 GB).
+1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz) (warning: 8.8 GB).
 2. Extract the downloaded files.
 3. Move those files to ```~/.drivechain```.
-4. Download [DriveNet](http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz) testnet.
+4. Download [DriveNet](http://172.105.148.135/drivechain/drivechain-0.42.00-x86_64-linux-gnu.tar.gz) testnet.
 5. Run Drivechain in pruned mode.
 
 
@@ -133,6 +170,18 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 
 ## Selected Older Release Notes
+
+
+## What's New (v41, Mar 23, 2022)
+
+
+* Software is now a hard fork at block 729,792. Mining difficulty will be reset to the initial minimum and non-updated nodes will become incompatible.  Syncing the Bitcoin Core blockchain requires about 450 GB of storage. Enabling txindex will use ~20 GB of additional storage.
+* GUI performance upgrades.
+* Improve BMM request encoding, reduced [minimum BMM bytes in transaction from 13 to 9](https://github.com/drivechain-project/mainchain/commit/48d6ee078d84430b1d7d0285b2bf9f5847a85e82).
+* Updated cache sizes and chain params for faster IDB & sync.
+* Fix BMM request selection miner bug.
+* Update overview page & mempool table with fiat conversion.
+* GUI allows setting BTC/USD price.
 
 
 ### What's New (v40, Oct 24, 2021)
