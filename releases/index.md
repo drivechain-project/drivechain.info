@@ -47,7 +47,7 @@ Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bV
 
 * Bip300/301
 * * Sidechain address bytes have been removed -- they were clunky and unnecessary. Sidechain deposit key data is now determined by sidechain number. Sidechain proposal scripts are now significantly smaller as they do not include key data. Plus there is less work for the user to do in the GUI / command line. Sidechain proposals only require a title and sidechain number now. 
-* BMM bug fixe, and size reduced from 9 to 8 bytes.
+* * BMM bug fixe, and size reduced from 9 to 8 bytes.
 * Quality-of-Life
 * * Hash calculator updated to add ascii decoded output, sha512 hash function, and a new HMAC tab.
 * * Basic paper wallet dialog added, but only BIP 39 wordlist generation is enabled for now.
