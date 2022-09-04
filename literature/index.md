@@ -32,7 +32,7 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
-### TabConf 2021 ### {#tabconf2021}
+### Baltic Honeybadger 2022 ### {#baltic-2022}
 
 A 20 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
 
