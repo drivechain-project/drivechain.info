@@ -36,6 +36,12 @@ To this, only three modifications have since been made:
 
 A 20 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
 
+* [Slides](/media/slides/baltic-2022.pdf)
+
+### TabConf 2021 ### {#tabconf2021}
+
+A 20 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
+
 * [Slides](/media/slides/tabconf2021.pdf)
 * [Transcript](/media/slides/tabconf-speech.pdf)
 * [Performed Live! w/ Audience Questions](https://youtu.be/reKjNYQSZaQ?t=23595)
