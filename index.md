@@ -98,8 +98,8 @@ It is very risky for Bitcoin to go *without* Drivechain.
 
 Drivechain is made of two BIPs:
 
-1. [**BIP 300 (Hashrate Escrows)**](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki) -- "Container UTXOs" that compress 3-6 months of transaction data into a fixed 32-bytes.
-2. [**BIP 301 (Blind Merged Mining)**](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
+1. [**BIP 300 (Hashrate Escrows)**](https://github.com/psztorc/bips/blob/master/bip-0300.mediawiki) -- "Container UTXOs" that compress 3-6 months of transaction data into a fixed 32-bytes.
+2. [**BIP 301 (Blind Merged Mining)**](https://github.com/psztorc/bips/blob/master/bip-0301.mediawiki) -- A technique to replace the act of running a sidechain node with the act of including a single high-fee transaction.
 
 
 ### Selected Recent Podcasts
