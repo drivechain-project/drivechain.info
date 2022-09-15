@@ -5,63 +5,64 @@ title: Releases
 
 
 
-## Download Latest Version (v42.00)
+## Download Latest Version (v43.00)
 
 [**Folder w/ All Releases**](http://release.drivechain.info/)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v42**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v16.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v79|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v7.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|**Mainchain v43**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v17.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v80|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|Thunder v8.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
 |zCash-DC v5.0.0|[tar.gz][zside-tar]|n/a|n/a|[GitHub](https://github.com/nchashch/zcash-sidechain)|
-|BitAssets v2.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
+|BitAssets v3.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
 
-[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-2.00.00-osx.dmg
-[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-2.00.00-win64-setup.exe
-[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-2.00.00-x86_64-linux-gnu.tar.gz
-[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.42.00-osx.dmg
-[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.42.00-win64-setup.exe
-[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.42.00-x86_64-linux-gnu.tar.gz
-[testchain-dmg]: http://172.105.148.135/drivechain/testchain-16.00.00-osx.dmg
-[testchain-exe]: http://172.105.148.135/drivechain/testchain-16.00.00-win64-setup.exe
-[testchain-tar]: http://172.105.148.135/drivechain/testchain-16.00.00-x86_64-linux-gnu.tar.gz
-[thunder-dmg]: http://172.105.148.135/drivechain/thunder-7.00.00-osx.dmg
-[thunder-exe]: http://172.105.148.135/drivechain/thunder-7.00.00-win64-setup.exe
-[thunder-tar]: http://172.105.148.135/drivechain/thunder-7.00.00-x86_64-linux-gnu.tar.gz
-[train-dmg]: http://172.105.148.135/drivechain/trainchain-79.00.00-osx.dmg
-[train-exe]: http://172.105.148.135/drivechain/trainchain-79.00.00-win64-setup.exe
-[train-tar]: http://172.105.148.135/drivechain/trainchain-79.00.00-x86_64-linux-gnu.tar.gz
-[zside-tar]: http://172.105.148.135/drivechain/zside-7.00-x86_64-pc-linux-gnu.tar.gz
+[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-3.00.00-osx.dmg
+[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-3.00.00-win64-setup.exe
+[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-3.00.00-x86_64-linux-gnu.tar.gz
+[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.43.00-osx.dmg
+[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.43.00-win64-setup.exe
+[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.43.00-x86_64-linux-gnu.tar.gz
+[testchain-dmg]: http://172.105.148.135/drivechain/testchain-17.00.00-osx.dmg
+[testchain-exe]: http://172.105.148.135/drivechain/testchain-17.00.00-win64-setup.exe
+[testchain-tar]: http://172.105.148.135/drivechain/testchain-17.00.00-x86_64-linux-gnu.tar.gz
+[thunder-dmg]: http://172.105.148.135/drivechain/thunder-8.00.00-osx.dmg
+[thunder-exe]: http://172.105.148.135/drivechain/thunder-8.00.00-win64-setup.exe
+[thunder-tar]: http://172.105.148.135/drivechain/thunder-8.00.00-x86_64-linux-gnu.tar.gz
+[train-dmg]: http://172.105.148.135/drivechain/trainchain-80.00.00-osx.dmg
+[train-exe]: http://172.105.148.135/drivechain/trainchain-80.00.00-win64-setup.exe
+[train-tar]: http://172.105.148.135/drivechain/trainchain-80.00.00-x86_64-linux-gnu.tar.gz
+[zside-tar]: http://172.105.148.135/drivechain/zside-8.00-x86_64-pc-linux-gnu.tar.gz
 
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
-Old releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
+For help join [The Telegram](t.me/DcInsiders).
+
+Older releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
 
 
 
-## What's New (v42, Jun 7, 2022)
+##  What's New -- Sept 15, 2022 (v43)
 
-* Bip300/301
-* * Sidechain address bytes have been removed -- they were clunky and unnecessary. Sidechain deposit key data is now determined by sidechain number. Sidechain proposal scripts are now significantly smaller as they do not include key data. Plus there is less work for the user to do in the GUI / command line. Sidechain proposals only require a title and sidechain number now. 
-* * BMM bug fixe, and size reduced from 9 to 8 bytes.
-* Quality-of-Life
-* * Hash calculator updated to add ascii decoded output, sha512 hash function, and a new HMAC tab.
-* * Basic paper wallet dialog added, but only BIP 39 wordlist generation is enabled for now.
-* zSide
-* * We can now copy zCash via Nikitas "bridge" submodule. This allows us to copy the latest version of zCash, which has Halo2, no trusted setup, orchard addresses, performance improvements allowing shielding on mobile, plus whatever else bugfixes and changes they made.
-* BitAssets
-* * Fixed wallet bug causing balance to vanish from GUI after asset transfer / creation.
-* * Fixed asset creation bug where headline would be replaced with ticker characters.
-* * Fixed bug that caused change from bitasset transfer to be counted as a bitasset.
-* * Fixed wallet code for transferring bitassets to select correct amount of input instead of all assets of a certain type.
-* * Fixed the "My Assets" table to update after transfers instead of waiting for a new block.
-* * Added send all button to asset transfer dialog.
+Mainchain
 
+* M4
+* * We overhauled M4 to make it easier to understand. It is now more UTXO-like. New [code](https://github.com/drivechain-project/mainchain/commit/1375f723bc3a71dab873a0e3ef20ba439b5195d8), to reflect this change.
+* * * There was also associated [refactoring](https://github.com/drivechain-project/mainchain/commit/a86a7be150a69b5a1b1887510ffec18ef232fb3d) of withdrawal updates & voting
+* * * These changes allowed much more code to be deleted, than added! (238 additions and 949 deletions), and (583 additions and 2,009 deletions), respectively.
+* * New GUI to help people understand what is going on! See for yourself how M4 works.
+* * The [BIP text](https://github.com/psztorc/bips/blob/master/bip-0300.mediawiki) has been updated to reflect these clarifications. I think the BIP is now much shorter, simpler, and better organized. Will this put an end to pervasive BIP300 misunderstandings? Probably not.
+* UX / Quality of Life
+* * Hash calculator dialog upgrades
+* * New version of paper wallet dialog, split into create & restore wallet tools 
 
+Sidechains
+
+* RPC
+* * Added getwithdrawalbundle RPC to all sidechains. Returns the current withdrawal bundle transaction hex encoded
 
 
 
@@ -91,16 +92,16 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     tar -xvzf drivechain-linux-pruned-739597.tar.gz
     mkdir ~/.drivechain
     mv drivechain-linux-pruned-739597/* ~/.drivechain
-    curl -O http://172.105.148.135/drivechain/drivechain-0.41.00-x86_64-linux-gnu.tar.gz
-    tar -xvzf drivechain-0.42.00-x86_64-linux-gnu.tar.gz
-    ./drivechain-0.42.00/bin/drivechain-qt --prune=2600
+    curl -O http://172.105.148.135/drivechain/drivechain-0.43.00-x86_64-linux-gnu.tar.gz
+    tar -xvzf drivechain-0.43.00-x86_64-linux-gnu.tar.gz
+    ./drivechain-0.43.00/bin/drivechain-qt --prune=2600
 
 What do those commands do? They:
 
 1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz) (warning: 8.8 GB).
 2. Extract the downloaded files.
 3. Move those files to ```~/.drivechain```.
-4. Download [DriveNet](http://172.105.148.135/drivechain/drivechain-0.42.00-x86_64-linux-gnu.tar.gz) testnet.
+4. Download [DriveNet][drivechain-tar] testnet.
 5. Run Drivechain in pruned mode.
 
 
@@ -148,7 +149,26 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 ## Selected Older Release Notes
 
 
-## What's New (v41, Mar 23, 2022)
+###  Jun 7, 2022 (v42)
+
+
+* Bip300/301
+* * Sidechain address bytes have been removed -- they were clunky and unnecessary. Sidechain deposit key data is now determined by sidechain number. Sidechain proposal scripts are now significantly smaller as they do not include key data. Plus there is less work for the user to do in the GUI / command line. Sidechain proposals only require a title and sidechain number now. 
+* * BMM bug fixe, and size reduced from 9 to 8 bytes.
+* Quality-of-Life
+* * Hash calculator updated to add ascii decoded output, sha512 hash function, and a new HMAC tab.
+* * Basic paper wallet dialog added, but only BIP 39 wordlist generation is enabled for now.
+* zSide
+* * We can now copy zCash via Nikitas "bridge" submodule. This allows us to copy the latest version of zCash, which has Halo2, no trusted setup, orchard addresses, performance improvements allowing shielding on mobile, plus whatever else bugfixes and changes they made.
+* BitAssets
+* * Fixed wallet bug causing balance to vanish from GUI after asset transfer / creation.
+* * Fixed asset creation bug where headline would be replaced with ticker characters.
+* * Fixed bug that caused change from bitasset transfer to be counted as a bitasset.
+* * Fixed wallet code for transferring bitassets to select correct amount of input instead of all assets of a certain type.
+* * Fixed the "My Assets" table to update after transfers instead of waiting for a new block.
+* * Added send all button to asset transfer dialog.
+
+### Mar 23, 2022 (v41)
 
 
 * Software is now a hard fork at block 729,792. Mining difficulty will be reset to the initial minimum and non-updated nodes will become incompatible.  Syncing the Bitcoin Core blockchain requires about 450 GB of storage. Enabling txindex will use ~20 GB of additional storage.
@@ -160,7 +180,7 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 * GUI allows setting BTC/USD price.
 
 
-### What's New (v40, Oct 24, 2021)
+### Oct 24, 2021 (v40)
 
 
 This update has a lot of small improvements and bug fixes but most notable are the new GUI elements. The overview
