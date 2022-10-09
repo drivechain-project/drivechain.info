@@ -1,5 +1,5 @@
 ---
-title: EthSide -- The Ethereum Drivechain
+title: EthSide -- An Ethereum Drivechain
 show_author: true
 comments: true
 date: 2022-10-09 05:00:00
