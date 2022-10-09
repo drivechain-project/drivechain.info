@@ -24,11 +24,11 @@ Specifically, we do 5 steps:
 
 **LINUX** is needed. Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html) -- see [these](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) [guide](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is easy & secure - it stops DriveNet from touching the rest of your computer.
 
-Below: Step 1.A, you are looking at the ubuntu desktop.
+Below: you are looking at an Ubuntu desktop.
 
 ![image](/media/ethside-guide/1.png)
 
-Open a terminal -- (right-click -> "Open in Terminal")
+Open a terminal -- (right-click -> "Open in Terminal").
 
 ![image](/media/ethside-guide/2.png)
 
