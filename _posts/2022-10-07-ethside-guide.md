@@ -127,7 +127,7 @@ Try making a new "wallet":
 
     personal.newAccount()
 
-And checks the balance (zero coins).
+Try checking your wallet balance -- zero coins... for now.
 
     eth.getBalance(eth.accounts[0])
 
