@@ -99,8 +99,8 @@ In the new terminal tab run:
     mkdir datadirs/eth
     ./ethereum-sidechain/build/bin/geth --datadir ./datadirs/eth init ./ethereum-sidechain/genesis.json
     ./ethereum-sidechain/build/bin/geth --http --http.api eth,web3,personal,net \
-                                    --http.corsdomain "https://remix.ethereum.org" \
-                                    --datadir=./datadirs/eth --maxpeers 0 --dev
+        --http.corsdomain "https://remix.ethereum.org" \
+        --datadir=./datadirs/eth --maxpeers 0 --dev
 
 (It may ask you for your Ubuntu password again).
 
@@ -122,12 +122,13 @@ And in it, fire up ethereum:
 
 The Eth terminal is now on! You can now user Ethereum.
 
-Try some of these:
+Try making a new "wallet":
 
     personal.newAccount()
-    eth.getBalance(eth.accounts[0])
 
-That makes a "wallet" for you. And checks the balance (zero coins).
+And checks the balance (zero coins).
+
+    eth.getBalance(eth.accounts[0])
 
 ![image](/media/ethside-guide/9.png)
 
