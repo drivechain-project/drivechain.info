@@ -6,6 +6,7 @@ date: 2022-10-09 05:00:00
 ---
 
 
+[VIDEO WALKTHROUGH on YouTube](https://youtu.be/B2cmR2Vz-s0).
 
 ## In This Guide
 
