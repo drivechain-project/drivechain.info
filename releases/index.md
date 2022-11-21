@@ -5,36 +5,36 @@ title: Releases
 
 
 
-## Download Latest Version (v43.00)
+## Download Latest Version (v44.00)
 
 [**Folder w/ All Releases**](http://release.drivechain.info/)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v43**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v17.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v80|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
+|**Mainchain v44**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
+|Testchain v18.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
+|Trainchain v81|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 |Thunder v8.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
-|zCash-DC v5.0.0|[tar.gz][zside-tar]|n/a|n/a|[GitHub](https://github.com/nchashch/zcash-sidechain)|
-|BitAssets v3.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
+|zCash-DC v9.0.0|[tar.gz][zside-tar]|n/a|n/a|[GitHub](https://github.com/nchashch/zcash-sidechain)|
+|BitAssets v4.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
 
-[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-3.00.00-osx.dmg
-[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-3.00.00-win64-setup.exe
-[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-3.00.00-x86_64-linux-gnu.tar.gz
-[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.43.00-osx.dmg
-[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.43.00-win64-setup.exe
-[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.43.00-x86_64-linux-gnu.tar.gz
-[testchain-dmg]: http://172.105.148.135/drivechain/testchain-17.00.00-osx.dmg
-[testchain-exe]: http://172.105.148.135/drivechain/testchain-17.00.00-win64-setup.exe
-[testchain-tar]: http://172.105.148.135/drivechain/testchain-17.00.00-x86_64-linux-gnu.tar.gz
+
+[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.44.00-osx.dmg
+[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.44.00-win64-setup.exe
+[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+[testchain-dmg]: http://172.105.148.135/drivechain/testchain-18.00.00-osx.dmg
+[testchain-exe]: http://172.105.148.135/drivechain/testchain-18.00.00-win64-setup.exe
+[testchain-tar]: http://172.105.148.135/drivechain/testchain-18.00.00-x86_64-linux-gnu.tar.gz
+[train-dmg]: http://172.105.148.135/drivechain/trainchain-81.00.00-osx.dmg
+[train-exe]: http://172.105.148.135/drivechain/trainchain-81.00.00-win64-setup.exe
+[train-tar]: http://172.105.148.135/drivechain/trainchain-81.00.00-x86_64-linux-gnu.tar.gz
 [thunder-dmg]: http://172.105.148.135/drivechain/thunder-8.00.00-osx.dmg
 [thunder-exe]: http://172.105.148.135/drivechain/thunder-8.00.00-win64-setup.exe
 [thunder-tar]: http://172.105.148.135/drivechain/thunder-8.00.00-x86_64-linux-gnu.tar.gz
-[train-dmg]: http://172.105.148.135/drivechain/trainchain-80.00.00-osx.dmg
-[train-exe]: http://172.105.148.135/drivechain/trainchain-80.00.00-win64-setup.exe
-[train-tar]: http://172.105.148.135/drivechain/trainchain-80.00.00-x86_64-linux-gnu.tar.gz
-[zside-tar]: http://172.105.148.135/drivechain/zside-8.00-x86_64-pc-linux-gnu.tar.gz
-
+[zside-tar]: http://172.105.148.135/drivechain/zside-9.00-x86_64-pc-linux-gnu.tar.gz
+[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-4.00.00-osx.dmg
+[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-4.00.00-win64-setup.exe
+[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-4.00.00-x86_64-linux-gnu.tar.gz
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -45,45 +45,27 @@ Older releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_
 
 
 
-##  What's New -- Sept 15, 2022 (v43)
+##  What's New -- Nov 21, 2022 (v44)
 
 Mainchain
 
-* M4
-* * We overhauled M4 to make it easier to understand. It is now more UTXO-like. New [code](https://github.com/drivechain-project/mainchain/commit/1375f723bc3a71dab873a0e3ef20ba439b5195d8), to reflect this change.
-* * * There was also associated [refactoring](https://github.com/drivechain-project/mainchain/commit/a86a7be150a69b5a1b1887510ffec18ef232fb3d) of withdrawal updates & voting
-* * * These changes allowed much more code to be deleted, than added! (238 additions and 949 deletions), and (583 additions and 2,009 deletions), respectively.
-* * New GUI to help people understand what is going on! See for yourself how M4 works.
-* * The [BIP text](https://github.com/psztorc/bips/blob/master/bip-0300.mediawiki) has been updated to reflect these clarifications. I think the BIP is now much shorter, simpler, and better organized. Will this put an end to pervasive BIP300 misunderstandings? Probably not.
-* UX / Quality of Life
-* * Hash calculator dialog upgrades
-* * New version of paper wallet dialog, split into create & restore wallet tools 
+* Sidechain deposits are now only 2 marginal bytes, and have no signatures ever. (Previously, they were ~80 bytes, and had a pointless ECDSA signature.)
+* The [Drivechain Integration testing script](https://github.com/drivechain-project/DriveChainIntegration) has been upgraded to activate and withdraw from multiple sidechains at once.
+* More fun tools in the "Tools" dropdown menu.
+* Fix mainchain SCDB Byte commitment bug
 
-Sidechains
+Sidechain
 
-* RPC
-* * Added getwithdrawalbundle RPC to all sidechains. Returns the current withdrawal bundle transaction hex encoded
-
+* Sidechain template `refreshbmm` bug fix
 
 
 ## How to Run
-
-Casual users should use "Fast Sync" below.
-
-### Normal Sync
-
-1. If you have old data directories from previous versions (~/.drivenet, ~/.testchain), then delete them!
-2. Download the **tar.gz** file (above), and extract it.
-3. Navigate to the qt file (/bin/drivenet-qt).
-4. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
-
-* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
 
 ### Fast Sync (Casual Users)
 
 The initial block download is slow.
 Let's skip it!
-(This requires an 8.8 GB download.)
+(Only requires 8.8 GB download, instead of 100's.)
 
 Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
 
@@ -92,17 +74,26 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     tar -xvzf drivechain-linux-pruned-739597.tar.gz
     mkdir ~/.drivechain
     mv drivechain-linux-pruned-739597/* ~/.drivechain
-    curl -O http://172.105.148.135/drivechain/drivechain-0.43.00-x86_64-linux-gnu.tar.gz
+    curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
     tar -xvzf drivechain-0.43.00-x86_64-linux-gnu.tar.gz
     ./drivechain-0.43.00/bin/drivechain-qt --prune=2600
 
-What do those commands do? They:
+Those commands will:
 
 1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz) (warning: 8.8 GB).
 2. Extract the downloaded files.
 3. Move those files to ```~/.drivechain```.
 4. Download [DriveNet][drivechain-tar] testnet.
 5. Run Drivechain in pruned mode.
+
+### Normal Sync (Power Users)
+
+1. Download [the tar.gz file][drivechain-tar], and extract it.
+2. Navigate to the qt file (/bin/drivenet-qt).
+3. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
+
+* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
+* Be sure to delete old data directorires from previous versions (~/.drivenet, ~/.testchain).
 
 
 ## Useful Tips
@@ -147,6 +138,26 @@ Feel free to [ask for testcoins](www.t.me/DcInsiders), or start mining to collec
 
 
 ## Selected Older Release Notes
+
+### Sept 15, 2022 (v44)
+
+Mainchain
+
+* M4
+* * We overhauled M4 to make it easier to understand. It is now more UTXO-like. New [code](https://github.com/drivechain-project/mainchain/commit/1375f723bc3a71dab873a0e3ef20ba439b5195d8), to reflect this change.
+* * * There was also associated [refactoring](https://github.com/drivechain-project/mainchain/commit/a86a7be150a69b5a1b1887510ffec18ef232fb3d) of withdrawal updates & voting
+* * * These changes allowed much more code to be deleted, than added! (238 additions and 949 deletions), and (583 additions and 2,009 deletions), respectively.
+* * New GUI to help people understand what is going on! See for yourself how M4 works.
+* * The [BIP text](https://github.com/psztorc/bips/blob/master/bip-0300.mediawiki) has been updated to reflect these clarifications. I think the BIP is now much shorter, simpler, and better organized. Will this put an end to pervasive BIP300 misunderstandings? Probably not.
+* UX / Quality of Life
+* * Hash calculator dialog upgrades
+* * New version of paper wallet dialog, split into create & restore wallet tools 
+
+Sidechains
+
+* RPC
+* * Added getwithdrawalbundle RPC to all sidechains. Returns the current withdrawal bundle transaction hex encoded
+
 
 
 ###  Jun 7, 2022 (v42)
