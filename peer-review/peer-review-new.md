@@ -107,7 +107,7 @@ To me, the complaint makes no sense. Nonetheless, I shall now try to explain thi
 
 First, the complaint asks us to consider "burdensome sidechains" which are expensive to run, but profitable.
 
-So imagine that all "sidechain" software costs $5 M / year to run, but "sidiechains" bring in $100 M / year (in txn fee revenue). A solo miner with only 4% of the hashrate would earn $4M from "sidechains" (just 4% of the total $100M). But "sidechains" would cost this miner a fixed $5M. So this miner does not run any sidechains. But conversely, a solo miner with 12% would run sidechains -- they'd pay $5M (fixed) and earn $12. This miner now earns a higher ROI (the $12/$5 ROI blends in with the subsistence ROI he was earning pre-sidechains). Because of sidechains, larger miners are rewarded more.
+So imagine that all "sidechain" software costs $5 M / year to run, but "sidechains" bring in $100 M / year (in txn fee revenue). A solo miner with only 4% of the hashrate would earn $4M from "sidechains" (just 4% of the total $100M). But "sidechains" would cost this miner a fixed $5M. So this miner does not run any sidechains. But conversely, a solo miner with 12% would run sidechains -- they'd pay $5M (fixed) and earn $12. This miner now earns a higher ROI (the $12/$5 ROI blends in with the subsistence ROI he was earning pre-sidechains). Because of sidechains, larger miners are rewarded more.
 
 The same problem applies to pools. The pool operators who mine "sidechains", will have an edge over those who do not. Pools which turn down the free money, will not attract Hashers. Therefore, eventually, "running all profitable sidechains" will become an activity that is de facto mandatory.
 
