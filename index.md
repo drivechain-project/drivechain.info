@@ -61,6 +61,9 @@ div.desc {
 
 ## **[DOWNLOAD Software](http://www.drivechain.info/releases/index.html)** -- **[LEARN on YouTube](https://www.youtube.com/watch?v=NK2IvzDz7pk&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)**
 
+"Drivechain ... arguably could have been more important or useful than Taproot."
+- [Adam Back](https://www.blockstream.com/about/), [Baltic Honeybadger 2022](https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5)
+
 ### Peer-to-Peer Bitcoin Sidechains
 
 Drivechain allows Bitcoin to *create*, *delete*, *send BTC to*, and *receive BTC from* ["Layer-2"s](https://academy.binance.com/en/glossary/layer-2) called "sidechains". Sidechains are Altcoins that lack a native "coin" -- instead, pre-existing coins [from a different blockchain] must first be sent over.
