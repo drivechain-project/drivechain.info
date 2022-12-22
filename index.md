@@ -63,7 +63,7 @@ div.desc {
 
 <h3>"Drivechain ... arguably could have been more important or useful than Taproot."</h3>
 
-<p>- <a href="https://www.blockstream.com/about/"><strong>Adam Back</strong></a>, (<a href="https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5">Baltic Honeybadger 2022</a>)</p>
+<p>- <a href="https://www.blockstream.com/about/"><strong>Adam Back</strong></a>, <a href="https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5">Baltic Honeybadger 2022</a></p>
 
 
 ## **[DOWNLOAD Software](http://www.drivechain.info/releases/index.html)** -- **[LEARN on YouTube](https://www.youtube.com/watch?v=NK2IvzDz7pk&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)**
