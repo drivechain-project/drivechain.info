@@ -63,7 +63,7 @@ div.desc {
 
 ### Peer-to-Peer Bitcoin Sidechains
 
-Drivechain allows Bitcoin to *create*, *delete*, *send BTC to*, and *receive BTC from* ["Layer-2"s](https://www.binance.vision/glossary/layer-2) called "sidechains". Sidechains are Altcoins that lack a native "coin" -- instead, pre-existing coins [from a different blockchain] must first be sent over.
+Drivechain allows Bitcoin to *create*, *delete*, *send BTC to*, and *receive BTC from* ["Layer-2"s](https://academy.binance.com/en/glossary/layer-2) called "sidechains". Sidechains are Altcoins that lack a native "coin" -- instead, pre-existing coins [from a different blockchain] must first be sent over.
 
 Once on a sidechain, coins can change hands an unlimited number of times, and in an unlimited number of *new ways*. Thus, BTC-owners can opt-in to [new features or tradeoffs](http://www.drivechain.info/projects/index.html). Meanwhile, the Bitcoiners who don't opt-in, never need to care what any sidechain is doing.
 
