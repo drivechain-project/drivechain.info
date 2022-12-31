@@ -41,7 +41,7 @@ You "own" a name, such as "EdwardSnowden.bit", and then no one can take it away 
 4. eliminate our reliance on cell phone numbers / ISPs / email profiders (a reliance which today is nearly absolute)
 5. facilitate privacy, by allowing users to generate as many new identities as they like, whenever they like
 
-Read more: https://www.truthcoin.info/blog/bitnames/
+[Read more.](https://www.truthcoin.info/blog/bitnames/)
 
 
 ### 4. "Thunder" -- Scaling via Sidechains
@@ -69,7 +69,7 @@ Academic discussion continued [for years](https://www.semanticscholar.org/paper/
 
 Those projects had two drawbacks: they consumed L1 blockspace, and they confused retail users (and murked-up Bitcoin's value proposition). With this sidechain, we aim to reverse both: the BitAssets sidechain has its own blockchain (and its own block space); and it uses BTC for all txn fees (making it clear that BTC is money, and the BitAssets are completely separate "non-money" tokens).
 
-[Read more](https://www.truthcoin.info/blog/bit-assets/).
+[Read more.](https://www.truthcoin.info/blog/bit-assets/)
 
 [Download](https://www.drivechain.info/releases/index.html), and try it for yourself.
 
