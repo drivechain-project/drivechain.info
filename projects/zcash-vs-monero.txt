@@ -1,0 +1,65 @@
+zCash vs Monero
+===============
+Paul Sztorc
+Jan 4 2023
+
+
+Why do I favor copying zCash, over Monero?
+-------------------------------------------
+
+The zCash vs Monero drama is bitter, isn't it!
+I get this question all the time!!
+
+My reasoning is:
+
+* sidechain-zCash is a lot better than altcoin-zCash
+* sidechain-Monero is a lot worse than altcoin-Monero
+* zCash's tech is (imo) slightly better than Monero's
+* zCash is a code-fork of BTC, so it is just easier for me to make/understand (than learning a different codebase/language/style etc).
+
+
+How can you say that zCash is better???>!?!? Don't you know that Darknet markets use Monero???
+----------------------------------------------------------------------------------------
+
+Monero is more popular in the real world for non-code reasons.
+
+Monero community:
+
+* is more focused on DNMs (some zCashers sometimes send mixed signals)
+* has more liquidity / adoption
+
+Sidechain-ification would not help us emulate these core advantages. Since they are social (ie, they are not something in Monero's software code).
+
+zCash, in contrast:
+
+* does lots of complex R&D
+* has a dev tax which discourages use/liquidity
+* has a hidden inflation bug
+* has an ever-growing "nullifiers" set
+
+Sidechain-ification removes this inflation risk completely, removes the inflation tax completely, takes maximal advantage of the zCash R&D (free-riding on top of it, in fact), and allows the nullifier set to be occasionally erased.
+
+See: https://www.truthcoin.info/blog/zside-meltcast/
+
+The "final destination" is better with zCash. zCash mixes everyone with everyone (with ring signatures, you get a smaller amount of mixing). zCash allows for **a single reusable z-address** which is an enormous UX improvement.
+
+
+What about "privacy by default"?
+---------------------------------
+
+I disagree with this framing.
+
+YES, we want a high anonymity set. But NO, we do NOT want to achieve via force -- by making it **mandatory**. That is a mistake. It will not work (at best, and will backfire at worst).
+
+The "t-address vs z-address" decision is comparable to a "Bitcoin vs Monero" decision or a "Venmo vs Bitcoin" decision. In the real world you can always opt-out. So the focus should not be on trapping people in the privacy world; it should be about making it as cheap as possible to dwell there.
+
+
+People in zCash often misuse the privacy!
+------------------------------------------
+
+Yes, this is a UX problem. It can be fixed with (for example) Melt/Cast, which we've built already.
+
+
+Further reading:
+https://www.truthcoin.info/blog/zside-meltcast/
+https://www.drivechain.info/blog/spring-contest/
