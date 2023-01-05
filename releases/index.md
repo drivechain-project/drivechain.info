@@ -7,17 +7,30 @@ title: Releases
 
 ## Download Latest Version (v44.00)
 
-[**Folder w/ All Releases**](http://release.drivechain.info/)
+### Mainchain
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
 |**Mainchain v44**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/drivechain-project/mainchain/)|
-|Testchain v18.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
-|Trainchain v81|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
-|Thunder v8.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+
+### Sidechains Based on Template
+
+|Software|Linux|Windows|Mac|Source|
+|--------|:---:|:-----:|:-:|:----:|
+|Sidechain Template v18.00|[tar.gz][testchain-tar]|[.exe][testchain-exe]|[dmg][testchain-dmg]|[Github](https://github.com/drivechain-project/sidechains)|
 |zCash-DC v9.0.0|[tar.gz][zside-tar]|n/a|n/a|[GitHub](https://github.com/nchashch/zcash-sidechain)|
 |BitAssets v4.00.0|[tar.gz][bitasset-tar]|[.exe][bitasset-exe]|[dmg][bitasset-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/BitAssets)|
+|Thunder v8.00.00|[tar.gz][thunder-tar]|[.exe][thunder-exe]|[dmg][thunder-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/thunder)|
+|Trainchain v81|[tar.gz][train-tar]|[.exe][train-exe]|[dmg][train-dmg]|[Github](https://github.com/drivechain-project/sidechains/tree/trainchain)|
 
+### Sidechains Based on Cloning Altcoins
+
+|Software|Linux|Windows|Mac|Source|
+|--------|:---:|:-----:|:-:|:----:|
+|Latest Ethereum|[Guide](https://www.drivechain.info/blog/ethside-guide/), [Video](https://www.youtube.com/watch?v=PsaSGZ0yulQ&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=11)|||[GitHub](https://github.com/nchashch/ethereum-sidechain)|
+|Latest zCash|[Guide](https://github.com/nchashch/zcash-sidechain/blob/master/zside-tour-2022.sh), [Video](https://www.youtube.com/watch?v=N33iJK2FdpE&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=10)|||[Guide](https://github.com/nchashch/zcash-sidechain)|
+
+[**Folder w/ All Releases**](http://release.drivechain.info/)
 
 [drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.44.00-osx.dmg
 [drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.44.00-win64-setup.exe
