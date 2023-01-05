@@ -28,7 +28,7 @@ title: Releases
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
 |Latest Ethereum|[Guide](https://www.drivechain.info/blog/ethside-guide/), [Video](https://www.youtube.com/watch?v=PsaSGZ0yulQ&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=11)|||[GitHub](https://github.com/nchashch/ethereum-sidechain)|
-|Latest zCash|[Guide](https://github.com/nchashch/zcash-sidechain/blob/master/zside-tour-2022.sh), [Video](https://www.youtube.com/watch?v=N33iJK2FdpE&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=10)|||[Guide](https://github.com/nchashch/zcash-sidechain)|
+|Latest zCash|[Guide](https://github.com/nchashch/zcash-sidechain/blob/master/zside-tour-2022.sh), [Video](https://www.youtube.com/watch?v=N33iJK2FdpE&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=10)|||[GitHub](https://github.com/nchashch/zcash-sidechain)|
 
 [**Folder w/ All Releases**](http://release.drivechain.info/)
 
