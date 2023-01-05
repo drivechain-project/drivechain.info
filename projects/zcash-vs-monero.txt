@@ -49,9 +49,11 @@ What about "privacy by default"?
 
 I disagree with this framing.
 
-YES, we want a high anonymity set. But NO, we do NOT want to achieve via force -- by making it **mandatory**. That is a mistake. It will not work (at best, and will backfire at worst).
+YES, we want a high anonymity set. But NO, we do NOT want to achieve it via force -- by making it **mandatory**. That is a mistake. It will not work (at best, and it will backfire at worst).
 
-The "t-address vs z-address" decision is comparable to a "Bitcoin vs Monero" decision or a "Venmo vs Bitcoin" decision. In the real world you can always opt-out. So the focus should not be on trapping people in the privacy world; it should be about making it as cheap as possible to dwell there.
+The "t-address vs z-address" decision is comparable to a "Bitcoin vs Monero" decision or a "Venmo vs Bitcoin" decision. In the real world you can always opt-out. So the focus should not be on trapping people in the privacy world; it should be about making it as cheap as possible to visit there or dwell there.
+
+There is nothing WRONG with "privacy by default". But it IS wrong to treat this as a final goal. Instead, the goal should be "privacy always availiable to people who want it". THAT goal DOES require a large-enough anonymity set (and it does require meta-privacy); but it does NOT require privacy-by-default.
 
 
 People in zCash often misuse the privacy!
