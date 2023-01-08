@@ -297,6 +297,46 @@ In my view, SHoM is too similar to an extension block. And it therefore lacks dr
 
 I [tweeted my thoughts](https://twitter.com/Truthcoin/status/1060585538925735936) on this article. I am happy that the authors worked on this, but I do not think that I can use it for anything.
 
+
+### What about [ZK Validity Rollups](https://bitcoinrollups.org/#section-1-an-introduction-to-validity-rollups)? ### {#rollups}
+
+Rollups pack a list of txns into a smaller amount of L1 space. Thus, they are a perfectly legitimate L2.
+
+They have several drawbacks when compared to drivechain.
+
+First: the benefits of rollups are much lower.
+
+Rollup's increase in onboarding capacity is capped. See an example of capped-ness [here](https://bitcoinrollups.org/#section-1-an-introduction-to-validity-rollups):
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The onchain transactions needed to open and settle (and
+occasionally rebalance) self-custodial Lightning channels
+take up a measureable amount of limited bitcoin block space.
+This block space footprint results in a hard upper limit
+on the number of self-custodial users who can be onboarded
+to Lightning in a given period of time. The additional
+transaction capacity enabled by validity rollups could
+be used to support more Lightning transactions ...
+For 2-P2WPKH-input-1-P2WSH-output-2-P2WPKH-output
+dual-funded channels, rollups can create room for up to
+3.8x more Lightning channel open transactions.
+</code></pre></div></div>
+
+In contrast, in Drivechain the onboarding growth factor is not limited to 3.8 -- instead it is unlimited.
+
+If rollups use an account model (vs utxo), their growth factor may be 10x or 100x more (ie, it may be 38x or 380x). But I have yet to see anyone describe, design, or code this.
+
+Furthermore, rollups do not have as much flexibility as sidechains. (Sidechains have unlimited flexibility -- everything in a rollup must in principle be *writeable* to L1, whereas sidechains are the reverse: everything experienced on the sidechain must be in principle *ignorable* on L1.)
+
+Second, rollups require a big change to L1: L1 must validate zk-snarks. Bip300 is just an integer that counts from 1 to 13,150, which is something that anyone can understand and audit. Zk-stuff is rightly called ["spooky moon math"](https://old.reddit.com/r/ethereum/comments/6wjnou/what_is_zksnarks_spooky_moon_math/) and most experts are (or were) confounded by it (see [here](https://twitter.com/peterktodd/status/794950673280409601) and [here](https://www.youtube.com/watch?v=P6RLjcGVUnw&t=1050s)). The average person has zero chance of ever grasping the difference between a zk-proof system that is *pretending to work* (vs one that is working genuinely). You might say: so much the worse, for the average person! Rightly so, but "most L1 node runners" also have zero chance of understanding or auditing these systems. Nor does the economic center of gravity of the Bitcoin system. In contrast, things like hash functions and signatures are simple operations that a user can perform for themselves, many times -- thus they can learn the basics and "audit" their computer.
+
+Third, rollups do nothing to solve the "data availability problem". Drivechain does not solve it either... but Drivechain is at least designed with this DA failure mode in mind. To marginally address DA, Drivechain rewards L1 miners with txn fees (via merged mining); and rewards L2 users (via useful services). Rollups are often presented as though they are impervious to failure. But really: DA is where the rubber meets the road, and rollups do nothing about this big problem.
+
+Fourth, despite the above limitations, the main "advantage" that rollups have over DC, is very very small. The advantage is: the supposed benefit that "51% miners cannot steal from" rollups. Firstly, this comparison is weak, because in DC an actual theft requires 6 months of open, easily-demonstrated misbehavior. So DC theft is enormously impractical -- like robbing Fort Knox in slow motion. Secondly, in the rollup case, if evil miners are determined to steal (from rollups), then they can also spend six months doing something comparable: refuse to allow the L1 zk-snark message into the L1 blockchain. This holds the rollup funds hostage -- miners can refuse to allow rollup-withdrawals, unless desperate users sell their coins to the miners for pennies on the dollar. If miners start this on Jan 1, likely that many users will have given up by July 1. So the main advantage rollups have over DC is not significant.
+
+Fifth, the "advantage" in point four is (yet again) just a misunderstanding of the DC "miners can steal" problem. "Miners can steal" is not a bug, it is a feature (for DC). See [the long presentation on "Sidechain Privatization"](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1), if you want to be one of the very few people who understand why. Not that it matters much in this case, since rollups are also not flexible or general purpose enough to cause too much inter-chain damage.
+
+
+
 ## 3. Usefulness ## {#usefulness}
 
 ### How can we ensure that Great Altcoins are transformed into Sidechains? ### {#conveyor}
