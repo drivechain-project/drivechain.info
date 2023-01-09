@@ -82,14 +82,22 @@ Let's skip it!
 
 Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
 
+    # Download Files
     cd ~/Downloads/
     curl -O http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz
-    tar -xvzf drivechain-linux-pruned-739597.tar.gz
-    mkdir ~/.drivechain
-    mv drivechain-linux-pruned-739597/* ~/.drivechain
     curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+    # Extract Files
+    mkdir ~/.drivechain
+    tar -xvzf drivechain-linux-pruned-739597.tar.gz -C ~/.drivechain
     tar -xvzf drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+    # Run Software
     ./drivechain-0.44.00/bin/drivechain-qt --prune=2600
+
+<!--
+REMINDER
+ The pruned filename is referenced twice above and once below. 
+ The drivenet version filename is mentione three times above.
+-->
 
 Those commands will:
 
