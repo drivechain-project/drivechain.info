@@ -88,8 +88,8 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     mkdir ~/.drivechain
     mv drivechain-linux-pruned-739597/* ~/.drivechain
     curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
-    tar -xvzf drivechain-0.43.00-x86_64-linux-gnu.tar.gz
-    ./drivechain-0.43.00/bin/drivechain-qt --prune=2600
+    tar -xvzf drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+    ./drivechain-0.44.00/bin/drivechain-qt --prune=2600
 
 Those commands will:
 
