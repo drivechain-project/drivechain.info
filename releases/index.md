@@ -87,11 +87,11 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     curl -O http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz
     curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
     # Extract Files
-    mkdir ~/.drivechain
-    tar -xvzf drivechain-linux-pruned-739597.tar.gz -C ~/.drivechain
+    tar -xvzf drivechain-linux-pruned-739597.tar.gz
     tar -xvzf drivechain-0.44.00-x86_64-linux-gnu.tar.gz
     # Run Software
-    ./drivechain-0.44.00/bin/drivechain-qt --prune=2600
+    ./drivechain-0.44.00/bin/drivechain-qt --prune=2600 --datadir=Blockchain
+
 
 <!--
 REMINDER
@@ -102,9 +102,10 @@ REMINDER
 Those commands will:
 
 1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz) (warning: 8.8 GB).
+1. Download [DriveNet][drivechain-tar] testnet.
 2. Extract the downloaded files.
 3. Move those files to ```~/.drivechain```.
-4. Download [DriveNet][drivechain-tar] testnet.
+
 5. Run Drivechain in pruned mode.
 
 ### Normal Sync (Power Users)
