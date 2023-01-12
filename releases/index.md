@@ -102,11 +102,9 @@ REMINDER
 Those commands will:
 
 1. Download [this pre-synced directory tar.gz](http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz) (warning: 8.8 GB).
-1. Download [DriveNet][drivechain-tar] testnet.
-2. Extract the downloaded files.
-3. Move those files to ```~/.drivechain```.
-
-5. Run Drivechain in pruned mode.
+2. Download [DriveNet][drivechain-tar] testnet.
+3. Extract the downloaded files.
+4. Run Drivechain in pruned mode.
 
 ### Normal Sync (Power Users)
 
