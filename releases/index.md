@@ -86,12 +86,13 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     cd ~/Downloads/
     curl -O http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz
     curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+    # Make Directory
+    mkdir ~/.drivechain
     # Extract Files
-    tar -xvzf drivechain-linux-pruned-739597.tar.gz
+    tar -xvzf drivechain-linux-pruned-739597.tar.gz -C ~/.drivechain
     tar -xvzf drivechain-0.44.00-x86_64-linux-gnu.tar.gz
-    rm Blockchain/wallet.dat # this helps for some reason
     # Run Software
-    ./drivechain-0.44.00/bin/drivechain-qt --prune=2600 --datadir=Blockchain
+    ./drivechain-0.44.00/bin/drivechain-qt --prune=2600
 
 
 <!--
