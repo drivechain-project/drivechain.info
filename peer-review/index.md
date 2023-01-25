@@ -20,129 +20,129 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">Adam Back, Co-Founder and CEO of Blockstream</td>
-      <td style="text-align: left">“Drivechains…are pretty cool…and arguably could have been more important or useful than let’s say Taproot.”<br /><br />“props to @Truthcoin and team for implementing and validating drivechain design.”</td>
-      <td style="text-align: left"><a href="https://t.co/znmZdFfV83">Link</a><br /><br /><a href="https://twitter.com/adam3us/status/1580282460234924032">Link</a></td>
+      <td style="text-align: left"> Adam Back, Co-Founder and CEO of Blockstream</td>
+      <td style="text-align: left"> “Drivechains…are pretty cool…and arguably could have been more important or useful than let’s say Taproot.”<br /><br />“props to @Truthcoin and team for implementing and validating drivechain design.”</td>
+      <td style="text-align: left"> <a href="https://t.co/znmZdFfV83">Link</a><br /><br /><a href="https://twitter.com/adam3us/status/1580282460234924032">Link</a></td>
     </tr>
     <tr>
-      <td style="text-align: left">Fiatjaf, Creator of Nostr</td>
-      <td style="text-align: left">“Drivechain is our only hope.”<br /><br />“We need Drivechain or all the work of thousands in the last 13 years will be in vain.”</td>
-      <td style="text-align: left">https://twitter.com/fiatjaf/status/1380583953195749378<br /><br />https://twitter.com/fiatjaf/status/1611138970850676739</td>
+      <td style="text-align: left"> Fiatjaf, Creator of Nostr</td>
+      <td style="text-align: left"> “Drivechain is our only hope.”<br /><br />“We need Drivechain or all the work of thousands in the last 13 years will be in vain.”</td>
+      <td style="text-align: left"> https://twitter.com/fiatjaf/status/1380583953195749378<br /><br />https://twitter.com/fiatjaf/status/1611138970850676739</td>
     </tr>
     <tr>
-      <td style="text-align: left">Olaoluwa Osuntokun, CTO of Lightning Labs</td>
-      <td style="text-align: left">“In the past year, the drivechain specs seem to have come a long way.”</td>
-      <td style="text-align: left"><a href="https://twitter.com/roasbeef/status/946036030590906368">Link</a></td>
+      <td style="text-align: left"> Olaoluwa Osuntokun, CTO of Lightning Labs</td>
+      <td style="text-align: left"> “In the past year, the drivechain specs seem to have come a long way.”</td>
+      <td style="text-align: left"> <a href="https://twitter.com/roasbeef/status/946036030590906368">Link</a></td>
     </tr>
     <tr>
-      <td style="text-align: left">Ruben Somsen, Bitcoin Sorcerer and Creator of Spacechains</td>
-      <td style="text-align: left">“I would like to see Drivechains happen and run it as an experiment and see how it goes.”</td>
-      <td style="text-align: left">https://www.unhashedpodcast.com/episodes/2021/3/30/ep-129-l2-scaling-in-ethereum-and-bitcoin-w-eric-wall-amp-somsen</td>
+      <td style="text-align: left"> Ruben Somsen, Bitcoin Sorcerer and Creator of Spacechains</td>
+      <td style="text-align: left"> “I would like to see Drivechains happen and run it as an experiment and see how it goes.”</td>
+      <td style="text-align: left"> https://www.unhashedpodcast.com/episodes/2021/3/30/ep-129-l2-scaling-in-ethereum-and-bitcoin-w-eric-wall-amp-somsen</td>
     </tr>
     <tr>
-      <td style="text-align: left">Anton Kumaigorodski, LN developer</td>
-      <td style="text-align: left">“here’s another project which I think is more critical than LN for bitcoin’s long term survival”</td>
-      <td style="text-align: left">https://t.me/lightningwallet/11374</td>
+      <td style="text-align: left"> Anton Kumaigorodski, LN developer</td>
+      <td style="text-align: left"> “here’s another project which I think is more critical than LN for bitcoin’s long term survival”</td>
+      <td style="text-align: left"> https://t.me/lightningwallet/11374</td>
     </tr>
     <tr>
-      <td style="text-align: left">Super Testnet, Freelance Software Developer specializing in Bitcoin, Lightning, and Nostr</td>
-      <td style="text-align: left">“I’m not convinced it hurts anyone, but I am convinced it brings us slightly better sidechains than what we have today, and helps miners make more in fees.”<br /><br />“Personally, I would not use drivechains if they existed […] But I don’t think that is a good reason to block the softfork. You don’t have to personally want to use something to support making it an option.”<br /><br />“There is already a fork of bitcoin with bip300 support. If 51% of bitcoiners run it then we have bip300. If anyone wants help setting it up, I’m happy to assist.”</td>
-      <td style="text-align: left">https://twitter.com/super_testnet/status/1617226991710658562<br /><br />https://twitter.com/super_testnet/status/1608967999532470272<br /><br />https://twitter.com/super_testnet/status/1617205607617929217</td>
+      <td style="text-align: left"> Super Testnet, Freelance Software Developer specializing in Bitcoin, Lightning, and Nostr</td>
+      <td style="text-align: left"> “I’m not convinced it hurts anyone, but I am convinced it brings us slightly better sidechains than what we have today, and helps miners make more in fees.”<br /><br />“Personally, I would not use drivechains if they existed […] But I don’t think that is a good reason to block the softfork. You don’t have to personally want to use something to support making it an option.”<br /><br />“There is already a fork of bitcoin with bip300 support. If 51% of bitcoiners run it then we have bip300. If anyone wants help setting it up, I’m happy to assist.”</td>
+      <td style="text-align: left"> https://twitter.com/super_testnet/status/1617226991710658562<br /><br />https://twitter.com/super_testnet/status/1608967999532470272<br /><br />https://twitter.com/super_testnet/status/1617205607617929217</td>
     </tr>
     <tr>
-      <td style="text-align: left">Aaron van Wirdum, Journalist at Bitcoin Magazine</td>
-      <td style="text-align: left">“Surely you wouldn’t prefer off-chain custodial accounts (eg. Coinbase) over sidechain balances (eg. Drivechain)?”<br /><br />“Custodial services can steal your bitcoin successfully 100% of the time. How can sidechains be worse than that?”</td>
-      <td style="text-align: left">https://twitter.com/AaronvanW/status/1002916724935675904<br /><br />https://twitter.com/AaronvanW/status/1002919331758473217</td>
+      <td style="text-align: left"> Aaron van Wirdum, Journalist at Bitcoin Magazine</td>
+      <td style="text-align: left"> “Surely you wouldn’t prefer off-chain custodial accounts (eg. Coinbase) over sidechain balances (eg. Drivechain)?”<br /><br />“Custodial services can steal your bitcoin successfully 100% of the time. How can sidechains be worse than that?”</td>
+      <td style="text-align: left"> https://twitter.com/AaronvanW/status/1002916724935675904<br /><br />https://twitter.com/AaronvanW/status/1002919331758473217</td>
     </tr>
     <tr>
-      <td style="text-align: left">Mario Gibney, Bitcoin promoter. Formerly at Ledn and Blockstream</td>
-      <td style="text-align: left">“[If Drivechain is] …incredibly useful… [it may] push toward greater total fees added to bitcoin.”</td>
-      <td style="text-align: left">https://twitter.com/Mario_Gibney/status/1457755740509245452</td>
+      <td style="text-align: left"> Mario Gibney, Bitcoin promoter. Formerly at Ledn and Blockstream</td>
+      <td style="text-align: left"> “[If Drivechain is] …incredibly useful… [it may] push toward greater total fees added to bitcoin.”</td>
+      <td style="text-align: left"> https://twitter.com/Mario_Gibney/status/1457755740509245452</td>
     </tr>
     <tr>
-      <td style="text-align: left">Andreas Brekken, Founder of SideShiftAI</td>
-      <td style="text-align: left">“Activate BIP 300! This is how we get DeFi on Bitcoin. Drivechain: https://drivechain.info”<br /><br />“Monero should be a sidechain of Bitcoin using Drivechain”</td>
-      <td style="text-align: left">https://twitter.com/abrkn/status/1397456620439834628<br /><br />https://twitter.com/abrkn/status/1403649701887365120</td>
+      <td style="text-align: left"> Andreas Brekken, Founder of SideShiftAI</td>
+      <td style="text-align: left"> “Activate BIP 300! This is how we get DeFi on Bitcoin. Drivechain: https://drivechain.info”<br /><br />“Monero should be a sidechain of Bitcoin using Drivechain”</td>
+      <td style="text-align: left"> https://twitter.com/abrkn/status/1397456620439834628<br /><br />https://twitter.com/abrkn/status/1403649701887365120</td>
     </tr>
     <tr>
-      <td style="text-align: left">Michael Tidwell, Co-Founder of TABConf, Founder of The Atlanta BidDevs, and VP of Infrastructure at ZEBEDEE</td>
-      <td style="text-align: left">“a sad unlikely future would be bip300 is done as a last ditch effort to take $ share% away from alts. i hope if/when bip300,.. it’s done out of the love for btc innovation…”</td>
-      <td style="text-align: left">https://twitter.com/miketwenty1/status/1466434096461197318</td>
+      <td style="text-align: left"> Michael Tidwell, Co-Founder of TABConf, Founder of The Atlanta BidDevs, and VP of Infrastructure at ZEBEDEE</td>
+      <td style="text-align: left"> “a sad unlikely future would be bip300 is done as a last ditch effort to take $ share% away from alts. i hope if/when bip300,.. it’s done out of the love for btc innovation…”</td>
+      <td style="text-align: left"> https://twitter.com/miketwenty1/status/1466434096461197318</td>
     </tr>
     <tr>
-      <td style="text-align: left">Kalle Alm, Bitcoin Core Contributor</td>
-      <td style="text-align: left">“My understanding is there’s some controversy/contention about drivechains, but the idea seems pretty cool, yep.”</td>
-      <td style="text-align: left">https://twitter.com/kallewoof/status/1404675811869806593</td>
+      <td style="text-align: left"> Kalle Alm, Bitcoin Core Contributor</td>
+      <td style="text-align: left"> “My understanding is there’s some controversy/contention about drivechains, but the idea seems pretty cool, yep.”</td>
+      <td style="text-align: left"> https://twitter.com/kallewoof/status/1404675811869806593</td>
     </tr>
     <tr>
-      <td style="text-align: left">Vlad Costea, Host of the Bitcoin Takeover Podcast</td>
-      <td style="text-align: left">“Drivechains are the purest form of Bitcoin maximalism. Anything else is conservatism in comparison.”</td>
-      <td style="text-align: left">https://twitter.com/thevladcostea/status/1615009368071720962</td>
+      <td style="text-align: left"> Vlad Costea, Host of the Bitcoin Takeover Podcast</td>
+      <td style="text-align: left"> “Drivechains are the purest form of Bitcoin maximalism. Anything else is conservatism in comparison.”</td>
+      <td style="text-align: left"> https://twitter.com/thevladcostea/status/1615009368071720962</td>
     </tr>
     <tr>
-      <td style="text-align: left">Torkel Rogstad, Co-Founder of Bare Bitcoin and Software Developer at Arcane Crypto</td>
-      <td style="text-align: left">“We desperately need to take a long and hard look in the mirror, and start doing things differently. I think starting a more serious and thorough discussion about BIP300 (Drivechain) is the right place to start.”</td>
-      <td style="text-align: left">https://twitter.com/torkelrogstad/status/1512501111659409409</td>
+      <td style="text-align: left"> Torkel Rogstad, Co-Founder of Bare Bitcoin and Software Developer at Arcane Crypto</td>
+      <td style="text-align: left"> “We desperately need to take a long and hard look in the mirror, and start doing things differently. I think starting a more serious and thorough discussion about BIP300 (Drivechain) is the right place to start.”</td>
+      <td style="text-align: left"> https://twitter.com/torkelrogstad/status/1512501111659409409</td>
     </tr>
     <tr>
-      <td style="text-align: left">Sergio Demian Lerner, Chief of Innovation at IOV Labs and Designer of the RSK Rootstock Bitcoin sidechain</td>
-      <td style="text-align: left">“[…] migrate Rootstock to a drivechain when it is softforked into Bitcoin […] the destiny is to become fully decentralized.”<br /><br />“[…] sidechains are the natural extension of the Bitcoin finance stack […]. A sidechain is a blockchain that is highly incentive-aligned with the Bitcoin community.”</td>
-      <td style="text-align: left">https://twitter.com/SDLerner/status/1617188603267792897<br /><br />https://medium.com/iovlabs-innovation-stories/bitcoin-sidechains-74a72ceba35d</td>
+      <td style="text-align: left"> Sergio Demian Lerner, Chief of Innovation at IOV Labs and Designer of the RSK Rootstock Bitcoin sidechain</td>
+      <td style="text-align: left"> “[…] migrate Rootstock to a drivechain when it is softforked into Bitcoin […] the destiny is to become fully decentralized.”<br /><br />“[…] sidechains are the natural extension of the Bitcoin finance stack […]. A sidechain is a blockchain that is highly incentive-aligned with the Bitcoin community.”</td>
+      <td style="text-align: left"> https://twitter.com/SDLerner/status/1617188603267792897<br /><br />https://medium.com/iovlabs-innovation-stories/bitcoin-sidechains-74a72ceba35d</td>
     </tr>
     <tr>
-      <td style="text-align: left">Pete Rizzo, Editor of Bitcoin Magazine and Editor At Large of Kraken Digital Asset Exchange</td>
-      <td style="text-align: left">“…I think anybody in the developer community will tell you, even if they don’t want to do Drivechains, that they respect Paul Sztorc, because Paul Sztorc is trying to further Bitcoin as a technology.”</td>
-      <td style="text-align: left">https://www.whatbitcoindid.com/podcast/the-role-of-bitcoin-maximalism-part-2</td>
+      <td style="text-align: left"> Pete Rizzo, Editor of Bitcoin Magazine and Editor At Large of Kraken Digital Asset Exchange</td>
+      <td style="text-align: left"> “…I think anybody in the developer community will tell you, even if they don’t want to do Drivechains, that they respect Paul Sztorc, because Paul Sztorc is trying to further Bitcoin as a technology.”</td>
+      <td style="text-align: left"> https://www.whatbitcoindid.com/podcast/the-role-of-bitcoin-maximalism-part-2</td>
     </tr>
     <tr>
-      <td style="text-align: left">Peter McCormack, Host of the What Bitcoin Did podcast</td>
-      <td style="text-align: left">“I like that fact that it just gives me one currency to go around and do all these other things, I like that a lot so that’s cool.”</td>
-      <td style="text-align: left">https://www.whatbitcoindid.com/podcast/should-drivechains-come-to-bitcoin</td>
+      <td style="text-align: left"> Peter McCormack, Host of the What Bitcoin Did podcast</td>
+      <td style="text-align: left"> “I like that fact that it just gives me one currency to go around and do all these other things, I like that a lot so that’s cool.”</td>
+      <td style="text-align: left"> https://www.whatbitcoindid.com/podcast/should-drivechains-come-to-bitcoin</td>
     </tr>
     <tr>
-      <td style="text-align: left">Edan Yago, Cheerleader-In-Chief of Sovryn</td>
-      <td style="text-align: left">“The only thing missing from Bitcoin is that ability to adopt any feature or technology without changing main chain. BIP 300 fixes this.”</td>
-      <td style="text-align: left">https://twitter.com/EdanYago/status/1402036078614306822</td>
+      <td style="text-align: left"> Edan Yago, Cheerleader-In-Chief of Sovryn</td>
+      <td style="text-align: left"> “The only thing missing from Bitcoin is that ability to adopt any feature or technology without changing main chain. BIP 300 fixes this.”</td>
+      <td style="text-align: left"> https://twitter.com/EdanYago/status/1402036078614306822</td>
     </tr>
     <tr>
-      <td style="text-align: left">Brad Mills, Host of the Magic Internet Money podcast</td>
-      <td style="text-align: left">“I think it’s time the Bitcoin community took a more serious look at @Truthcoin’s drivechain proposal.”</td>
-      <td style="text-align: left">https://twitter.com/bradmillscan/status/1401981128328855555</td>
+      <td style="text-align: left"> Brad Mills, Host of the Magic Internet Money podcast</td>
+      <td style="text-align: left"> “I think it’s time the Bitcoin community took a more serious look at @Truthcoin’s drivechain proposal.”</td>
+      <td style="text-align: left"> https://twitter.com/bradmillscan/status/1401981128328855555</td>
     </tr>
     <tr>
-      <td style="text-align: left">Guy Swann, Host of the Bitcoin Audible podcast</td>
-      <td style="text-align: left">“I feel like sidechains are an inevitable part of the ecosystem for multiple reasons, &amp; I simply see BIP300 as a hashrate based sidechain rather than a federated multisig. I 100% agree on the alts issue, but that’s not why i am interested in it.”</td>
-      <td style="text-align: left">https://twitter.com/TheGuySwann/status/1457557455127425030</td>
+      <td style="text-align: left"> Guy Swann, Host of the Bitcoin Audible podcast</td>
+      <td style="text-align: left"> “I feel like sidechains are an inevitable part of the ecosystem for multiple reasons, &amp; I simply see BIP300 as a hashrate based sidechain rather than a federated multisig. I 100% agree on the alts issue, but that’s not why i am interested in it.”</td>
+      <td style="text-align: left"> https://twitter.com/TheGuySwann/status/1457557455127425030</td>
     </tr>
     <tr>
-      <td style="text-align: left">John Light, Product at Sovryn. Bitcoin researcher.</td>
-      <td style="text-align: left">“I would like to see both validity rollups and drivechains offered as options for people on Bitcoin layer one. […] I think it would make sense to do drivechains first rather than wait until validity rollups are ready. […] What I call the “miners will steal hypothesis” has so far been proven to be false on blockchains that implement basically the same security model [as Drivechain]”.</td>
-      <td style="text-align: left">https://twitter.com/i/spaces/1LyGBqDkkYEKN?s=20</td>
+      <td style="text-align: left"> John Light, Product at Sovryn. Bitcoin researcher.</td>
+      <td style="text-align: left"> “I would like to see both validity rollups and drivechains offered as options for people on Bitcoin layer one. […] I think it would make sense to do drivechains first rather than wait until validity rollups are ready. […] What I call the “miners will steal hypothesis” has so far been proven to be false on blockchains that implement basically the same security model [as Drivechain]”.</td>
+      <td style="text-align: left"> https://twitter.com/i/spaces/1LyGBqDkkYEKN?s=20</td>
     </tr>
     <tr>
-      <td style="text-align: left">Andrew Bailey, Associate Professor of Humanities/Philosophy, Yale-NUS College</td>
-      <td style="text-align: left">“A year later, I’m starting to have views. They’re pretty pro-BIP300, I confess!”</td>
-      <td style="text-align: left">https://twitter.com/resistancemoney/status/1614111587601874946</td>
+      <td style="text-align: left"> Andrew Bailey, Associate Professor of Humanities/Philosophy, Yale-NUS College</td>
+      <td style="text-align: left"> “A year later, I’m starting to have views. They’re pretty pro-BIP300, I confess!”</td>
+      <td style="text-align: left"> https://twitter.com/resistancemoney/status/1614111587601874946</td>
     </tr>
     <tr>
-      <td style="text-align: left">Troy Cross, Professor of Philosophy and Humanities at Reed College</td>
-      <td style="text-align: left">“[…] long-term we need either a better fee market, something like drivechains, or else… mining at a loss by large stakeholders.”<br /><br />“I agree.” (In response to: “Building on bitcoin will increase in an exciting way once drivechain is adopted. #Hivemind”)</td>
-      <td style="text-align: left">https://twitter.com/thetrocro/status/1504493801003360258<br /><br />https://twitter.com/thetrocro/status/1618112234533842944</td>
+      <td style="text-align: left"> Troy Cross, Professor of Philosophy and Humanities at Reed College</td>
+      <td style="text-align: left"> “[…] long-term we need either a better fee market, something like drivechains, or else… mining at a loss by large stakeholders.”<br /><br />“I agree.” (In response to: “Building on bitcoin will increase in an exciting way once drivechain is adopted. #Hivemind”)</td>
+      <td style="text-align: left"> https://twitter.com/thetrocro/status/1504493801003360258<br /><br />https://twitter.com/thetrocro/status/1618112234533842944</td>
     </tr>
     <tr>
-      <td style="text-align: left">Eric Wall, Investor and Software Engineer</td>
-      <td style="text-align: left">“it’s been 7 years since @Truthcoin wrote the original drivechain blog post. if you went back in time and told me that 7 years later no effort has been made towards merge-mined sidechains but that the same people who opposed them were upset ethereum existed i’d laugh in your face”</td>
-      <td style="text-align: left">https://twitter.com/ercwl/status/1594449547689869319<br /><br />https://twitter.com/ercwl/status/1594450557825175552</td>
+      <td style="text-align: left"> Eric Wall, Investor and Software Engineer</td>
+      <td style="text-align: left"> “it’s been 7 years since @Truthcoin wrote the original drivechain blog post. if you went back in time and told me that 7 years later no effort has been made towards merge-mined sidechains but that the same people who opposed them were upset ethereum existed i’d laugh in your face”</td>
+      <td style="text-align: left"> https://twitter.com/ercwl/status/1594449547689869319<br /><br />https://twitter.com/ercwl/status/1594450557825175552</td>
     </tr>
     <tr>
-      <td style="text-align: left">Nic Carter, Founder and General Partner, Castle Island Ventures</td>
-      <td style="text-align: left">“I agree with all of this”</td>
-      <td style="text-align: left">https://twitter.com/nic__carter/status/1542176840726495232</td>
+      <td style="text-align: left"> Nic Carter, Founder and General Partner, Castle Island Ventures</td>
+      <td style="text-align: left"> “I agree with all of this”</td>
+      <td style="text-align: left"> https://twitter.com/nic__carter/status/1542176840726495232</td>
     </tr>
     <tr>
-      <td style="text-align: left">Sjors Provoost, Bitcoin Core contributor</td>
-      <td style="text-align: left">“What I find most appealing about the Drivechain idea is the separation of funding second layer and using second layer. With Lighning everyone needs to open their own channels which is expensive, whereas Drivechain would allow economies of scale for those transfers. If it works.”</td>
-      <td style="text-align: left">https://twitter.com/provoost/status/946327279633911808</td>
+      <td style="text-align: left"> Sjors Provoost, Bitcoin Core contributor</td>
+      <td style="text-align: left"> “What I find most appealing about the Drivechain idea is the separation of funding second layer and using second layer. With Lighning everyone needs to open their own channels which is expensive, whereas Drivechain would allow economies of scale for those transfers. If it works.”</td>
+      <td style="text-align: left"> https://twitter.com/provoost/status/946327279633911808</td>
     </tr>
   </tbody>
 </table>
@@ -152,41 +152,41 @@
 <table border="1">
   <thead>
     <tr>
-      <th>Braiins/Slush Pool, mining pool operator company</th>
-      <th>“RSK is building smart-contract functionality on top of Bitcoin. In other words, it’s enabling more complex transactions than are possible directly on the Bitcoin blockchain, but these transactions are paid with BTC rather than a separate coin. […] If this growth continues, we will soon be able to increase the payouts we send to our miners by including the rewards earned through merge mining RSK. Meanwhile, more complex use cases for Bitcoin will be enabled, driving its fundamental value up.”</th>
-      <th>https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c</th>
+      <th> Braiins/Slush Pool, mining pool operator company</th>
+      <th> “RSK is building smart-contract functionality on top of Bitcoin. In other words, it’s enabling more complex transactions than are possible directly on the Bitcoin blockchain, but these transactions are paid with BTC rather than a separate coin. […] If this growth continues, we will soon be able to increase the payouts we send to our miners by including the rewards earned through merge mining RSK. Meanwhile, more complex use cases for Bitcoin will be enabled, driving its fundamental value up.”</th>
+      <th> https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>Bryan Bishop, Co-Founder and Chief Technology Offier of Custodia Bank (formerly Avanti Bank &amp; Trust), Bitcoin Core Contributor</td>
-      <td>“w/ sidechains many fast upgrades can be tested with real bitcoin without impacting entire bitcoin protocol. Mainnet? Might take a while.”</td>
-      <td>https://twitter.com/kanzure/status/892130601448484864?s=20&amp;t=8c0eFtMa_Ohw5v5ENly_ZQ</td>
+      <td> Bryan Bishop, Co-Founder and Chief Technology Offier of Custodia Bank (formerly Avanti Bank &amp; Trust), Bitcoin Core Contributor</td>
+      <td> “w/ sidechains many fast upgrades can be tested with real bitcoin without impacting entire bitcoin protocol. Mainnet? Might take a while.”</td>
+      <td> https://twitter.com/kanzure/status/892130601448484864?s=20&amp;t=8c0eFtMa_Ohw5v5ENly_ZQ</td>
     </tr>
     <tr>
-      <td>Junseth, Bitcoin OG and Co-Host of the Bitcoin Unlimited podcast</td>
-      <td>“I think that Sidechains are a way to experiment on Bitcoin. […] If we do have a widely used EVM on Bitcoin or one that is easily accessible, it kills a lot of propositions that Ethereum makes.”</td>
-      <td>https://bitcoinmagazine.com/culture/bitcoin-businesses-the-biz-john-carvalho</td>
+      <td> Junseth, Bitcoin OG and Co-Host of the Bitcoin Unlimited podcast</td>
+      <td> “I think that Sidechains are a way to experiment on Bitcoin. […] If we do have a widely used EVM on Bitcoin or one that is easily accessible, it kills a lot of propositions that Ethereum makes.”</td>
+      <td> https://bitcoinmagazine.com/culture/bitcoin-businesses-the-biz-john-carvalho</td>
     </tr>
     <tr>
-      <td>Tuur Demeester, Founder of Adamant Capital</td>
-      <td>“Sidechains could be a game changer. Merge mining allows for reaping rewards of multiple chains at once. Keep an eye on #drivechain.”<br /><br />“I don’t have a strong view […]”</td>
-      <td>https://twitter.com/TuurDemeester/status/900703059390726144<br /><br />https://twitter.com/TuurDemeester/status/1612335728549044225</td>
+      <td> Tuur Demeester, Founder of Adamant Capital</td>
+      <td> “Sidechains could be a game changer. Merge mining allows for reaping rewards of multiple chains at once. Keep an eye on #drivechain.”<br /><br />“I don’t have a strong view […]”</td>
+      <td> https://twitter.com/TuurDemeester/status/900703059390726144<br /><br />https://twitter.com/TuurDemeester/status/1612335728549044225</td>
     </tr>
     <tr>
-      <td>Sergej Kotliar, Founder and CEO of Bitrefill</td>
-      <td>“A surprisingly large number of bitcoiners seem to be ok w bitcoin being this pure but niche thing while all of the financial activity happens elsewhere on things like stablecoins and banks. “It will all fix itself after hyperbitcoinization 🤷‍♂️”</td>
-      <td>https://twitter.com/ziggamon/status/1617586084615159808</td>
+      <td> Sergej Kotliar, Founder and CEO of Bitrefill</td>
+      <td> “A surprisingly large number of bitcoiners seem to be ok w bitcoin being this pure but niche thing while all of the financial activity happens elsewhere on things like stablecoins and banks. “It will all fix itself after hyperbitcoinization 🤷‍♂️”</td>
+      <td> https://twitter.com/ziggamon/status/1617586084615159808</td>
     </tr>
     <tr>
-      <td>Rijndael, Bitcoiner and Former AWS Principal Engineer</td>
-      <td>“I am pro-sidechain. […]”</td>
-      <td>https://twitter.com/rot13maxi/status/1617686566864052224</td>
+      <td> Rijndael, Bitcoiner and Former AWS Principal Engineer</td>
+      <td> “I am pro-sidechain. […]”</td>
+      <td> https://twitter.com/rot13maxi/status/1617686566864052224</td>
     </tr>
     <tr>
-      <td>Jay Berg, Chief Technology Officer at Protoblock</td>
-      <td>“to be clear, im actually a fan of bip300 (Hashrate Escrow), but bip301 (Blind Merged Mining) is a non starter for me.. and hope one day to replace it with a new proposal”</td>
-      <td>https://twitter.com/jaybny/status/1537207234408591360</td>
+      <td> Jay Berg, Chief Technology Officer at Protoblock</td>
+      <td> “to be clear, im actually a fan of bip300 (Hashrate Escrow), but bip301 (Blind Merged Mining) is a non starter for me.. and hope one day to replace it with a new proposal”</td>
+      <td> https://twitter.com/jaybny/status/1537207234408591360</td>
     </tr>
   </tbody>
 </table>
