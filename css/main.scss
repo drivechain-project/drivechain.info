@@ -176,3 +176,9 @@ h3 {
 pre code {
     white-space: pre;
 }
+
+/* Add borders to all tables */
+
+table, th, td {
+  border: 1px solid black;
+}
