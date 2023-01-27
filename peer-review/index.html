@@ -422,8 +422,8 @@ $.each(tableDataDriveChainSupport, function(index, value){
   let myName = $("<div>").html(emboldened).addClass("col-3 px-2 px-sm-3 pb-4 text-black-emphasis bg-primary-subtle border border-dark border-bottom-0 border-end-0 ");
   myName.attr("style","min-width: 110px; padding-top:9px");
 
-  let myQuote = $("<div>").text(value.quote).addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis border border-dark border-bottom-0 border-end-0");
-  myQuote.attr("style","background-color:#fff3d4; padding-top:9px");
+  let myQuote = $("<div>").text(value.quote).addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis bg-secondary-subtle border border-dark border-bottom-0 border-end-0");
+  myQuote.attr("style","padding-top:9px");
   let myLink = $("<div>").addClass("col-2 px-2 pb-4 text-primary-emphasis bg-primary-subtle border border-dark border-bottom-0");
   myLink.attr("style","padding-top:9px;")
   let myAnchorTag = $("<a>").text("Link").attr("href", value.link);
@@ -446,8 +446,8 @@ $.each(tableDataSideChainSupport, function(index, value){
   let [nameName, ...rest] = value.name.split(",");
   let emboldened = "<span class='fw-bolder text-dark-emphasis'>" + nameName + "</span>" + "," + rest.join(",");
   let myName = $("<div>").html(emboldened).addClass("col-3 px-2 px-sm-3 pb-4 text-black-emphasis bg-primary-subtle border border-dark border-bottom-0 border-end-0 ");  myName.attr("style","min-width: 110px; padding-top:9px");
-  let myQuote = $("<div>").text(value.quote).addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis border border-dark border-bottom-0 border-end-0");
-  myQuote.attr("style","background-color:#fff3d4; padding-top:9px");
+  let myQuote = $("<div>").text(value.quote).addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis bg-secondary-subtle border border-dark border-bottom-0 border-end-0");
+  myQuote.attr("style","padding-top:9px");
   let myLink = $("<div>").addClass("col-2 px-2 pb-4 text-primary-emphasis bg-primary-subtle border border-dark border-bottom-0");
   myLink.attr("style","padding-top:9px;")
   let myAnchorTag = $("<a>").text("Link").attr("href", value.link);
