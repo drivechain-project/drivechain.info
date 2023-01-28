@@ -1,0 +1,167 @@
+[
+  {
+  "0": {
+    "name": "Adam Back, Co-Founder and CEO of Blockstream",
+    "quote": [" \u201cDrivechains\u2026are pretty cool\u2026and arguably could have been more important or useful than let\u2019s say Taproot.\u201d", "\u201cProps to @Truthcoin and team for implementing and validating drivechain design.\u201d"],
+    "link": ["https://t.co/znmZdFfV83", "https://twitter.com/adam3us/status/1580282460234924032"]
+  },
+  "1": {
+    "name": " Fiatjaf, Creator of Nostr",
+    "quote": [" \u201cDrivechain is our only hope.\u201d", "\u201cWe need Drivechain or all the work of thousands in the last 13 years will be in vain.\u201d"],
+    "link": ["https://twitter.com/fiatjaf/status/1380583953195749378", "https://twitter.com/fiatjaf/status/1611138970850676739"]
+  },
+  "2": {
+    "name": "Olaoluwa Osuntokun, CTO of Lightning Labs",
+    "quote": [" \u201cIn the past year, the drivechain specs seem to have come a long way.\u201d"],
+    "link": ["https://twitter.com/roasbeef/status/946036030590906368"]
+  },
+  "3": {
+    "name": "Ruben Somsen, Bitcoin Sorcerer and Creator of Spacechains",
+    "quote": [" \u201cI would like to see Drivechains happen and run it as an experiment and see how it goes.\u201d"],
+    "link": ["https://www.unhashedpodcast.com/episodes/2021/3/30/ep-129-l2-scaling-in-ethereum-and-bitcoin-w-eric-wall-amp-somsen"]
+  },
+  "4": {
+    "name": "Anton Kumaigorodski, LN developer",
+    "quote": [" \u201chere\u2019s another project which I think is more critical than LN for bitcoin\u2019s long term survival\u201d"],
+    "link": ["https://t.me/lightningwallet/11374"]
+  },
+  "5": {
+    "name": " Super Testnet, Freelance Software Developer specializing in Bitcoin, Lightning, and Nostr",
+    "quote": [" \u201cI\u2019m not convinced it hurts anyone, but I am convinced it brings us slightly better sidechains than what we have today, and helps miners make more in fees.\u201d", "\u201cPersonally, I would not use drivechains if they existed [\u2026] But I don\u2019t think that is a good reason to block the softfork. You don\u2019t have to personally want to use something to support making it an option.\u201d", "\u201cThere is already a fork of bitcoin with bip300 support. If 51% of bitcoiners run it then we have bip300. If anyone wants help setting it up, I\u2019m happy to assist.\u201d"],
+    "link": ["https://twitter.com/super_testnet/status/1617226991710658562", "https://twitter.com/super_testnet/status/1608967999532470272", "https://twitter.com/super_testnet/status/1617205607617929217"]
+  },
+  "6": {
+    "name": " Aaron van Wirdum, Journalist at Bitcoin Magazine",
+    "quote": [" \u201cSurely you wouldn\u2019t prefer off-chain custodial accounts (eg. Coinbase) over sidechain balances (eg. Drivechain)?\u201d","\u201cCustodial services can steal your bitcoin successfully 100% of the time. How can sidechains be worse than that?\u201d"],
+    "link": ["https://twitter.com/AaronvanW/status/1002916724935675904", "https://twitter.com/AaronvanW/status/1002919331758473217"]
+  },
+  "7": {
+    "name": " Mario Gibney, Bitcoin promoter. Formerly at Ledn and Blockstream",
+    "quote": [" \u201c[If Drivechain is] \u2026incredibly useful\u2026 [it may] push toward greater total fees added to bitcoin.\u201d"],
+    "link": [" https://twitter.com/Mario_Gibney/status/1457755740509245452"]
+  },
+  "8": {
+    "name": " Andreas Brekken, Founder of SideShiftAI",
+    "quote": [" \u201cActivate BIP 300! This is how we get DeFi on Bitcoin. Drivechain: https://drivechain.info\u201d", "\u201cMonero should be a sidechain of Bitcoin using Drivechain\u201d"],
+    "link": ["https://twitter.com/abrkn/status/1397456620439834628", "https://twitter.com/abrkn/status/1403649701887365120"]
+  },
+  "9": {
+    "name": " Michael Tidwell, Co-Founder of TABConf, Founder of The Atlanta BidDevs, and VP of Infrastructure at ZEBEDEE",
+    "quote": [" \u201ca sad unlikely future would be bip300 is done as a last ditch effort to take $ share% away from alts. i hope if/when bip300,.. it\u2019s done out of the love for btc innovation\u2026\u201d"],
+    "link": ["https://twitter.com/miketwenty1/status/1466434096461197318"]
+  },
+  "10": {
+    "name": " Kalle Alm, Bitcoin Core Contributor",
+    "quote": [" \u201cMy understanding is there\u2019s some controversy/contention about drivechains, but the idea seems pretty cool, yep.\u201d"],
+    "link": [" https://twitter.com/kallewoof/status/1404675811869806593"]
+  },
+  "11": {
+    "name": " Vlad Costea, Host of the Bitcoin Takeover Podcast",
+    "quote": [" \u201cDrivechains are the purest form of Bitcoin maximalism. Anything else is conservatism in comparison.\u201d"],
+    "link": [" https://twitter.com/thevladcostea/status/1615009368071720962"]
+  },
+  "12": {
+    "name": " Torkel Rogstad, Co-Founder of Bare Bitcoin and Software Developer at Arcane Crypto",
+    "quote": [" \u201cWe desperately need to take a long and hard look in the mirror, and start doing things differently. I think starting a more serious and thorough discussion about BIP300 (Drivechain) is the right place to start.\u201d"],
+    "link": [" https://twitter.com/torkelrogstad/status/1512501111659409409"]
+  },
+  "13": {
+    "name": " Sergio Demian Lerner, Chief of Innovation at IOV Labs and Designer of the RSK Rootstock Bitcoin sidechain",
+    "quote": [" \u201c[\u2026] migrate Rootstock to a drivechain when it is softforked into Bitcoin [\u2026] the destiny is to become fully decentralized.\u201d", "\u201c[\u2026] sidechains are the natural extension of the Bitcoin finance stack [\u2026]. A sidechain is a blockchain that is highly incentive-aligned with the Bitcoin community.\u201d"],
+    "link": ["https://twitter.com/SDLerner/status/1617188603267792897", "https://medium.com/iovlabs-innovation-stories/bitcoin-sidechains-74a72ceba35d"]
+  },
+  "14": {
+    "name": " Pete Rizzo, Editor of Bitcoin Magazine and Editor At Large of Kraken Digital Asset Exchange",
+    "quote": [" \u201c\u2026I think anybody in the developer community will tell you, even if they don\u2019t want to do Drivechains, that they respect Paul Sztorc, because Paul Sztorc is trying to further Bitcoin as a technology.\u201d"],
+    "link": [" https://www.whatbitcoindid.com/podcast/the-role-of-bitcoin-maximalism-part-2"]
+  },
+  "15": {
+    "name": " Peter McCormack, Host of the What Bitcoin Did podcast",
+    "quote": [" \u201cI like that fact that it just gives me one currency to go around and do all these other things, I like that a lot so that\u2019s cool.\u201d"],
+    "link": [" https://www.whatbitcoindid.com/podcast/should-drivechains-come-to-bitcoin"]
+  },
+  "16": {
+    "name": " Edan Yago, Cheerleader-In-Chief of Sovryn",
+    "quote": [" \u201cThe only thing missing from Bitcoin is that ability to adopt any feature or technology without changing main chain. BIP 300 fixes this.\u201d"],
+    "link": [" https://twitter.com/EdanYago/status/1402036078614306822"]
+  },
+  "17": {
+    "name": "Brad Mills, investor, entrepreneur, and Host of the Magic Internet Money podcast",
+    "quote": [" \u201cI think it\u2019s time the Bitcoin community took a more serious look at @Truthcoin\u2019s drivechain proposal. [...]\u201d"],
+    "link": [" https://twitter.com/bradmillscan/status/1401981128328855555"]
+  },
+  "18": {
+    "name": " Guy Swann, Host of the Bitcoin Audible podcast",
+    "quote": [" \u201cI feel like sidechains are an inevitable part of the ecosystem for multiple reasons, & I simply see BIP300 as a hashrate based sidechain rather than a federated multisig. I 100% agree on the alts issue, but that\u2019s not why i am interested in it.\u201d"],
+    "link": [" https://twitter.com/TheGuySwann/status/1457557455127425030"]
+  },
+  "19": {
+    "name": " John Light, Product at Sovryn. Bitcoin researcher.",
+    "quote": [" \u201cI would like to see both validity rollups and drivechains offered as options for people on Bitcoin layer one. [\u2026] I think it would make sense to do drivechains first rather than wait until validity rollups are ready. [\u2026] What I call the \u201cminers will steal hypothesis\u201d has so far been proven to be false on blockchains that implement basically the same security model [as Drivechain]\u201d."],
+    "link": ["https://twitter.com/i/spaces/1LyGBqDkkYEKN?s=20"]
+  },
+  "20": {
+    "name": " Andrew Bailey, Associate Professor of Humanities/Philosophy, Yale-NUS College",
+    "quote": [" \u201cA year later, I\u2019m starting to have views. They\u2019re pretty pro-BIP300, I confess!\u201d"],
+    "link": ["https://twitter.com/resistancemoney/status/1614111587601874946"]
+  },
+  "21": {
+    "name": " Troy Cross, Professor of Philosophy and Humanities at Reed College",
+    "quote": [" \u201c[\u2026] long-term we need either a better fee market, something like drivechains, or else\u2026 mining at a loss by large stakeholders.\u201d","\u201cI agree.\u201d (In response to: \u201cBuilding on bitcoin will increase in an exciting way once drivechain is adopted. #Hivemind\u201d)"],
+    "link": ["https://twitter.com/thetrocro/status/1504493801003360258", "https://twitter.com/thetrocro/status/1618112234533842944"]
+  },
+  "22": {
+    "name": " Eric Wall, Investor and Software Engineer",
+    "quote": [" \u201cIt\u2019s been 7 years since @Truthcoin wrote the original drivechain blog post. if you went back in time and told me that 7 years later no effort has been made towards merge-mined sidechains but that the same people who opposed them were upset ethereum existed i\u2019d laugh in your face\u201d"],
+    "link": ["https://twitter.com/ercwl/status/1594449547689869319"]
+  },
+  "23": {
+    "name": " Nic Carter, Founder and General Partner, Castle Island Ventures",
+    "quote": [" \u201cI agree with all of this\u201d"],
+    "link": ["https://twitter.com/nic__carter/status/1542176840726495232"]
+  },
+  "24": {
+    "name": " Sjors Provoost, Bitcoin Core contributor",
+    "quote": [" \u201cWhat I find most appealing about the Drivechain idea is the separation of funding second layer and using second layer. With Lighning everyone needs to open their own channels which is expensive, whereas Drivechain would allow economies of scale for those transfers. If it works.\u201d"],
+    "link": ["https://twitter.com/provoost/status/946327279633911808"]
+  },
+  "25": {
+    "name": " Joe007, Cryptocurrency trader",
+    "quote": ["\u201cAs a self-professed Bitcoin maximalist, I support #BIP300. Enabling permissionless innovation on top of a stable and conservative Bitcoin base layer (rather than pushing them into shitcoinosphere) is a very important goal. That's how modern versatile Internet came into being.\u201d"],
+    "link": ["https://twitter.com/J0E007/status/1408788553560117256"]
+  }
+},
+
+{
+  "0": {
+    "name": " Bryan Bishop, Co-Founder and Chief Technology Offier of Custodia Bank (formerly Avanti Bank & Trust), Bitcoin Core Contributor",
+    "quote": [" \u201cw/ sidechains many fast upgrades can be tested with real bitcoin without impacting entire bitcoin protocol. Mainnet? Might take a while.\u201d"],
+    "link": [" https://twitter.com/kanzure/status/892130601448484864?s=20&t=8c0eFtMa_Ohw5v5ENly_ZQ"]
+  },
+  "1": {
+    "name": " Junseth, Bitcoin OG and Co-Host of the Bitcoin Unlimited podcast",
+    "quote": [" \u201cI think that Sidechains are a way to experiment on Bitcoin. [\u2026] If we do have a widely used EVM on Bitcoin or one that is easily accessible, it kills a lot of propositions that Ethereum makes.\u201d"],
+    "link": ["https://bitcoinmagazine.com/culture/bitcoin-businesses-the-biz-john-carvalho"]
+  },
+  "2": {
+    "name": " Tuur Demeester, Founder of Adamant Capital",
+    "quote": [" \u201cSidechains could be a game changer. Merge mining allows for reaping rewards of multiple chains at once. Keep an eye on #drivechain.\u201d","\u201cI don\u2019t have a strong view [\u2026]\u201d"],
+    "link": ["https://twitter.com/TuurDemeester/status/900703059390726144", "https://twitter.com/TuurDemeester/status/1612335728549044225"]
+  },
+  "3": {
+    "name": " Sergej Kotliar, Founder and CEO of Bitrefill",
+    "quote": [" \u201cA surprisingly large number of bitcoiners seem to be ok w bitcoin being this pure but niche thing while all of the financial activity happens elsewhere on things like stablecoins and banks. \u201cIt will all fix itself after hyperbitcoinization \ud83e\udd37\u200d\u2642\ufe0f\u201d"],
+    "link": ["https://twitter.com/ziggamon/status/1617586084615159808"]
+  },
+  "4": {
+    "name": " Rijndael, Bitcoiner and Former AWS Principal Engineer",
+    "quote": [" \u201cI am pro-sidechain. [\u2026]\u201d"],
+    "link": ["https://twitter.com/rot13maxi/status/1617686566864052224"]
+  },
+  "5": {
+    "name": " Oflow Show, Bitcoiner and recording artist",
+    "quote": [" \u201cEveryone wants to see sidechains become even more decentralized.\u201d"],
+    "link": ["https://twitter.com/oflowshow/status/1476609145423859714"]
+  }
+  }
+]

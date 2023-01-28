@@ -362,7 +362,7 @@ const tableDataDriveChainSupport = {
     "link": [" https://twitter.com/EdanYago/status/1402036078614306822"]
   },
   "17": {
-    "name": " Brad Mills, Host of the Magic Internet Money podcast",
+    "name": "Brad Mills, investor, entrepreneur, and Host of the Magic Internet Money podcast",
     "quote": [" \u201cI think it\u2019s time the Bitcoin community took a more serious look at @Truthcoin\u2019s drivechain proposal. [...]\u201d"],
     "link": [" https://twitter.com/bradmillscan/status/1401981128328855555"]
   },
@@ -403,7 +403,7 @@ const tableDataDriveChainSupport = {
   },
   "25": {
     "name": " Joe007, Cryptocurrency trader",
-    "quote": ["As a self-professed Bitcoin maximalist, I support #BIP300. Enabling permissionless innovation on top of a stable and conservative Bitcoin base layer (rather than pushing them into shitcoinosphere) is a very important goal. That's how modern versatile Internet came into being."],
+    "quote": ["\u201cAs a self-professed Bitcoin maximalist, I support #BIP300. Enabling permissionless innovation on top of a stable and conservative Bitcoin base layer (rather than pushing them into shitcoinosphere) is a very important goal. That's how modern versatile Internet came into being.\u201d"],
     "link": ["https://twitter.com/J0E007/status/1408788553560117256"]
   }
 };
@@ -436,7 +436,7 @@ const tableDataSideChainSupport = {
   },
   "5": {
     "name": " Oflow Show, Bitcoiner and recording artist",
-    "quote": [" Everyone wants to see sidechains become even more decentralized."],
+    "quote": [" \u201cEveryone wants to see sidechains become even more decentralized.\u201d"],
     "link": ["https://twitter.com/oflowshow/status/1476609145423859714"]
   }
 };
@@ -449,7 +449,7 @@ $.each(tableDataDriveChainSupport, function(index, value){
   let [nameName, ...rest] = value.name.split(",");
   let emboldened = "<span class='fw-bolder text-dark-emphasis'>" + nameName + "</span>" + "," + rest.join(",");
   let myName = $("<div>").html(emboldened).addClass("col-3 px-2 px-sm-3 pb-4 text-black-emphasis bg-primary-subtle border border-dark border-bottom-0 border-end-0 ");
-  myName.attr("style","min-width: 110px; padding-top:9px");
+  myName.attr("style","min-width: 110px; padding-top:9px;word-wrap: break-word;");
   let linkList = value.link;
   let myQuoteHolder = $("<div>").addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis bg-secondary-subtle border border-dark border-bottom-0 border-end-0").attr("id",index);
   myQuoteHolder.attr("style", "padding-top:9px");
@@ -488,7 +488,7 @@ $.each(tableDataSideChainSupport, function(index, value){
   let [nameName, ...rest] = value.name.split(",");
   let emboldened = "<span class='fw-bolder text-dark-emphasis'>" + nameName + "</span>" + "," + rest.join(",");
   let myName = $("<div>").html(emboldened).addClass("col-3 px-2 px-sm-3 pb-4 text-black-emphasis bg-primary-subtle border border-dark border-bottom-0 border-end-0 ");
-  myName.attr("style","min-width: 110px; padding-top:9px");
+  myName.attr("style","min-width: 110px; padding-top:9px; word-wrap: break-word;");
   let linkList = value.link;
   let myQuoteHolder = $("<div>").addClass("col-7 px-2 px-sm-3 pb-4 text-black-emphasis bg-secondary-subtle border border-dark border-bottom-0 border-end-0").attr("id",index);
   myQuoteHolder.attr("style", "padding-top:9px");
