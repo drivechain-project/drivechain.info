@@ -32,22 +32,22 @@ title: Releases
 
 [**Folder w/ All Releases**](http://release.drivechain.info/)
 
-[drivechain-dmg]: http://172.105.148.135/drivechain/drivechain-0.44.00-osx.dmg
-[drivechain-exe]: http://172.105.148.135/drivechain/drivechain-0.44.00-win64-setup.exe
-[drivechain-tar]: http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
-[testchain-dmg]: http://172.105.148.135/drivechain/testchain-18.00.00-osx.dmg
-[testchain-exe]: http://172.105.148.135/drivechain/testchain-18.00.00-win64-setup.exe
-[testchain-tar]: http://172.105.148.135/drivechain/testchain-18.00.00-x86_64-linux-gnu.tar.gz
-[train-dmg]: http://172.105.148.135/drivechain/trainchain-81.00.00-osx.dmg
-[train-exe]: http://172.105.148.135/drivechain/trainchain-81.00.00-win64-setup.exe
-[train-tar]: http://172.105.148.135/drivechain/trainchain-81.00.00-x86_64-linux-gnu.tar.gz
-[thunder-dmg]: http://172.105.148.135/drivechain/thunder-8.00.00-osx.dmg
-[thunder-exe]: http://172.105.148.135/drivechain/thunder-8.00.00-win64-setup.exe
-[thunder-tar]: http://172.105.148.135/drivechain/thunder-8.00.00-x86_64-linux-gnu.tar.gz
-[zside-tar]: http://172.105.148.135/drivechain/zside-9.00-x86_64-pc-linux-gnu.tar.gz
-[bitasset-dmg]: http://172.105.148.135/drivechain/bitassets-4.00.00-osx.dmg
-[bitasset-exe]: http://172.105.148.135/drivechain/bitassets-4.00.00-win64-setup.exe
-[bitasset-tar]: http://172.105.148.135/drivechain/bitassets-4.00.00-x86_64-linux-gnu.tar.gz
+[drivechain-dmg]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-osx.dmg
+[drivechain-exe]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-win64-setup.exe
+[drivechain-tar]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+[testchain-dmg]: https://www.drivechain.info/releases/bin/testchain-18.00.00-osx.dmg
+[testchain-exe]: https://www.drivechain.info/releases/bin/testchain-18.00.00-win64-setup.exe
+[testchain-tar]: https://www.drivechain.info/releases/bin/testchain-18.00.00-x86_64-linux-gnu.tar.gz
+[train-dmg]: https://www.drivechain.info/releases/bin/trainchain-81.00.00-osx.dmg
+[train-exe]: https://www.drivechain.info/releases/bin/trainchain-81.00.00-win64-setup.exe
+[train-tar]: https://www.drivechain.info/releases/bin/trainchain-81.00.00-x86_64-linux-gnu.tar.gz
+[thunder-dmg]: https://www.drivechain.info/releases/bin/thunder-8.00.00-osx.dmg
+[thunder-exe]: https://www.drivechain.info/releases/bin/thunder-8.00.00-win64-setup.exe
+[thunder-tar]: https://www.drivechain.info/releases/bin/thunder-8.00.00-x86_64-linux-gnu.tar.gz
+[zside-tar]: https://www.drivechain.info/releases/bin/zside-9.00-x86_64-pc-linux-gnu.tar.gz
+[bitasset-dmg]: https://www.drivechain.info/releases/bin/bitassets-4.00.00-osx.dmg
+[bitasset-exe]: https://www.drivechain.info/releases/bin/bitassets-4.00.00-win64-setup.exe
+[bitasset-tar]: https://www.drivechain.info/releases/bin/bitassets-4.00.00-x86_64-linux-gnu.tar.gz
 
 
 Click [here for CHECKSUMs](/releases/bin/checksums.txt).
@@ -85,7 +85,7 @@ Open Linux terminal (in Ubuntu, cntrl+alt+t), and run these:
     # Download Files
     cd ~/Downloads/
     curl -O http://172.105.148.135/drivechain/drivechain-linux-pruned-739597.tar.gz
-    curl -O http://172.105.148.135/drivechain/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+    curl -O https://www.drivechain.info/releases/bin/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
     # Make Directory
     mkdir ~/.drivechain
     # Extract Files
