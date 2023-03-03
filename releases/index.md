@@ -6,7 +6,7 @@ title: Releases
 
 ## Switchboard
 
-The easiest way to run Drivechain.
+The easiest way to run Drivechain. (Testnet / play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
