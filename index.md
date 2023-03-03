@@ -212,13 +212,15 @@ See also:
 
 ## Screenshots
 
-![image](/media/shot-6.png)
+![image](/releases/switchboard/switchboard-usage.png)
 
 ![image](/media/shot-7.png)
 
 ![image](/media/shot-8.png)
 
 ![image](/media/shot-9.png)
+
+![image](/media/shot-6.png)
 
 
 <!--

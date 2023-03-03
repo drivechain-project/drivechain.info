@@ -4,10 +4,25 @@ title: Releases
 ---
 
 
+## Switchboard
 
-## Download Latest Version (v44.00)
+The easiest way to run Drivechain.
 
-### Mainchain
+|Software|Linux|Windows|Mac|Source|
+|--------|:---:|:-----:|:-:|:----:|
+|**Switchboard v0.0.2**|[.deb](/releases/switchboard/switchboard-gui_0.0.2_amd64.deb)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
+
+![image](/releases/switchboard/install-instructions.png)
+
+![image](/releases/switchboard/switchboard-usage.png)
+
+
+
+---
+
+## Individual Binaries and Sources
+
+### Mainchain (v44.00)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
