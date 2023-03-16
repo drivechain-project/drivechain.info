@@ -17,7 +17,7 @@ It is said that "51% of the miners can steal all of the funds on the sidechain".
 
 It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like. Namely, they would include a withdrawal that pays them all of the sidechain's BTC. At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
 
-So, it is true that 51% hashrate can steal all the BTC on the sidechain. But, already, they can steal all of the BTC on the mainchain. In a way that full nodes cannot prevent. And the mainchain theft is easier, and pays more.
+So, it is true that 51% hashrate can steal all the BTC on the sidechain. But, already, they can steal all of the BTC transacted on the mainchain. In a way that full nodes cannot prevent. And the mainchain theft is easier, and pays more.
 
 It is to simply take the assumed attack (ie, "6 months of 51% miner-attacking, or 3 months of 100% attacking"), and use it to cause a block reorganization. Specifically, a 13,150-block reorganization.
 
@@ -27,7 +27,7 @@ The reorg attack allows miners to steal all BTC transacted on the mainchain, in 
 
 How much BTC could be stolen by a reorg attack?
 
-Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* circulating coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is more BTC than could ever be deposited onto any sidechain ever.
+Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* transacted coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is more BTC than could ever be deposited onto any sidechain ever.
 
 Critics who raise this point, are really objecting to the entire philosophy of "optional sidechains". The purpose of sidechains is to allow the mainchain Bitcoin Core software to ignore BTC-activity on other networks -- this indifference frees up those networks to try experimental or controversial features. Critics who invoke "miners can steal", fail to understand this purpose. Since the only way to block "miner theft" is via full-node rule-enforcement, these critics are really advocating a sidechain security model where Bitcoin Core is required to download and validate all sidechain blocks on all sidechains. This would prevent miner-theft, but it turns each new sidechain into a mandatory hard fork!
 
