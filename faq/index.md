@@ -3,7 +3,7 @@ layout: page
 title: Frequently Asked Questions
 ---
 
-Updated 04/2018
+Updated 03/2023
 
 Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), my latest YouTube video. I know many people prefer the YouTube format these days.
 
