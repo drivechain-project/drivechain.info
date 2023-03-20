@@ -12,10 +12,11 @@ The easiest way to run Drivechain. (Testnet / play money only.)
 |--------|:---:|:-----:|:-:|:----:|
 |**Switchboard v0.0.2**|[.deb](/releases/switchboard/switchboard-gui_0.0.2_amd64.deb)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
 
-![image](/releases/switchboard/install-instructions.png)
+In one image:
 
-![image](/releases/switchboard/switchboard-usage.png)
-
+* [How to install](/releases/switchboard/install-instructions.png)
+* [How to run](/releases/switchboard/switchboard-usage.png)
+* [How to use Linux software on your Mac/PC](/releases/virtualbox-explained.png) -- see also: [VirtualBox.org](https://www.virtualbox.org/), [VMWare.com](https://www.vmware.com/products/fusion.html),  [Guide1](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox), [Guide2](https://graspingtech.com/vmware-fusion-ubuntu-20.04/).
 
 
 ---
@@ -45,7 +46,7 @@ The easiest way to run Drivechain. (Testnet / play money only.)
 |Latest Ethereum|[Guide](https://www.drivechain.info/blog/ethside-guide/), [Video](https://www.youtube.com/watch?v=PsaSGZ0yulQ&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=11)|||[GitHub](https://github.com/nchashch/ethereum-sidechain)|
 |Latest zCash|[Guide](https://github.com/nchashch/zcash-sidechain/blob/master/zside-tour-2022.sh), [Video](https://www.youtube.com/watch?v=N33iJK2FdpE&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=10)|||[GitHub](https://github.com/nchashch/zcash-sidechain)|
 
-[**Folder w/ All Releases**](http://release.drivechain.info/)
+[**Folder**](http://release.drivechain.info/) -- Older [Archives](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d)
 
 [drivechain-dmg]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-osx.dmg
 [drivechain-exe]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-win64-setup.exe
@@ -69,9 +70,16 @@ Click [here for CHECKSUMs](/releases/bin/checksums.txt).
 
 For help join [The Telegram](t.me/DcInsiders).
 
-Older releases archived [here](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d).
+### How to Run
 
+1. Download [the tar.gz file][drivechain-tar], and extract it.
+2. Navigate to the qt file (/bin/drivenet-qt).
+3. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
 
+* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
+* Be sure to delete old data directorires from previous versions (~/.drivenet, ~/.testchain).
+
+---
 
 ##  What's New -- Nov 21, 2022 (v44)
 
@@ -87,9 +95,25 @@ Sidechain
 * Sidechain template `refreshbmm` bug fix
 
 
-## How to Run
+-----
 
-### Fast Sync (Casual Users)
+
+## Useful Tips
+
+### 1. How to Mine Blocks
+
+On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
+
+On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
+
+### 2. Useful Tools
+
+* [Block Explorer](http://explorer.drivechain.info/)
+* This [script on Github](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
+* Written [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
+
+
+### 3. Fast Sync (Casual Users)
 
 The initial block download is slow.
 Let's skip it!
@@ -123,36 +147,11 @@ Those commands will:
 3. Extract the downloaded files.
 4. Run Drivechain in pruned mode.
 
-### Normal Sync (Power Users)
-
-1. Download [the tar.gz file][drivechain-tar], and extract it.
-2. Navigate to the qt file (/bin/drivenet-qt).
-3. Right-click to open a terminal in this location, and run the qt file via "./drivenet-qt" + ENTER.
-
-* If you have a technical issue, try reindexing: (example: ./drivenet-qt --reindex). Or, bother us in the [t.me/DcInsiders telegram](t.me/DcInsiders).
-* Be sure to delete old data directorires from previous versions (~/.drivenet, ~/.testchain).
 
 
-## Useful Tips
-
-### 1. Useful Tools
-
-* [Block Explorer](http://explorer.drivechain.info/)
-* This [script on Github](https://github.com/CryptAxe/DriveChainIntegration) -- will clone, build, and run DriveNet; then activate a sidechain, then deposit to and withdraw from the sidechain. [Video](https://drive.google.com/open?id=1BwSFmXWPLvGyrWP_zo3ZCivqxDvwlZbe).
-* Written [**Usage Tour**](http://www.drivechain.info/blog/usage-tour/) and [**Creating a Sidechain**](http://www.drivechain.info/blog/adding-a-sidechain/), and other [**Articles**](http://www.drivechain.info/archive/).
-
-### 2. How to Mine Blocks
-
-On the mainchain, use the "Tools" dropdown, and select "GUI Miner".
-
-On the sidechain, go to the "Parent Chain" tab, and "BMM" sub-tab.
 
 
-### 3. I don't have Linux!!!
-
-Some of the software is Linux-only.
-
-Mac/Windows users can run Linux for free, by using software such as [VirtualBox](https://www.virtualbox.org/) or [VMWare](https://www.vmware.com/products/fusion.html). See guides [here](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox) and [here](https://graspingtech.com/vmware-fusion-ubuntu-20.04/). This is not only easy, it is very secure (by layperson standards), because it should be impossible for DriveNet to touch the rest of your Mac/Windows computer (it will be confined to the VirtualBox computer).
+-----
 
 
 
