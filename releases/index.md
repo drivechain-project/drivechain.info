@@ -14,9 +14,10 @@ The easiest way to run Drivechain. (Testnet / play money only.)
 
 In one image:
 
-* [How to install](/releases/switchboard/install-instructions.png)
-* [How to run](/releases/switchboard/switchboard-usage.png)
-* [How to use Linux software on your Mac/PC](/releases/virtualbox-explained.png) -- see also: [VirtualBox.org](https://www.virtualbox.org/), [VMWare.com](https://www.vmware.com/products/fusion.html),  [Guide1](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox), [Guide2](https://graspingtech.com/vmware-fusion-ubuntu-20.04/).
+* [How to install & run](/releases/switchboard/install-instructions.png)
+* [What it looks like](/releases/switchboard/switchboard-usage.png)
+* [How to run it on Mac/PC](/releases/virtualbox-explained.png)
+* * See also: [VirtualBox.org](https://www.virtualbox.org/), [VMWare.com](https://www.vmware.com/products/fusion.html),  [Guide1](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox), [Guide2](https://graspingtech.com/vmware-fusion-ubuntu-20.04/).
 
 
 ---
