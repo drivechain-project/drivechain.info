@@ -7,16 +7,32 @@ Updated March 2023
 
 ## 1. Security ## {#security}
 
-### Are drivechains secure? ### ## {#sidechain-theft}
+### How are drivechains secured? ### {#sidechain-theft}
 
-The security model is [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
+Miners "farm" sidechains for their txn fees (and exchange-rate value-add). Why kill the "goose that lays the golden eggs"?
 
-Sidechain security is higher when:
+Well, it depends on:
 
-* The sidechain in question is popular with users.
-* There are many popular sidechains.
+* How many eggs they lay
+* How much the dead goose is worth, and
+* How much effort it takes to actually kill the goose.
 
-Overall, the drivechain model is comparable to the existing L1 Bitcoin security model. L1 protects a given txn, by bundling it with all of the other recent txns (such that the miners cannot revert a txn without attacking the entire chain). In contrast, Drivechain protects only a subset of the total Bitcoin txns, but it compensates for this by bundling these txns over a much longer period of time (3-6 months). Thus: Drivechain "divides" by a large number, then "multiplies" by a large number (to try to compensate). 
+So, no two drivechains will have the same level of security.
+
+Some will lay many "eggs". These will have high fee-revenues, and/or will enhance the underlying coin-utility.
+
+Similarly, some drivechains are more valuable to "kill" than others. The more coins on a drivechain, the higher the incentive to "kill" it (and take all those coins).
+
+Finally, how to "kill" such a drivechain?
+
+Because of the "slow return" feature of BIP300, it isn't easy. Miners must 51% attack in a very transparent and obvious way, in full view of everyone, for a continuous 3-6 months, *before* the coins can be stolen.
+
+The formal security model is [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
+
+In general, Drivechain security is higher when:
+
+* The drivechain in question is popular with users.
+* There are many popular drivechains.
 
 
 ### What if a sidechain isn't popular?? Can miners "steal" from a sidechain? ## {#unpopular-sc}
@@ -26,14 +42,14 @@ An unpopular sidechain is one which:
 * Has low total txn fees, AND/OR
 * If the sidechain went away, the market price of Bitcoin would NOT fall significantly.
 
-In such a case, Miners lose very little, economically, by taking the sidechain's coins. Especially if mining turnover is low, and hashrate is stable.
+In such a case, Miners lose very little, economically, by taking the sidechain's coins. Especially if mining turnover is low (among pools/devices), and hashrate is stable.
 
 
 ### Isn't that bad? ### {#user-sovereignty}
 
-Not at all.
+Not really. 
 
-We currently have ZERO sidechains. So even a 99.99% unpopularity rate (and a 100% failure rate of unpopular sidechains) would be an improvement over the status quo.
+We currently have ZERO sidechains. So even a 99.99% unpopularity rate (and a 100% failure rate of unpopular sidechains) would be an improvement over the status quo. At least we'd improve from 0% to 00.01%.
 
 The risk-reward decision is one each user should make. Not you! If you don't like a particular sidechain, or sidechains in general, then don't use them! It's like that slogan: "If you don't Like Gay Marriage, don't get one!".
 
@@ -258,8 +274,8 @@ While this is collaboration, it is not centralization. Drivechain is designed so
 
 * The "600,000 Altcoins on coinmarketcap" represent only \~40 novel ideas. The other 599,960 coins are just a carbon-copy of one of the 40, with a different name. The name is the only new thing.
 * Many of those ideas are novel consensus mechanisms.
-* * They replace proof-of-work with something else. This is near-certain to fail.
-* * Under the hood, they do the same "job" as Bitcoin's PoW and Merged-mining. So they add no value to a merged-mined Bitcoin sidechain. Sidechains already "ride along" in consensus, for free.
+* * They replace proof-of-work with something else. (This is near-certain to fail.)
+* * They try to solve a problem that has already been solved by Merged-mining. So they add no value to a merged-mined Bitcoin sidechain.
 
 
 
@@ -567,7 +583,7 @@ Please navigate to the [sidechain projects](http://www.drivechain.info/projects/
 
 -----
 
-For more, watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k).
+For more info, watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k).
 
 
 <!--
