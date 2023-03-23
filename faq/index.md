@@ -67,7 +67,7 @@ I looked into it in detail, [in 2016](https://www.youtube.com/playlist?list=PLw8
 
 Sidechain merged-mining is a new revenue stream for miners, yes.
 
-But [Altcoin merged-mining(https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c) has existed for years. It was invented by Satoshi in 2010. And has been in [widespread use](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/) ever since.
+But [Altcoin merged-mining](https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c) has existed for years. It was invented by Satoshi in 2010. And has been in [widespread use](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/) ever since.
 
 All BIP300 does, is supercharge MM. With sidechains, miners would (hopefully) get huge revenues (and profits) from MM... instead of the pittance they get from MM today.
 
