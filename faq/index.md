@@ -5,6 +5,9 @@ title: Frequently Asked Questions
 
 Updated March 2023
 
+See also [Drivechain Q&A](https://fiatjaf.com/drivechain.html) by [fiatjaf](https://github.com/fiatjaf) (creator of Nostr).
+
+
 ## 1. Security ## {#security}
 
 ### How are drivechains secured? ### {#sidechain-theft}
@@ -134,7 +137,7 @@ More details are in [the original 2015 post](https://www.truthcoin.info/blog/dri
 
 No. Only specialists will use the BIP300 withdrawal. It can only pay out to 20,000 L1 destination UTXOs, anyway. So it is capped at 20,000 outputs per 3-6 months.
 
-Everyone else will transact *with* those specialists. The specialists will be exchanges like Coinbase/Kraken, or they will be private users trustlessly swapping coins with HTLCs.
+Everyone else will transact *with* those specialists. The specialists will be exchanges like Coinbase/Kraken/Sideshift, or they will be private users trustlessly swapping coins with HTLCs.
 
 The specialist charges a fee, but users get to move their coins from L2 back to L1 immediately. The layperson customer never has to wait.
 
@@ -144,39 +147,77 @@ The specialist charges a fee, but users get to move their coins from L2 back to 
 Drivechain is asymmetric. The child sidechain is subordinate to the parent mainchain, always. If the mainchain ceases to exist, then all child sidechains cease to exist as well.
 
 
-### Does Drivechain rely on a UASF to prevent a sidechain theft? ### {#uasf-reliance}
+### Does Drivechain rely on a UASF to prevent sidechain theft? ### {#uasf-reliance}
 
 No.
 
-I will unpack this answer in three sections.
+I will unpack this answer, in three sections.
 
-##### (i) Live by the UASF, Die by the UASF
+#### (i) The UASF Can Do Anything (It Can Prevent Miner-Theft)
 
 A UASF can block a sidechain-theft... but a different UASF can *force* a sc-theft to go through!
 
-And everything in between: a UASF could guarantee that all sc-withdrawals always fail (whether these be theft-withdrawals or honest-withdrawals); or, it could force all honest withdrawals to succeed as quickly as possible. Or: that all thefts always succeed on precisely the 22,222nd block after they are attempted (or any other number between 13,150 and 26,300).
+The UASF is flexible. Here are some possible UASFs:
 
-So it is not meaningful to imbue the UASF with an "anti-theft" feature. Instead, the UASF is simply a vehicle through which users clarify, VERY loudly, exactly what it is they want to buy from miners when they hand over 140,000 USD (at 2/18/2018 prices) in exchange for the newest 13.5 BTC (assuming 1 BTC of tx fees).
+* Every coinbase after block #800,000 must contain the word "Hello".
+* Block #888,888 must only contain TxIDs that start with an 8. 
+* Block #1,000,000 must contain an OP RETURN gif of Napoleon Bonaparte dancing.
+* Starting block #925,000, every TxID that starts with 7, is banned.
+* Starting block #975,000, every TxID must start with 4, is banned.
+* The following Bip300 withdrawal TxID, is banned forever: "4h2f..."
+* The following Bip300 withdrawal TxID, MUST be included in block #950,000:  "4h2f..."
 
-If a UASF fails, then it had no effect. If a UASF succeeds, then by definition it has defeated the miners. So, yes, a UASF can block miner-theft.
+You can even do all those, together. (In which case, the Napoleon gif will need to be one whose TxID starts with 4.)
+
+Anyway, you can see that we can force any sc-theft to succeed via UASF, or fail.
+
+Thus, it is **wrong** to imbue the UASF with an "anti-theft" feature. Inherently, it is neither pro-theft nor anti-theft. It allows users to clarify, VERY loudly, what they want to buy, when they hand over $186,000 USD (at 3/22/2023 prices) to miners in exchange for the newest 6.75 BTC (assuming +0.5 BTC of tx fees). UASFs have no inherent allegance to a consensus rule; nor any inherent hostility.
+
+But, yes, a UASF can block a sc-theft.
 
 
-##### (ii) "Preventing" Theft
+#### (ii) UASF Drama?
 
-If miners are determined to theft-attack a sidechain, then the victims should try to UASF. It costs nothing to them, nothing to anyone else, and it might succeed (in blocking the theft).
+But what is the effect on 3rd parties? Is there [drama](https://twitter.com/stephanlivera/status/1618201490228649985).
 
-The anti-theft UASF will split the chain, at the time (3 months from now) when the withdrawal finally goes through. 
+To explain this, we must explain the UASF in more detail.
 
-Victims (the UASFers) will hope that the free market favors their UASF coins, with a higher price (higher than the non-UASF-coins). If so, then the UASF will succeed and the miners will be defeated. Miners must extend the higher-value chain (see [here](https://medium.com/@bramcohen/bitcoin-s-ironic-crisis-32226a85e39f) and [here](https://medium.com/@danrobinson/the-cost-of-supporting-the-b2x-fork-how-to-lose-100m-in-ten-days-6797f7ef52da)). The network will re-fuse into one blockchain where the theft *could* have been included in a block, but never was.
+First: what is this UASF?
 
-If that doesn't happen, then the UASF fails. But it only affects the people who voluntarily opted-in to it. The sidechain theft goes through, but new bad thing happens, to anyone. So it is free to try.
+Sidechain-theft can be blocked, with a UASF of the following form: prevent the upcoming theft-txn from entering the blockchain, ever. If it works, then their sidechain-coins are saved! If it doesn't work, then the UASFers lose nothing -- they're in the same position they're in now. That is what the victims will try.
 
-Here, the UASF "prevents" the sidechain-theft. But only if the UASF increases the market price. So, really, DC "relies" on market price, not UASF.
+Second, this "withdrawal dispute" UASF has unusual properties:
 
+* No code changes are needed. No code needs to be written, nor reviewed nor bike-shedded. No software needs to be downloaded, etc. Miners have already chosen the TxID they will steal with, and everyone knows what it is -- thus, the UASFers need only select it, and ban it. It is a simple point-and-click.
+* While the UASFers are *immediately* alerted to the problem, their UASF cannot take place *until later* -- until *after* the theft-txn has accumulated its required 13,150 ACKs. Thus, the actual USAF is planned "today", but it cannot actually happen until "3-6 months from now".
+* There is no need for the UASFers to choose an exact time of their fork. Nor do they need to specify activation, nor signal to each other. The fork event is tied to "the inclusion of the theft-txn" in a L1 block. So, no coordination is needed among UASFers. They can successfully pull the whole thing off, even if they never speak to each other.
 
-##### (iii) What does DC "Rely" On, if not UASFs?
+Third, let's imagine that a theft is attempted, users counter with a UASF, and the miners don't back down. On the day of the theft, the coin splits into two. What happens now?
 
-Sidechain popularity -- sidechain-enabled coins, are *worth more* than mono-chain coins -- this is [the "m" parameter](http://www.truthcoin.info/blog/drivechain/#drivechains-security). And they give fee revenues (the "b" parameter). But only while they are safe to use.
+Well, one coin will have a higher market price than the other.
+
+The miner-thieves hope that their coin is the higher-priced. If so, they will happily mine the more-valuable chain. 100% of the hashrate will mine the more profitable coin, even miners who were personally against the theft *or miners who prefer to own the UASF coin*. This is a crucial point, see ["if a miner would rather hold B2X, they could earn it four times faster by mining B1X and trading it for B2X"](https://medium.com/@danrobinson/the-cost-of-supporting-the-b2x-fork-how-to-lose-100m-in-ten-days-6797f7ef52da), for the explanation in the context of SegWit2x. Thus, the UASFers will be on a stalled chain, with 0% hashrate. They may see a few altrustically mined blocks, but it will not be enough. The UASFers have lost, and they stay on a stalled chain, individually, until each admits defeat. They must "unblock" the TxID of the theft txn, and allow it.
+
+In this case, all neutral people will be on the longest-hashrate chain, the whole time -- they will not even notice that anything has happened. So they are unaffected by the failed UASF.
+
+But what if the UASF succeeds? If the UASF-coin has the higher price, miners will be forced to mine it (by the exact same logic as before.) The network will remain one blockchain (or re-fuse into one blockchain). It will be a chain where the theft-txn *did* get all 13,150+ ACKs, and it *could* be included in a block, but it never is (eventually the 26,000 BIP300 window expires, and the theft-txn with it). The UASFers win; the miners fail to steal.
+
+But what of the neutral parties? If the price differential is large, then the network will never actually split (this happened with SegWit2x -- ["fork futures"](https://www.truthcoin.info/blog/fork-futures/) warned us in advance which chain would die, and it was never born). If the price-differential is tiny (ie, market is mostly indifferent -- this is pretty unlikely), then both chains may live for a short time. The networks have identical protocol rules, so every txn broadcast during this time will be included in both chains. (In other words, there would be full [transaction replay](https://www.truthcoin.info/blog/mahf-and-replay/#what-is-replay-replay-protection); unlike in the BCH case where there was the exact opposte: mandatory full replay protection.) Any malicious double-spenders, can be defeated by via recipient asking for txn confirmation on *both* chains, before considering a payment finalized (it is not possible for a layperson user to "accidentally" double-spend, in this case). Ultimately, one chain wins and the other dies -- it is as if they own a DropBox folder that splits into two identical dropbox folders and then collapses back into one.
+
+In the very worst case (and unlikely) scenario, there is a reorg that affects some transactions. This requires the market to be somehow "undecided" up until (and during) the fork, and then to decide to be anti-UASF for a little while, and then change its mind. It is a pretty far-fetched scenario. More likely, fork futures will warn us in advance, which coin will be worth more.
+
+#### (iii) In Context
+
+Any group of people, can decide to UASF, at any time, for any reason. (Such as the dancing Napoleon gif reason.) Drivechain *might* create "theft events", which attract UASF attention, but probably not. And what of all the UASFs that DC prevents? For example, DC (if popular) removes the need for all future soft and hard forks. On net, drama on L1 would plummet due to Drivechain.
+
+Also, reorganizations --while unfortunate-- are already an inherent risk of using Bitcoin. Each user can voluntarily mitigate this risk, in the usual way (waiting for more confirmations). Drivechain should only be blamed for any new risks it might introduce -- not risks that already exist!
+
+#### What does DC "Rely" On, if not UASFs?
+
+If you go [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security), you see that DC relies on:
+
+* The m parameter (sidechain-able BTC being worth more, than mono-chain BTC)
+* The b parameter (the fee-revenues from the sidechains).
 
 
 <!---
@@ -199,7 +240,7 @@ Usually coordination is hard, but not here.
 
 The key difference is the user's *alternatives*. The *first* blockchain ever invented, could not rely on UASF to work.
 
-But once a few exist, the user can simplye *wait*.
+But once a few exist, the user can simply *wait*.
 
 However, once we already have a few different blockchains set up, the user has an option to simply *wait*. So, the default policy of everyone could be to prevent all withdrawals, unless the evidence of their honesty is overwhelming. (It is a little like how, if you actually go to court, you need to have all of your documents very organized -- you cannot waste the judge's time.) The social scalability can be increased arbitrarily, at a cost of making all of the withdrawals more likely to fail (ie, time out) or else by simply making them all take much longer. In other words, instead of checking in on a sidechain once every 3 months, you could check in on each sidechain once every year, or once every two years.
 
@@ -272,11 +313,13 @@ While this is collaboration, it is not centralization. Drivechain is designed so
 
 256 is the right number. The people who disagree, fail to grasp the following facts:
 
+* We can have sidechains *of sidechains*, so the true number is unlimited.
+* By limiting the number to 256, we can id a sidechain using just one byte. Any more would require two bytes, and allow us to count to 65,000+ which is overkill.
 * The "600,000 Altcoins on coinmarketcap" represent only \~40 novel ideas. The other 599,960 coins are just a carbon-copy of one of the 40, with a different name. The name is the only new thing.
 * Many of those ideas are novel consensus mechanisms.
 * * They replace proof-of-work with something else. (This is near-certain to fail.)
 * * They try to solve a problem that has already been solved by Merged-mining. So they add no value to a merged-mined Bitcoin sidechain.
-
+* If necessary, we could just add a second BIP300, "BIP300b", that adds 256 more slots.
 
 
 ## 2. Comparisons
