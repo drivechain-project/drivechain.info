@@ -608,7 +608,7 @@ The underlying consensus of L1 (PoW vs PoS), and the community.
 For example, Monero has a larger anonymity set, as of this writing. And Ethereum has more txn fees and users.
 
 
-### Is the 13,150 ACK parameter hardcoded? Why not let each sidechain specify it? ### {#13150}
+### Is the 13,150 ACK parameter hardcoded? Why not let each sidechain specify it? ### {#y13150}
 
 Yes.
 
