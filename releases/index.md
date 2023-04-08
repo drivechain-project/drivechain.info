@@ -4,13 +4,13 @@ title: Releases
 ---
 
 
-## Switchboard
+## DriveNet
 
-The easiest way to run Drivechain. (Testnet / play money only.)
+The easiest way to run Drivechain. (Play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Switchboard v0.0.2**|[.deb](/releases/switchboard/switchboard-gui_0.0.2_amd64.deb)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
+|**DriveNet v0.0.3**|[.deb](/releases/switchboard/drivenet_0.0.3_amd64.deb)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
 
 In one image:
 
