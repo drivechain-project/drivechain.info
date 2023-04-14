@@ -3,169 +3,252 @@ layout: page
 title: Frequently Asked Questions
 ---
 
-Updated 04/2018
+Updated March 2023
 
-Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), my latest YouTube video. I know many people prefer the YouTube format these days.
-
-## 0. Five Common Misconceptions
-
-Here I highlight five big hangups that people seem to have over and over.
-
-### i. "51% hashrate can steal BTC" ### {#i}
-
-It is said that "51% of the miners can steal all of the funds on the sidechain".
-
-It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like. Namely, they would include a withdrawal that pays them all of the sidechain's BTC. At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
-
-So, it is true that 51% hashrate can steal all the BTC on the sidechain. But, already, they can steal all of the BTC on the mainchain. In a way that full nodes cannot prevent. And the mainchain theft is easier, and pays more.
-
-It is to simply take the assumed attack (ie, "6 months of 51% miner-attacking, or 3 months of 100% attacking"), and use it to cause a block reorganization. Specifically, a 13,150-block reorganization.
-
-The reorg attack is easier in two ways. First, the reorg-attackers may work in secret. In contrast, the DC-attackers must announce the attack in advance, and then continue it openly each block. Secondly, because of their hashrate superiority (of at least 2%, in the 51%-case) they can start their new chain as many as ~526 blocks into the past.
-
-The reorg attack allows miners to steal all BTC transacted on the mainchain, in two ways. First, by making BTC purchases themselves, and then refunding themselves via doublespend. Second, by collaborating with other purchasers (by rewarding them "epsilon" if they sign a doublespend txn directing the merchant's money to miners).
-
-How much BTC could be stolen by a reorg attack?
-
-Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* circulating coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is more BTC than could ever be deposited onto any sidechain ever.
-
-Critics who raise this point, are really objecting to the entire philosophy of "optional sidechains". The purpose of sidechains is to allow the mainchain Bitcoin Core software to ignore BTC-activity on other networks -- this indifference frees up those networks to try experimental or controversial features. Critics who invoke "miners can steal", fail to understand this purpose. Since the only way to block "miner theft" is via full-node rule-enforcement, these critics are really advocating a sidechain security model where Bitcoin Core is required to download and validate all sidechain blocks on all sidechains. This would prevent miner-theft, but it turns each new sidechain into a mandatory hard fork!
-
-
-### ii. Autonomous Miners Fallacy ### {#ii}
-
-Some people believe that miners are free to do whatever they like. This view is often simplified [perhaps for politeness reasons] as sorting miners into two "types", the "honest" type that tend to choose to do friendly things, and the "dishonest" type that tend to choose to do unfriendly things (ie, short-term, narrowly selfish, deceptive, etc).
-
-In reality, though, miners have no choice but to profit-maximize.
-
-Here are some passages which explain this well: 
-
-* ["if so many miners stick to their guns that the ROI on the old currency continues to be high, then all the obstinate miners will have accomplished is in making a gift to the more practical ones."](https://medium.com/@bramcohen/bitcoin-s-ironic-crisis-32226a85e39f) -- Bram Cohen, June 2015
-* ["if a miner would rather hold B2X, they could earn it four times faster by mining B1X and trading it for B2X"](https://medium.com/@danrobinson/the-cost-of-supporting-the-b2x-fork-how-to-lose-100m-in-ten-days-6797f7ef52da) -- Dan Robinson, Nov 2017
-
-Two days after Dan Robinson's post, [miners cancelled their SegWit2x project](https://news.bitcoin.com/breaking-news-segwit2x-fork-cancelled/), which they --seemingly-- wanted very badly. But not as badly as they wanted more MONEY!
-
-Please see [the published security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) and also panes 5 and 6 of [this meme](http://www.drivechain.info/media/meme3.png) for details on what miners would find to be more or less profitable.
-
-### iii. "Infallible Miner" Fallacy ### {#iii}
-
-A related notion is the idea that "miners" are the "owners" or "masters" or "controllers" of the Bitcoin cryptosystem -- and wherever miners lead, everyone else follows blindly and without resistance.
-
-But the truth is the exact *opposite* of this. Whenever "miners" and "nodes" disagree, it is always nodes that get the final word. For example:
-
-* Flag day" UASF activations -- most famously of SegWit in Summer 2017, but also [P2SH in Spring 2012](https://www.uasf.co/#why-bip148-and-not-a-direct-flag-day-uasf-for-segwit).
-* The [March 2013 anti-consensus event](https://bitcoin.org/en/alert/2013-03-11-chain-fork) -- during which miners were required to reconfigure their software (at great financial loss)...but nodes were required to do "nothing".
-* The Post-Scaling-III civil war, during which 51% hashrate "signaled" for Bitcoin Unlimited. This signaling ultimately had no effect whatsoever. (Once it did [cause an invalid block](https://www.reddit.com/r/Bitcoin/comments/5qwtr2/bitcoincom_loses_132btc_trying_to_fork_the/) to be formed, leading -again- to miner losses but node indifference.)
-* In August 2010, miners *did as they were told* and extended [a chain that followed all of the rules](https://en.bitcoin.it/wiki/Value_overflow_incident). The problem was, some nodes later decided that they didn't like these rules, after all. So nodes changed the rules, and found new miners to enforce the new rules. The old miners, enforcing the old rules, did not get paid, and had to surrender.
-
-These are examples of Miners being trumped by users, in a variety of contexts. Drivechain merely acknowledges this pre-existing fact.
-
-This fallacy is similar to the ["Enough to Buy Back the Product"](http://steshaw.org/economics-in-one-lesson/chap21p1.html) and "Labor Theory of Value" fallacies. It demands that "the makers of cheap dresses should get enough to buy back cheap dresses and the makers of mink coats enough to buy back mink coats". Miners are like security guards -- watching diligently over a football game or rock concert to deal with altercations. But "a group of security guards" does not a rock-and-roll concert make...you need the guitarist. And you need the drummer, and the promoters, the record company, the guitar-maker, the producer of nylon string, etc.
-
-[Related](https://twitter.com/Truthcoin/status/929797893413855232) -- a time when hashrate determined nothing.
-
-While the security guards should be *obedient* they should NOT be *incompetent* -- they must be able to carry out the investor's will. That is the subject of the next misconception.
-
-### iv. Ethereum Immunodeficiency Syndrome ### {#iv}
-
-Some "smart contracts" are actually bad, and we *want* to get rid of them.
-
-This is near-impossible to do, if the smart contract system is too general purpose (as in Ethereum). See my ["Smart Contract Ecology" presentation](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1) (or [answer below](www.drivechain.info/faq/#categorical-control) for details.
-
-However, it is also impossible to do, if no one has an incentive to do it. Without an incentive to curate the portfolio of active sidechains, we will have a free rider problem -- who will take out the trash? 
-
-We solve this by harmonizing ownership and control -- the miners are the only ones with enough skin in the game to make this decision, so they should be the ones who control which sidechains are "evicted". So the 51% theft possibility is actually a *feature*, not a bug. We want it there, filtering out sidechains that interact badly (just like we want miners to "evict" txns that are double spends).
-
-### v. User Paternalism Fallacy / Sidechain Homogeneity ### {#v}
-
-Not all sidechains are the same -- some are bound to be "low quality". This could be because they are not popular enough to be secure, or because they have been constructed by saboteurs. Depositing into these would be a bad idea.
-
-It is natural to want to "protect" people from their mistakes.
-
-But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an Altcoin. And -- as they should! The user is sovereign.
-
+See also [Drivechain Q&A](https://fiatjaf.com/drivechain.html) by [fiatjaf](https://github.com/fiatjaf) (creator of Nostr).
 
 
 ## 1. Security ## {#security}
 
-### Are merged-mined sidechains secure? Can miners "steal" from a sidechain? ## {#sidechain-theft}
+### How are drivechains secured? ### {#sidechain-theft}
 
-The [security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security) is comparable to Bitcoin's. Bitcoin protects a given txn by bundling it with all of the other recent txns (such that the miners cannot revert a txn without attacking the entire chain). Drivechain protects only a subset of the total Bitcoin txns, but it compensates for this by bundling these txns over a much longer period of time.
+Miners "farm" sidechains for their txn fees (and exchange-rate value-add). Why kill the "goose that lays the golden eggs"?
 
-Security is higher when:
+Well, it depends on:
 
-* The sidechain in question is popular with users.
-* There are many popular sidechains.
+* How many eggs they lay
+* How much the dead goose is worth, and
+* How much effort it takes to actually kill the goose.
 
-A **more important point is this**: the risk-reward decision is one which should be up to each individual user. If you don't like a particular sidechain, or sidechains in general, then you don't have to use them!
+So, no two drivechains will have the same level of security.
 
-But don't try to decide on behalf of other people! If each individual user is free to sell his/her BTC in exchange for an Altcoin (or for fiat), we can hardly deny users the opportunity to move *their money* between two sidechains.
+Some will lay many "eggs". These will have high fee-revenues, and/or will enhance the underlying coin-utility.
+
+Similarly, some drivechains are more valuable to "kill" than others. The more coins on a drivechain, the higher the incentive to "kill" it (and take all those coins).
+
+Finally, how to "kill" such a drivechain?
+
+Because of the "slow return" feature of BIP300, it isn't easy. Miners must 51% attack in a very transparent and obvious way, in full view of everyone, for a continuous 3-6 months, *before* the coins can be stolen.
+
+The formal security model is [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
+
+In general, Drivechain security is higher when:
+
+* The drivechain in question is popular with users.
+* There are many popular drivechains.
+
+
+### What if a sidechain isn't popular?? Can miners "steal" from a sidechain? ## {#unpopular-sc}
+
+An unpopular sidechain is one which:
+
+* Has low total txn fees, AND/OR
+* If the sidechain went away, the market price of Bitcoin would NOT fall significantly.
+
+In such a case, Miners lose very little, economically, by taking the sidechain's coins. Especially if mining turnover is low (among pools/devices), and hashrate is stable.
+
+
+### Isn't that bad? ### {#user-sovereignty}
+
+Not really. 
+
+We currently have ZERO sidechains. So even a 99.99% unpopularity rate (and a 100% failure rate of unpopular sidechains) would be an improvement over the status quo. At least we'd improve from 0% to 00.01%.
+
+The risk-reward decision is one each user should make. Not you! If you don't like a particular sidechain, or sidechains in general, then don't use them! It's like that slogan: "If you don't Like Gay Marriage, don't get one!".
+
+Users today sell their BTC for goods/services; for fiat; and for Alts. Why deny them the option to move their coins to a sidechain? They are the owner. Not you! Mind your own business!!
 
 
 ### What negative impact could sidechains have on the mainchain (ie, Bitcoin Core)? ### {#harms}
 
 There are none, actually.
 
-Users are free to ignore any sidechain software they don't like. And, thanks to something called ["blind merged mining"](http://www.truthcoin.info/blog/blind-merged-mining/), even miners are free to ignore sidechain software they don't like (while still being able to mine these sidechains for transaction fees).
-
-This means that the **sidechains are [completely firewalled](http://www.truthcoin.info/blog/wise-contracts/) from each other**. The mainchain cannot be harmed by the mistakes of its child sidechain. Even the [ecological effects](https://www.youtube.com/playlist?list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4) are neutralized.
-
-In fact, because Drivechain is asymmetric (in that the child sidechain is subordinate to the parent mainchain), the mainchains cannot be harmed even by the *success* of their sidechains. Since Bitcoin Core would be the patriarch of this family of sidechains, Core would be the safest chain of them all.
+I looked into it in detail, [in 2016](https://www.youtube.com/playlist?list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4).
 
 
-### Does Drivechain rely on a UASF to prevent a sidechain theft? ### {#uasf-reliance}
+### Really?! What about miner incentives? ### {#mining-incentives}
 
-The phrase "rely on" is ambiguous in this case, but the answer is "no". I will give the answer in three sections.
+Sidechain merged-mining is a new revenue stream for miners, yes.
 
-##### (i) Live by the UASF, Die by the UASF
+But [Altcoin merged-mining](https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c) has existed for years. It was invented by Satoshi in 2010. And has been in [widespread use](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/) ever since.
 
-The UASF can do anything - which is the problem. A UASF can block a sidechain-theft, but it can also *force* a sc-theft through. And everything in between: a UASF could guarantee that all sc-withdrawals always fail (whether these be theft-withdrawals or honest-withdrawals); or else a USAF could be done to make all honest withdrawals always succeed as quickly as possible. Or that all thefts always succeed on precisely the 22,222nd block after they are attempted (or any other number between 13,150 and 26,300).
-
-So it is not meaningful to imbue the UASF with an "anti-theft" feature. Instead, the UASF is simply a vehicle through which users clarify, VERY loudly, exactly what it is they want to buy from miners when they hand over 140,000 USD (at 2/18/2018 prices) in exchange for the newest 13.5 BTC (assuming 1 BTC of tx fees). If a UASF fails, then it had no effect. If a UASF succeeds, then by definition it has defeated the miners. So, yes, a UASF can block miner-theft.
+All BIP300 does, is supercharge MM. With sidechains, miners would (hopefully) get huge revenues (and profits) from MM... instead of the pittance they get from MM today.
 
 
-##### (ii) "Preventing" Theft
+### Are you sure that isn't bad? ### {#miner-profits-bad}
 
-If miners are determined to theft-attack a sidechain, then a UASF is probably the victim's best recourse.
+Yes, I'm sure.
 
-This UASF would (when the withdrawal finally goes through, 3 months from now) split the chain. At which point the victims would hope that exchanges support [what will be, by definition] a minority hashrate chain. UASF-ers hope that the free market favors their UASF-coins (vs the non-UASF-coins), with a higher price. If those two conditions are met, then users will defeat the miners. The miners will be *forced* to extend the UASF-chain (ie the non-theft chain), and it will become the longest chain (re-fusing them into one chain).
+Profits are good for miners. And good for us. They increase Bitcoin's [security budget](https://www.truthcoin.info/blog/security-budget-ii-mm/). They increase the network Difficulty. They deter 51% attacks (by making them more expensive).
 
-Thus, the UASF "prevents" the sidechain-theft. But only if the UASF increases the market price. Nodes trump miners, but the market trumps both.
+Mining has seen many "changes" that have increased profits:
+
+* Using ASICs, instead of CPUs
+* Using a pool whose software maximizes txn-fees (vs one that leaves this "free" money on the table)
+* Collecting [natgas tax credits](https://www.forbes.com/sites/christopherhelman/2021/08/02/green-bitcoin-mining-the-big-profits-in-clean-crypto/?sh=275922a534ce), while taking advantage of stranded energy
+* Negotiating lower-than-normal energy prices via a ["demand response"](https://www.newsweek.com/bitcoin-mining-americas-most-misunderstood-industry-opinion-1669892) contract
+
+Merged mining is no different than those changes.
 
 
+### But this is a change that affects the protocol! ### {#affects-protocol}
 
-##### (iii) What does DC "Rely" On
+BIP300 affects the L1 Bitcoin protocol; the sidechains *themselves* do not.
 
-In DC, thefts are deterred by [the security model](http://www.truthcoin.info/blog/drivechain/#drivechains-security). Sidechain-enabled coins are worth more (to miners and everyone else) than mono-chain coins -- this is the "m" parameter. Sidechains give miners additional fee revenues (the "b" parameter). -- but only while they are safe to use.
+The L1 protocol *never* behaves differently, based on something a sidechain does, ever. It only behaves differently based on what the BIP300 messages do. **All** BIP300 messages are included in the L1 blockchain -- your node has to look at them anyway. Enforcing BIP300, does NOT mean downloading sidechain software, nor seeing sidechain blocks nor sidechain transactions.
 
-UASFs may provide a secondary deterrent.
+Whether the *miners* download sidechain software, and collect coins over there... that's *their* business, not yours. They already face this decision with merged-mined Altcoins. And they make it without any input from you! Mind your own business!
 
-Furthermore, the personal shame of the miners, or the potential of new sidechain-inventions, could be further deterrents.
 
-The extent to which the system "relies" on either is hard to know. In the real world, do contracts "rely", on courts, to be enforced? 99%+ of contracts never see a court. The two [parties](https://en.wikipedia.org/wiki/Party_%28law%29) will work together to enforce the contract on each other. They will only "go to court" as a last resort. So, at first glance the court is superfluous. On the other hand, we would wonder how the *absence* of a judicial system might affect people's willingness to fulfill their contractual obligations. Maybe the court is an effective deterrant. Maybe the court isn't that important and citizens would "rely on" something else (personal reputations, credit scores), in its absence. Hard to say.
+### Are you absolutely sure about that? It sounds heretical. ### {#blockstream-mistake}
 
-Remember that DC actually "relies" on theft to some extent. [Some sidechains are bad, and we *want* miners/investors to get rid of them for us](http://www.truthcoin.info/blog/wise-contracts/). See [this infographic](https://www.drivechain.info/media/meme-vital-few.png). Remember also: the only way we can detect sc-theft for certain, is by running a sidechain node -- but this is exactly what sidechains are uninterested in doing. Sidechains must open the door to theft; if they don't they aren't sidechains (see: very first answer in this FAQ).
+Unfortunately, [Blockstream's paper](https://www.blockstream.com/sidechains.pdf) mistakenly defined "mining centralization" as: "when any miner increases their profits". (Read Section 4.3 and see for yourself.)
 
+This mistake is the worst thing to happen to Bitcoin in its history. It led to years of irrational prejudice against merged mining. Years of "miner centralization bad" = "any increase in miner profits bad" = "miners collecting more txn fees sometimes, is bad". Which is unfortunate because the opposite is true. Of course.
+
+BIP300 forces miners to care about something new: maximizing sidechain utility, and sidechain txn fees. This is *good* for us -- one more task that our mining servants perform, for us. And if they don't perform --if they don't work as hard as they possibly can, as hard as all their rivals at least-- then they are fired.
+
+Miners have to care about new stuff all the time (such as natural gas credits example, two answers ago). This is heathy and normal.
+
+
+### What is the correct definition of "mining centralization", then? ### {#mining-centralization}
+
+If you ask me, the correct definition of "mining centralization" is: the cost of starting up a new, viable **mining pool**. Thus, we can increase decentralization by making it easy to pool hop, and making high-quality open source pool software widely availiable for free.
+
+The centralization you should focus on, is [CONOP centralization](https://www.truthcoin.info/blog/measuring-decentralization/) -- the cost of starting up a new full node. CONOP centralization is the "real" form of centralization, and it is unaffected by the arrival of a new BIP300 sidechain. (There is a microscopic, fixed increase in CONOP, due to enforcement of [the BIP300 rules](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki), but by the time BIP300 activates, this increase will have been offset 1000x by everyday advances in computer power/cost.)
+
+Your node only enforces the BIP300 rules on L1 messages; your node does not look at any L2 messages.
+
+
+### How are sidechains secure, if my L1 node isn't looking at them? ### {#blind}
+
+For block-finding, it is the same as merged mined Namecoin which has existed for years.
+
+For the withdrawals -- well, why wouldn't miners steal from them?
+
+1. It would end the flow of sidechain txn fees.
+2. It might negatively affect the price of Bitcoin.
+3. The slow, rare nature of the BIP300 withdrawal makes it very easy for everyone to audit a theft. Even laypeople will know, with certainty, who is stealing from who. It's like shoplifting, but you are on national live television, and can only move in ultra-slow motion. The theft will be noticed, understood, communicated worldwide, and universally condemmed, several months before it can actually "go through".
+
+More details are in [the original 2015 post](https://www.truthcoin.info/blog/drivechain/#drivechains-security).
+
+
+### If withdrawals are so slow, won't users hate that? ### {#withdrawal-speed}
+
+No. Only specialists will use the BIP300 withdrawal. It can only pay out to 20,000 L1 destination UTXOs, anyway. So it is capped at 20,000 outputs per 3-6 months.
+
+Everyone else will transact *with* those specialists. The specialists will be exchanges like Coinbase/Kraken/Sideshift, or they will be private users trustlessly swapping coins with HTLCs.
+
+The specialist charges a fee, but users get to move their coins from L2 back to L1 immediately. The layperson customer never has to wait.
+
+
+### What if a sidechain becomes so successful, that it becomes the dominant chain? ### {#sc-success}
+
+Drivechain is asymmetric. The child sidechain is subordinate to the parent mainchain, always. If the mainchain ceases to exist, then all child sidechains cease to exist as well.
+
+
+### Does Drivechain rely on a UASF to prevent sidechain theft? ### {#uasf-reliance}
+
+No.
+
+I will unpack this answer, in three sections.
+
+#### (i) The UASF Can Do Anything (It Can Prevent Miner-Theft)
+
+A UASF can block a sidechain-theft... but a different UASF can *force* a sc-theft to go through!
+
+The UASF is flexible. Here are some possible UASFs:
+
+* Every coinbase after block #800,000 must contain the word "Hello".
+* Block #888,888 must only contain TxIDs that start with an 8. 
+* Block #1,000,000 must contain an OP RETURN gif of Napoleon Bonaparte dancing.
+* Starting block #925,000, every TxID that starts with 7, is banned.
+* Starting block #975,000, every TxID must start with 4, is banned.
+* The following Bip300 withdrawal TxID, is banned forever: "4h2f..."
+* The following Bip300 withdrawal TxID, MUST be included in block #950,000:  "4h2f..."
+
+You can even do all those, together. (In which case, the Napoleon gif will need to be one whose TxID starts with 4.)
+
+Anyway, you can see that we can force any sc-theft to succeed via UASF, or fail.
+
+Thus, it is **wrong** to imbue the UASF with an "anti-theft" feature. Inherently, it is neither pro-theft nor anti-theft. It allows users to clarify, VERY loudly, what they want to buy, when they hand over $186,000 USD (at 3/22/2023 prices) to miners in exchange for the newest 6.75 BTC (assuming +0.5 BTC of tx fees). UASFs have no inherent allegance to a consensus rule; nor any inherent hostility.
+
+But, yes, a UASF can block a sc-theft.
+
+
+#### (ii) UASF Drama?
+
+But what is the effect on 3rd parties? Is there [drama](https://twitter.com/stephanlivera/status/1618201490228649985).
+
+To explain this, we must explain the UASF in more detail.
+
+First: what is this UASF?
+
+Sidechain-theft can be blocked, with a UASF of the following form: prevent the upcoming theft-txn from entering the blockchain, ever. If it works, then their sidechain-coins are saved! If it doesn't work, then the UASFers lose nothing -- they're in the same position they're in now. That is what the victims will try.
+
+Second, this "withdrawal dispute" UASF has unusual properties:
+
+* No code changes are needed. No code needs to be written, nor reviewed nor bike-shedded. No software needs to be downloaded, etc. Miners have already chosen the TxID they will steal with, and everyone knows what it is -- thus, the UASFers need only select it, and ban it. It is a simple point-and-click.
+* While the UASFers are *immediately* alerted to the problem, their UASF cannot take place *until later* -- until *after* the theft-txn has accumulated its required 13,150 ACKs. Thus, the actual USAF is planned "today", but it cannot actually happen until "3-6 months from now".
+* There is no need for the UASFers to choose an exact time of their fork. Nor do they need to specify activation, nor signal to each other. The fork event is tied to "the inclusion of the theft-txn" in a L1 block. So, no coordination is needed among UASFers. They can successfully pull the whole thing off, even if they never speak to each other.
+
+Third, let's imagine that a theft is attempted, users counter with a UASF, and the miners don't back down. On the day of the theft, the coin splits into two. What happens now?
+
+Well, one coin will have a higher market price than the other.
+
+The miner-thieves hope that their coin is the higher-priced. If so, they will happily mine the more-valuable chain. 100% of the hashrate will mine the more profitable coin, even miners who were personally against the theft *or miners who prefer to own the UASF coin*. This is a crucial point, see ["if a miner would rather hold B2X, they could earn it four times faster by mining B1X and trading it for B2X"](https://medium.com/@danrobinson/the-cost-of-supporting-the-b2x-fork-how-to-lose-100m-in-ten-days-6797f7ef52da), for the explanation in the context of SegWit2x. Thus, the UASFers will be on a stalled chain, with 0% hashrate. They may see a few altrustically mined blocks, but it will not be enough. The UASFers have lost, and they stay on a stalled chain, individually, until each admits defeat. They must "unblock" the TxID of the theft txn, and allow it.
+
+In this case, all neutral people will be on the longest-hashrate chain, the whole time -- they will not even notice that anything has happened. So they are unaffected by the failed UASF.
+
+But what if the UASF succeeds? If the UASF-coin has the higher price, miners will be forced to mine it (by the exact same logic as before.) The network will remain one blockchain (or re-fuse into one blockchain). It will be a chain where the theft-txn *did* get all 13,150+ ACKs, and it *could* be included in a block, but it never is (eventually the 26,000 BIP300 window expires, and the theft-txn with it). The UASFers win; the miners fail to steal.
+
+But what of the neutral parties? If the price differential is large, then the network will never actually split (this happened with SegWit2x -- ["fork futures"](https://www.truthcoin.info/blog/fork-futures/) warned us in advance which chain would die, and it was never born). If the price-differential is tiny (ie, market is mostly indifferent -- this is pretty unlikely), then both chains may live for a short time. The networks have identical protocol rules, so every txn broadcast during this time will be included in both chains. (In other words, there would be full [transaction replay](https://www.truthcoin.info/blog/mahf-and-replay/#what-is-replay-replay-protection); unlike in the BCH case where there was the exact opposte: mandatory full replay protection.) Any malicious double-spenders, can be defeated by via recipient asking for txn confirmation on *both* chains, before considering a payment finalized (it is not possible for a layperson user to "accidentally" double-spend, in this case). Ultimately, one chain wins and the other dies -- it is as if they own a DropBox folder that splits into two identical dropbox folders and then collapses back into one.
+
+In the very worst case (and unlikely) scenario, there is a reorg that affects some transactions. This requires the market to be somehow "undecided" up until (and during) the fork, and then to decide to be anti-UASF for a little while, and then change its mind. It is a pretty far-fetched scenario. More likely, fork futures will warn us in advance, which coin will be worth more.
+
+#### (iii) In Context
+
+Any group of people, can decide to UASF, at any time, for any reason. (Such as the dancing Napoleon gif reason.) Drivechain *might* create "theft events", which attract UASF attention, but probably not. And what of all the UASFs that DC prevents? For example, DC (if popular) removes the need for all future soft and hard forks. On net, drama on L1 would plummet due to Drivechain.
+
+Also, reorganizations --while unfortunate-- are already an inherent risk of using Bitcoin. Each user can voluntarily mitigate this risk, in the usual way (waiting for more confirmations). Drivechain should only be blamed for any new risks it might introduce -- not risks that already exist!
+
+#### What does DC "Rely" On, if not UASFs?
+
+If you go [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security), you see that DC relies on:
+
+* The m parameter (sidechain-able BTC being worth more, than mono-chain BTC)
+* The b parameter (the fee-revenues from the sidechains).
+
+
+<!---
 
 ### Isn't that [UASF reliance] solution [socially unscalable](https://twitter.com/theinstagibbs/status/965315428686934016)? ### {#social-scalability}
 
-Despite the previous answer, where I say that drivechain does NOT rely on a UASF, I will answer this question. I believe the answer to this one is also a no, because UASFs can in fact be made to be [socially scalable](http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html).
+Drivechain does not rely on UASFs, but I will answer anyway.
 
-First, let us imagine that mining conditions have reached a point of extreme hostility, such that each withdrawal *must* be manually escorted across the finish line by a new UASF. (In this way, the withdrawals would "rely on" UASFs.)
+No.
 
-Is this technique "socially scalable"?
+UASFs can be made to be [socially scalable](http://unenumerated.blogspot.com/2017/02/money-blockchains-and-social-scalability.html).
 
-Greg Sanders [suggests on Twitter](https://twitter.com/theinstagibbs/status/965315428686934016) that the answer is "no". Surely, if this technique worked at scale, mining itself would be unnecessary. Bitcoin would just let the blockchain grow arbitrarily, and leave "the free market" to sort it all out somehow (presumably, with thousands of UASFs per day).
+First, imagine miners are super-evil and each withdrawal *must* be escorted to safety via a fresh UASF. (Ie, BIP300 withdrawals "rely on" UASFs.)
 
-But I think that the answer is actually "yes".
+Is that "socially scalable"?
 
-The key difference lies in the user's *alternatives*. If were trying to create a blockchain from scratch ("Proof-of-UASF-Coin"), then your users have no alternatives, and are held hostage to PoUSAF-Coin's success. In this sense I agree with Greg Sanders that the UASF is a non-solution.
+Greg Sanders [suggests on Twitter](https://twitter.com/theinstagibbs/status/965315428686934016): "no". He says coordination is hard (if it were easy, who would need blockchains?).
+
+Usually coordination is hard, but not here. 
+
+The key difference is the user's *alternatives*. The *first* blockchain ever invented, could not rely on UASF to work.
+
+But once a few exist, the user can simply *wait*.
 
 However, once we already have a few different blockchains set up, the user has an option to simply *wait*. So, the default policy of everyone could be to prevent all withdrawals, unless the evidence of their honesty is overwhelming. (It is a little like how, if you actually go to court, you need to have all of your documents very organized -- you cannot waste the judge's time.) The social scalability can be increased arbitrarily, at a cost of making all of the withdrawals more likely to fail (ie, time out) or else by simply making them all take much longer. In other words, instead of checking in on a sidechain once every 3 months, you could check in on each sidechain once every year, or once every two years.
 
 And, as luck would have it, "slowing everything down" yet another difference between our case and the 'from scratch' case. There, slow means slow, and degraded performance for everyone. But in our multi-network case, only the side-to-main PegOut withdrawals are delayed...users can *immediately* use Atomic Swaps to sell their side:BTC for main:BTC. Speculators will compete to give them the best prices, and, through the magic of the market, every single sidechain user will become precisely as patient as the most patient person in the network.
 
 So the social scalability can be reclaimed, without the entire system failing. Instead, one aspect of it simply becomes a little bit more expensive.
+
+
 
 ### Isn't that ["relying" on a UASF] an example of sidechains affecting mainchains ("mainchain contagion")? And thus, a sidechain could have an impact on the mainchain (and your whole goal was to avoid exactly that)? ### {#uasf-contagion}
 
@@ -199,58 +282,59 @@ Now, my responses:
 
 The most important response of all, is to point out how out-of-context this complaint is. Complaints such as these scratch the bottom of the barrel as far as relevancy. Meanwhile, Bitcoin has serious competition in the form of "dumb but popular" Altcoins (think Qwerty keybord vs. Esperanto the "best" language; VHS vs BetaMax etc), messy hard fork campaigns, and fundamental [not-resolvable] disagreements over how much it should cost to run a Bitcoin node. These are serious problems that Drivechain has a shot at solving. What is presented in the complaint above is as follows: that there might occasionally, with overwhelming advance warning, be a small mainchain reorg, supported by the economic majority, to prevent sidechain theft, if numerous people act against their own self interest all at once. Contrast that with how much "mainchain contagion" we would have if Ethereum simply displaced Bitcoin as the Internet's money.
 
+-->
+
 
 ### Why does drivechain allow miners to deny the creation of a given sidechain? Are you against permissionless innovation? Are you a BitMain shill?? ### {#categorical-control}
 
-Unlike other projects, drivechain explicitly aims to allow miners to censor certain types of smart contract. I call this feature **"categorical control"**. Simple-minded people misinterpret this design goal as an affront to permissionless innovation -- "After all", they think, "if miners can censor a type of smart contract, how can it be a permissionless system?".
+Miners will add a sidechain if it makes money to do so.
 
-I have been repeating myself on this topic for years (both in person and [via YouTube lecture](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)), and [replied on bitcoin-dev about it](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014453.html), and [written about it](http://www.drivechain.info/literature/index.html#theory) on my blog (and in the BIP documentation) on several occasions. It is certainly one of the most frequently-asked-questions, especially among Bitcoin-experts who should know better.
-
-The short answer is that **Bitcoin users might disagree with the <i>intended behavior</i> of the sidechain**. It is assumed that miners must meet the needs of users as best they can (and that, at worst, there can be confusion among miners over what it is that user want). The group "Bitcoin users" can be defined either as [1] the subset of users known as "the economic majority", or as [2] "the entire population of sincere users"; it doesn't matter.
-
-In other words, I am saying that all of the users, taken together, would *all* prefer it to be the case that certain types of smart contracts become impossible. I have provide concrete examples of such cases [here](http://www.truthcoin.info/blog/wise-contracts/#wise-contracts)). And it is not so strange -- any population of humans will *all* prefer that the crime of theft be universally impossible. And, (closer to home) the population of Bitcoin users prefers that it be impossible for miners to create Bitcoin blocks that contain double-spent txns (in which case we would not need nodes, as all necessary validation could be client-side and off-chain).
-
-Therefore, the idea of "allowing miners to censor sidechains by category" is not a rejection of permissionless innovation, even though it may seem that way. The activities in question are *already censored* by the laws of economics. Users will never be able to use a "parasite contract", in practice, because the host will either already be dead or [more likely] will never be built. So, the ability of miners to "censor" these parasites is a moot point. However, with a little 'categorical control' the tables are turned -- the parasites can be deleted as a category, and it is therefore the parasites which we will probably never see. Instead, we will get all the good stuff, and it will all still be permissionless.
+Also, Miners will remove a sidechain, if it makes money to do so.
 
 
-In general, I think that the people who have trouble understanding these explanations are falling victim to a [cryptography vs game theory](link-forthcoming) disparity that I have elsewhere described. At our current level of e-cash technology, the "cryptographer nirvana" of 'complete independence from the miners' is unattainable. Instead, users, developers, investors, and miners all interact with each other and are dependent on each other. By understanding this interdependence we can try to solve problems, but by rejecting interdependence we really just *give up* on solving them.
+### Miners earn more, by removing a sidechain?! How could that happen?? ### {#categorical-control-2}
 
-This is why the strongest cryptographers often have no solutions to Bitcoin's largest problems: scaling, outreach, competition from Altcoins / rival systems, dissatisfied collaborators, and too few developers / dev turnover. Instead, these people tinker with obscure mathematical toy problems, which are very complex and impressive...but have less actual significance.
+If one sidechain prevents a 2nd from reaching its full potential, then the 1st sidechain is a troublemaker. It should be gotten rid of, the same way that security guards keep out thieves.
 
-( Incidentally, it is also why I believe that general-purpose smart contracting systems, like Ethereum and Rootstock, are misguided. These "general-purpose" systems actually *can't do as much* as a subset of individually selected smart contracts -- ironically, their [generality limits their usefulness](http://www.truthcoin.info/blog/contracts-oracles-sidechains/). )
+See my ["Smart Contract Ecology" presentation](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1) (or [answer below](www.drivechain.info/faq/#categorical-control) for more details.
+
+This is actually why a sidechain-system is superior to one single general purpose blockchain (as in Ethereum). 
+
 
 
 ### In the security model you mention ["sounding the alarm"](http://www.truthcoin.info/blog/drivechain/#security-models), where users and miners warn other users and miners. Isn't this centralization / collusion? ### {#sound-the-alarm}
 
 One reddit user [writes](https://www.reddit.com/r/Bitcoin/comments/6ztp3b/lets_discuss_something_techrelated_for_a_change/dn0rsdo/?utm_content=permalink&utm_medium=front&utm_source=reddit&utm_name=Bitcoin): "Drivechains have 1008-block cycles ostensibly to protect against theft, so that someone can 'raise the alarm' and tell miners to downvote a particular theft withdrawal, but that sounds too much like centralized collusion to me."
 
-In this case, the word 'collusion' is misused. In one sense, the word is neutral, meaning "working together". One could say that there is already a lot of Bitcoin collusion today, because all Bitcoin users and miners are coordinating in order to run mutually-compatible versions of Bitcoin. Everyone *is* colluding, but everyone wants to get the right answer. So in this case collusion is a good/neutral thing.
-
-In the second more negative sense, 'collusion' implies some secrecy and nefariousness (to gain an edge on a different group, one made up of earnest and independent people). But that sense does not apply here. Sounding the alarm is 100% transparent. In fact, it is an alarm! Very loud!
-
-And this "collusion" [of sounding the alarm] is only possible if the bad guys have themselves just "colluded". The baddies have to collude first (over which WT^ to upvote). In response, the defenders have to do exactly as much colluding work. But it is easier for the defenders because they can move second -- the do not need to lift a finger until after the attackers have invested the effort of attacking.
-
-While this is collaboration, it is not centralization. Drivechain is designed so that everyone can **independently** respond to the alarm by doing the right thing. They do not need to coordinate with a leader, or a large miner or other users, or anything else. They simply know what to do, because, by design, it is very easy for them to learn what to do. In this case the design is much better than, [the March 2013 consensus failure emergency](http://www.truthcoin.info/blog/against-the-hard-fork/#3-coordination-and-ambiguity). A drivechain theft would be exactly like that event (in which everything worked out just fine), except that it would be much *better*, because **everyone** would [1] have plenty of warning, and time to respond (two months or so), and [2] would already know what to do (either downvote everything, or manually upvote the winner, both will work).
+While this is collaboration, it is not centralization. Drivechain is designed so that everyone can **independently** respond to the alarm by doing the right thing. They do not need to coordinate with a leader, or a large miner or other users, or anything else. They simply know what to do, because, by design, it is very easy for them to learn what to do. In this case the design is much better than, [the March 2013 consensus failure emergency](http://www.truthcoin.info/blog/against-the-hard-fork/#3-coordination-and-ambiguity). A drivechain theft would be exactly like that event (in which everything worked out just fine), except that it would be much *better*, because **everyone** would: [1] have plenty of warning, and time to respond (two months or so), and [2] would already know what to do (either downvote everything, or manually upvote the winner, both will work).
 
 
+### Why can there be only 256 sidechains? Won't we run out?? There are 600,000 Altcoins on coinmarketcap!
 
-## 2. Comparisons 
+256 is the right number. The people who disagree, fail to grasp the following facts:
+
+* We can have sidechains *of sidechains*, so the true number is unlimited.
+* By limiting the number to 256, we can id a sidechain using just one byte. Any more would require two bytes, and allow us to count to 65,000+ which is overkill.
+* The "600,000 Altcoins on coinmarketcap" represent only \~40 novel ideas. The other 599,960 coins are just a carbon-copy of one of the 40, with a different name. The name is the only new thing.
+* Many of those ideas are novel consensus mechanisms.
+* * They replace proof-of-work with something else. (This is near-certain to fail.)
+* * They try to solve a problem that has already been solved by Merged-mining. So they add no value to a merged-mined Bitcoin sidechain.
+* If necessary, we could just add a second BIP300, "BIP300b", that adds 256 more slots.
+
+
+## 2. Comparisons
 
 ### How does this proposal compare to the proposal in [the Oct 2014 paper "Enabling Blockchain Innovations with Pegged Sidechains"](https://blockstream.com/sidechains.pdf)? ### {#blockstream}
 
-Well, that paper was chiefly a broad discussion of possible techniques. In Appendix B, "Efficient SPV proofs", there is a concrete suggestion, although it is immediately qualified with the sentence "A detailed analysis of this problem and its possible solutions is out of scope for this document". So, according to the authors, the 2014 paper does not actually advance any particular sidechain proposal for review.
+Only in Appendix B is there a concrete suggestion. It was never implemented in the real world, and in the paper it is immediately qualified with the sentence "A detailed analysis of this problem and its possible solutions is out of scope for this document".
 
-Nonetheless, I will compare drivechain to their suggestion.
+Nonetheless we can compare.
 
-First, the sidechain challenge is to create a SPV-proof for side-to-main transfers. In other words, we must define conditions under which main-to-side payments can be re-unlocked on the mainchain.
+In Drivechain it is impossible to conduct a surprise attack, impossible to harass the community writ large with many withdrawal attempts (ie a "mosquito strategy"), and very easy for users to understand that the attack is happening, long before it actually happens. Also, each attempt is very simple, one question of 'Endorse'/'Reject' -- quite comparable to the [the March 2013 anti-consensus event](https://freedom-to-tinker.com/2015/07/28/analyzing-the-2013-bitcoin-fork-centralized-decision-making-saved-the-day/).
 
-Their suggestion involves two things: [1] add a second Merkle tree (to both chains) such that each block commits to all earlier blocks, and [2] to actually insert a big chunk of stuff into the bitcoin txn withdrawing the funds. This "big chunk of stuff" is the txn that was included in the sidechain, along with the sidechain's block header, as well as many of the sidechain's headers. In this way, they literally "SPV prove" the spend. I say "literally" because this idea strongly resembles the way an actual SPV wallet works: it downloads many headers, and checks these headers for valid work, and finally checks the given txn to see if it was included.
+A slow transparent process means that it is impossible for miners to attack the chain and claim that they didn't know that they were doing so -- with transparency, everyone knows, observers as well as the miners themselves. So it is a clearer demonstration of malice.
 
-They then use some statistical logic to greatly reduce the number of headers needed, in general. This is a very cool trick, but since each header is ~80 bytes (or ~160 if merged mined), and since each must be selected somehow, the proof size ends up "in the tens of kilobytes range". The midpoint of this phrase, 50 KB, is about 100 times the size of the the average Bitcoin txn, which (everything included) is about 0.5 Kb. So their proof requires a txn to be much larger.
-
-What we do in drivechain is actually very similar, although it is simpler and better. We do use each Bitcoin block to commit to many earlier blocks...after a fashion. To do it, we keep a running cumulative total of the 'ACK count' for a txn. In this way, we get a proof that is much smaller, easier to compute, is robust to changes in difficulty, and is more consistent as it is not constantly changing size as a function of stochastic block hashes. Both proposals require a new Merkle tree, and both must contain the txn's inputs and outputs. Instead of block headers (tens of KB), Drivechain requires that the TxID itself be included in a block (32 bytes), and then it requires [an out-of-block message which might be as small as zero bytes](https://github.com/drivechain-project/docs/blob/master/bip1-hashrate-escrow.md#m4----ack-withdrawal) per sidechain per block, or, worst case, is 6 bytes per sidechain per block. And, worst case, this message would be required in 100% of blocks for 3 months worth of blocks, for total size of 78840 (to prove 13140 blocks). So even in a highly unrealistic worst-case scenario, drivechain's proof totals 78879 bytes which is also in the tens of kilobytes range. Best case it may total 39 bytes. And the outcome is not random -- the worst case is only possible when miners run amok for *no* benefit at a cost to themselves. So it is reasonable to expect the very best case.
-
-The security is also vastly superior in drivechain. Both approaches fail, and permit miner-theft if 51% attacked. However, drivechain holds up better under attack than the skiplist. This is mainly due to the drivechain's slow transparent withdrawal process. In drivechain the attempts are delayed substantially before they are ACKed, and the ACKs themselves are slow. So it is impossible to conduct a surprise attack, impossible to harass the community writ large with many withdrawal attempts (ie the "mosquito strategy"), and very easy for users to understand that the attack is happening, long before it actually happens. Also, each attempt is very simple, one question of 'Endorse'/'Reject' -- quite comparable to the [the March 2013 anti-consensus event](https://freedom-to-tinker.com/2015/07/28/analyzing-the-2013-bitcoin-fork-centralized-decision-making-saved-the-day/). Except that the March 2013 event was a sudden surprise, we did not know about it until after it had happened. Skiplist-sidechains would also work in this 'surprising' way, but in drivechain there are no surprises, because we are given many week's worth of clear warning that the anti-consensus event will happen. Finally, a slow transparent process means that it is impossible for miners to attack the chain and claim that they didn't know that they were doing so -- with transparency, everyone knows, observers as well as the miners themselves. So it is a clearer demonstration of malice.
+Blockstream's skiplist proof is "in the tens of kilobytes range". DC requires first [an M3 message, and next many M4 messages](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki#user-content-M4__ACK_Bundles). Roughly 1 marginal byte per sidechain per block. Over 13,150 blocks, this is 13.150 KB per sidechain of course. So Drivechain's size is slightly smaller.
 
 
 
@@ -341,17 +425,29 @@ Fifth, the "advantage" in point four is (yet again) just a misunderstanding of t
 
 ### How can we ensure that Great Altcoins are transformed into Sidechains? ### {#conveyor}
 
-It actually shouldn't be difficult at all! If Altcoins are useful, they should have fee-paying users. Therefore, miners should want to claim these fees by making the Altcoin a blind-merged-mined drivechain.
-
-Bitcoin Miners are actually the chief *victims* of Altcoin-value-dilution -- other miners are getting money that *they* could have for free, if the Altcoins were instead merged-mined sidechains.
-
-I think the issue is confusing, because most of the Altcoins we see today are *not* useful and therefore we would *not* want to absorb them into Bitcoin. And therefore, it is hard for Bitcoiners of today to imagine that absorption happening.
-
-But really, if you think about it, if a given Altcoin persists as an Altcoin [and is not made into a sidechain], then that very fact is *evidence* that the Altcoin in question probably isn't useful to anyone. Or else, it is because it has features that *can't* be copied by *any* sidechain (see Monero answer), in which case this question is moot.
+If Altcoins are useful, they should have fee-paying users. Therefore, miners should want to claim these fees.
 
 
 ### Why would anyone make a sidechain, when instead they could make a great ICO Scam and/or Altcoin? ### {#vs-alt}
 
+It doesn't matter.
+
+If they make an Altcoin, and the Altcoin is useful, then we will copy that Altcoin into a sidechain (as we have already done for zCash and Ethereum). This is easy to do.
+
+If they don't make the Altcoin; or they do make it and it isn't useful, then we won't copy it.
+
+
+### People buy Altcoins to make money! Not for their features, Paul! How could you make such a silly mistake? ### {#pump}
+
+Darknet markets have switch from BTC only, to XMR only. Since no one holds the coin (the buyer, the seller, nor the DNM), this cannot be related to the coin's exchange rate. It can only be related to the XMR superior privacy feature.
+
+But sure, if people only want to buy/flip/pump crypto-assets, then they can continue to do that, on the BitAssets sidechain.
+
+Two sociopaths can't pump-and-dump each other. It requires at least one guillible victim. In Alt-land the guillible victim is always told **a story** that involves the coin's distinctive features. With sidechains, we can copy these features. We get the utility, AND we disable the "story". So, sidechains help in either case.
+
+
+
+<!--
 Four Part Answer:
 
 #### i. Free Rider Problem #### {#free-rider}
@@ -408,24 +504,24 @@ Some complain that such a system would be too slow to be usable, but replies of 
 
 Thanks to atomic swaps, someone can act as an investment banker or custodian, and purchase side:BTC at a (tiny, competitive discount) and then transfer those side-to-main at a minimal inconvenience (comparable to that of someone who buys a bank CD). Through market activities, the *entire system* becomes exactly as patient as its most-patient members. As icing on the cake, people who aren't planning on using their BTC anytime soon (ie "the patient") can even get a tiny investment yield, in return for providing this service.
 
+-->
+
 ### With respect to a "LargeBlock sidechain" specifically ...
 
 #### ...why should I need to xfer my UTXOs from main-to-side at all? That's inconvenient -- with a hard fork, they just show up there. #### {#vs-hf}
 
 Sidechains are "opt in". So if you want to use the new feature, you must "opt in" to it.
 
-#### ...will the "SmallBlock mainchain" even have enough tx-bandwidth for all of our [LargeBlocker] coins to escape? #### {#trapped-utxos} 
+#### ...will the "SmallBlock mainchain" even have enough tx-bandwidth for all of our [LargeBlocker] coins to escape? #### {#trapped-utxos}
 
-Well -- eventually, each UTXO on the mainchain must be spent, if it is to have any effect at all on anything. So, if there is not enough bandwidth, then your mainchain UTXOs are lost in any case, and you have no choice but to hope for a hardfork blocksize increase.
+A wealthy Bitcoiner could deposit *many coins* into the sidechain in a single transaction.
 
-However, the sidechain does not *need* to source its growth from main-to-side txns.
-
-Two questions ago, I mentioned that an 'investment banker' type person could "specialize in patience". They would hold sidechain coins and walk them side-to-main.
-
-The same principle applies main-to-side. A very wealthy individual "Wally" could use a few main-to-side transfers to xfer a high *quantity of coins*. Wally could then charge a tiny premium on selling these coins in any manner -- for example: via mainchain atomic swaps, in exchange for mainchain lightning-payments, in exchange for real-life goods and services.
+He can then onboard new users over there, without consuming any marginal L1 bytes.
 
 So sidechains can grow in all the ways that Altcoins can grow.
 
+
+<!--
 
 ### What if a sidechain has too few nodes? Who will run them? Who will maintain this software?
 
@@ -443,7 +539,7 @@ In practice I highly doubt the sidechain ecosystem would be anywhere near as dyn
 Users who aren't comfortable with the risks of new chains / new features, can simply decline to use them. If the benefits of a sidechain (to Person X) outweigh its risks (to Person X), the Person X will move some BTC there.
 
 
-###  What if a sidechain becomes "Too Big To Fail"?
+### What if a sidechain becomes "Too Big To Fail"?
 
 In other words: "What if a *majority* of BTC is moved to one sidechain, and then that sidechain has some kind of problem?".
 
@@ -452,7 +548,7 @@ One simple solution would be to cap the quantity of BTC that can be moved to eac
 Other than that, I would point out that Bitcoin has always been the "money of principle", and that we survived the MtGox announcement (in which ~850,000/12,400,000 = 6.85% of the total BTC were assumed to be stolen).
 
 
-
+-->
 
 
 ## 4. Abilities and Limitations ## {#abilities}
@@ -471,101 +567,112 @@ For those reasons, BMM is the recommended consensus algorithm for Bitcoin drivec
 
 ### How is Blind Merged Mining doing achieving consensus for free (above)? ### {#how-bmm}
 
-The original specification for this is [here](http://www.truthcoin.info/blog/blind-merged-mining/), but I will try again.
+The original specification is [here](http://www.truthcoin.info/blog/blind-merged-mining/), and the BIP text is [here](https://github.com/bitcoin/bips/blob/master/bip-0301.mediawiki). I would first look at the table in the beginning of the BIP text.
 
-In general, BMM is a kind of ["embedded consensus"](https://counterparty.io/docs/faq/), as though each sidechain blockheader were a Counterparty txn. BMM only allows one side:block to be found per main:block. This side:block is controlled by a kind of "critical coinbase tx real estate", which the mainchain miners auction off to the highest bidder. We thus know that each sidechain block "wasted" the "most" resources. And since the blocks are forced to refer to their parents, we can determined the "most waste" chain. It is waste of BTC instead of PoW-hashing, however.
+BMM only allows one side:block to be found per main:block. This side:block hash must be inserted into "critical real estate" in the L1 coinbase. L1 miners "auction off" this real estate, to the highest bidder.
 
 [Here is a more detailed explanation.](/media/blind-merged-mining-sequence.txt)
 
-Since it relies on embedded consensus, this trick requires a "regular" PoW blockchain to already exist -- it can't work all by itself. (Ie, Bitcoin Core can't "switch" to it.) All the money earned by all sidechains will ultimately go to mainchain Bitcoin miners, so, economically, it really is as if miners were actually mining several chains at once. Except, in this case they only need to run a Bitcoin node.
+
+### Can Bitcoin L1 switch to Blind Merged Mining? ### {#root-bmm}
+
+No. The BMM trick requires a "regular" PoW blockchain to exist. It can't work all by itself.
+
+All the money earned by all sidechains will ultimately go to mainchain Bitcoin miners, so, economically, it really is as if miners were actually mining several chains at once. Except, in this case they only need to run a Bitcoin node.
 
 
-### A crazy person on Twitter is saying that miners don't get all of the txn-fee revenues under BMM. So BMM is at a disadvantage and miners will not want to use it? ### {#bmm-econ}
+### If Simon keeps a cut, then who would ever use BMM? Why allow Simon to keep a cut, when Mary can run a full node and collect 100% ### {#bmm-econ}
 
-It is true that sidechain nodes (called "Simons") do get to keep a portion of the sidechain's tx fees. Therefore, not all of it will go to the mainchain miners (called "Marys"). However, the Simons compete on making this portion as low as possible, and the technical details allow it to go quite low, even (theoretically) to the Satoshi or sub-satoshi level. In contrast, a Bitcoin full node today may cost $20 or $50 per month in bandwidth alone. And the complaints regarding "miner centralization" all concern bandwidth-hog sidechains where the cost may be 10 or even 1000 times higher.
+The full node might be expensive to run.
 
-For a super-intensive "ESPN 4K Sidechain" of some kind, miners have the option of killing their full node, and using BMM instead. Instead of paying thousands per month on the sidechain node, they (or their pool admin) can simply surrender a $0.10 gratuity per block (which comes to $432 per month). Or, as I say above, the gratuity may fall even further than that, as little prevents it from taking on the smallest possible value.
+For example, a node costs $20 to run (amortized over 10 minute periods) and fees are $100 (also amortized over 10 minutes), then Simon can BMM and pay $81 to choose the next sidechain block. Mary won't run her own node.
+
+So, Simon's cut actually helps Mary make *even more money* than she would have made otherwise. It isn't a disadvantage at all.
+
+The equilibrium value of the cut is near zero. *Every* sidechain user is already running a side:node. So it is a sunk cost. Paying $81 to earn $100, is always profitable. It doesn't matter that the node cost $20. Paying $82 to win $100, is more profitable than losing the bid (where you pay nothing to earn nothing). So the equilibrium "cut" will always be near-zero.
 
 If the fullnode costs are too *low* to justify BMM...well that simply indicates that there's no problem and no one needs to care. 
-
-[Here is a more detailed explanation.](/media/blind-merged-mining-econ/)
-
-Furthermore, I regard "miner centralization" to be an unfalsifiable theory, and therefore unscientific.
-
-Finally, the theory that "sidechains cause miner centralization" does not make sense, even in its own terms. For the theory would imply that many things would cause mining centralization, and most of these are unpreventable and much more harmful. For example "an individual choosing to offer $5 to a miner, for each block (s)he solves, if they reveal their mailing address" would also "cause miner centralization", and this cannot be prevented.
-
 
 
 ### Obviously, in an asymmetric system, a mainchain can have two or more sidechains. But can you do the reverse, and have a sidechain of two different mainchains at once? ### {#two-mainchains}
 
-Yes. For example, you could have a sidechain of Bitcoin that was also a sidechain of Ethereum. The user would need to run all three full nodes, in order to validate the sidechain. The sidechain might need to be blind merged-mined on only one chain, or perhaps it could alternate chains or have an extremely strange chain-integration rule. The security/stability of the sidechain would probably be equal to that of the most insecure/unstable mainchain.
+Yes. But this is a convoluted and terrible idea.
 
-I'm really not sure why you would want to do this, however.
+For example, you could have a sidechain of Bitcoin that was also a sidechain of Ethereum. The user would need to run all three full nodes, in order to validate the sidechain. The sidechain might need to be blind merged-mined on only one chain, or perhaps it could alternate chains or have an extremely strange chain-integration rule. The security/stability of the sidechain would probably be equal to that of the most insecure/unstable mainchain.
+
 
 ### Is there anything that drivechains can't copy? ### {#cant-copy}
 
-Well, the only thing that comes to mind is the fact that Monero has a larger anonymity set. You see, users will probably want to move quickly from one drivechain to the next, and they will probably also want to settle to the mainchain whenever possible. So, fewer people will be leaving their money on a Monero-sidechain.
+The underlying consensus of L1 (PoW vs PoS), and the community.
 
-On the other hand, the quantity "number of transactions per day" should be the same, whether it is on a Monero sidechain or on regular Monero. So perhaps it actually is the same anonymity set.
-
-Some people say that txns on a hypothetical Monero side would be de-anonymized with they move side-to-main (in other words, when users pull their money from the Monero sidechain back to the regular Bitcoin chain). I'm not sure that this is the case. However, by leaving the Monero cryptosystem, these txns *are* shirking their responsibility to "add to the Monero anonymity set" -- side-to-main xfers are not sidechain txns, they are mainchain txns. In this way, selling Monero for BTC contributes to Monero's anonymity, but moving from side-to-main (or main-to-side) does not.
+For example, Monero has a larger anonymity set, as of this writing. And Ethereum has more txn fees and users.
 
 
+### Is the 13,150 ACK parameter hardcoded? Why not let each sidechain specify it? ### {#y13150}
 
-## 5. Implementation ## {#implementation}
+Yes.
 
-
-### When will be able to use Drivechain? What's your strategy for getting it into Bitcoin and activated? ### {#when-drivechain}
-
-I confidently estimate <del>July 1st or earlier, but this will depend on feedback from users</del>. The delay is not actually due to the planning fallacy (as would otherwise be the case). Instead it is because the project scope expanded to include Blind Merged Mining, which is itself a significant project. However, based on the feedback received as of June, it seems that Drivechain could be active in a January 2018 release of Bitcoin.
-
-While technically, the Bitcoin network can upgrade via soft-fork at any time, traditionally we have always used a friendly ("patient"), process of accruing a 95% activation threshold. Which leaves the vote entirely up to the miners.
-
-I expect Drivechain to be popular with miners. Sidechains mean more transaction fees for miners. They also mean a much cooler Bitcoin, which should mean a higher BTC price. Finally, Drivechain enables [larger blocks through a heavier sidechain](https://youtu.be/Gzg_u9gHc5Q?t=1h49m27s). Therefore, one might expect miners to activate the soft fork quickly. Optimistically, **Drivechain could be available 2-4 weeks after miners decide to support it**.
-
-If miners refuse to activate the soft fork, it is still possible for users to activate it, and force it upon the miners (just as today's users force miners to enforce all activated soft forks -- activation of past soft forks is no longer optional for miners). This is riskier, but still very safe if user-support is overwhelming. If user-support is merely lukewarm (or unmeasureable), then we might turn to the exchanges for help.
-
-The "blind merged mining" technology <del>has not been developed</del> is under development. It will <del>take an unknown amount of time to code and review probably be finished by the end of the summer</del> has recently been finished.
+1. To prevent a "race to the bottom".
+2. To promote solidarity among all sidechains, in the event of a theft.
 
 
-### What's the rush? Aren't you worried about bugs? ### {#rushing}
-
-I am worried about bugs! However, **Drivechain's bugs can (probably) be found and fixed "in the wild"**. Bitcoin's design (particularly, the soft fork model), prevents any bugs in this software from affecting version that don't have Drivechain. This limits the potential damage tremendously (if not completely).
-
-Secondly, software developers are often overworked, and can't prioritize their scarce review-time. Therefore, sadly, the projects that get the most attention are often those that "charge the mound", so to speak.
 
 
-### Does Drivechain require SegWit? ### {#need-segwit}
-
-No.
-
-They are similar -- SegWit requires miners to support a new block structure, and to enforce [new rules for a new address types (P2WPKH, P2WSH)](https://github.com/bitcoin/bips/blob/master/bip-0142.mediawiki). Sidechains also require miners to support a new block structure (one which contains a "withdrawal-vote-database" of minimal size"), and to enforce new rules for a new address type. But the two are requirements are entirely independent of each other. **You could have one, the other, both, or none.**
-
-However, the two have tremendous synergy. Lightning Network allows instant/fully-reliable transactions *across sidechains*, which is very cool for both Sidechains and LN.
-
-
-## 6. Other ## {#other}
-
+## 5. Other ## {#other}
 
 ### What kind of sidechain projects can we expect? ### {#projects}
 
 Please navigate to the [sidechain projects](http://www.drivechain.info/projects/index.html) section.
 
+-----
 
-### Can sidechains really help with Scaling? ### {#scaling}
+For more info, watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k).
 
-I believe that sidechains can solve the *scaling contention*, precisely **because** sidechains do *not* solve scaling itself.
 
-Let me explain.
+<!--
 
-We might define "resources needed" as X, and "production output" as Y. Then, everyone would want r = Y/X to always be as high as possible.
+### i. "51% hashrate can steal BTC" ### {#i}
 
-In Bitcoin's case, the "resources needed" are the node costs -- the infamous **blocksize**. The "production output" is the network's ability -- the **transactions per second**.
+It is said that "51% of the miners can steal all of the funds on the sidechain".
 
-If we define "scalability" as r (ie "transactions per second" / "blocksize"), then there is no controversy about r. Everyone wants to r to be as high as possible. Everyone wants the most scalability.
+It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like. Namely, they would include a withdrawal that pays them all of the sidechain's BTC. At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
 
-However, my belief is that the "contention" (ie, the "reason everyone is upset") is about *choosing the right X*. No matter the r, some people feel that X is too small (and others feel that X is too large). (This may explain why debates over scalability still persist, despite the surprising discovery of the Lightning Network, which multiplies r by a large factor.)
+So, it is true that 51% hashrate can steal all the BTC on the sidechain. But, already, they can steal all of the BTC on the mainchain. In a way that full nodes cannot prevent. And the mainchain theft is easier, and pays more.
 
-Sidechains are different, in that they allow people to "choose their own X". This does not (directly) impact r, but it should eliminate most of the controversy.
+It is to simply take the assumed attack (ie, "6 months of 51% miner-attacking, or 3 months of 100% attacking"), and use it to cause a block reorganization. Specifically, a 13,150-block reorganization.
 
-(Interestingly, sidechains may also indirectly impact r, by allowing for [synergy between two chains](https://www.youtube.com/watch?v=Gzg_u9gHc5Q&t=6575s), or by exploiting [a] UTXO commitments, [b] the SC security model, and [c] the mainchain's management of the 21 M limit, to allow sidechains to simply discard old blocks.)
+The reorg attack is easier in two ways. First, the reorg-attackers may work in secret. In contrast, the DC-attackers must announce the attack in advance, and then continue it openly each block. Secondly, because of their hashrate superiority (of at least 2%, in the 51%-case) they can start their new chain as many as ~526 blocks into the past.
+
+The reorg attack allows miners to steal all BTC transacted on the mainchain, in two ways. First, by making BTC purchases themselves, and then refunding themselves via doublespend. Second, by collaborating with other purchasers (by rewarding them "epsilon" if they sign a doublespend txn directing the merchant's money to miners).
+
+How much BTC could be stolen by a reorg attack?
+
+Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* circulating coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is more BTC than could ever be deposited onto any sidechain ever.
+
+Critics who raise this point, are really objecting to the entire philosophy of "optional sidechains". The purpose of sidechains is to allow the mainchain Bitcoin Core software to ignore BTC-activity on other networks -- this indifference frees up those networks to try experimental or controversial features. Critics who invoke "miners can steal", fail to understand this purpose. Since the only way to block "miner theft" is via full-node rule-enforcement, these critics are really advocating a sidechain security model where Bitcoin Core is required to download and validate all sidechain blocks on all sidechains. This would prevent miner-theft, but it turns each new sidechain into a mandatory hard fork!
+
+
+
+
+
+
+### iii. "Infallible Miner" Fallacy ### {#iii}
+
+A related notion is the idea that "miners" are the "owners" or "masters" or "controllers" of the Bitcoin cryptosystem -- and wherever miners lead, everyone else follows blindly and without resistance.
+
+But the truth is the exact *opposite* of this. Whenever "miners" and "nodes" disagree, it is always nodes that get the final word. For example:
+
+* Flag day" UASF activations -- most famously of SegWit in Summer 2017, but also [P2SH in Spring 2012](https://www.uasf.co/#why-bip148-and-not-a-direct-flag-day-uasf-for-segwit).
+* The [March 2013 anti-consensus event](https://bitcoin.org/en/alert/2013-03-11-chain-fork) -- during which miners were required to reconfigure their software (at great financial loss)...but nodes were required to do "nothing".
+* The Post-Scaling-III civil war, during which 51% hashrate "signaled" for Bitcoin Unlimited. This signaling ultimately had no effect whatsoever. (Once it did [cause an invalid block](https://www.reddit.com/r/Bitcoin/comments/5qwtr2/bitcoincom_loses_132btc_trying_to_fork_the/) to be formed, leading -again- to miner losses but node indifference.)
+* In August 2010, miners *did as they were told* and extended [a chain that followed all of the rules](https://en.bitcoin.it/wiki/Value_overflow_incident). The problem was, some nodes later decided that they didn't like these rules, after all. So nodes changed the rules, and found new miners to enforce the new rules. The old miners, enforcing the old rules, did not get paid, and had to surrender.
+
+These are examples of Miners being trumped by users, in a variety of contexts. Drivechain merely acknowledges this pre-existing fact.
+
+This fallacy is similar to the ["Enough to Buy Back the Product"](http://steshaw.org/economics-in-one-lesson/chap21p1.html) and "Labor Theory of Value" fallacies. It demands that "the makers of cheap dresses should get enough to buy back cheap dresses and the makers of mink coats enough to buy back mink coats". Miners are like security guards -- watching diligently over a football game or rock concert to deal with altercations. But "a group of security guards" does not a rock-and-roll concert make...you need the guitarist. And you need the drummer, and the promoters, the record company, the guitar-maker, the producer of nylon string, etc.
+
+[Related](https://twitter.com/Truthcoin/status/929797893413855232) -- a time when hashrate determined nothing.
+
+While the security guards should be *obedient* they should NOT be *incompetent* -- they must be able to carry out the investor's will. That is the subject of the next misconception.
+
+-->

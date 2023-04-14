@@ -66,7 +66,7 @@ div.desc {
 <p>- <a href="https://www.blockstream.com/about/"><strong>Adam Back</strong></a>, <a href="https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5">Baltic Honeybadger 2022</a></p>
 
 
-## **[DOWNLOAD Software](http://www.drivechain.info/releases/index.html)** -- **[LEARN on YouTube](https://www.youtube.com/watch?v=NK2IvzDz7pk&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)**
+## **[LEARN via YouTube](https://www.youtube.com/watch?v=NK2IvzDz7pk&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)** -- **[DOWNLOAD our Software](http://www.drivechain.info/releases/index.html)** -- **[Get a Printable Booklet](https://www.drivechain.info/literature/booklet-friends-bip-ethside-slides-faq.pdf)**
 
 
 ### Peer-to-Peer Bitcoin Sidechains
