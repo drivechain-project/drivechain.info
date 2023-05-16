@@ -33,6 +33,12 @@ To this, only three modifications have since been made:
 ## Presentations
 
 
+### PlebFi 2023
+
+[pdf](https://www.drivechain.info/media/slides/plebfi-2023.pdf)
+[pptx](https://www.drivechain.info/media/slides/plebfi-2023.pptx)
+
+
 ### Bitcoin++ 2023
 
 [pdf](https://www.drivechain.info/media/slides/bitcoin-plus-2023.pdf)
