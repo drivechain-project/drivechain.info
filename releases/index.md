@@ -10,7 +10,7 @@ The easiest way to run Drivechain. (Play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**DriveNet v0.0.4**|[.deb](https://drive.google.com/file/d/1ocU0aoYrBfD7lWaNUh9WFsFbDOuapBtP/view?usp=share_link)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
+|**DriveNet v0.0.5**|[.deb](https://drive.google.com/file/d/1i_NewSS0l5wgroydHgDxfePu9kHrze_s/view?usp=share_link)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
 
 In one image:
 
