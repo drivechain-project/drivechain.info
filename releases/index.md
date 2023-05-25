@@ -28,7 +28,7 @@ In one image:
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Mainchain v44**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/LayerTwo-Labs/mainchain)|
+|**Mainchain v44.01**|[tar.gz][drivechain-tar]|[.exe][drivechain-exe]|[dmg][drivechain-dmg]|[Github](https://github.com/LayerTwo-Labs/mainchain)|
 
 ### Sidechains Based on Template
 
@@ -50,8 +50,8 @@ In one image:
 [**Folder**](http://release.drivechain.info/) -- Older [Archives](https://drive.google.com/drive/folders/195MeFVLI_bVZyas8XA25dLk1ZWFJwu8d)
 
 [drivechain-dmg]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-osx.dmg
-[drivechain-exe]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-win64-setup.exe
-[drivechain-tar]: https://www.drivechain.info/releases/bin/drivechain-0.44.00-x86_64-linux-gnu.tar.gz
+[drivechain-exe]: https://www.drivechain.info/releases/bin/drivechain-0.44.01-win64-setup.exe
+[drivechain-tar]: https://www.drivechain.info/releases/bin/drivechain-0.44.01-x86_64-linux-gnu.tar.gz
 [testchain-dmg]: https://www.drivechain.info/releases/bin/testchain-18.00.00-osx.dmg
 [testchain-exe]: https://www.drivechain.info/releases/bin/testchain-18.00.00-win64-setup.exe
 [testchain-tar]: https://www.drivechain.info/releases/bin/testchain-18.00.00-x86_64-linux-gnu.tar.gz
