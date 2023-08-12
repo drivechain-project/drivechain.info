@@ -4,20 +4,24 @@ title: Releases
 ---
 
 
-## DriveNet
+## The DC Launcher
 
 The easiest way to run Drivechain. (Play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**DriveNet v0.0.5**|[.deb](https://drive.google.com/file/d/1i_NewSS0l5wgroydHgDxfePu9kHrze_s/view?usp=share_link)|n/a|n/a|[Github](https://github.com/nchashch/switchboard-gui/)|
+|**Launcher v45**|[.sh](https://drive.google.com/file/d/1HnJDcLPv2R-Jn7_3giwvgtWFoNh-pzJW/view?usp=sharing)|n/a|n/a|[Github](https://github.com/LayerTwo-Labs/dc-launcher)|
 
+
+<!--
 In one image:
 
 * [How to install & run](/releases/switchboard/install-instructions.png)
 * [What it looks like](/releases/switchboard/switchboard-usage.png)
 * [How to run it on Mac/PC](/releases/virtualbox-explained.png)
 * * See also: [VirtualBox.org](https://www.virtualbox.org/), [VMWare.com](https://www.vmware.com/products/fusion.html),  [Guide1](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox), [Guide2](https://graspingtech.com/vmware-fusion-ubuntu-20.04/).
+
+-->
 
 
 ---
