@@ -66,16 +66,33 @@ div.desc {
 <p>- <a href="https://www.blockstream.com/about/"><strong>Adam Back</strong></a>, <a href="https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5">Baltic Honeybadger 2022</a></p>
 
 
-## **[LEARN via YouTube](https://www.youtube.com/watch?v=JwIoTaJQNi0&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)** -- **[DOWNLOAD our Software](http://www.drivechain.info/releases/index.html)** -- **[Get a Printable Booklet](https://www.drivechain.info/literature/booklet-friends-bip-ethside-slides-faq.pdf)**
+## **[LEARN via YouTube](https://www.youtube.com/watch?v=JwIoTaJQNi0&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)** -- **[DOWNLOAD our Software](http://www.drivechain.info/releases/index.html)**
+
 
 
 ### Peer-to-Peer Bitcoin Sidechains
 
 Drivechain allows Bitcoin to *create*, *delete*, *send BTC to*, and *receive BTC from* ["Layer-2"s](https://academy.binance.com/en/glossary/layer-2) called "sidechains". Sidechains are Altcoins that lack a native "coin" -- instead, pre-existing coins [from a different blockchain] must first be sent over.
 
+"Sidechains" boils down to allowing consenting individuals to:
+
+1. choose their own security models
+2. spend their bitcoin how they like
+3. permissionlessly create voluntarist technology
+
 Once on a sidechain, coins can change hands an unlimited number of times, and in an unlimited number of *new ways*. Thus, BTC-owners can opt-in to [new features or tradeoffs](http://www.drivechain.info/projects/index.html). Meanwhile, the Bitcoiners who don't opt-in, never need to care what any sidechain is doing.
 
 Transfers from sidechain back to the mainchain (ie, from Layer 2 back to Layer 1) are not done via *verifiable proof*, but instead via *conjecture-and-refutation*. A "bundle" of transfers is asserted, and then slowly "ACKed" over time. After 3 months of ACKing, the bundle succeeds. Thus, the SC:BTC market price cannot deviate significantly from a 1:1 ratio. [More info](http://www.drivechain.info/literature/index.html#consensus-2019).
+
+### Why Sidechains?
+
+Drivechain lets users do what they want, with their own money.
+
+Drivechain happens to solve a number of [huge problems for Bitcoin](https://www.drivechain.info/media/slides/plebfi-2023.pdf).
+
+### Why Drivechain Is Zero Risk
+
+Drivechain claims the unused OP NOP 5, and basically uses it to count up to 13,150. [That's it.](https://github.com/bitcoin/bips/blob/master/bip-0300.mediawiki). If there are problems, then OP NOP 5 can be disabled (via soft fork) -- restoring things to exactly the way they were. It would just be cntrl + z on drivechain.
 
 
 ### Better for Everyone
