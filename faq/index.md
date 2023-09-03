@@ -7,40 +7,22 @@ Updated March 2023
 
 See also [Drivechain Q&A](https://fiatjaf.com/drivechain.html) by [fiatjaf](https://github.com/fiatjaf) (creator of Nostr).
 
+See also [Paul's Tweet Highlights](https://twitter.com/Truthcoin/highlights).
+
 
 ## 1. Security ## {#security}
 
-### How are drivechains secured? ### {#sidechain-theft}
+### Miners can just withdraw the coins wherever they like? Won't they just steal all the L2 coins? ###
 
-Miners "farm" sidechains for their txn fees (and exchange-rate value-add). Why kill the "goose that lays the golden eggs"?
+Yes, Miners set the destination for withdrawals.
 
-Well, it depends on:
+The security model is econonmic. Miners "farm" sidechains for their txn fees (and their exchange-rate value-add).
 
-* How many eggs they lay
-* How much the dead goose is worth, and
-* How much effort it takes to actually kill the goose.
+The idea is that greedy miners will not kill the goose that lays the golden eggs.
 
-So, no two drivechains will have the same level of security.
+See [the original 2015 post](https://www.truthcoin.info/blog/drivechain/#drivechains-security) and also [this math](//) for concret numbers.
 
-Some will lay many "eggs". These will have high fee-revenues, and/or will enhance the underlying coin-utility.
-
-Similarly, some drivechains are more valuable to "kill" than others. The more coins on a drivechain, the higher the incentive to "kill" it (and take all those coins).
-
-Finally, how to "kill" such a drivechain?
-
-Because of the "slow return" feature of BIP300, it isn't easy. Miners must 51% attack in a very transparent and obvious way, in full view of everyone, for a continuous 3-6 months, *before* the coins can be stolen.
-
-The formal security model is [here](http://www.truthcoin.info/blog/drivechain/#drivechains-security).
-
-In general, Drivechain security is higher when:
-
-* The drivechain in question is popular with users.
-* There are many popular drivechains.
-
-
-### What if a sidechain isn't popular?? Can miners "steal" from a sidechain? ## {#unpopular-sc}
-
-An unpopular sidechain is one which:
+When a sidechain is "unpopular", ie:
 
 * Has low total txn fees, AND/OR
 * If the sidechain went away, the market price of Bitcoin would NOT fall significantly.
@@ -68,9 +50,9 @@ I looked into it in detail, [in 2016](https://www.youtube.com/playlist?list=PLw8
 
 ### Really?! What about miner incentives? ### {#mining-incentives}
 
-Sidechain merged-mining is a new revenue stream for miners, yes.
+Drivechain is comparable to [RIOT's use of "power curtailment credits"](https://riotplatforms.com/bitcoin-mining). It is just a new way for miners to make money.
 
-But [Altcoin merged-mining](https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c) has existed for years. It was invented by Satoshi in 2010. And has been in [widespread use](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/) ever since.
+When I'm asked: "does drivechain affect miner incentives?" I say "no". I personally lived through the invention of: FPGAs/ASICs, heat-reuse, [stranded natgas flaring](https://www.forbes.com/sites/christopherhelman/2021/08/02/green-bitcoin-mining-the-big-profits-in-clean-crypto/?sh=275922a534ce), curtailment credits, and [a whole lot else](https://www.newsweek.com/bitcoin-mining-americas-most-misunderstood-industry-opinion-1669892). Merged mining was [invented by Satoshi in 2010](https://truthcoin.info/blog/security-budget-ii-mm/#c-its-too-late--mm-is-already-widespread), and is [already in continuous use](https://medium.com/braiins/why-slush-pool-merge-mines-rsk-and-not-elastos-or-vcash-156a8a0c470c). So, to someone like me, getting revenues from merged mining doesn't even register as a change. It's just business as usual. 
 
 All BIP300 does, is supercharge MM. With sidechains, miners would (hopefully) get huge revenues (and profits) from MM... instead of the pittance they get from MM today.
 
@@ -81,14 +63,7 @@ Yes, I'm sure.
 
 Profits are good for miners. And good for us. They increase Bitcoin's [security budget](https://www.truthcoin.info/blog/security-budget-ii-mm/). They increase the network Difficulty. They deter 51% attacks (by making them more expensive).
 
-Mining has seen many "changes" that have increased profits:
-
-* Using ASICs, instead of CPUs
-* Using a pool whose software maximizes txn-fees (vs one that leaves this "free" money on the table)
-* Collecting [natgas tax credits](https://www.forbes.com/sites/christopherhelman/2021/08/02/green-bitcoin-mining-the-big-profits-in-clean-crypto/?sh=275922a534ce), while taking advantage of stranded energy
-* Negotiating lower-than-normal energy prices via a ["demand response"](https://www.newsweek.com/bitcoin-mining-americas-most-misunderstood-industry-opinion-1669892) contract
-
-Merged mining is no different than those changes.
+Mining has seen many "changes" that have increased profits. Merged mining is no different than those changes.
 
 
 ### But this is a change that affects the protocol! ### {#affects-protocol}
