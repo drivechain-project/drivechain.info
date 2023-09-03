@@ -12,7 +12,7 @@ See also [Paul's Tweet Highlights](https://twitter.com/Truthcoin/highlights).
 
 ## 1. Security ## {#security}
 
-### Miners can just withdraw the coins wherever they like? Won't they just steal all the L2 coins? ###
+### Miners set the withdrawal destination? Won't they just steal all the L2 coins for themselves? ###
 
 Yes, Miners set the destination for withdrawals.
 
@@ -20,17 +20,11 @@ The security model is econonmic. Miners "farm" sidechains for their txn fees (an
 
 The idea is that greedy miners will not kill the goose that lays the golden eggs.
 
-See [the original 2015 post](https://www.truthcoin.info/blog/drivechain/#drivechains-security) and also [this math](//) for concret numbers.
+See [the original 2015 post](https://www.truthcoin.info/blog/drivechain/#drivechains-security) and also [this math](https://www.drivechain.info/blog/fees/) for concrete numbers.
 
-When a sidechain is "unpopular", ie:
+Withdrawals are very slow, deliberate, rare, and auditable. It is impossible for miners to steal coins, without it being a deliberate concious, comitted effort over 3-6 months. To steal coins in this way, would be to conciously pull the plug on the Drivechain idea.
 
-* Has low total txn fees, AND/OR
-* If the sidechain went away, the market price of Bitcoin would NOT fall significantly.
-
-In such a case, Miners lose very little, economically, by taking the sidechain's coins. Especially if mining turnover is low (among pools/devices), and hashrate is stable.
-
-
-### Isn't that bad? ### {#user-sovereignty}
+### Isn't that a bad model? ### {#user-sovereignty}
 
 Not really. 
 
