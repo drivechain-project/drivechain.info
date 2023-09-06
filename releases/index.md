@@ -4,13 +4,13 @@ title: Releases
 ---
 
 
-## The DC Launcher
+## DriveNet Launcher
 
 The easiest way to run Drivechain. (Play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**Launcher v45**|[.sh](https://drive.google.com/file/d/1HnJDcLPv2R-Jn7_3giwvgtWFoNh-pzJW/view?usp=sharing)|n/a|n/a|[Github](https://github.com/LayerTwo-Labs/dc-launcher)|
+|**DriveNet v45.0**|[.tar.gz](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher_linux-1.0.0.x86_64.tar.gz)|[.zip](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher_win-1.0.0.zip)|[.dmg](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher-1.0.0.dmg)|[Github](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/tag/v1.0.0)|
 
 
 <!--
@@ -20,7 +20,6 @@ In one image:
 * [What it looks like](/releases/switchboard/switchboard-usage.png)
 * [How to run it on Mac/PC](/releases/virtualbox-explained.png)
 * * See also: [VirtualBox.org](https://www.virtualbox.org/), [VMWare.com](https://www.vmware.com/products/fusion.html),  [Guide1](https://www.wikihow.com/Install-Ubuntu-on-VirtualBox), [Guide2](https://graspingtech.com/vmware-fusion-ubuntu-20.04/).
-
 -->
 
 
