@@ -10,7 +10,7 @@ The easiest way to run Drivechain. (Play money only.)
 
 |Software|Linux|Windows|Mac|Source|
 |--------|:---:|:-----:|:-:|:----:|
-|**DriveNet Launcher**|[.tar.gz](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher_linux-1.0.0.x86_64.tar.gz)|[.zip](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher_win-1.0.0.zip)|[.dmg](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.0.0/drivechain_launcher-1.0.0.dmg)|[Github](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/tag/v1.0.0)|
+|**DriveNet Launcher 1.1.0**|[.tar.gz](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-linux-1.1.0.x86_64.tar.gz)|[.zip](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-1.1.0-win.zip)|[.dmg](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-osx64-1.1.0.dmg.zip)|[Github](https://github.com/LayerTwo-Labs/drivechain_launcher/releases)|
 
 
 <!--
