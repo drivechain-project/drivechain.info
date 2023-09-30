@@ -30,7 +30,7 @@ If anything, DC would move Altcoins *off* of L1 Bitcoin, onto their own L2 sidec
 
 No -- Bip300 **only** affects the people who use it.
 
-Your existing node, will still do EXACTLY what it was doing before. It will NOT *start* doing anything new; it will NOT *stop* doing anything it was doing before. This is the magic of the [*soft fork*](https://bitcointalk.org/index.php?topic=945977.0). This is a side-deal between consenting users and miners -- not you.
+Your node will still do *exactly* what it was doing before. It will NOT *start* doing anything new; it will NOT *stop* doing anything it was doing before. This is the magic of the [*soft fork*](https://bitcointalk.org/index.php?topic=945977.0).
 
 
 

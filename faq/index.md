@@ -577,6 +577,13 @@ The underlying consensus of L1 (PoW vs PoS), and the community.
 For example, Monero has a larger anonymity set, as of this writing. And Ethereum has more txn fees and users.
 
 
+### Must each sidechain have a 10 minute blocktime? ### {#interblocktime}
+
+You *could* change it. But you shouldn't. Trust me, you don't need to. 
+
+It is possible to have "instant" sidechain txns, using special "setup" transactions that have already been confirmed. The lightning network is one example of this; a second example is [Double Spend Forfeits](https://x.com/Truthcoin/status/1701791091790352823?s=20) et al.
+
+
 ### Is the 13,150 ACK parameter hardcoded? Why not let each sidechain specify it? ### {#y13150}
 
 Yes.
