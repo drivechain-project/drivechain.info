@@ -84,7 +84,7 @@ We have received $0 from VCs. Funding for LayerTwo Labs comes from Bitcoin OGs w
 
 Drivechain was proposed [back in 2015](https://www.truthcoin.info/blog/drivechain/). L2L was only funded at the end of 2022. 
 
-All of this is irrelevant ad hominem anyway. Drivechain is good for Bitcoin and is [widely supported by the independent technical elite](layertwolabs.com/friends).
+All of this is irrelevant ad hominem anyway. Drivechain is good for Bitcoin and is [widely supported by the independent technical elite](https://layertwolabs.com/friends).
 
 
 ### 7. Why are people rushing this??? 🤡
