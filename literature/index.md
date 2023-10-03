@@ -44,6 +44,14 @@ To this, only three modifications have since been made:
 [pdf](https://www.drivechain.info/media/slides/bitcoin-plus-2023.pdf)
 [pptx](https://www.drivechain.info/media/slides/bitcoin-plus-2023.pptx)
 
+
+### MIT 2023
+
+[pdf](https://www.drivechain.info/media/slides/mit-2023.pdf)
+[pptx](https://www.drivechain.info/media/slides/mit-2023.pptx)
+[speech](https://www.drivechain.info/media/slides/mit-2023-speech.pdf)
+
+
 ### Baltic Honeybadger 2022 ### {#baltic-2022}
 
 A 20 minute whirlwind tour of what Bip300 is, and what you could do with it. For a general audience.
