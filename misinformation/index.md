@@ -3,13 +3,13 @@ layout: page
 title: Misinformation
 ---
 
-Drivechain is a strict improvement - it benefits all Bitcoiners and has no downsides.
+Drivechain benefits all Bitcoiners, and has no downsides.
 
 Nonetheless, it has many enemies:
 
 * Altcoiners (who want their alt investment to do well).
 * The Anti-Alt Bitcoin Immune System (which is misfiring in this case).
-* Rival L2s (who prioritize their equity/prestige, over Bitcoin's success).
+* Rival developers / L2s (who are out of a job if Drivechain succeeds).
 * People who are publicly known to be DC-haters, and who will now be humiliated if it succeeds.
 
 Here are some of the misconceptions which they spread:
