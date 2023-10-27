@@ -41,6 +41,8 @@ Miners can [steal from the Lightning Network, more easily](https://x.com/Truthco
 
 In reality, [miners will not be stealing from DC](https://www.drivechain.info/blog/fees/), nor from LN.
 
+The "miner theft" issue depends on two [security parameters](https://www.truthcoin.info/blog/drivechain/#drivechains-security): [m and b](https://www.drivechain.info/media/meme-vital-few.png). Anyone who does not bring up m and b, is a total fraud.
+
 "Miners" control the L1 chain, and everything that goes into it -- if you are against miners, you are against Proof-of-Work and against Bitcoin.
 
 If this type of thing bothers you, then don't use Bip300. [Don't run a Bip300 node](https://x.com/Truthcoin/status/1707423956876005556?s=20) either. Trust me, we won't miss you.
