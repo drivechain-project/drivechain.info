@@ -32,6 +32,12 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+### NABS 2023
+
+[pdf](https://www.drivechain.info/media/slides/NABS-2023.pdf)
+[pptx](https://www.drivechain.info/media/slides/NABS-2023.pptx)
+[speech](https://www.drivechain.info/media/slides/NABS-2023-speech.pdf)
+
 
 ### PlebFi 2023
 
