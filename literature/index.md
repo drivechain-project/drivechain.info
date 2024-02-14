@@ -32,6 +32,13 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+
+### Anarchapulco 2024
+
+[pdf](https://www.drivechain.info/media/slides/ap-2024.pdf)
+[pptx](https://www.drivechain.info/media/slides/ap-2024.pptx)
+[speech](https://www.drivechain.info/media/slides/ap-2024-script.pdf)
+
 ### NABS 2023
 
 [pdf](https://www.drivechain.info/media/slides/NABS-2023.pdf)
