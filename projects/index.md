@@ -17,7 +17,7 @@ z-transactions improve BTC privacy by hiding three things: the sender, the recei
 
 Try it for yourself by [following this guide](https://www.youtube.com/watch?v=N33iJK2FdpE&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=10).
 
-[FAQ: Why zCash and not Monero?](/zcash-vs-monero.txt)
+[FAQ: Why zCash and not Monero?](/projects/zcash-vs-monero.txt)
 
 
 ### 2. "EthSide" (A clone of Ethereum)
