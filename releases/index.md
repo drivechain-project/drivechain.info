@@ -4,6 +4,18 @@ title: Releases
 ---
 
 
+## Updates: Too Many To List!
+
+
+New versions, of each L1/L2 full node, are on [releases.drivechain.info](https://releases.drivechain.info/) and the source code / commit history is [on Github](https://github.com/LayerTwo-Labs).
+
+New users: download **The Launcher** from [LayerTwoLabs.com/download](https://layertwolabs.com/download). And join [the Telegram Group](https://t.me/DcInsiders).
+
+Below is an archive of previous versions of the software.
+
+
+<!--
+
 ## DriveNet Launcher
 
 The easiest way to run Drivechain. (Play money only.)
@@ -13,7 +25,6 @@ The easiest way to run Drivechain. (Play money only.)
 |**DriveNet Launcher 1.1.0**|[.tar.gz](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-linux-1.1.0.x86_64.tar.gz)|[.zip](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-1.1.0-win.zip)|[.dmg](https://github.com/LayerTwo-Labs/drivechain_launcher/releases/download/v1.1.0/drivechain_launcher-osx64-1.1.0.dmg.zip)|[Github](https://github.com/LayerTwo-Labs/drivechain_launcher/releases)|
 
 
-<!--
 In one image:
 
 * [How to install & run](/releases/switchboard/install-instructions.png)
@@ -25,7 +36,12 @@ In one image:
 
 ---
 
-## Individual Binaries and Sources
+
+
+
+## Archive of v44 and Earlier
+
+This page contains pre-L2L versions of the software. It is for archival purposes only!
 
 ### Mainchain (v44.00)
 
