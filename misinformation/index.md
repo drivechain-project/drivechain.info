@@ -15,7 +15,7 @@ Nonetheless, it has many enemies:
 
 Here are some of the misconceptions which they spread:
 
-### 1. Drivechains Bring "Sh&!coins To Bitcoin" 🤡
+### 1. Drivechains Bring "Sh&!coins To Bitcoin" 🤡 ### {#1}
 
 Some projects ---Colored Coins (2012), Omni (2014), Counterparty (2014), Taro (2022), BRC20 (2023), Runes (2023)--- enable "Sh&!coins", on any Blockchain, including Bitcoin.
 
@@ -27,7 +27,7 @@ If anything, DC would move Altcoins *off* of L1 Bitcoin, onto their own L2 sidec
 
 
 
-### 2. BIP300 will *CHANGE* Bitcoin into something else 🤡
+### 2. BIP300 will *CHANGE* Bitcoin into something else 🤡  ### {#2}
 
 No -- Bip300 **only** affects the people who use it.
 
@@ -35,7 +35,7 @@ Your node will still do *exactly* what it was doing before. It will NOT *start* 
 
 
 
-### 3. Miners Can Steal From BIP300 Sidechains 🤡
+### 3. Miners Can Steal From BIP300 Sidechains 🤡  ### {#3}
 
 Miners can [steal from the Lightning Network, more easily](https://x.com/Truthcoin/status/1701959339508965405?s=20) than they can from DC.
 
@@ -49,7 +49,7 @@ If this type of thing bothers you, then don't use Bip300. [Don't run a Bip300 no
 
 
 
-### 4. Drivechain Changes Miners' Incentives: 🤡
+### 4. Drivechain Changes Miners' Incentives: 🤡  ### {#4}
 
 Drivechain allows miners to collect 10,000x more revenues (or more).
 
@@ -77,7 +77,7 @@ For more see [here](https://x.com/Truthcoin/status/1704643105171935619?s=20).
 
 
 
-### 5. Altcoins are only for Scamming, Never for Innovation! Don't you know?? 🤡
+### 5. Altcoins are only for Scamming, Never for Innovation! Don't you know?? 🤡  ### {#5}
 
 Most Alts are scams -- especially the famous ones.
 
@@ -95,7 +95,7 @@ Plus countless more.
 Even if all Alts were scams, it doesn't mean every new blockchain design will be. It's too risky to put all our eggs in one basket! We need *competition* among chain designs.
 
 
-### 6. Drivechain is funded by VCs! 🤡
+### 6. Drivechain is funded by VCs! 🤡 ### {#6}
 
 We have received $0 from VCs. Funding for LayerTwo Labs comes from Bitcoin OGs with 10+ years experience. Our investors understand Bitcoin much better than you do. Plus, Paul's business model for L2L, does NOT rely on Bip300 being activated in BTC.
 
@@ -104,7 +104,7 @@ Drivechain was proposed [back in 2015](https://www.truthcoin.info/blog/drivechai
 All of this is irrelevant ad hominem anyway. Drivechain is good for Bitcoin and is [widely supported by the independent technical elite](https://layertwolabs.com/friends).
 
 
-### 7. Why are people rushing this??? 🤡
+### 7. Why are people rushing this??? 🤡 ### {#7}
 
 It isn't rushed at all. It is 8 years old.
 
@@ -113,7 +113,7 @@ Read the [literature page](https://www.drivechain.info/literature/) to see just 
 People are pushing Drivechain in late 2023, because the 2021-2023 BS narratives (S2F, LN, institutions) are collapsing and they want something new. 
 
 
-### 8. Isn't Bitcoin already Perfect?! Why rain on our parade? Thinking is for nerds!! 🤡
+### 8. Isn't Bitcoin already Perfect?! Why rain on our parade? Thinking is for nerds!! 🤡 ### {#8}
 
 Bitcoin is not perfect. Consider the following:
 
@@ -123,7 +123,7 @@ Bitcoin is not perfect. Consider the following:
 * Lightning is the supposed savior of Bitcoin, according to the othodoxy. But the knowledgeable Lightning Insiders have been jumping ship all last year -- see [this](https://www.youtube.com/watch?v=BjFjK-f9ts0) [this](https://www.youtube.com/watch?v=LnG5H62I7Ko) [this](https://www.youtube.com/watch?v=eCWTTY1eDoo) [this](https://www.youtube.com/watch?v=EocWax43QgQ) and [this](https://www.truthcoin.info/blog/lightning-limitations/).
 
 
-### 9. We don't need privacy! That's asking for trouble! 🤡
+### 9. We don't need privacy! That's asking for trouble! 🤡 ### {#9}
 
 Bitcoin must have some subversive element -- or else it will go to zero.
 
