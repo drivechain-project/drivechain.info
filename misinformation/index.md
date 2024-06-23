@@ -3,6 +3,8 @@ layout: page
 title: Misinformation
 ---
 
+## The Right Enemies
+
 Drivechain benefits all Bitcoiners, and has no downsides.
 
 Nonetheless, it has many enemies:
@@ -14,8 +16,6 @@ Nonetheless, it has many enemies:
 * Haters of Bitcoin privacy, who want to kill the zCash sidechain.
 
 Here are some of the misconceptions which they spread:
-
-
 
 <h3 id="1">1. Drivechains Bring "Sh&!coins To Bitcoin" 🤡</h3>
 
@@ -59,17 +59,21 @@ In return, they are encouraged to (but never required to):
 
 This is precisely [what Satoshi intended](https://www.truthcoin.info/blog/security-budget-ii-mm/#c-its-too-late--mm-is-already-widespread) for miners. Merged mining was invented by Satoshi, and has been in continuous use ever since. I've merely optimized it.
 
-| **It's Allowed/Good When Miners...**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | **But Bad if they...**                                                                                                                      |   |   |   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| Use ASICs to hash faster/cheaper.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Run software that increases L1 fees, sourced via Bip300/301.                                                                                  |   |   |   |
-| Seek the cheapest/stranded electrical power.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Occasionally participate in Withdrawal Validation (which [costs ~zero time/expense](https://twitter.com/Truthcoin/status/1709979104596951160)). |   |   |   |
-| Include as many fee-paying Bitcoin txns as possible, regardless of 3rd party interference.                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                   |   |   |   |
-| Innovate -- new cooling technologies ; hashrate derivatives ; [business models](https://www.riotplatforms.com/bitcoin-mining), [side-hustles](https://shop.braiins.com/products/braiins-polo-shirt) etc.                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                   |   |   |   |
-| Fight for the Bitcoin brand -- hire lobbyists/spokespeople, return mistaken [fee](https://news.bitcoin.com/bitcoin-miner-repays-customer-who-accidentally-paid-2-5-bitcoins-transaction-fee/) [overpayments](https://www.coindesk.com/business/2023/09/15/bitcoin-miner-f2pool-returns-198-btc-to-paxos-after-overpaid-fee/), [emergency](https://freedom-to-tinker.com/2015/07/28/analyzing-the-2013-bitcoin-fork-centralized-decision-making-saved-the-day/) [up/downgrades](https://bitcoin.org/en/alert/2015-07-04-spv-mining). |                                                                                                                                                   |   |   |   |
-| Run software that increases fee revenue, via [Merged Mining](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/).                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                                                                                                   |   |   |   |
-| Give [input at technical Bitcoin conferences](https://www.reddit.com/r/Bitcoin/comments/3vnrrx/scaling_bitcoin_hong_kong_part_2_miner_panel/).                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                                                   |   |   |   |
-| Run software that increases L1 fees sourced from: BIPs 141/341, Ordinals/Inscriptions, [Marriage on the Blockchain](https://www.reddit.com/r/Bitcoin/comments/1t38rc/its_official_im_hitched_and_bitcoin_can_prove_it/?rdt=42824), [prayers on the blockchain](https://bitcointalk.org/index.php?topic=38007), etc.                                                                                                                                                                                                             |                                                                                                                                                   |   |   |   |
-| [Participate](https://www.coindesk.com/tech/2021/05/01/bitcoin-taproot-activation-has-begun-miners-now-have-3-months-to-get-on-board/) in Bitcoin soft fork upgrades (which is always contentious).                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                   |   |   |   |
+Supposedly (according to critics)...
+
+| **It's Allowed/Good When Miners...**    | **But Bad if they...**        |
+|:----------------------------------------|:------------------------------|
+| Use ASICs to hash faster/cheaper.       | Run software that increases L1 fees, sourced via Bip300/301.|
+| Seek the cheapest/stranded electrical power. | Occasionally participate in Withdrawal Validation (which [costs ~zero time/expense](https://twitter.com/Truthcoin/status/1709979104596951160)).|
+| Include as many fee-paying Bitcoin txns as possible, regardless of 3rd party interference.|   |
+| Innovate -- new cooling technologies ; hashrate derivatives ; [business models](https://www.riotplatforms.com/bitcoin-mining), [side-hustles](https://shop.braiins.com/products/braiins-polo-shirt) etc.|   |
+| Fight for the Bitcoin brand -- hire lobbyists/spokespeople, return mistaken [fee](https://news.bitcoin.com/bitcoin-miner-repays-customer-who-accidentally-paid-2-5-bitcoins-transaction-fee/) [overpayments](https://www.coindesk.com/business/2023/09/15/bitcoin-miner-f2pool-returns-198-btc-to-paxos-after-overpaid-fee/), [emergency](https://freedom-to-tinker.com/2015/07/28/analyzing-the-2013-bitcoin-fork-centralized-decision-making-saved-the-day/) [up/downgrades](https://bitcoin.org/en/alert/2015-07-04-spv-mining). |   |
+| Run software that increases fee revenue, via [Merged Mining](https://blog.bitmex.com/the-growth-of-bitcoin-merge-mining/). |  |
+| Give [input at technical Bitcoin conferences](https://www.reddit.com/r/Bitcoin/comments/3vnrrx/scaling_bitcoin_hong_kong_part_2_miner_panel/). |  |
+| Run software that increases L1 fees sourced from: BIPs 141/341, Ordinals/Inscriptions, [Marriage on the Blockchain](https://www.reddit.com/r/Bitcoin/comments/1t38rc/its_official_im_hitched_and_bitcoin_can_prove_it/?rdt=42824), [prayers on the blockchain](https://bitcointalk.org/index.php?topic=38007), etc. |  |
+| [Participate](https://www.coindesk.com/tech/2021/05/01/bitcoin-taproot-activation-has-begun-miners-now-have-3-months-to-get-on-board/) in Bitcoin soft fork upgrades (which is always contentious).|   |
+
+...but this is clearly ridiculous.
 
 For more see [here](https://x.com/Truthcoin/status/1704643105171935619?s=20).
 
@@ -109,7 +113,9 @@ It isn't rushed at all. It is 8 years old.
 
 Read the [literature page](https://www.drivechain.info/literature/) to see just how slowly things have gone, overall.
 
-People are pushing Drivechain in late 2023, because the 2021-2023 BS narratives (S2F, LN, institutions) are collapsing and they want something new. 
+People are pushing Drivechain in late 2023, because the 2021-2023 BS narratives (S2F, LN, institutions) are collapsing and they want something new.
+
+Going slow is [also a risk](https://x.com/Truthcoin/status/1695825441154531595). 
 
 
 <h3 id="8">8. Isn't Bitcoin already Perfect?! Why rain on our parade? Thinking is for nerds!! 🤡</h3>
@@ -130,6 +136,9 @@ This is not a matter of preference -- it's the cold calculated reality of **comp
 
 Thus, the pro-regulation, pro-institution "Bitcoiners" make the same mistake as the 2017 L1 largeblockers -- they are compromising Bitcoin's essential properties, in pursuit of a quick fix.
 
+
+
+
 ---
 
 See also:
@@ -137,3 +146,6 @@ See also:
 * [Paul's Twitter Highlights](https://twitter.com/Truthcoin/highlights) for more answers.
 * [Why Drivechain Is Harder to Understand](https://www.drivechain.info/blog/hard-to-understand/)
 * [Fiatjaf on Drivechain](https://fiatjaf.com/drivechain.html)
+
+----
+
