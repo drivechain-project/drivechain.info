@@ -6,10 +6,11 @@ title: Releases
 
 ## Updates: Too Many To List!
 
+|Software|Linux|Windows|Mac|Source|
+|--------|:---:|:-----:|:-:|:----:|
+|**Drivechain Launcher**|[.tar.gz](https://releases.drivechain.info/drivechain-launcher-latest-x86_64-unknown-linux-gnu.zip)|[.exe](https://releases.drivechain.info/drivechain-launcher-latest-x86_64-w64.zip)|[.dmg](https://releases.drivechain.info/drivechain-launcher-latest-x86_64-apple-darwin.zip)|[Github](https://github.com/LayerTwo-Labs/drivechain_launcher)|
 
-New versions, of each L1/L2 full node, are on [releases.drivechain.info](https://releases.drivechain.info/) and the source code / commit history is [on Github](https://github.com/LayerTwo-Labs).
-
-New users: download **The Launcher** from [LayerTwoLabs.com/download](https://layertwolabs.com/download). And join [the Telegram Group](https://t.me/DcInsiders).
+New users: join [the Telegram Group](https://t.me/DcInsiders).
 
 Below is an archive of previous versions of the software.
 
