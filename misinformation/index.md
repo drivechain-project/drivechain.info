@@ -97,6 +97,8 @@ Plus countless more.
 
 Even if all Alts were scams, it doesn't mean every new blockchain design will be. It's too risky to put all our eggs in one basket! We need *competition* among chain designs.
 
+( Even [diehard-maxi Saylor was forced to admit](https://old.reddit.com/r/AltStreetBets/comments/kr221n/gigachad_michael_saylor_maybe_you_need_a_monero/) that maybe there is [a second best](https://www.youtube.com/watch?v=MNf97XgBdTc) after all. )
+
 
 <h3 id="6">6. Drivechain is funded by VCs! 🤡</h3>
 
