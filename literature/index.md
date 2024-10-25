@@ -33,6 +33,13 @@ To this, only three modifications have since been made:
 ## Presentations
 
 
+### TabConf 2024
+
+[pdf](https://www.drivechain.info/media/slides/tab-2024.pdf)
+[pptx](https://www.drivechain.info/media/slides/tab-2024.pptx)
+[speech](https://www.drivechain.info/media/slides/tabconf-2024-speech.pdf)
+
+
 ### Anarchapulco 2024
 
 [pdf](https://www.drivechain.info/media/slides/ap-2024.pdf)
