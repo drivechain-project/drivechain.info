@@ -2,6 +2,9 @@ Bitcoin Core (untouched)
 ========================
 port: 38333 for signet
 
+Signet Server: http://172.105.148.135/
+Chain Info: mempool.drivechain.live
+Facuet: https://drivechain.live/#/faucet
 
 drivechain-L1 (now Bip300301_enforcer)
 =======================================
