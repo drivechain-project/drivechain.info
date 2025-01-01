@@ -1,0 +1,64 @@
+Bitcoin Core (untouched)
+========================
+port: 38333 for signet
+
+
+drivechain-L1 (now Bip300301_enforcer)
+=======================================
+port: 8332
+getblocktemplate server port: 8122
+rpcport: 50051
+
+
+conf file:
+-----------
+signet=1
+acceptnonstdtxn=1  
+txindex=1
+rpcuser=***
+rpcpassword=***
+zmqpubsequence=tcp://localhost:29000
+signetblocktime=60
+signetchallenge=00141551188e5153533b4fdd555449e640d9cc129456
+------------------------
+
+testchain
+===========
+slot: 0
+port: 8272 
+
+
+bitnames
+==========
+slot: 2
+port: 6002
+
+
+bitassets
+==========
+slot: 4
+port: 6004
+
+
+zside (now "zsail" frontend, zside backend)
+======
+slot: 5
+port: 8232
+
+
+ethsail
+========
+slot: 6
+port: 8545
+
+
+thunder
+========
+slot: 9
+port: 6009
+
+
+latestcore sidechain
+====================
+slot: 11
+port: 19015
