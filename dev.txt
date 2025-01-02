@@ -1,67 +1,90 @@
+Fast Info
+Paul Sztorc -- 1/1/2025
+====================================================
+
+
+Quick Links
+
+    http://172.105.148.135/             -- Signet Server
+    https://mempool.drivechain.live     -- Chain Info (live)
+    https://drivechain.live/#/faucet    -- Faucet for Free Coins
+    http://www.t.me/DcInsiders          -- Telegram Group
+
+    addnode 172.105.148.135:38333 onetry
+
+
+The Launcher
+==============
+
+~/.local/share/cusf_launcher
+
+
 Bitcoin Core (untouched)
 ========================
-port: 38333 for signet
+    port: 38333 for signet
+    Default dir: ~/.drivechain  [ not ~/.bitcoin ]
 
-Signet Server: http://172.105.148.135/
-Chain Info: mempool.drivechain.live
-Facuet: https://drivechain.live/#/faucet
+    conf file:
+    -----------
+    signet=1
+    acceptnonstdtxn=1  
+    txindex=1
+    rpcuser=***
+    rpcpassword=***
+    zmqpubsequence=tcp://localhost:29000
+    [signet]
+    addnode=172.105.148.135
+    signetblocktime=60
+    signetchallenge=00141551188e5153533b4fdd555449e640d9cc129456
+    ------------------------
+
 
 drivechain-L1 (now Bip300301_enforcer)
 =======================================
-port: 8332
-getblocktemplate server port: 8122
-rpcport: 50051
+                            port: 8332
+    getblocktemplate server port: 8122
+                         rpcport: 50051
 
+    default dir: ~/.local/share/bip300301_enforcer/
 
-conf file:
------------
-signet=1
-acceptnonstdtxn=1  
-txindex=1
-rpcuser=***
-rpcpassword=***
-zmqpubsequence=tcp://localhost:29000
-signetblocktime=60
-signetchallenge=00141551188e5153533b4fdd555449e640d9cc129456
-------------------------
 
 testchain
 ===========
-slot: 0
-port: 8272 
+    slot: 0
+    port: 8272 
 
 
 bitnames
 ==========
-slot: 2
-port: 6002
+    slot: 2
+    port: 6002
 
 
 bitassets
 ==========
-slot: 4
-port: 6004
+    slot: 4
+    port: 6004
 
 
 zside (now "zsail" frontend, zside backend)
 ======
-slot: 5
-port: 8232
+    slot: 5
+    port: 8232
 
 
 ethsail
 ========
-slot: 6
-port: 8545
+    slot: 6
+    port: 8545
 
 
 thunder
 ========
-slot: 9
-port: 6009
+    slot: 9
+    port: 6009
 
 
 latestcore sidechain
 ====================
-slot: 11
-port: 19015
+    slot: 11
+    port: 19015
