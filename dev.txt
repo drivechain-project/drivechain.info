@@ -48,6 +48,11 @@ drivechain-L1 (now Bip300301_enforcer)
     default dir: ~/.local/share/bip300301_enforcer/
 
 
+bitwindow
+===========
+    port: 8080
+
+
 testchain
 ===========
     slot: 0
