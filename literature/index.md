@@ -39,14 +39,20 @@ To this, only three modifications have since been made:
 [live video](https://www.youtube.com/watch?v=ImUCulfr1cE)
 
 
-### TabConf 2024
+### TabConf - Oct 2024
 
 [pdf](https://www.drivechain.info/media/slides/tab-2024.pdf)
 [pptx](https://www.drivechain.info/media/slides/tab-2024.pptx)
 [speech](https://www.drivechain.info/media/slides/tabconf-2024-speech.pdf)
 
 
-### Anarchapulco 2024
+### CSUF - Jul 2024
+
+[pdf](https://www.drivechain.info/literature/cusf.pdf)
+[site](https://bip300cusf.com/)
+
+
+### Anarchapulco - Feb 2024
 
 [pdf](https://www.drivechain.info/media/slides/ap-2024.pdf)
 [pptx](https://www.drivechain.info/media/slides/ap-2024.pptx)
