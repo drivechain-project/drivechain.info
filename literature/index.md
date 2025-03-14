@@ -32,6 +32,12 @@ To this, only three modifications have since been made:
 
 ## Presentations
 
+### OP NEXT - Nov 2024
+
+[slides](https://www.drivechain.info/media/slides/op-next-2024.pdf)
+[transcript](https://www.drivechain.info/media/slides/op-next-2024-speech.pdf)
+[live video](https://www.youtube.com/watch?v=ImUCulfr1cE)
+
 
 ### TabConf 2024
 
