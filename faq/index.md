@@ -10,9 +10,42 @@ See also [Drivechain Q&A](https://fiatjaf.com/drivechain.html) by [fiatjaf](http
 See also [Paul's Tweet Highlights](https://twitter.com/Truthcoin/highlights).
 
 
-## 1. Security ## {#security}
+## 0. Recent ## {#recent}
 
-### Miners set the withdrawal destination? Won't they just steal all the L2 coins for themselves? ###
+### If Drivechain is such a good idea, why don't we have it yet?
+
+Three reasons:
+
+1. Bitcoin Core is defective -- their priorities are wrong and they can no longer soft fork.
+2. I [Paul Sztorc] never put out an activation client.
+3. The priorities of BTC (especially miners) have been warped by its history.
+
+Bitcoin Core used to perform the "soft fork" roughly twice a year. Since 2017, we have only soft forked twice (SegWit-2017 and Taproot-2021) -- both for ideas supported by Greg Maxwell (the unofficial technical leader of Bitcoin Core), who has since disappeared. It remains to be seen, if *any* soft fork will *ever* be merged into Bitcoin Core ever again -- no matter how safe or useful. [Many proposals](https://www.truthcoin.info/files/covenants-rationale/) have been introduced, from 2015-Present, but none have been merged. It is "the process" which has stalled, not Bip300.
+
+There has been [working Drivechain software, since 2018](https://www.drivechain.info/releases/index.html). So, why not open a pull request, to merge the Bip300 changes? Because our [old] software was a fork of Bitcoin 16.99 from 2017 -- it also had many customized cosmetic changes. So... why not rebase it? Because rebasing is a lot of work -- both upfront, and continuously. If Bitcoin Core ignores your rebased work (see last paragraph), and then releases a new version of Core, then you must start the work over again. Why do endless extra work, for no reason?
+
+Early in Bitcoin's history, people imagined it would be adopted like the internet: difficult to use at first, confusing, etc. But, eventually: fast, cheap, easy to use... and revolutionary. Over time, the innovative and creative people have departed to work on Altcoins, and what remains in BTC has turned it into a kind of "stock price", plus a cultural disdain for Altcoiners (aka deserters). This makes it difficult for a project like Bip300 to stand out, since in order to appreciate Bip300 you have to appreciate Altcoin-features such as privacy, scale, ease-of-use, etc. Today's miners know nothing about Bitcoin Core (the software) -- many of them are publicly traded, regulated companies that don't know anything about Bitcoin.
+
+These three problems are solved with [CUSF](https://bip300cusf.com/) -- an activation client which does not modify Bitcoin Core. With CUSF, there's no dealing with Bitcoin Core; you only rebase once (ever); and miners are free to activate/deactivate whenever they want (independent of what other groups say/want). CUSF was only tweeted about in early 2024 by me, paper published in summer 2024, and now the new activation client is being tested today [in early 2025].
+
+### With all this delay, will it still be worth it?
+
+Yes.
+
+First, Drivechain has become more vindicated over time. Altcoin-tech improves, [Altcoin-fees increase](https://cryptofees.info/), BTC-miners seek new revenue sources (such as ordinals), LN is [being discarded](https://www.truthcoin.info/blog/ln-blackpill/).
+
+Second, we need a proper accounting of "delays" and productivity. In drivechain, the L1 component is simple, and most work is done by the L2 software. It is more upfront work, to make a "demo" of the whole UX. Once finished, however, the real Bitcoin network can immediately do anything the demo can do -- including scale to 8 billion people. With Lightning (for example), it is the reverse: it is easy to build a demo, of one or two transactions (under simplified liquidity assumptions), but impossible to scale that demo to 8 billion real users. Drivechain will teleport from the starting line from the finish line, while Ln is still running the first 1% of the race (that it will never finish).
+
+### When can we expect Drivechain? What can we do to get it faster?
+
+See for yourself! Download [the testnet software](https://layertwolabs.com/download), try it out, and offer feedback in [the telegram group](https://t.me/dcinsiders).
+
+We cannot expect miners to activate Bip300-cusf, until *after* the software works very reliably.
+
+
+## 1. Category: Security Qs ## {#security}
+
+### Miners set the withdrawal destination? Won't they just steal all the L2 coins for themselves?
 
 Yes, Miners set the destination for withdrawals.
 
@@ -291,7 +324,15 @@ While this is collaboration, it is not centralization. Drivechain is designed so
 * If necessary, we could just add a second BIP300, "BIP300b", that adds 256 more slots.
 
 
-## 2. Comparisons
+## Category: Comparing Drivechain To...
+
+### LN and ARK
+
+LN and Ark are "non-mined L2s" -- they do not pay their txn fees to L1 Miners. This will cause a whole host of problems, as I [presented at OP NEXT](https://www.youtube.com/watch?v=ImUCulfr1cE) in Nov 2024. In contrast, Drivechain passes all of its txn fees to L1 miners.
+
+This is in addition to [the other problems with Lightning](https://www.truthcoin.info/blog/lightning-limitations/), and [with ARK](https://arkdev.info/blog/liquidity-requirements/#the-change-problem).
+
+
 
 ### How does this proposal compare to the proposal in [the Oct 2014 paper "Enabling Blockchain Innovations with Pegged Sidechains"](https://blockstream.com/sidechains.pdf)? ### {#blockstream}
 
