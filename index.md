@@ -66,7 +66,7 @@ div.desc {
 <p>- <a href="https://www.blockstream.com/about/"><strong>Adam Back</strong></a>, <a href="https://www.youtube.com/watch?v=93iHn1dDuik&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=5">Baltic Honeybadger 2022</a></p>
 
 
-## **[LEARN via YouTube](https://www.youtube.com/watch?v=JwIoTaJQNi0&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)** -- **[DOWNLOAD our Software](http://www.drivechain.info/releases/index.html)**
+## **[LEARN via YouTube](https://www.youtube.com/watch?v=JwIoTaJQNi0&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)** -- **[DOWNLOAD our Software](http://www.drivechain.info/releases/index.html)** -- [Dev Notes](https://www.drivechain.info/dev.txt)
 
 
 

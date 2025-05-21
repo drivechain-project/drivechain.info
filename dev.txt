@@ -1,26 +1,53 @@
 Fast Info
-Paul Sztorc -- 1/1/2025
+Paul Sztorc -- 5/21/2025
 ====================================================
 
 
+
 Quick Links
+============
 
-    http://172.105.148.135/             -- Signet Server
-    https://mempool.drivechain.live     -- Chain Info (live)
-    https://drivechain.live/#/faucet    -- Faucet for Free Coins
-    http://www.t.me/DcInsiders          -- Telegram Group
+    SigNet Server           -- 172.105.148.135
+    Reconnect               -- addnode 172.105.148.135:38333 onetry
+    L2 Block Heights        -- https://node.drivechain.info/#/explorer
+    Mempool.Space fork (L1) -- https://explorer.drivechain.info/
+    Faucet for Free Coins   -- https://drivechain.live/#/faucet
+    Telegram Group          -- http://www.t.me/DcInsiders
+    L2L Offical Github      -- https://github.com/orgs/LayerTwo-Labs/repositories
 
-    addnode 172.105.148.135:38333 onetry
+    Official download link  -- https://layertwolabs.com/download
+    Server with binaries    -- https://releases.drivechain.info/ 
+
+    Command Line Install    -- http://bip300.xyz/ 
+
+    
+
+Software Stack
+===============
+
+  L1
+   Bitcoin Core (patched)   -- https://github.com/LayerTwo-Labs/bitcoin-patched
+   Bip300_301 Enforcer      -- https://github.com/LayerTwo-Labs/bip300301_enforcer
 
 
-The Launcher
-==============
+  L2 -- (each of these is its own chain)
+   Thunder (scaling)    -- https://github.com/LayerTwo-Labs/thunder-rust
+   zSide (privacy)      -- https://github.com/iwakura-rein/thunder-orchard
+   BitNames (ID/dns)    -- https://github.com/LayerTwo-Labs/plain-bitnames
+   BitAssets (tokens)   -- https://github.com/LayerTwo-Labs/plain-bitassets
+   EthSide (evm)        -- https://www.drivechain.info/blog/ethside-guide/
 
-~/.local/share/cusf_launcher
+  Cross-Chain
+    Launcher (DL & connect chains) -- https://github.com/LayerTwo-Labs/Drivechain-Launcher         
+    BitWindow (Gui & Wallet)       -- https://github.com/LayerTwo-Labs/drivechain-frontends
 
 
-Bitcoin Core (untouched)
-========================
+Ports (etc) for Each Software
+=============================
+
+Bitcoin Core (patched)
+------------------------
+
     port: 38333 for signet
     Default dir: ~/.drivechain  [ not ~/.bitcoin ]
 
@@ -39,8 +66,8 @@ Bitcoin Core (untouched)
     ------------------------
 
 
-drivechain-L1 (now Bip300301_enforcer)
-=======================================
+Bip300301_enforcer
+-------------------
                             port: 8332
     getblocktemplate server port: 8122
                          rpcport: 50051
@@ -49,47 +76,47 @@ drivechain-L1 (now Bip300301_enforcer)
 
 
 bitwindow
-===========
+---------
     port: 8080
 
 
 testchain
-===========
+---------
     slot: 0
     port: 8272 
 
 
 bitnames
-==========
+--------
     slot: 2
     port: 6002
 
 
 bitassets
-==========
+--------
     slot: 4
     port: 6004
 
 
-zside (now "zsail" frontend, zside backend)
-======
+zside
+-----
     slot: 5
     port: 8232
 
 
 ethsail
-========
+-------
     slot: 6
     port: 8545
 
 
 thunder
-========
+------
     slot: 9
     port: 6009
 
 
 latestcore sidechain
-====================
+--------------------
     slot: 11
     port: 19015
