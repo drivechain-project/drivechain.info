@@ -1,5 +1,5 @@
 ---
-title: Tidwell's List of Objections
+title: The List of Objections
 show_author: true
 comments: true
 date: 2023-09-04 05:00:00
