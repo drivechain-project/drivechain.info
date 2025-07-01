@@ -36,6 +36,7 @@ Let me clarify:
 * * If only one person enters the contest (and qualifies), then they will earn $10,000.
 * * If three people enter the contest (and they all qualify), then 1st place gets $4,500, and 2nd and 3rd places each get $2,225.
 * The final contest, ends Aug 19, 2025 -- but may continue!
+* Blocks are currently set to 160 MB -- but we may increase this, up to 800 MB, over the life of the contest.
 
 Also, you only Qualify (as a potential winner) if:
 
