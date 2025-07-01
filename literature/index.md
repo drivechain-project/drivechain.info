@@ -120,6 +120,13 @@ These are two good interviews, each recorded *after* the DriveNET software relea
 On [YouTube](https://www.youtube.com/watch?v=N33iJK2FdpE). Covers all the steps needed to use a ZCash sidechain on Bitcoin.
 
 
+### Austin BitDevs 2019 ###
+
+A talk I gave at the Austin BitDevs meetup.
+
+* [Slides](/media/slides/austin-2019.pdf)
+
+
 ### Construct 2019 (at Consensus NYC) ### {#consensus-2019}
 
 20 minute overview of Drivechain design and security model. Includes comparison with the Lightning Network.
@@ -127,7 +134,6 @@ On [YouTube](https://www.youtube.com/watch?v=N33iJK2FdpE). Covers all the steps 
 * [Slides](/media/slides/construct-2019.pdf)
 * [Transcript](/media/slides/construct-2019-speech.pdf)
 * Video (coming soon)
-
 
 
 ### TabConf 2019 ### {#tab-2019}
