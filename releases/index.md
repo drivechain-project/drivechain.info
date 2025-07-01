@@ -4,6 +4,19 @@ title: Releases
 ---
 
 
+Please visit: 
+
+* [LayerTwoLabs.com/download](https://layertwolabs.com/download)
+* [releases.drivechain.info](https://releases.drivechain.info/)
+* [LayerTwoLabs GitHub](https://github.com/orgs/LayerTwo-Labs/repositories)
+* [Drivechain.info/dev.txt](https://www.drivechain.info/dev.txt)
+
+...for the latest software.
+
+This page will no longer be updated! It is now merely an archive of previous versions of the software.
+
+<!--
+
 ## Updates: Too Many To List!
 
 |Software|Linux|Windows|Mac|Source|
@@ -15,7 +28,7 @@ New users: join [the Telegram Group](https://t.me/DcInsiders).
 Below is an archive of previous versions of the software.
 
 
-<!--
+
 
 ## DriveNet Launcher
 
