@@ -26,7 +26,7 @@ The **fastest time** wins!
 
 Money to be awarded as follows:
 
-![image](/images/contest-2025/calendar.png)
+![image](/media/contest-2025/calendar.png)
 
 Let me clarify:
 
