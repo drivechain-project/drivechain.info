@@ -60,6 +60,7 @@ Drastic changes -- such as rewriting the codebase in a different language -- are
 ### Helpful Suggestions
 
 * [Eric Voskuil](https://x.com/evoskuil) improved Bitcoin Core's performance by a staggering 50x (-98%). He obviously has an idea or two. Perhaps you should [study his work](https://github.com/libbitcoin/libbitcoin-system); or ask him for ideas.
+* There's some useful information, at [drivechain.info/dev.txt](https://www.drivechain.info/dev.txt).
 * (I'll add more suggestions here, if I think of any.)
 
 
