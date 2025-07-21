@@ -69,4 +69,33 @@ Drastic changes -- such as rewriting the codebase in a different language -- are
 * We reserve the right to cancel this whole experiment (at any time) -- if it turns out to be a disaster.
 * We also reserve the right to *increase* the prize amounts -- or award extra prizes, if there are many great submissions.
 
+
 ---
+
+## Contest #1! (And updates for Contest #2)
+
+All the entries are **up** -- on [the public repo](https://github.com/LayerTwo-Labs/thunder-rust) as branches "contest1_1, contest1_2, ... contest1_5".
+
+The **winners**, are:
+
+1. 1st place -- "contest1_3"
+2. 2nd place -- "contest1_1"
+3. 3rd place -- "contest1_2"
+
+Thanks to all who participated!
+
+re: **Next Contest**. It took *longer than expected* for us to put up the new benchmark version. So we shall change the schedule as follows:
+
+* No prize, no contest for July 22nd.
+* The July 29th prize will be **doubled** in value. [$20,000 ; $17,600 ; $18,000]
+
+The **[new benchmark software](https://github.com/LayerTwo-Labs/thunder-rust/tree/2025-07-18-bench)** is up, in the new branch "2025-07-18-bench". That's the version you must use, for Contest #2! Stay tuned, as we may still push an update or two, to it!
+
+Notes:
+- Some users discussed [*CUDA*](https://developer.nvidia.com/cuda-toolkit), and if it could be used. I say: *yes*. You must stick to hardware offered by Github-actions (I believe they have NVIDIA T4 GPUs). And you will be arbitrarily penalized if we make a CUDA vs CPU apples-to-oranges comparison.
+- We had *no merkle tree* before -- but now we have a new, customized one. So that is probably ripe for optimization.
+- We *will* increase the blocksize, to 320 Mb, in the next contest.
+- Some asked about optimizing bandwidth. In the past, bandwidth was the bottleneck (and thus, the most important thing to optimize), but recently the bandwidth problem has basically solved itself. Some envelope math: at maximum size [1600 MB blocks / 10 mins], this comes to [12800 Mb/600 sec] or [21.3 mpbs]. Today's average USA down/up speeds are 200/50, which is already more than enough -- even after accounting for: IBD ("catching up"), jurisdictional arbitrage, queuing theory paradoxes, error, etc. Globally, bandwidth speeds are rising at about 20% per year -- *way higher* than the txn growth rate ([of 6.2%](https://www.truthcoin.info/blog/all-world-txns/)). And even the average is misleading -- phones will be on 5G; servers and desktops (ie, the relevant computer type, for nodes) will be on Gigabit. Today, a single Call of Duty update is now 37.4 GB -- we live in a new era of abundant internet. (Back in 2008, average USA internet down-speed was just 5 Mbps.)
+ 
+---
+
