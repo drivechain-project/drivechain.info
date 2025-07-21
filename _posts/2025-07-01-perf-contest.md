@@ -72,7 +72,7 @@ Drastic changes -- such as rewriting the codebase in a different language -- are
 
 ---
 
-## Contest #1! (And updates for Contest #2)
+## Contest 1 Results! (And updates for Contest 2)
 
 All the entries are **up** -- on [the public repo](https://github.com/LayerTwo-Labs/thunder-rust) as branches "contest1_1, contest1_2, ... contest1_5".
 
