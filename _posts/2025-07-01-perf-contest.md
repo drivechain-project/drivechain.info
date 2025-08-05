@@ -99,3 +99,23 @@ Notes:
  
 ---
 
+
+## Contest 2 Results! (And updates for Contest 3)
+
+Same as before, the [entries are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "contest2_1, contest2_2, ... ".
+
+Same as before, we will **combine** into a **two-week** contest:
+
+* No prize, no contest for Aug 5th.
+* The Aug 12th prize will be **doubled** in value. [$20,000 ; $17,600 ; $18,000]
+
+The **[new benchmark software](https://github.com/LayerTwo-Labs/thunder-rust/tree/2025-08-04-bench)** is "2025-08-04-bench". That's the version you must improve, for Contest #3!
+
+Notes:
+- Please do not update UtreeXo at this time. It is no longer part of the benchmark -- we might return to it later.
+- We have increased the blocksize from 5x blocks 160 mb , to 10x blocks 320 MB.
+- Unsafe code should include comments explaining why it is safe.
+- We are now using a paid runner for benchmarks, and may adjust specs, so we advise against optimizing for specific runners.
+- We will re-run the baseline, at the submission deadline. This is to account for variation in runners, and give accurate comparisons.
+
+---
