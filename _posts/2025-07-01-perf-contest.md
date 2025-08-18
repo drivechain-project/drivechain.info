@@ -119,3 +119,27 @@ Notes:
 - We will re-run the baseline, at the submission deadline. This is to account for variation in runners, and give accurate comparisons.
 
 ---
+
+## Contest 3 Results! 
+
+Same as before, the [entries are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "2025-18-13-contest3_1, _2, _3, _4".
+
+Same as before, we will **combine** into a **two-week** contest:
+
+* No prize, no contest for Aug 19th.
+* A **doubled** prize on Aug 26th.
+
+The **new benchmark** is **[2025-08-19-bench](https://github.com/LayerTwo-Labs/thunder-rust/tree/2025-08-19-bench)** -- it is based on the winner of contest3, but with **960mb** blocks.
+
+Notes:
+
+
+- We have upgraded our runner, up one size, to 16-core 64 GB RAM.
+- What is left to optimize? Probably only these:
+- * switching to a thread-safe DB for parallel reads
+- * using a GPU for merkle root computation & signature verification
+- * switching to a faster elliptic curve/group
+- FYI, during contest 3, everyone focused on allocations.
+
+---
+
