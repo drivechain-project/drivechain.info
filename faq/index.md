@@ -324,7 +324,7 @@ While this is collaboration, it is not centralization. Drivechain is designed so
 * If necessary, we could just add a second BIP300, "BIP300b", that adds 256 more slots.
 
 
-## Category: Comparing Drivechain To...
+## Category: Comparing Drivechain To... ## {#comparables}
 
 
 ### LN and ARK
