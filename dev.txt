@@ -1,97 +1,131 @@
 Fast Info
-Paul Sztorc -- 5/21/2025
+Paul Sztorc -- 2/19/2026
 ====================================================
 
 
 
 Quick Links
-============
+===========
 
-    SigNet Server           -- 172.105.148.135
-    Reconnect               -- addnode 172.105.148.135:38333 onetry
-    L2 Block Heights        -- https://node.drivechain.info/#/explorer
-    Mempool.Space fork (L1) -- https://explorer.drivechain.info/
-    Faucet for Free Coins   -- https://drivechain.live/#/faucet
-    Telegram Group          -- http://www.t.me/DcInsiders
-    L2L Offical Github      -- https://github.com/orgs/LayerTwo-Labs/repositories
+  Telegram Group          -- http://www.t.me/DcInsiders
+  L2L Offical Github      -- https://github.com/orgs/LayerTwo-Labs/repositories
+  Official download link  -- https://LayerTwoLabs.com/download
+  Server with binaries    -- https://releases.drivechain.info/ 
+  Command Line Install    -- http://bip300.xyz/
 
-    Official download link  -- https://layertwolabs.com/download
-    Server with binaries    -- https://releases.drivechain.info/ 
 
-    Command Line Install    -- http://bip300.xyz/ 
-
-    
 
 Software Stack
 ===============
 
   L1
+   Bitcoin Core             -- https://github.com/bitcoin/bitcoin
    Bitcoin Core (patched)   -- https://github.com/LayerTwo-Labs/bitcoin-patched
    Bip300_301 Enforcer      -- https://github.com/LayerTwo-Labs/bip300301_enforcer
-
+   BitWindow (GUI & Wallet) -- https://github.com/LayerTwo-Labs/drivechain-frontends/tree/master/
 
   L2 -- (each of these is its own chain)
-   Thunder (scaling)    -- https://github.com/LayerTwo-Labs/thunder-rust
-   zSide (privacy)      -- https://github.com/iwakura-rein/thunder-orchard
-   BitNames (ID/dns)    -- https://github.com/LayerTwo-Labs/plain-bitnames
-   BitAssets (tokens)   -- https://github.com/LayerTwo-Labs/plain-bitassets
-   EthSide (evm)        -- https://www.drivechain.info/blog/ethside-guide/
+   Thunder (scaling)        -- https://github.com/LayerTwo-Labs/thunder-rust
+   zSide (privacy)          -- https://github.com/iwakura-rein/thunder-orchard
+   BitNames (ID/dns)        -- https://github.com/LayerTwo-Labs/plain-bitnames
+   BitAssets (tokens)       -- https://github.com/LayerTwo-Labs/plain-bitassets
+   Truthcoin-DC (p.markets) -- https://github.com/LayerTwo-Labs/truthcoin-dc
+   CoinShift  (coin swap)   -- https://github.com/LayerTwo-Labs/coinshift-rs
+   Photon (quantum res.)    -- https://github.com/LayerTwo-Labs/photon
 
-  Cross-Chain
-    Launcher (DL & connect chains) -- https://github.com/LayerTwo-Labs/Drivechain-Launcher         
-    BitWindow (Gui & Wallet)       -- https://github.com/LayerTwo-Labs/drivechain-frontends
+  Other / Crosschain
+    Signet Server           -- https://github.com/LayerTwo-Labs/signet-server
+    RedWallet (mobile)      -- https://github.com/LayerTwo-Labs/BlueWallet
 
 
-Ports (etc) for Each Software
-=============================
 
-Bitcoin Core (patched)
-------------------------
+Two Testnets
+=============
 
-    port: 38333 for signet
-    Default dir: ~/.drivechain  [ not ~/.bitcoin ]
+                 SIGNET (Bitcoin Core)       |      FORKNET (bitcoin patched)
+                  ---------------------------|--------------------------------
+                                             |
+[explorer/       node.signet.drivechain.info |   node.forknet.drivechain.info
+ faucet]                                     | 
+                                             |
+[datadir]          ~/.bitcoin/signet/        |   ~/.drivechain
+                                             |
+                                             |
+                                             |
+                                             |                                   
 
-    conf file:
-    -----------
-    signet=1
-    acceptnonstdtxn=1  
+
+
+SigNet Info
+============
+
+    Explorer/Faucet/Info    -- https://node.signet.drivechain.info
+    SigNet Server           -- 172.105.148.135
+    Reconnect               -- addnode 172.105.148.135:38333 onetry
+    Mempool.Space           -- https://explorer.signet.drivechain.info/
+
+( For forknet, use 157.180.8.224:8333 .)
+
+
+Conf File (Signet)
+====================
+
+# This config should be placed in following path:
+# ~/.bitcoin/bitcoin.conf
+
+    rpcuser=user
+    rpcpassword=password
+    server=1
+    listen=1
     txindex=1
-    rpcuser=***
-    rpcpassword=***
-    zmqpubsequence=tcp://localhost:29000
+    zmqpubsequence=tcp://127.0.0.1:29000
+    rest=1
+    fallbackfee=0.00021
+    chain=signet
+
     [signet]
-    addnode=172.105.148.135
-    signetblocktime=60
-    signetchallenge=00141551188e5153533b4fdd555449e640d9cc129456
-    ------------------------
+    addnode=172.105.148.135:38333
+    signetblocktime=600
+    signetchallenge=a91484fa7c2460891fe5212cb08432e21a4207909aa987
+
+    [main]
+    addnode=157.180.8.224:8333
+    drivechain=1   # only Core (patched) will notice this
+
+( For forknet, just delete "chain=signet". )
 
 
-Bip300301_enforcer
--------------------
-                            port: 8332
-    getblocktemplate server port: 8122
-                         rpcport: 50051
 
-    default dir: ~/.local/share/bip300301_enforcer/
+Ports
+=======
+
+                Layer    slot       port (p2p)     port (rpc)    port (zmq)    port (grpc)
+===================================================================================================
+----------------------------------------------------------------------------------------------------
+300301_enforcer   L1      --         --             8123 rpc        --          50051
+                                                    8122 gbt
+----------------------------------------------------------------------------------------------------
+bitwindow         L1      --         --             --              --          30301
+----------------------------------------------------------------------------------------------------
+Bitcoin Core      L1      --         8333   m       8332   m       28332
+                                     38332  s       38332  s
+----------------------------------------------------------------------------------------------------
+bitnames          L2      2          4002           6002           28002
+----------------------------------------------------------------------------------------------------
+bitassets         L2      4          4004           6004           28004
+----------------------------------------------------------------------------------------------------
+thunder           L2      9          4009           6009
+----------------------------------------------------------------------------------------------------
+truthcoin-dc      L2      13         4013           6013 
+----------------------------------------------------------------------------------------------------
+zside             L2      98         4098           6098
+----------------------------------------------------------------------------------------------------
+photon            L2      99         4099           6099 
+----------------------------------------------------------------------------------------------------
+coinshift         L2      255        4255           6255
+----------------------------------------------------------------------------------------------------
 
 
-               L       slot       port
--------------------------------------------
-bitwindow      cc      n/a        8080
--------------------------------------------
-testchain      L2      0          8272
--------------------------------------------
-bitnames       L2      2          6002
--------------------------------------------
-bitassets      L2      4          6004
--------------------------------------------
-zside          L2      5          8232
--------------------------------------------
-ethsail        L2      6          8545
--------------------------------------------
-thunder        L2      9          6009
--------------------------------------------
-latestcore-
-sidechain      L2      11        19015 
--------------------------------------------
- 
+
+
+
