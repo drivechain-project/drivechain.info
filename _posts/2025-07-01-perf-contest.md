@@ -95,7 +95,9 @@ Notes:
 - Some users discussed [*CUDA*](https://developer.nvidia.com/cuda-toolkit), and if it could be used. I say: *yes*. You must stick to hardware offered by Github-actions (I believe they have NVIDIA T4 GPUs). And you will be arbitrarily penalized if we make a CUDA vs CPU apples-to-oranges comparison.
 - We had *no merkle tree* before -- but now we have a new, customized one. So that is probably ripe for optimization.
 - We *will* increase the blocksize, to 320 Mb, in the next contest.
-- Some asked about optimizing bandwidth. In the past, bandwidth was the bottleneck (and thus, the most important thing to optimize), but recently the bandwidth problem has basically solved itself. Some envelope math: at maximum size [1600 MB blocks / 10 mins], this comes to [12800 Mb/600 sec] or [21.3 mpbs]. Today's average USA down/up speeds are 200/50, which is already more than enough -- even after accounting for: IBD ("catching up"), jurisdictional arbitrage, queuing theory paradoxes, error, etc. Globally, bandwidth speeds are rising at about 20% per year -- *way higher* than the txn growth rate ([of 6.2%](https://www.truthcoin.info/blog/all-world-txns/)). And even the average is misleading -- phones will be on 5G; servers and desktops (ie, the relevant computer type, for nodes) will be on Gigabit. Today, a single Call of Duty update is now 37.4 GB -- we live in a new era of abundant internet. (Back in 2008, average USA internet down-speed was just 5 Mbps.)
+- Some asked about optimizing bandwidth. In the past, bandwidth was the bottleneck (and thus, the most important thing to optimize), but recently the bandwidth problem has -- more or less -- solved itself[^1].
+
+[^1]: Some envelope math: at maximum size [1600 MB blocks / 10 mins], this comes to [12800 Mb/600 sec] or [21.3 mpbs]. Today's average USA down/up speeds are 200/50, which is already more than enough -- even after accounting for: IBD ("catching up"), jurisdictional arbitrage, queuing theory paradoxes, error, etc. Globally, bandwidth speeds are rising at about 20% per year -- *way higher* than the txn growth rate ([of 6.2%](https://www.truthcoin.info/blog/all-world-txns/)). And even the average is misleading -- phones will be on 5G; servers and desktops (ie, the relevant computer type, for nodes) will be on Gigabit. Today, a single Call of Duty update is now 37.4 GB -- we live in a new era of abundant internet. (Back in 2008, average USA internet down-speed was just 5 Mbps.)
  
 ---
 
@@ -142,4 +144,30 @@ Notes:
 - FYI, during contest 3, everyone focused on allocations.
 
 ---
+
+## Contest 4 Results! 
+
+The final entries [are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "2025-08-27-contest4_1, _2, etc".
+
+The winner was **entry 4_1** , who used CUDA / a GPU runner to [get a score](https://github.com/LayerTwo-Labs/thunder-rust/actions/runs/17293562461/workflow) of 303.50:
+
+    *************
+    YOUR SCORE:  303.50
+    Verified 10x 960mb blocks in 303.50 seconds (mean) / 302.37 seconds (median).
+    *************
+
+At a [minimal txn size](https://www.truthcoin.info/blog/small-txns/#part-6-total--conclusion) of 138 bytes per txn, a 960 mB block comes to 6.95 million txns per block. At 600 seconds per block, this comes to a tps rate of 11,594. When we account for [my plan to have 13 cooperating L2s](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math), the full txn rate is **150,722 transactions per second**.
+
+
+## Conclusion
+
+Since bandwith is no longer the bottleneck[^1], this means that our software can --today-- process 50% of [the world's txns](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math).
+
+Obviously, the software will continue to improve. Obviously, supporting tech (CPUs, GPUs, bandwith, storage, etc) will also continue to improve.
+
+To me, this settles the debate over whether "blockchains can scale". Actually -- they can. They just did! In fact, it is the Lightning Network crew who should probably prove -- to the rest of us -- why end users would want to deal with channel-opening, inbound liquidity, hot wallets, HTLCs, etc.
+
+---
+
+### Footnotes
 
