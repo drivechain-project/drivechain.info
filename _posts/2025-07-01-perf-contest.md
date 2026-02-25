@@ -161,7 +161,7 @@ At a [minimal txn size](https://www.truthcoin.info/blog/small-txns/#part-6-total
 
 ## Conclusion
 
-Since bandwith is no longer the bottleneck[^1], this means that our software can --today-- process 50% of [the world's txns](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math).
+Since bandwith is no longer the bottleneck[^1], this means that our software can --today-- process over 50% of [the world's txns](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math).
 
 Obviously, the software will continue to improve. Obviously, supporting tech (CPUs, GPUs, bandwith, storage, etc) will also continue to improve.
 
