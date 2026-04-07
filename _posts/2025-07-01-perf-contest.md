@@ -122,7 +122,7 @@ Notes:
 
 ---
 
-## Contest 3 Results! 
+## Contest 3 Results!
 
 Same as before, the [entries are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "2025-18-13-contest3_1, _2, _3, _4".
 
@@ -145,9 +145,9 @@ Notes:
 
 ---
 
-## Contest 4 Results! 
+## Contest 4 Results!
 
-The final entries [are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "2025-08-27-contest4_1, _2, etc".
+The final entries [are up](https://github.com/LayerTwo-Labs/thunder-rust) as branches "2025-08-27-contest4_1, \_2, etc".
 
 The winner was **entry 4_1** , who used CUDA / a GPU runner to [get a score](https://github.com/LayerTwo-Labs/thunder-rust/actions/runs/17293562461/workflow) of 303.50:
 
@@ -158,7 +158,6 @@ The winner was **entry 4_1** , who used CUDA / a GPU runner to [get a score](htt
 
 At a [minimal txn size](https://www.truthcoin.info/blog/small-txns/#part-6-total--conclusion) of 138 bytes per txn, a 960 mB block comes to 6.95 million txns per block. At 600 seconds per block, this comes to a tps rate of 11,594. When we account for [my plan to have 13 cooperating L2s](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math), the full txn rate is **150,722 transactions per second**.
 
-
 ## Conclusion
 
 Since bandwith is no longer the bottleneck[^1], this means that our software can --today-- process over 50% of [the world's txns](https://www.truthcoin.info/blog/all-world-txns/#appendix-1--blockspace-napkin-math).
@@ -166,6 +165,14 @@ Since bandwith is no longer the bottleneck[^1], this means that our software can
 Obviously, the software will continue to improve. Obviously, supporting tech (CPUs, GPUs, bandwith, storage, etc) will also continue to improve.
 
 To me, this settles the debate over whether "blockchains can scale". Actually -- they can. They just did! In fact, it is the Lightning Network crew who should probably prove -- to the rest of us -- why end users would want to deal with channel-opening, inbound liquidity, hot wallets, HTLCs, etc.
+
+---
+
+## Appendix 1: Cost
+
+How expensive would these nodes be? Our contest paints a misleading picture, because we had to first *generate* an enormous pile of fake txns. To merely run a full node, would require a machine roughly between to Hetzer's EX44 (about 50 Euros per month) and Akami's G8-dedicated-64x16 ($560 month). We could eyeball it at **$3600 per year**.
+
+In return for our $3600 per year, we are rewarded with a node that can do 11,594 tps. By dividing, we get a ratio of **3.22 tps per annual dollar**. (This ratio allows us to compare our largeblock node against other largeblock-node projects.)
 
 ---
 
