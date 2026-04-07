@@ -170,7 +170,7 @@ To me, this settles the debate over whether "blockchains can scale". Actually --
 
 ## Appendix 1: Cost
 
-How expensive would these nodes be? Our contest paints a misleading picture, because we had to first *generate* an enormous pile of fake txns. To merely run a full node, would require a machine roughly between to Hetzer's EX44 (about 50 Euros per month) and Akami's G8-dedicated-64x16 ($560 month). We could eyeball it at **$3600 per year**.
+How expensive would these nodes be? Our GitHub runners had to be extra powerful, in order to *administer* the contest (mainly, because they had to fist *generate* an enormous pile of fake txns). In the real world, full nodes would merely need to download and validate blocks. Mere validation would require a machine, roughly between Hetzer's EX44 (about 50 Euros per month) and Akami's G8-dedicated-64x16 ($560 month). We could eyeball it at **$3600 per year**.
 
 In return for our $3600 per year, we are rewarded with a node that can do 11,594 tps. By dividing, we get a ratio of **3.22 tps per annual dollar**. (This ratio allows us to compare our largeblock node against other largeblock-node projects.)
 
