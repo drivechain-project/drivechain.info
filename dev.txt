@@ -21,6 +21,7 @@ Software Stack
   L1
    Bitcoin Core             -- https://github.com/bitcoin/bitcoin
    Bitcoin Core (patched)   -- https://github.com/LayerTwo-Labs/bitcoin-patched
+   "ForkNet" (Bitcoin Core) -- https://github.com/drivechain-forknet/drivechain-forknet
    Bip300_301 Enforcer      -- https://github.com/LayerTwo-Labs/bip300301_enforcer
    BitWindow (GUI & Wallet) -- https://github.com/LayerTwo-Labs/drivechain-frontends/tree/master/
 
