@@ -2,7 +2,7 @@
 title: Summer 2026 Bug Hunt Hackathon!
 show_author: true
 comments: true
-date: 2026-08-26 1:00:00
+date: 2026-05-26 1:00:00
 ---
 
 ### Summary
