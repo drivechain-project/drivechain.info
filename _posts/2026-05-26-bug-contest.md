@@ -24,7 +24,7 @@ Some **bug-types** are worth more than others:
 |:----:|------------------------------------------------------------------|
 |   1  | Network fork, loss of funds, inflation, or theft.                |
 |   2  | Network crashes, mining halts, or txns fail to confirm.          |
-|   3  | Perforamance degrades, software slows.                           |
+|   3  | Performance degrades (significantly), software slows.            |
 |   4  | Anything else -- strange graphical effects, mysterious behavior. |
 
 ...and some **repos** are more mission-critical than others:
