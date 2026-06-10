@@ -87,7 +87,7 @@ Conf File (Signet)
     [signet]
     addnode=172.105.148.135:38333
     signetblocktime=600
-    signetchallenge=a91484fa7c2460891fe5212cb08432e21a4207909aa987
+    signetchallenge=00148835832e28c816b7acd8fdb19772ab2199603a56
 
     [main]
     addnode=157.180.8.224:8333
